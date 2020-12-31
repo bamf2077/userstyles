@@ -2,15 +2,24 @@
 @name:en Global Font: Microsoft Family
 @name 全局微软雅黑
 @namespace franciszhao
-@version 2.2.1
+@version 2.2.2
 @description:en A UserCSS style to replace all fonts on web pages with Microsoft’s font family.
-@description 一个使用微软的系列字体替换网页原有字体的用户样式表。
+@description 一款使用微软的系列字体替换网页原有字体的用户样式表。
 @author Francis Zhao <francis@n2o.io>
 @homepageURL https://n2o.io/go?page=user.css
 @supportURL https://weibo.com/francis4es
 @license MIT
 @preprocessor default
 ==/UserStyle== */
+
+/*
+ *                     重要提示
+ *
+ * 本样式自 2.2.2 版本开始将默认等宽字体由 Consolas 更换为微软的开源字体 Cascadia Code，
+ * 无论之前是否下载过字体包，都请重新下载安装，以免字体无法正常显示。
+ * 下载地址：https://n2o.io/p/user.css/
+ *
+ */
 
 $font-system: -apple-system, BlinkMacSystemFont, system-ui;
 
@@ -38,17 +47,18 @@ $font-serif-j-fallback: $font-serif;
 $font-serif-k: "";
 $font-serif-k-fallback: $font-serif;
 
-$font-mono: "Consolas";
-$font-mono-sc: "Consolas";
-$font-mono-sc-fallback: $font-mono, $font-sans-sc, $font-sans-sc-fallback;
-$font-mono-tc: "Consolas";
-$font-mono-tc-fallback: $font-mono, $font-sans-tc, $font-sans-tc-fallback;
-$font-mono-hc: "Consolas";
-$font-mono-hc-fallback: $font-mono-tc, $font-mono, $font-sans-hc, $font-sans-hc-fallback;
-$font-mono-j: "Consolas";
-$font-mono-j-fallback: $font-mono, $font-sans-j, $font-sans-j-fallback;
-$font-mono-k: "Consolas";
-$font-mono-k-fallback: $font-mono, $font-sans-k, $font-sans-k-fallback;
+$font-mono: "Cascadia Code";
+$font-mono-fallback: "Consolas";
+$font-mono-sc: "Cascadia Code";
+$font-mono-sc-fallback: $font-mono-fallback, $font-sans-sc, $font-sans-sc-fallback;
+$font-mono-tc: "Cascadia Code";
+$font-mono-tc-fallback: $font-mono-fallback, $font-sans-tc, $font-sans-tc-fallback;
+$font-mono-hc: "Cascadia Code";
+$font-mono-hc-fallback: $font-mono-tc, $font-mono-fallback, $font-sans-hc, $font-sans-hc-fallback;
+$font-mono-j: "Cascadia Code";
+$font-mono-j-fallback: $font-mono-fallback, $font-sans-j, $font-sans-j-fallback;
+$font-mono-k: "Cascadia Code";
+$font-mono-k-fallback: $font-mono-fallback, $font-sans-k, $font-sans-k-fallback;
 
 $font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
 
@@ -57,8 +67,15 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 
-  &:lang(de) body {
-    quotes: "„" "“";
+  &:lang(de) {
+    body {
+      font-family: $font-sans, sans-serif, $font-emoji;
+      quotes: "„" "“";
+    }
+
+    code, kbd, pre, samp {
+      font-family: $font-mono, $font-mono-fallback, monospace, $font-emoji;
+    }
   }
 
   &:lang(en) {
@@ -67,17 +84,31 @@ html {
     }
 
     code, kbd, pre, samp {
-      font-family: $font-mono, monospace, $font-emoji;
+      font-family: $font-mono, $font-mono-fallback, monospace, $font-emoji;
     }
   }
 
-  &:lang(es) body,
-  &:lang(no) body {
-    quotes: "«" "»";
+  &:lang(es),
+  &:lang(no) {
+    body {
+      font-family: $font-sans, sans-serif, $font-emoji;
+      quotes: "«" "»";
+    }
+
+    code, kbd, pre, samp {
+      font-family: $font-mono, $font-mono-fallback, monospace, $font-emoji;
+    }
   }
 
-  &:lang(fr) body {
-    quotes: "« " " »";
+  &:lang(fr) {
+    body {
+      font-family: $font-sans, sans-serif, $font-emoji;
+      quotes: "« " " »";
+    }
+
+    code, kbd, pre, samp {
+      font-family: $font-mono, $font-mono-fallback, monospace, $font-emoji;
+    }
   }
 
   &:lang(zh-CN),
@@ -173,7 +204,7 @@ code, kbd, pre, samp {
   }
 }
 
-@each $font-mono-replace in ("Consolas", "Courier", "Courier New" ) {
+@each $font-mono-replace in ("Consolas", "Courier", "Courier New", "Lucida Console" ) {
   @font-face {
     font-family: $font-mono-replace;
     src: local($font-mono);

@@ -2,9 +2,9 @@
 @name:en Global Font: Adobe Family
 @name 全局思源黑体
 @namespace franciszhao
-@version 2.2.1
+@version 2.2.2
 @description:en A UserCSS style to replace all fonts on web pages with Adobe’s Source family.
-@description 一个使用 Adobe 的“思源”系列字体替换网页原有字体的用户样式表。
+@description 一款使用 Adobe 的“思源”系列字体替换网页原有字体的用户样式表。
 @author Francis Zhao <francis@n2o.io>
 @homepageURL https://n2o.io/go?page=user.css
 @supportURL https://weibo.com/francis4es
@@ -12,9 +12,19 @@
 @preprocessor default
 ==/UserStyle== */
 
+/*
+ *                     重要提示
+ *
+ * 因 Source Sans Pro 自 3.028 版本开始，Adobe 将其更名为 Source Sans 3，
+ * 本样式自 2.2.2 版本开始跟进更名，同时将思源黑体等配套字体一并更新到最新版本，
+ * 无论之前是否下载过字体包，都请重新下载安装，以免字体无法正常显示。
+ * 下载地址：https://n2o.io/p/user.css/
+ *
+ */
+
 $font-system: -apple-system, BlinkMacSystemFont, system-ui;
 
-$font-sans: "Source Sans Pro";
+$font-sans: "Source Sans 3";
 $font-sans-sc: "Source Han Sans SC";
 $font-sans-sc-fallback: "Noto Sans CJK SC", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", $font-system;
 $font-sans-tc: "Source Han Sans TC";
@@ -57,8 +67,15 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 
-  &:lang(de) body {
-    quotes: "„" "“";
+  &:lang(de) {
+    body {
+      font-family: $font-sans, sans-serif, $font-emoji;
+      quotes: "„" "“";
+    }
+
+    code, kbd, pre, samp {
+      font-family: $font-mono, monospace, $font-emoji;
+    }
   }
 
   &:lang(en) {
@@ -71,13 +88,27 @@ html {
     }
   }
 
-  &:lang(es) body,
-  &:lang(no) body {
-    quotes: "«" "»";
+  &:lang(es),
+  &:lang(no) {
+    body {
+      font-family: $font-sans, sans-serif, $font-emoji;
+      quotes: "«" "»";
+    }
+
+    code, kbd, pre, samp {
+      font-family: $font-mono, monospace, $font-emoji;
+    }
   }
 
-  &:lang(fr) body {
-    quotes: "« " " »";
+  &:lang(fr) {
+    body {
+      font-family: $font-sans, sans-serif, $font-emoji;
+      quotes: "« " " »";
+    }
+
+    code, kbd, pre, samp {
+      font-family: $font-mono, monospace, $font-emoji;
+    }
   }
 
   &:lang(zh-CN),
@@ -173,7 +204,7 @@ code, kbd, pre, samp {
   }
 }
 
-@each $font-mono-replace in ("Consolas", "Courier", "Courier New" ) {
+@each $font-mono-replace in ("Consolas", "Courier", "Courier New", "Lucida Console" ) {
   @font-face {
     font-family: $font-mono-replace;
     src: local($font-mono);

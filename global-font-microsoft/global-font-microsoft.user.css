@@ -3,15 +3,23 @@
 @name:en Global Font: Microsoft Family
 @name 全局微软雅黑
 @namespace franciszhao
-@version 2.2.1
+@version 2.2.2
 @description:en A UserCSS style to replace all fonts on web pages with Microsoft’s font family.
-@description 一个使用微软的系列字体替换网页原有字体的用户样式表。
+@description 一款使用微软的系列字体替换网页原有字体的用户样式表。
 @author Francis Zhao <francis@n2o.io>
 @homepageURL https://n2o.io/go?page=user.css
 @supportURL https://weibo.com/francis4es
 @license MIT
 @preprocessor default
 ==/UserStyle== */
+/*
+ *                     重要提示
+ *
+ * 本样式自 2.2.2 版本开始将默认等宽字体由 Consolas 更换为微软的开源字体 Cascadia Code，
+ * 无论之前是否下载过字体包，都请重新下载安装，以免字体无法正常显示。
+ * 下载地址：https://n2o.io/p/user.css/
+ *
+ */
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -19,7 +27,12 @@ html {
 }
 
 html:lang(de) body {
+  font-family: "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
   quotes: "„" "“";
+}
+
+html:lang(de) code, html:lang(de) kbd, html:lang(de) pre, html:lang(de) samp {
+  font-family: "Cascadia Code", "Consolas", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
 }
 
 html:lang(en) body {
@@ -27,16 +40,25 @@ html:lang(en) body {
 }
 
 html:lang(en) code, html:lang(en) kbd, html:lang(en) pre, html:lang(en) samp {
-  font-family: "Consolas", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+  font-family: "Cascadia Code", "Consolas", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
 }
 
-html:lang(es) body,
-html:lang(no) body {
+html:lang(es) body, html:lang(no) body {
+  font-family: "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
   quotes: "«" "»";
 }
 
+html:lang(es) code, html:lang(es) kbd, html:lang(es) pre, html:lang(es) samp, html:lang(no) code, html:lang(no) kbd, html:lang(no) pre, html:lang(no) samp {
+  font-family: "Cascadia Code", "Consolas", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+}
+
 html:lang(fr) body {
+  font-family: "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
   quotes: "« " " »";
+}
+
+html:lang(fr) code, html:lang(fr) kbd, html:lang(fr) pre, html:lang(fr) samp {
+  font-family: "Cascadia Code", "Consolas", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
 }
 
 html:lang(zh-CN) body, html:lang(zh-SG) body {
@@ -44,7 +66,7 @@ html:lang(zh-CN) body, html:lang(zh-SG) body {
 }
 
 html:lang(zh-CN) code, html:lang(zh-CN) kbd, html:lang(zh-CN) pre, html:lang(zh-CN) samp, html:lang(zh-SG) code, html:lang(zh-SG) kbd, html:lang(zh-SG) pre, html:lang(zh-SG) samp {
-  font-family: "Consolas", "Consolas", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+  font-family: "Cascadia Code", "Consolas", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
 }
 
 html:lang(zh-TW) body {
@@ -53,7 +75,7 @@ html:lang(zh-TW) body {
 }
 
 html:lang(zh-TW) code, html:lang(zh-TW) kbd, html:lang(zh-TW) pre, html:lang(zh-TW) samp {
-  font-family: "Consolas", "Consolas", "Microsoft JhengHei", "HanHei TC", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+  font-family: "Cascadia Code", "Consolas", "Microsoft JhengHei", "HanHei TC", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
 }
 
 html:lang(zh-HK) body, html:lang(zh-MO) body {
@@ -62,7 +84,7 @@ html:lang(zh-HK) body, html:lang(zh-MO) body {
 }
 
 html:lang(zh-HK) code, html:lang(zh-HK) kbd, html:lang(zh-HK) pre, html:lang(zh-HK) samp, html:lang(zh-MO) code, html:lang(zh-MO) kbd, html:lang(zh-MO) pre, html:lang(zh-MO) samp {
-  font-family: "Consolas", "Consolas", "Consolas", "Microsoft JhengHei", "HanHei TC", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+  font-family: "Cascadia Code", "Cascadia Code", "Consolas", "Microsoft JhengHei", "HanHei TC", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
 }
 
 html:lang(ja) body {
@@ -71,7 +93,7 @@ html:lang(ja) body {
 }
 
 html:lang(ja) code, html:lang(ja) kbd, html:lang(ja) pre, html:lang(ja) samp {
-  font-family: "Consolas", "Consolas", "Yu Gothic", "Hiragino Kaku Gothic Pro", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+  font-family: "Cascadia Code", "Consolas", "Yu Gothic", "Hiragino Kaku Gothic Pro", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
 }
 
 html:lang(ko) body {
@@ -79,7 +101,7 @@ html:lang(ko) body {
 }
 
 html:lang(ko) code, html:lang(ko) kbd, html:lang(ko) pre, html:lang(ko) samp {
-  font-family: "Consolas", "Consolas", "Malgun Gothic", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+  font-family: "Cascadia Code", "Consolas", "Malgun Gothic", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
 }
 
 body {
@@ -104,7 +126,7 @@ textarea:disabled {
 }
 
 code, kbd, pre, samp {
-  font-family: "Consolas", "Consolas", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+  font-family: "Cascadia Code", "Consolas", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
 }
 
 /* 字体替换：西里尔字母 */
@@ -165,17 +187,22 @@ code, kbd, pre, samp {
 
 @font-face {
   font-family: "Consolas";
-  src: local("Consolas");
+  src: local("Cascadia Code");
 }
 
 @font-face {
   font-family: "Courier";
-  src: local("Consolas");
+  src: local("Cascadia Code");
 }
 
 @font-face {
   font-family: "Courier New";
-  src: local("Consolas");
+  src: local("Cascadia Code");
+}
+
+@font-face {
+  font-family: "Lucida Console";
+  src: local("Cascadia Code");
 }
 
 /* 字体替换：中文 */
@@ -366,16 +393,16 @@ code, kbd, pre, samp {
 
 @-moz-document domain("greasyfork.org") {
   #script_version_code, .ace_editor {
-    font-family: "Consolas", "Consolas", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji" !important;
+    font-family: "Cascadia Code", "Consolas", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji" !important;
   }
 }
 
 @-moz-document domain("github.com") {
   .text-mono {
-    font-family: "Consolas", "Consolas", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji" !important;
+    font-family: "Cascadia Code", "Consolas", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji" !important;
   }
   .blob-num, .blob-code-inner {
-    font-family: "Consolas", "Consolas", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+    font-family: "Cascadia Code", "Consolas", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
   }
 }
 
