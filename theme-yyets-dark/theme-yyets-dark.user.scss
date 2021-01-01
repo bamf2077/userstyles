@@ -9,8 +9,8 @@
 @name:en 💡 TURN OFF THE LIGHT, YYeTs!
 @name 💡 关灯，人人影视！
 @namespace franciszhao
-@version 2.3.2
-@description:en A UserCSS style with dark theme for YYeTs.com.
+@version 2.3.2-alpha.1
+@description:en An UserCSS style with dark theme for YYeTs.com.
 @description 一款适用于 YYeTs 人人影视系列网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
 @homepageURL https://n2o.io/go?page=user.css
@@ -23,9 +23,9 @@ $font-yyets: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC", "PingFang SC
 
 /* 人人影视主站 */
 
-@-moz-document regexp("https?://[\\w\\.]*rrysx\\d{4}\\.com/.*"),
-  regexp("https?://[\\w\\.]*zmz\\d{4}\\.com/.*"),
-  regexp("https?://[\\w\\.]*zimuzu\\.\\w+/.*") {
+@-moz-document regexp("https?://[\w-\.]*rrys\d{4}\.com/.*"),
+  regexp("https?://[\w-\.]*zmz\d{4}\.com/.*"),
+  regexp("https?://[\w-\.]*zimuzu\.\w+/.*") {
   * {
     border-color: #999999 !important;
     font-family: $font-yyets, sans-serif !important;
@@ -255,9 +255,7 @@ $font-yyets: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC", "PingFang SC
 }
 
 /* 人人影视资源分享站 */
-@-moz-document regexp("https?://[\\w\\.]*got\\d{3}\\.com/.*"),
-  regexp("https?://[\\w\\.]*zmz\\d{3}\\.com/.*") {
-
+@-moz-document regexp("https?://[\w-\.]*got\d{3}\.com/.*") {
   *,
   .ui-header .ui-limit .logo-wrapper .desc {
     font-family: $font-yyets, sans-serif;
