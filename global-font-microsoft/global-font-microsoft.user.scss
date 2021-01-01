@@ -1,25 +1,25 @@
-/* ==UserStyle==
-@name:en Global Font: Microsoft Family
-@name 全局微软雅黑
-@namespace franciszhao
-@version 2.2.3
-@description:en A UserCSS style to replace all fonts on web pages with Microsoft’s font family.
-@description 一款使用微软的系列字体替换网页原有字体的用户样式表。
-@author Francis Zhao <francis@n2o.io>
-@homepageURL https://n2o.io/go?page=user.css
-@supportURL https://weibo.com/francis4es
-@license MIT
-@preprocessor default
-==/UserStyle== */
-
 /*
  *                     重要提示
  *
- * 本样式自 2.2.2 版本开始将默认等宽字体由 Consolas 更换为微软的开源字体 Cascadia Code，
+ * 本样式自 2.2.3 版本开始将默认等宽字体由 Consolas 更换为微软的开源字体 Cascadia Code，
  * 无论之前是否下载过字体包，都请重新下载安装，以免字体无法正常显示。
  * 下载地址：https://n2o.io/p/user.css/
  *
  */
+
+/* ==UserStyle==
+@name:en Global Font: Microsoft Family
+@name 全局微软雅黑
+@namespace franciszhao
+@version 2.2.4-alpha.1
+@description:en A UserCSS style to replace all fonts on web pages with Microsoft’s font family.
+@description 一款使用微软的系列字体替换网页原有字体的用户样式表。
+@author Francis Zhao <francis@n2o.io>
+@homepageURL https://n2o.io/go?page=user.css
+@supportURL https://n2o.io/go?page=user.css
+@license MIT
+@preprocessor default
+==/UserStyle== */
 
 $font-system: -apple-system, BlinkMacSystemFont, system-ui;
 
