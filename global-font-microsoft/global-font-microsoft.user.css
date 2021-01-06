@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*
+/**
  *                     重要提示
  *
  * 本样式自 2.2.3 版本开始将默认等宽字体由 Consolas 更换为微软的开源字体 Cascadia Code，
@@ -8,104 +8,28 @@
  *
  */
 /* ==UserStyle==
-@name:en Global Font: Microsoft Family
+@name:en Global Font: Microsoft-branded
 @name 全局微软雅黑
 @namespace franciszhao
-@version 2.2.4-alpha.1
-@description:en A UserCSS style to replace all fonts on web pages with Microsoft’s font family.
-@description 一款使用微软的系列字体替换网页原有字体的用户样式表。
+@version 2.2.4-alpha.2
+@description:en An UserCSS style to replace all fonts on web pages with Microsoft-branded fonts.
+@description 一款使用微软系列字体替换网页原有字体的用户样式表。
 @author Francis Zhao <francis@n2o.io>
 @homepageURL https://n2o.io/go?page=user.css
 @supportURL https://n2o.io/go?page=user.css
 @license MIT
 @preprocessor default
 ==/UserStyle== */
+/* 1 全局字体定义 */
+/* 2 字体设定 */
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
 
-html:lang(de) body {
-  font-family: "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-  quotes: "„" "“";
-}
-
-html:lang(de) code, html:lang(de) kbd, html:lang(de) pre, html:lang(de) samp {
-  font-family: "Cascadia Code", "Consolas", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-}
-
-html:lang(en) body {
-  font-family: "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-}
-
-html:lang(en) code, html:lang(en) kbd, html:lang(en) pre, html:lang(en) samp {
-  font-family: "Cascadia Code", "Consolas", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-}
-
-html:lang(es) body, html:lang(no) body {
-  font-family: "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-  quotes: "«" "»";
-}
-
-html:lang(es) code, html:lang(es) kbd, html:lang(es) pre, html:lang(es) samp, html:lang(no) code, html:lang(no) kbd, html:lang(no) pre, html:lang(no) samp {
-  font-family: "Cascadia Code", "Consolas", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-}
-
-html:lang(fr) body {
-  font-family: "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-  quotes: "« " " »";
-}
-
-html:lang(fr) code, html:lang(fr) kbd, html:lang(fr) pre, html:lang(fr) samp {
-  font-family: "Cascadia Code", "Consolas", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-}
-
-html:lang(zh-CN) body, html:lang(zh-SG) body {
-  font-family: "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-}
-
-html:lang(zh-CN) code, html:lang(zh-CN) kbd, html:lang(zh-CN) pre, html:lang(zh-CN) samp, html:lang(zh-SG) code, html:lang(zh-SG) kbd, html:lang(zh-SG) pre, html:lang(zh-SG) samp {
-  font-family: "Cascadia Code", "Consolas", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-}
-
-html:lang(zh-TW) body {
-  font-family: "Microsoft JhengHei", "HanHei TC", -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-  quotes: "「" "」";
-}
-
-html:lang(zh-TW) code, html:lang(zh-TW) kbd, html:lang(zh-TW) pre, html:lang(zh-TW) samp {
-  font-family: "Cascadia Code", "Consolas", "Microsoft JhengHei", "HanHei TC", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-}
-
-html:lang(zh-HK) body, html:lang(zh-MO) body {
-  font-family: "Microsoft JhengHei", "HanHei TC", -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-  quotes: "「" "」";
-}
-
-html:lang(zh-HK) code, html:lang(zh-HK) kbd, html:lang(zh-HK) pre, html:lang(zh-HK) samp, html:lang(zh-MO) code, html:lang(zh-MO) kbd, html:lang(zh-MO) pre, html:lang(zh-MO) samp {
-  font-family: "Cascadia Code", "Cascadia Code", "Consolas", "Microsoft JhengHei", "HanHei TC", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-}
-
-html:lang(ja) body {
-  font-family: "Yu Gothic", "Hiragino Kaku Gothic Pro", -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-  quotes: "「" "」";
-}
-
-html:lang(ja) code, html:lang(ja) kbd, html:lang(ja) pre, html:lang(ja) samp {
-  font-family: "Cascadia Code", "Consolas", "Yu Gothic", "Hiragino Kaku Gothic Pro", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-}
-
-html:lang(ko) body {
-  font-family: "Malgun Gothic", -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-}
-
-html:lang(ko) code, html:lang(ko) kbd, html:lang(ko) pre, html:lang(ko) samp {
-  font-family: "Cascadia Code", "Consolas", "Malgun Gothic", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-}
-
 body {
-  font-family: "Segoe UI", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+  font-family: "Segoe UI", "Microsoft YaHei UI", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
   quotes: "“" "”";
 }
 
@@ -125,11 +49,204 @@ textarea:disabled {
   cursor: not-allowed;
 }
 
-code, kbd, pre, samp {
-  font-family: "Cascadia Code", "Consolas", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+code,
+kbd,
+pre,
+samp {
+  font-family: "Cascadia Code", "Consolas", "Microsoft YaHei UI", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", monospace;
 }
 
-/* 字体替换：西里尔字母 */
+html:lang(en) body, html:lang(de) body, html:lang(nl) body, html:lang(sv) body, html:lang(nb) body, html:lang(no) body, html:lang(da) body, html:lang(is) body, html:lang(fr) body, html:lang(it) body, html:lang(es) body, html:lang(pt) body, html:lang(ro) body, html:lang(lt) body, html:lang(lv) body, html:lang(ru) body, html:lang(uk) body, html:lang(pl) body, html:lang(cs) body, html:lang(sk) body, html:lang(bg) body, html:lang(sl) body, html:lang(sr) body, html:lang(hr) body, html:lang(bs) body, html:lang(el) body, html:lang(tr) body, html:lang(ar) body, html:lang(he) body, html:lang(fi) body, html:lang(et) body, html:lang(hu) body, html:lang(vi) body, html:lang(id) body {
+  font-family: "Segoe UI", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+
+html:lang(en) code,
+html:lang(en) kbd,
+html:lang(en) pre,
+html:lang(en) samp, html:lang(de) code,
+html:lang(de) kbd,
+html:lang(de) pre,
+html:lang(de) samp, html:lang(nl) code,
+html:lang(nl) kbd,
+html:lang(nl) pre,
+html:lang(nl) samp, html:lang(sv) code,
+html:lang(sv) kbd,
+html:lang(sv) pre,
+html:lang(sv) samp, html:lang(nb) code,
+html:lang(nb) kbd,
+html:lang(nb) pre,
+html:lang(nb) samp, html:lang(no) code,
+html:lang(no) kbd,
+html:lang(no) pre,
+html:lang(no) samp, html:lang(da) code,
+html:lang(da) kbd,
+html:lang(da) pre,
+html:lang(da) samp, html:lang(is) code,
+html:lang(is) kbd,
+html:lang(is) pre,
+html:lang(is) samp, html:lang(fr) code,
+html:lang(fr) kbd,
+html:lang(fr) pre,
+html:lang(fr) samp, html:lang(it) code,
+html:lang(it) kbd,
+html:lang(it) pre,
+html:lang(it) samp, html:lang(es) code,
+html:lang(es) kbd,
+html:lang(es) pre,
+html:lang(es) samp, html:lang(pt) code,
+html:lang(pt) kbd,
+html:lang(pt) pre,
+html:lang(pt) samp, html:lang(ro) code,
+html:lang(ro) kbd,
+html:lang(ro) pre,
+html:lang(ro) samp, html:lang(lt) code,
+html:lang(lt) kbd,
+html:lang(lt) pre,
+html:lang(lt) samp, html:lang(lv) code,
+html:lang(lv) kbd,
+html:lang(lv) pre,
+html:lang(lv) samp, html:lang(ru) code,
+html:lang(ru) kbd,
+html:lang(ru) pre,
+html:lang(ru) samp, html:lang(uk) code,
+html:lang(uk) kbd,
+html:lang(uk) pre,
+html:lang(uk) samp, html:lang(pl) code,
+html:lang(pl) kbd,
+html:lang(pl) pre,
+html:lang(pl) samp, html:lang(cs) code,
+html:lang(cs) kbd,
+html:lang(cs) pre,
+html:lang(cs) samp, html:lang(sk) code,
+html:lang(sk) kbd,
+html:lang(sk) pre,
+html:lang(sk) samp, html:lang(bg) code,
+html:lang(bg) kbd,
+html:lang(bg) pre,
+html:lang(bg) samp, html:lang(sl) code,
+html:lang(sl) kbd,
+html:lang(sl) pre,
+html:lang(sl) samp, html:lang(sr) code,
+html:lang(sr) kbd,
+html:lang(sr) pre,
+html:lang(sr) samp, html:lang(hr) code,
+html:lang(hr) kbd,
+html:lang(hr) pre,
+html:lang(hr) samp, html:lang(bs) code,
+html:lang(bs) kbd,
+html:lang(bs) pre,
+html:lang(bs) samp, html:lang(el) code,
+html:lang(el) kbd,
+html:lang(el) pre,
+html:lang(el) samp, html:lang(tr) code,
+html:lang(tr) kbd,
+html:lang(tr) pre,
+html:lang(tr) samp, html:lang(ar) code,
+html:lang(ar) kbd,
+html:lang(ar) pre,
+html:lang(ar) samp, html:lang(he) code,
+html:lang(he) kbd,
+html:lang(he) pre,
+html:lang(he) samp, html:lang(fi) code,
+html:lang(fi) kbd,
+html:lang(fi) pre,
+html:lang(fi) samp, html:lang(et) code,
+html:lang(et) kbd,
+html:lang(et) pre,
+html:lang(et) samp, html:lang(hu) code,
+html:lang(hu) kbd,
+html:lang(hu) pre,
+html:lang(hu) samp, html:lang(vi) code,
+html:lang(vi) kbd,
+html:lang(vi) pre,
+html:lang(vi) samp, html:lang(id) code,
+html:lang(id) kbd,
+html:lang(id) pre,
+html:lang(id) samp {
+  font-family: "Cascadia Code", "Consolas", "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", monospace;
+}
+
+html:lang(de) body {
+  quotes: "„" "“";
+}
+
+html:lang(es) body, html:lang(nb) body, html:lang(no) body {
+  quotes: "«" "»";
+}
+
+html:lang(fr) body {
+  quotes: "« " " »";
+}
+
+html:lang(zh) body, html:lang(zh-CN) body, html:lang(zh-SG) body {
+  font-family: "Microsoft YaHei UI", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  quotes: "“" "”";
+}
+
+html:lang(zh) code,
+html:lang(zh) kbd,
+html:lang(zh) pre,
+html:lang(zh) samp, html:lang(zh-CN) code,
+html:lang(zh-CN) kbd,
+html:lang(zh-CN) pre,
+html:lang(zh-CN) samp, html:lang(zh-SG) code,
+html:lang(zh-SG) kbd,
+html:lang(zh-SG) pre,
+html:lang(zh-SG) samp {
+  font-family: "Cascadia Code", "Consolas", "Microsoft YaHei UI", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", monospace;
+}
+
+html:lang(zh-TW) body {
+  font-family: "Microsoft JhengHei UI", "HanHei TC", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  quotes: "「" "」";
+}
+
+html:lang(zh-TW) code,
+html:lang(zh-TW) kbd,
+html:lang(zh-TW) pre,
+html:lang(zh-TW) samp {
+  font-family: "Cascadia Code", "Consolas", "Microsoft JhengHei UI", "HanHei TC", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", monospace;
+}
+
+html:lang(zh-HK) body, html:lang(zh-MO) body {
+  font-family: "Microsoft JhengHei UI", "HanHei TC", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  quotes: "「" "」";
+}
+
+html:lang(zh-HK) code,
+html:lang(zh-HK) kbd,
+html:lang(zh-HK) pre,
+html:lang(zh-HK) samp, html:lang(zh-MO) code,
+html:lang(zh-MO) kbd,
+html:lang(zh-MO) pre,
+html:lang(zh-MO) samp {
+  font-family: "Cascadia Code", "Consolas", "Microsoft JhengHei UI", "HanHei TC", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", monospace;
+}
+
+html:lang(ja) body {
+  font-family: "Yu Gothic UI", "Hiragino Kaku Gothic Pro", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+  quotes: "「" "」";
+}
+
+html:lang(ja) code,
+html:lang(ja) kbd,
+html:lang(ja) pre,
+html:lang(ja) samp {
+  font-family: "Cascadia Code", "Consolas", "Yu Gothic UI", "Hiragino Kaku Gothic Pro", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", monospace;
+}
+
+html:lang(ko) body {
+  font-family: "Malgun Gothic", "Apple Gothic", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+
+html:lang(ko) code,
+html:lang(ko) kbd,
+html:lang(ko) pre,
+html:lang(ko) samp {
+  font-family: "Cascadia Code", "Consolas", "Malgun Gothic", "Apple Gothic", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", monospace;
+}
+
+/* 3 字体替换 */
 @font-face {
   font-family: "Georgia";
   src: local("Georgia");
@@ -205,251 +322,260 @@ code, kbd, pre, samp {
   src: local("Cascadia Code");
 }
 
-/* 字体替换：中文 */
 @font-face {
   font-family: "SimSun";
-  src: local("Microsoft YaHei");
+  src: local("Microsoft YaHei UI");
 }
 
 @font-face {
   font-family: "SimSun-ExtB";
-  src: local("Microsoft YaHei");
+  src: local("Microsoft YaHei UI");
 }
 
 @font-face {
   font-family: "宋体";
-  src: local("Microsoft YaHei");
+  src: local("Microsoft YaHei UI");
 }
 
 @font-face {
   font-family: "NSimSun";
-  src: local("Microsoft YaHei");
+  src: local("Microsoft YaHei UI");
 }
 
 @font-face {
   font-family: "新宋体";
-  src: local("Microsoft YaHei");
+  src: local("Microsoft YaHei UI");
 }
 
 @font-face {
   font-family: "SimHei";
-  src: local("Microsoft YaHei");
+  src: local("Microsoft YaHei UI");
 }
 
 @font-face {
   font-family: "黑体";
-  src: local("Microsoft YaHei");
+  src: local("Microsoft YaHei UI");
 }
 
 @font-face {
   font-family: "Microsoft YaHei UI";
-  src: local("Microsoft YaHei");
+  src: local("Microsoft YaHei UI");
 }
 
 @font-face {
   font-family: "Microsoft YaHei";
-  src: local("Microsoft YaHei");
+  src: local("Microsoft YaHei UI");
 }
 
 @font-face {
   font-family: "微软雅黑";
-  src: local("Microsoft YaHei");
+  src: local("Microsoft YaHei UI");
 }
 
 @font-face {
   font-family: "STHeiti SC";
-  src: local("Microsoft YaHei");
+  src: local("Microsoft YaHei UI");
 }
 
 @font-face {
   font-family: "PingFang SC";
-  src: local("Microsoft YaHei");
+  src: local("Microsoft YaHei UI");
 }
 
 @font-face {
   font-family: "苹方-简";
-  src: local("Microsoft YaHei");
+  src: local("Microsoft YaHei UI");
 }
 
 @font-face {
   font-family: "MingLiU";
-  src: local("Microsoft JhengHei");
+  src: local("Microsoft JhengHei UI");
 }
 
 @font-face {
   font-family: "MingLiU-ExtB";
-  src: local("Microsoft JhengHei");
+  src: local("Microsoft JhengHei UI");
 }
 
 @font-face {
   font-family: "PMingLiU";
-  src: local("Microsoft JhengHei");
+  src: local("Microsoft JhengHei UI");
 }
 
 @font-face {
   font-family: "PMingLiU-ExtB";
-  src: local("Microsoft JhengHei");
+  src: local("Microsoft JhengHei UI");
 }
 
 @font-face {
   font-family: "Microsoft JhengHei UI";
-  src: local("Microsoft JhengHei");
+  src: local("Microsoft JhengHei UI");
 }
 
 @font-face {
   font-family: "Microsoft JhengHei";
-  src: local("Microsoft JhengHei");
+  src: local("Microsoft JhengHei UI");
 }
 
 @font-face {
   font-family: "微軟正黑體";
-  src: local("Microsoft JhengHei");
+  src: local("Microsoft JhengHei UI");
 }
 
 @font-face {
   font-family: "STHeiti TC";
-  src: local("Microsoft JhengHei");
+  src: local("Microsoft JhengHei UI");
 }
 
 @font-face {
   font-family: "PingFang TC";
-  src: local("Microsoft JhengHei");
+  src: local("Microsoft JhengHei UI");
 }
 
 @font-face {
   font-family: "蘋方-繁";
-  src: local("Microsoft JhengHei");
+  src: local("Microsoft JhengHei UI");
 }
 
 @font-face {
   font-family: "MingLiU_HKSCS";
-  src: local("Microsoft JhengHei");
+  src: local("Microsoft JhengHei UI");
 }
 
 @font-face {
   font-family: "MingLiU_HKSCS-ExtB";
-  src: local("Microsoft JhengHei");
+  src: local("Microsoft JhengHei UI");
 }
 
 @font-face {
   font-family: "PingFang HK";
-  src: local("Microsoft JhengHei");
+  src: local("Microsoft JhengHei UI");
 }
 
 @font-face {
   font-family: "蘋方-港";
-  src: local("Microsoft JhengHei");
+  src: local("Microsoft JhengHei UI");
 }
 
-/* 字体替换：日文 */
 @font-face {
   font-family: "MS Gothic";
-  src: local("Yu Gothic");
+  src: local("Yu Gothic UI");
 }
 
 @font-face {
   font-family: "MS PGothic";
-  src: local("Yu Gothic");
+  src: local("Yu Gothic UI");
 }
 
 @font-face {
   font-family: "MS UI Gothic";
-  src: local("Yu Gothic");
+  src: local("Yu Gothic UI");
 }
 
 @font-face {
   font-family: "Yu Gothic";
-  src: local("Yu Gothic");
+  src: local("Yu Gothic UI");
 }
 
 @font-face {
   font-family: "Yu Gothic UI";
-  src: local("Yu Gothic");
+  src: local("Yu Gothic UI");
 }
 
-/* 字体替换：朝鲜文 */
 @font-face {
   font-family: "Malgun Gothic";
   src: local("Malgun Gothic");
 }
 
-/* 特定网站修正 */
+/* 4 特定网站适配 */
 @-moz-document domain("baidu.com") {
   * {
-    font-family: "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+    font-family: "Microsoft YaHei UI", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
   }
 }
 
-@-moz-document regexp("https://www.baidu.com/#?"), url-prefix("https://www.baidu.com/?tn=") {
-  .s_ipt {
-    font-family: "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
-  }
-  .s-treasure,
-  .mnav[href^="http"]:not([href*="baidu.com"]),
-  .qrcode-layer {
-    display: none !important;
+@-moz-document regexp("https://www.baidu.com/#?"),
+url-prefix("https://www.baidu.com/?tn=") {
+  .s_ipt,
+  .new-pmd .c-font-medium {
+    font-family: "Microsoft YaHei UI", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
   }
 }
 
 @-moz-document domain("greasyfork.org") {
-  #script_version_code, .ace_editor {
-    font-family: "Cascadia Code", "Consolas", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji" !important;
+  #script_version_code,
+  .ace_editor {
+    font-family: "Cascadia Code", "Consolas", "Microsoft YaHei UI", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", monospace !important;
   }
 }
 
 @-moz-document domain("github.com") {
   .text-mono {
-    font-family: "Cascadia Code", "Consolas", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji" !important;
+    font-family: "Cascadia Code", "Consolas", "Microsoft YaHei UI", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", monospace !important;
   }
-  .blob-num, .blob-code-inner {
-    font-family: "Cascadia Code", "Consolas", "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+  .blob-num,
+  .blob-code-inner {
+    font-family: "Cascadia Code", "Consolas", "Microsoft YaHei UI", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", monospace;
   }
 }
 
 @-moz-document domain("ithome.com") {
   .post_comment {
-    font-family: "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+    font-family: "Microsoft YaHei UI", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
   }
 }
 
 @-moz-document domain("jiemian.com") {
   .article-content {
-    font-family: "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji" !important;
+    font-family: "Microsoft YaHei UI", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif !important;
   }
-  #ad_header_top, .cnzz-ads, .jm-app {
+  #ad_header_top,
+  .cnzz-ads,
+  .jm-app {
     display: none !important;
   }
 }
 
 @-moz-document domain("so.com") {
   * {
-    font-family: "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+    font-family: "Microsoft YaHei UI", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
   }
-  #mohe-know_side_nlp-imagelist,
-  #mohe-hot_hqr {
+  #footer a[href="http://mse.360.cn"],
+  #footer a[href="http://mse.360.cn"] + span {
     display: none !important;
   }
 }
 
 @-moz-document domain("sogou.com") {
   * {
-    font-family: "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
+    font-family: "Microsoft YaHei UI", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
   }
-  .nav-new,
-  .bizr_rb,
-  [id^="rightgameout"] {
+  .erwm-box {
     display: none !important;
   }
 }
 
 @-moz-document domain("sspai.com") {
-  h1, h2, h3, h4, h5, h6, .title, .content, p, a {
-    font-family: "Microsoft YaHei", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji" !important;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .title,
+  .content,
+  p,
+  a {
+    font-family: "Microsoft YaHei UI", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif !important;
   }
 }
 
 @-moz-document domain("userstyles.org") {
-  .ad, #top_android_button, .android_button_button, .android_button_banner, .walking {
+  .ad,
+  #top_android_button,
+  .android_button_button,
+  .android_button_banner,
+  .walking {
     display: none !important;
   }
 }

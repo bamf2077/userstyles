@@ -1,4 +1,4 @@
-/*
+/**
  *                     重要提示
  *
  * 因 Source Sans Pro 自 3.028 版本开始，Adobe 将其更名为 Source Sans 3，
@@ -9,12 +9,12 @@
  */
 
 /* ==UserStyle==
-@name:en Global Font: Adobe Family
+@name:en Global Font: Adobe-branded
 @name 全局思源黑体
 @namespace franciszhao
-@version 2.2.4-alpha.1
-@description:en A UserCSS style to replace all fonts on web pages with Adobe’s Source family.
-@description 一款使用 Adobe 的“思源”系列字体替换网页原有字体的用户样式表。
+@version 2.2.4-alpha.2
+@description:en An UserCSS style to replace all fonts on web pages with Adobe-branded fonts.
+@description 一款使用 Adobe 系列字体替换网页原有字体的用户样式表。
 @author Francis Zhao <francis@n2o.io>
 @homepageURL https://n2o.io/go?page=user.css
 @supportURL https://n2o.io/go?page=user.css
@@ -22,155 +22,80 @@
 @preprocessor default
 ==/UserStyle== */
 
+/* 1 全局字体定义 */
+
+// 1.1 默认字体
 $font-system: -apple-system, BlinkMacSystemFont, system-ui;
 
+// 1.2 无衬线字体
 $font-sans: "Source Sans 3";
 $font-sans-fallback: "Source Sans Pro";
+
 $font-sans-sc: "Source Han Sans SC";
 $font-sans-sc-fallback: "Noto Sans CJK SC", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", $font-system;
+
 $font-sans-tc: "Source Han Sans TC";
 $font-sans-tc-fallback: "Noto Sans CJK TC", "HanHei TC", $font-system;
+
 $font-sans-hc: "Source Han Sans HC";
 $font-sans-hc-fallback: "Noto Sans CJK HC", $font-sans-tc, $font-sans-tc-fallback;
+
 $font-sans-j: "Source Han Sans";
 $font-sans-j-fallback: "Noto Sans CJK JP", "Hiragino Kaku Gothic Pro", $font-system;
+
 $font-sans-k: "Source Han Sans K";
 $font-sans-k-fallback: "Noto Sans CJK KR", "Apple Gothic", $font-system;
 
+// 1.3 衬线字体
 $font-serif: "Source Serif Pro";
+
 $font-serif-sc: "Source Han Serif SC";
 $font-serif-sc-fallback: "Noto Serif CJK SC", "方正新书宋_GBK", $font-serif;
+
 $font-serif-tc: "Source Han Serif TC";
 $font-serif-tc-fallback: "Noto Serif CJK TC", $font-serif;
+
 $font-serif-hc: "Source Han Serif HC";
 $font-serif-hc-fallback: "Noto Serif CJK HC", $font-serif-tc, $font-serif-tc-fallback;
+
 $font-serif-j: "Source Han Serif";
 $font-serif-j-fallback: "Noto Serif CJK JP", $font-serif;
+
 $font-serif-k: "Source Han Serif K";
 $font-serif-k-fallback: "Noto Serif CJK KR", $font-serif;
 
+// 1.4 等宽字体
 $font-mono: "Source Code Pro";
-$font-mono-sc: "Source Han Code SC";
+
+$font-mono-sc: "Source Han Mono SC";
 $font-mono-sc-fallback: $font-mono, $font-sans-sc, $font-sans-sc-fallback;
-$font-mono-tc: "Source Han Code TC";
+
+$font-mono-tc: "Source Han Mono TC";
 $font-mono-tc-fallback: $font-mono, $font-sans-tc, $font-sans-tc-fallback;
-$font-mono-hc: "Source Han Code HC";
+
+$font-mono-hc: "Source Han Mono HC";
 $font-mono-hc-fallback: $font-mono-tc, $font-mono, $font-sans-hc, $font-sans-hc-fallback;
-$font-mono-j: "Source Han Code JP";
+
+$font-mono-j: "Source Han Mono";
 $font-mono-j-fallback: $font-mono, $font-sans-j, $font-sans-j-fallback;
-$font-mono-k: "Source Han Code KR";
+
+$font-mono-k: "Source Han Mono K";
 $font-mono-k-fallback: $font-mono, $font-sans-k, $font-sans-k-fallback;
 
+// 1.5 绘文字字体
 $font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji";
 
+/* 2 字体设定 */
+
+// 2.1 通用页面规则
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-
-  &:lang(de) {
-    body {
-      font-family: $font-sans, $font-sans-fallback, sans-serif, $font-emoji;
-      quotes: "„" "“";
-    }
-
-    code, kbd, pre, samp {
-      font-family: $font-mono, monospace, $font-emoji;
-    }
-  }
-
-  &:lang(en) {
-    body {
-      font-family: $font-sans, $font-sans-fallback, sans-serif, $font-emoji;
-    }
-
-    code, kbd, pre, samp {
-      font-family: $font-mono, monospace, $font-emoji;
-    }
-  }
-
-  &:lang(es),
-  &:lang(no) {
-    body {
-      font-family: $font-sans, $font-sans-fallback, sans-serif, $font-emoji;
-      quotes: "«" "»";
-    }
-
-    code, kbd, pre, samp {
-      font-family: $font-mono, monospace, $font-emoji;
-    }
-  }
-
-  &:lang(fr) {
-    body {
-      font-family: $font-sans, $font-sans-fallback, sans-serif, $font-emoji;
-      quotes: "« " " »";
-    }
-
-    code, kbd, pre, samp {
-      font-family: $font-mono, monospace, $font-emoji;
-    }
-  }
-
-  &:lang(zh-CN),
-  &:lang(zh-SG) {
-    body {
-      font-family: $font-sans-sc, $font-sans-sc-fallback, sans-serif, $font-emoji;
-    }
-
-    code, kbd, pre, samp {
-      font-family: $font-mono-sc, $font-mono-sc-fallback, monospace, $font-emoji;
-    }
-  }
-
-  &:lang(zh-TW) {
-    body {
-      font-family: $font-sans-tc, $font-sans-tc-fallback, sans-serif, $font-emoji;
-      quotes: "「" "」";
-    }
-
-    code, kbd, pre, samp {
-      font-family: $font-mono-tc, $font-mono-tc-fallback, monospace, $font-emoji;
-    }
-  }
-
-  &:lang(zh-HK),
-  &:lang(zh-MO) {
-    body {
-      font-family: $font-sans-hc, $font-sans-hc-fallback, sans-serif, $font-emoji;
-      quotes: "「" "」";
-    }
-
-    code, kbd, pre, samp {
-      font-family: $font-mono-hc, $font-mono-hc-fallback, monospace, $font-emoji;
-    }
-  }
-
-  &:lang(ja) {
-    body {
-      font-family: $font-sans-j, $font-sans-j-fallback, sans-serif, $font-emoji;
-      quotes: "「" "」";
-    }
-
-    code, kbd, pre, samp {
-      font-family: $font-mono-j, $font-mono-j-fallback, monospace, $font-emoji;
-    }
-  }
-
-  &:lang(ko) {
-    body {
-      font-family: $font-sans-k, $font-sans-k-fallback, sans-serif, $font-emoji;
-    }
-
-    code, kbd, pre, samp {
-      font-family: $font-mono-k, $font-mono-k-fallback, monospace, $font-emoji;
-    }
-  }
 }
 
 body {
-  font-family: $font-sans, $font-sans-fallback, $font-sans-sc, $font-sans-sc-fallback, sans-serif, $font-emoji;
-  quotes: "“" "”";
+  font-family: $font-sans, $font-sans-fallback, $font-sans-sc, $font-sans-sc-fallback, $font-emoji, sans-serif;
 }
 
 button,
@@ -185,12 +110,172 @@ textarea {
   }
 }
 
-code, kbd, pre, samp {
-  font-family: $font-mono-sc, $font-mono-sc-fallback, monospace, $font-emoji;
+code,
+kbd,
+pre,
+samp {
+  font-family: $font-mono-sc, $font-mono-sc-fallback, $font-emoji, monospace;
 }
 
-/* 字体替换：西里尔字母 */
+// 2.2 特定页面规则
+html {
+  // 2.2.1 拉丁字母、西里尔字母、希腊字母、阿拉伯字母
+  //       ✔️ 印欧语系/日耳曼语族：英语 English、德语 Deutsch、荷兰语 Nederlands、瑞典语 Svenska、挪威语 Bokmål & Nynorsk、丹麦语 Dansk、冰岛语 Íslenska
+  //       ✔️ 印欧语系/罗曼语族：法语 Français、意大利语 Italiano、西班牙语 Español、葡萄牙语 Português、罗马尼亚语 Română
+  //       ✔️ 印欧语系/波罗的语族：立陶宛语 Lietuvių、拉脱维亚语 Latviešu
+  //       ✔️ 印欧语系/斯拉夫语族：俄语 Русский & 白俄罗斯语 Български、乌克兰语 Українська、波兰语 Polski、捷克语 Čeština、斯洛伐克语 Slovenčina、保加利亚语 Български、斯洛文尼亚语 Slovenščina、塞尔维亚语 Srpski、克罗地亚语 Hrvatski、波斯尼亚语 Bosanski
+  //       ✔️ 印欧语系/希腊语族：希腊语 Ελληνικά
+  //       ✔️ 阿尔泰语系/突厥语族：土耳其语 Türkçe
+  //       ❌ 闪-含语系/闪米特语族：العربية 阿拉伯语、עברית 希伯来语
+  //       ✔️ 乌拉尔语系: 芬兰语 Suomi、爱沙尼亚语 Eesti、匈牙利语 Magyar
+  //       ✔️ 南亚语系/越芒语族：越南语 Tiếng việt
+  //       ✔️ 南岛语系/印度尼西亚语族：印度尼西亚语 Bahasa Indonesia & 马来语 Bahasa Melayu
+  //       ❌ 汉藏语系/壮侗语族：泰语 ไทย
+  &:lang(en),
+  &:lang(de),
+  &:lang(nl),
+  &:lang(sv),
+  &:lang(nb),
+  &:lang(no),
+  &:lang(da),
+  &:lang(is),
+  &:lang(fr),
+  &:lang(it),
+  &:lang(es),
+  &:lang(pt),
+  &:lang(ro),
+  &:lang(lt),
+  &:lang(lv),
+  &:lang(ru),
+  &:lang(uk),
+  &:lang(pl),
+  &:lang(cs),
+  &:lang(sk),
+  &:lang(bg),
+  &:lang(sl),
+  &:lang(sr),
+  &:lang(hr),
+  &:lang(bs),
+  &:lang(el),
+  &:lang(tr),
+  &:lang(fi),
+  &:lang(et),
+  &:lang(hu),
+  &:lang(vi),
+  &:lang(id) {
+    body {
+      font-family: $font-sans, $font-sans-fallback, $font-emoji, sans-serif;
+    }
 
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: $font-mono, $font-emoji, monospace;
+    }
+  }
+
+  &:lang(de) {
+    body {
+      quotes: "„" "“";
+    }
+  }
+
+  &:lang(es),
+  &:lang(nb),
+  &:lang(no) {
+    body {
+      quotes: "«" "»";
+    }
+  }
+
+  &:lang(fr) {
+    body {
+      quotes: "« " " »";
+    }
+  }
+
+  // 2.2.2 通用中文、简体中文 (中国)、简体中文 (新加坡)
+  &:lang(zh),
+  &:lang(zh-CN),
+  &:lang(zh-SG) {
+    body {
+      font-family: $font-sans-sc, $font-sans-sc-fallback, $font-emoji, sans-serif;
+      quotes: "“" "”";
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: $font-mono-sc, $font-mono-sc-fallback, $font-emoji, monospace;
+    }
+  }
+
+  // 2.2.3 繁体中文 (台湾)
+  &:lang(zh-TW) {
+    body {
+      font-family: $font-sans-tc, $font-sans-tc-fallback, $font-emoji, sans-serif;
+      quotes: "「" "」";
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: $font-mono-tc, $font-mono-tc-fallback, $font-emoji, monospace;
+    }
+  }
+
+  // 2.2.4 繁体中文 (香港)、繁体中文 (澳门)
+  &:lang(zh-HK),
+  &:lang(zh-MO) {
+    body {
+      font-family: $font-sans-hc, $font-sans-hc-fallback, $font-emoji, sans-serif;
+      quotes: "「" "」";
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: $font-mono-hc, $font-mono-hc-fallback, $font-emoji, monospace;
+    }
+  }
+
+  // 2.2.5 日语
+  &:lang(ja) {
+    body {
+      font-family: $font-sans-j, $font-sans-j-fallback, $font-emoji, sans-serif;
+      quotes: "「" "」";
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: $font-mono-j, $font-mono-j-fallback, $font-emoji, monospace;
+    }
+  }
+
+  // 2.2.6 韩国语 (朝鲜语)
+  &:lang(ko) {
+    body {
+      font-family: $font-sans-k, $font-sans-k-fallback, $font-emoji, sans-serif;
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: $font-mono-k, $font-mono-k-fallback, $font-emoji, monospace;
+    }
+  }
+}
+
+/* 3 字体替换 */
+
+// 3.1 拉丁字母、西里尔字母、希腊字母、阿拉伯字母
 @each $font-serif-replace in ("Georgia", "Times", "Time New Roman") {
   @font-face {
     font-family: $font-serif-replace;
@@ -205,15 +290,14 @@ code, kbd, pre, samp {
   }
 }
 
-@each $font-mono-replace in ("Consolas", "Courier", "Courier New", "Lucida Console" ) {
+@each $font-mono-replace in ("Consolas", "Courier", "Courier New", "Lucida Console") {
   @font-face {
     font-family: $font-mono-replace;
     src: local($font-mono);
   }
 }
 
-/* 字体替换：中文 */
-
+// 3.2 通用中文、简体中文 (中国)、简体中文 (新加坡)
 @each $font-serif-sc-replace in ("SimSun", "SimSun-ExtB", "宋体", "NSimSun", "新宋体") {
   @font-face {
     font-family: $font-serif-sc-replace;
@@ -228,6 +312,7 @@ code, kbd, pre, samp {
   }
 }
 
+// 3.3 繁体中文 (台湾)
 @each $font-serif-tc-replace in ("MingLiU", "MingLiU-ExtB", "PMingLiU", "PMingLiU-ExtB") {
   @font-face {
     font-family: $font-serif-tc-replace;
@@ -242,6 +327,7 @@ code, kbd, pre, samp {
   }
 }
 
+// 3.4 繁体中文 (香港)、繁体中文 (澳门)
 @each $font-serif-hc-replace in ("MingLiU_HKSCS", "MingLiU_HKSCS-ExtB") {
   @font-face {
     font-family: $font-serif-hc-replace;
@@ -256,8 +342,7 @@ code, kbd, pre, samp {
   }
 }
 
-/* 字体替换：日文 */
-
+// 3.5 日语
 @each $font-sans-j-replace in ("MS Gothic", "MS PGothic", "MS UI Gothic", "Yu Gothic", "Yu Gothic UI") {
   @font-face {
     font-family: $font-sans-j-replace;
@@ -265,8 +350,7 @@ code, kbd, pre, samp {
   }
 }
 
-/* 字体替换：朝鲜文 */
-
+// 3.6 韩国语 (朝鲜语)
 @each $font-sans-k-replace in ("Malgun Gothic") {
   @font-face {
     font-family: $font-sans-k-replace;
@@ -274,89 +358,102 @@ code, kbd, pre, samp {
   }
 }
 
-/* 特定网站修正 */
+/* 4 特定网站适配 */
 
 @-moz-document domain("baidu.com") {
   * {
-    font-family: $font-sans-sc, $font-sans-sc-fallback, sans-serif, $font-emoji;
+    font-family: $font-sans-sc, $font-sans-sc-fallback, $font-emoji, sans-serif;
   }
 }
 
-@-moz-document regexp("https://www.baidu.com/#?"), url-prefix("https://www.baidu.com/?tn=") {
-  .s_ipt {
-    font-family: $font-sans-sc, $font-sans-sc-fallback, sans-serif, $font-emoji;
-  }
-
-  .s-treasure,
-  .mnav[href^="http"]:not([href*="baidu.com"]),
-  .qrcode-layer {
-    display: none !important;
+@-moz-document regexp("https://www.baidu.com/#?"),
+url-prefix("https://www.baidu.com/?tn=")
+{
+  .s_ipt,
+  .new-pmd .c-font-medium {
+    font-family: $font-sans-sc, $font-sans-sc-fallback, $font-emoji, sans-serif;
   }
 }
 
 @-moz-document domain("greasyfork.org") {
-  #script_version_code, .ace_editor {
-    font-family: $font-mono-sc, $font-mono-sc-fallback, monospace, $font-emoji !important;
+  #script_version_code,
+  .ace_editor {
+    font-family: $font-mono-sc, $font-mono-sc-fallback, $font-emoji, monospace !important;
   }
 }
 
 @-moz-document domain("github.com") {
   .text-mono {
-    font-family: $font-mono-sc, $font-mono-sc-fallback, monospace, $font-emoji !important;
+    font-family: $font-mono-sc, $font-mono-sc-fallback, $font-emoji, monospace !important;
   }
 
-  .blob-num, .blob-code-inner {
-    font-family: $font-mono-sc, $font-mono-sc-fallback, monospace, $font-emoji;
+  .blob-num,
+  .blob-code-inner {
+    font-family: $font-mono-sc, $font-mono-sc-fallback, $font-emoji, monospace;
   }
 }
 
 @-moz-document domain("ithome.com") {
   .post_comment {
-    font-family: $font-sans-sc, $font-sans-sc-fallback, sans-serif, $font-emoji;
+    font-family: $font-sans-sc, $font-sans-sc-fallback, $font-emoji, sans-serif;
   }
 }
 
 @-moz-document domain("jiemian.com") {
   .article-content {
-    font-family: $font-sans-sc, $font-sans-sc-fallback, sans-serif, $font-emoji !important;
+    font-family: $font-sans-sc, $font-sans-sc-fallback, $font-emoji, sans-serif !important;
   }
 
-  #ad_header_top, .cnzz-ads, .jm-app {
+  #ad_header_top,
+  .cnzz-ads,
+  .jm-app {
     display: none !important;
   }
 }
 
 @-moz-document domain("so.com") {
   * {
-    font-family: $font-sans-sc, $font-sans-sc-fallback, sans-serif, $font-emoji;
+    font-family: $font-sans-sc, $font-sans-sc-fallback, $font-emoji, sans-serif;
   }
 
-  #mohe-know_side_nlp-imagelist,
-  #mohe-hot_hqr {
+  #footer a[href="http://mse.360.cn"],
+  #footer a[href="http://mse.360.cn"] + span
+  {
     display: none !important;
   }
 }
 
 @-moz-document domain("sogou.com") {
   * {
-    font-family: $font-sans-sc, $font-sans-sc-fallback, sans-serif, $font-emoji;
+    font-family: $font-sans-sc, $font-sans-sc-fallback, $font-emoji, sans-serif;
   }
 
-  .nav-new,
-  .bizr_rb,
-  [id^="rightgameout"] {
+  .erwm-box {
     display: none !important;
   }
 }
 
 @-moz-document domain("sspai.com") {
-  h1, h2, h3, h4, h5, h6, .title, .content, p, a {
-    font-family: $font-sans-sc, $font-sans-sc-fallback, sans-serif, $font-emoji !important;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .title,
+  .content,
+  p,
+  a {
+    font-family: $font-sans-sc, $font-sans-sc-fallback, $font-emoji, sans-serif !important;
   }
 }
 
 @-moz-document domain("userstyles.org") {
-  .ad, #top_android_button, .android_button_button, .android_button_banner, .walking {
+  .ad,
+  #top_android_button,
+  .android_button_button,
+  .android_button_banner,
+  .walking {
     display: none !important;
   }
 }
