@@ -1,11 +1,11 @@
-==[简体中文](https://github.com/francis-zhao/user.css#readme "读我")==
+[<kbd>简体中文</kbd>](https://github.com/francis-zhao/user.css#readme "读我")
 [English](https://github.com/francis-zhao/user.css/blob/master/README.EN.md "Readme")
 
 # user.css
 
 ## 简介
 
-本项目包含一系列方便实用的用户自定义样式表，由 [Sass](https://sass-lang.com/ "Sass: Syntactically Awesome Style Sheets")`(*.scss)` 语言写成。
+本项目包含一系列方便实用的用户自定义样式表，由 [Sass](https://sass-lang.com/ "Sass: Syntactically Awesome Style Sheets") `(*.scss)` 语言写成。
 
 ## 清单
 

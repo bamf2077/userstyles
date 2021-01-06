@@ -1,11 +1,11 @@
 [简体中文](https://github.com/francis-zhao/user.css#readme "读我")
-==[English](https://github.com/francis-zhao/user.css/blob/master/README.EN.md "Readme")==
+[<kbd>English</kbd>](https://github.com/francis-zhao/user.css/blob/master/README.EN.md "Readme")
 
 # user.css
 
 ## Introduction
 
-This project consists of a bunch of handy user-defined stylesheets with specific purpose, written in [Sass](https://sass-lang.com/ "Sass: Syntactically Awesome Style Sheets")`(*.scss)` language.
+This project consists of a bunch of handy user-defined stylesheets with specific purpose, written in [Sass](https://sass-lang.com/ "Sass: Syntactically Awesome Style Sheets") `(*.scss)` language.
 
 ## Lists
 
