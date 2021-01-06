@@ -15,7 +15,7 @@ This project consists of a bunch of handy user-defined stylesheets with specific
 
 An UserCSS style to replace all fonts on web pages with Adobe-branded fonts for a more unified view.
 
-You can subscribe on [Greasy Fork](https://greasyfork.org/scripts/419362 "Greasy Fork").
+You can subscribe to it as `user.css` or `user.js` on [Greasy Fork](https://greasyfork.org/scripts/419362 "Greasy Fork").
 <br>
 <br>
 
@@ -23,7 +23,7 @@ You can subscribe on [Greasy Fork](https://greasyfork.org/scripts/419362 "Greasy
 
 An UserCSS style to replace all fonts on web pages with Microsoft-branded fonts for a more unified view.
 
-You can subscribe on [Greasy Fork](https://greasyfork.org/scripts/419363 "Greasy Fork").
+You can subscribe to it as `user.css` or `user.js` on [Greasy Fork](https://greasyfork.org/scripts/419363 "Greasy Fork").
 <br>
 <br>
 
@@ -31,6 +31,6 @@ You can subscribe on [Greasy Fork](https://greasyfork.org/scripts/419363 "Greasy
 
 An UserCSS style with dark theme for YYeTs.com.
 
-You can subscribe on [Greasy Fork](https://greasyfork.org/scripts/419366 "Greasy Fork").
+You can subscribe to it as `user.css` or `user.js` on [Greasy Fork](https://greasyfork.org/scripts/419366 "Greasy Fork").
 <br>
 <br>
