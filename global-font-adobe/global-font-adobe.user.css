@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/**
+/*!
  *                     重要提示
  *
  * 因 Source Sans Pro 自 3.028 版本开始，Adobe 将其更名为 Source Sans 3，
@@ -12,9 +12,9 @@
 @name:en Global Font: Adobe-branded
 @name 全局思源黑体
 @namespace franciszhao
-@version 2.2.4-alpha.2
-@description:en An UserCSS style to replace all fonts on web pages with Adobe-branded fonts.
-@description 一款使用 Adobe 系列字体替换网页原有字体的用户样式表。
+@version 2.2.4-beta.1
+@description:en An UserCSS style to replace all fonts on web pages with Adobe-branded fonts for a more unified view.
+@description 一款使用 Adobe 系列字体替换网页原有字体的用户样式表，让页面更统一美观。
 @author Francis Zhao <francis@n2o.io>
 @homepageURL https://n2o.io/go?page=user.css
 @supportURL https://n2o.io/go?page=user.css
@@ -170,6 +170,23 @@ html:lang(es) body, html:lang(nb) body, html:lang(no) body {
 
 html:lang(fr) body {
   quotes: "« " " »";
+}
+
+html:lang(ar) body, html:lang(he) body, html:lang(th) body {
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+
+html:lang(ar) code,
+html:lang(ar) kbd,
+html:lang(ar) pre,
+html:lang(ar) samp, html:lang(he) code,
+html:lang(he) kbd,
+html:lang(he) pre,
+html:lang(he) samp, html:lang(th) code,
+html:lang(th) kbd,
+html:lang(th) pre,
+html:lang(th) samp {
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", monospace;
 }
 
 html:lang(zh) body, html:lang(zh-CN) body, html:lang(zh-SG) body {

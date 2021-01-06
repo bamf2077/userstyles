@@ -1,4 +1,4 @@
-/**
+/*!
  *                     重要提示
  *
  * 因 Source Sans Pro 自 3.028 版本开始，Adobe 将其更名为 Source Sans 3，
@@ -12,9 +12,9 @@
 @name:en Global Font: Adobe-branded
 @name 全局思源黑体
 @namespace franciszhao
-@version 2.2.4-alpha.2
-@description:en An UserCSS style to replace all fonts on web pages with Adobe-branded fonts.
-@description 一款使用 Adobe 系列字体替换网页原有字体的用户样式表。
+@version 2.2.4-beta.1
+@description:en An UserCSS style to replace all fonts on web pages with Adobe-branded fonts for a more unified view.
+@description 一款使用 Adobe 系列字体替换网页原有字体的用户样式表，让页面更统一美观。
 @author Francis Zhao <francis@n2o.io>
 @homepageURL https://n2o.io/go?page=user.css
 @supportURL https://n2o.io/go?page=user.css
@@ -195,7 +195,22 @@ html {
     }
   }
 
-  // 2.2.2 通用中文、简体中文 (中国)、简体中文 (新加坡)
+  &:lang(ar),
+  &:lang(he),
+  &:lang(th) {
+    body {
+      font-family: $font-system, $font-emoji, sans-serif;
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: $font-emoji, monospace;
+    }
+  }
+
+  // 2.2.2 中文、简体中文 (中国)、简体中文 (新加坡)
   &:lang(zh),
   &:lang(zh-CN),
   &:lang(zh-SG) {
