@@ -15,7 +15,7 @@
 
 一款使用 Adobe 系列字体替换网页原有字体的用户样式表，让页面更统一美观。
 
-源代码目录：`global-font-adobe`<br>
+源代码目录：[`global-font-adobe`](https://github.com/francis-zhao/user.css/tree/master/global-font-adobe)<br>
 订阅地址：[Greasy Fork](https://greasyfork.org/scripts/419362 "Greasy Fork")
 <br>
 <br>
@@ -24,7 +24,7 @@
 
 一款使用微软系列字体替换网页原有字体的用户样式表，让页面更统一美观。
 
-源代码目录：`global-font-microsoft`<br>
+源代码目录：[`global-font-microsoft`](https://github.com/francis-zhao/user.css/tree/master/global-font-microsoft)<br>
 订阅地址：[Greasy Fork](https://greasyfork.org/scripts/419363 "Greasy Fork")
 <br>
 <br>
@@ -33,7 +33,7 @@
 
 一款适用于 YYeTs 人人影视系列网站的深色主题用户样式表。
 
-源代码目录：`theme-yyets-dark`<br>
+源代码目录：[`theme-yyets-dark`](https://github.com/francis-zhao/user.css/tree/master/theme-yyets-dark)<br>
 订阅地址：[Greasy Fork](https://greasyfork.org/scripts/419366 "Greasy Fork")
 <br>
 <br>
