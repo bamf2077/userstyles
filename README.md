@@ -15,7 +15,7 @@
 
 一款使用 [Adobe 品牌字体](https://github.com/francis-zhao/user.css/wiki/字体清单#adobe_fonts)替换网页原有字体的用户样式表，让页面更统一美观。
 
-你可以在[这里](https://github.com/francis-zhao/user.css/wiki/全局字体优先级)查看该样式表使用的字体的优先级详情。
+你可以在[这里](https://github.com/francis-zhao/user.css/wiki/字体栈优先级)查看该样式表使用的字体的优先级详情。
 
 你可以在 [Greasy Fork](https://greasyfork.org/scripts/419362 "Greasy Fork") 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。
 
@@ -25,7 +25,7 @@
 
 一款使用[微软品牌字体](https://github.com/francis-zhao/user.css/wiki/字体清单#msft_fonts)替换网页原有字体的用户样式表，让页面更统一美观。
 
-你可以在[这里](https://github.com/francis-zhao/user.css/wiki/全局字体优先级)查看该样式表使用的字体的优先级详情。
+你可以在[这里](https://github.com/francis-zhao/user.css/wiki/字体栈优先级)查看该样式表使用的字体的优先级详情。
 
 你可以在 [Greasy Fork](https://greasyfork.org/scripts/419363 "Greasy Fork") 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。
 
