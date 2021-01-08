@@ -10,7 +10,7 @@
     4. [Traditional Chinese (Hong Kong), Traditional Chinese (Macao)](#adobe_fonts_hc)
     5. [Japanese](#adobe_fonts_j)
     6. [Korean](#adobe_fonts_k)
-    7. [Latin, Cyrillic, Greek, Vietnamese](#adobe_fonts_lcgv)
+    7. [Latin, Cyrillic, Greek, Khmer](#adobe_fonts_lcgv)
     8. [Arabic, Hebrew, Thai](#adobe_fonts_aht)
 
 2. [Global Font: Microsoft-branded](#msft_fonts)
@@ -21,7 +21,7 @@
     5. [Japanese](#msft_fonts_j)
     6. [Korean](#msft_fonts_k)
     7. [Latin, Cyrillic, Greek](#msft_fonts_lcg)
-    8. [Arabic, Hebrew, Thai, Vietnamese](#msft_fonts_ahtv)
+    8. [Arabic, Hebrew, Thai, Khmer](#msft_fonts_ahtv)
 
 ---
 
@@ -240,7 +240,7 @@ font-family: "Source Han Mono K",
              monospace;
 ```
 
-<h2 id="adobe_fonts_lcgv">Latin, Cyrillic, Greek, Vietnamese</h2>
+<h2 id="adobe_fonts_lcgv">Latin, Cyrillic, Greek, Khmer</h2>
 > Works with English, Deutsch, Nederlands, Svenska, Bokmål, Nynorsk, Dansk, Íslenska, Français, Italiano, Español, Português, Română, Lietuvių, Latviešu, Русский, Беларуская, Українська, Polski, Čeština, Slovenčina, Български, Slovenščina, Srpski, Hrvatski, Bosanski, Ελληνικά, Suomi, Eesti, Magyar, Türkçe, Tiếng việt, Bahasa Indonesia, Bahasa Melayu.
 
 ```css
@@ -290,7 +290,7 @@ font-family: "Source Code Pro",
 <h2 id="msft_fonts_lcg">Latin, Cyrillic, Greek</h2>
 > Works with English, Deutsch, Nederlands, Svenska, Bokmål, Nynorsk, Dansk, Íslenska, Français, Italiano, Español, Português, Română, Lietuvių, Latviešu, Русский, Беларуская, Українська, Polski, Čeština, Slovenčina, Български, Slovenščina, Srpski, Hrvatski, Bosanski, Ελληνικά, Suomi, Eesti, Magyar, Türkçe, Bahasa Indonesia, Bahasa Melayu.
 
-<h2 id="msft_fonts_ahtv">Arabic, Hebrew, Thai, Vietnamese</h2>
+<h2 id="msft_fonts_ahtv">Arabic, Hebrew, Thai, Khmer</h2>
 > Works with עברית ,العربية, ไทย, Tiếng việt.
 
 <br>
