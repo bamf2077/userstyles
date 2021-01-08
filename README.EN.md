@@ -38,5 +38,6 @@ An UserCSS stylesheet with dark theme for YYeTs.com.
 You can subscribe to the latest stable version as `user.css` or `user.js` via [Greasy Fork](https://greasyfork.org/scripts/419366 "Greasy Fork").
 
 <br>
+<br>
 
 [<kbd>Back to top</kbd>](# "Back to top")
