@@ -1,5 +1,5 @@
 [<kbd>简体中文</kbd>](https://github.com/francis-zhao/user.css/wiki/字体栈优先级 "字体栈优先级")
-[<kbd>`English`</kbd>](https://github.com/francis-zhao/user.css/wiki/Priority-of-font-stack "Priority of font stack")
+[<kbd>**`* English *`**</kbd>](https://github.com/francis-zhao/user.css/wiki/Priority-of-font-stack "Priority of font stack")
 
 <h1 id="index">Index</h1>
 
@@ -292,3 +292,5 @@ font-family: "Source Code Pro",
 
 <h2 id="msft_fonts_ahtv">Arabic, Hebrew, Thai, Vietnamese</h2>
 > Works with עברית ,العربية, ไทย, Tiếng việt.
+
+[<kbd>Back to top</kbd>](# "Back to top")

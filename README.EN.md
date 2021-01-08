@@ -1,5 +1,5 @@
 [<kbd>简体中文</kbd>](https://github.com/francis-zhao/user.css#readme "读我")
-[<kbd>`English`</kbd>](https://github.com/francis-zhao/user.css/blob/master/README.EN.md "Readme")
+[<kbd>**`* English *`**</kbd>](https://github.com/francis-zhao/user.css/blob/master/README.EN.md "Readme")
 
 # user.css
 
@@ -38,3 +38,5 @@ An UserCSS stylesheet with dark theme for YYeTs.com.
 You can subscribe to the latest stable version as `user.css` or `user.js` via [Greasy Fork](https://greasyfork.org/scripts/419366 "Greasy Fork").
 
 <br>
+
+[<kbd>Back to top</kbd>](# "Back to top")

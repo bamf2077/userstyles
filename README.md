@@ -1,4 +1,4 @@
-[<kbd>`简体中文`</kbd>](https://github.com/francis-zhao/user.css#readme "读我")
+[<kbd>**`* 简体中文 *`**</kbd>](https://github.com/francis-zhao/user.css#readme "读我")
 [<kbd>English</kbd>](https://github.com/francis-zhao/user.css/blob/master/README.EN.md "Readme")
 
 # user.css
@@ -38,3 +38,5 @@
 你可以在 [Greasy Fork](https://greasyfork.org/scripts/419366 "Greasy Fork") 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。
 
 <br>
+
+[<kbd>返回顶部</kbd>](# "返回顶部")
