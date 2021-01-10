@@ -32,7 +32,7 @@ html {
 }
 
 body {
-  font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
 button,
@@ -47,11 +47,11 @@ code,
 kbd,
 pre,
 samp {
-  font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
 html:lang(zh) body, html:lang(zh-CN) body, html:lang(zh-SG) body {
-  font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
   quotes: "“" "”";
 }
 
@@ -65,11 +65,11 @@ html:lang(zh-CN) samp, html:lang(zh-SG) code,
 html:lang(zh-SG) kbd,
 html:lang(zh-SG) pre,
 html:lang(zh-SG) samp {
-  font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
 html:lang(zh-TW) body {
-  font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
   quotes: "「" "」";
 }
 
@@ -77,11 +77,11 @@ html:lang(zh-TW) code,
 html:lang(zh-TW) kbd,
 html:lang(zh-TW) pre,
 html:lang(zh-TW) samp {
-  font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
 html:lang(zh-HK) body, html:lang(zh-MO) body {
-  font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
   quotes: "「" "」";
 }
 
@@ -92,11 +92,11 @@ html:lang(zh-HK) samp, html:lang(zh-MO) code,
 html:lang(zh-MO) kbd,
 html:lang(zh-MO) pre,
 html:lang(zh-MO) samp {
-  font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
 html:lang(ja) body {
-  font-family: "Yu Gothic UI", "Yu Gothic", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: "Yu Gothic UI", "Yu Gothic", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
   quotes: "「" "」";
 }
 
@@ -104,22 +104,22 @@ html:lang(ja) code,
 html:lang(ja) kbd,
 html:lang(ja) pre,
 html:lang(ja) samp {
-  font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Yu Gothic UI", "Yu Gothic", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Yu Gothic UI", "Yu Gothic", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
 html:lang(ko) body {
-  font-family: "Malgun Gothic", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: "Malgun Gothic", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
 html:lang(ko) code,
 html:lang(ko) kbd,
 html:lang(ko) pre,
 html:lang(ko) samp {
-  font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Malgun Gothic", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Malgun Gothic", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
 html:lang(en) body, html:lang(de) body, html:lang(nl) body, html:lang(sv) body, html:lang(nb) body, html:lang(no) body, html:lang(da) body, html:lang(is) body, html:lang(fr) body, html:lang(it) body, html:lang(es) body, html:lang(pt) body, html:lang(ro) body, html:lang(lt) body, html:lang(lv) body, html:lang(ru) body, html:lang(uk) body, html:lang(pl) body, html:lang(cs) body, html:lang(sk) body, html:lang(bg) body, html:lang(sl) body, html:lang(sr) body, html:lang(hr) body, html:lang(bs) body, html:lang(el) body, html:lang(fi) body, html:lang(et) body, html:lang(hu) body, html:lang(tr) body, html:lang(id) body {
-  font-family: "Segoe UI", "Noto Sans", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: "Segoe UI", "Noto Sans", "Roboto", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
 html:lang(en) code,
@@ -216,7 +216,7 @@ html:lang(tr) samp, html:lang(id) code,
 html:lang(id) kbd,
 html:lang(id) pre,
 html:lang(id) samp {
-  font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
 html:lang(de) body {
@@ -232,7 +232,7 @@ html:lang(fr) body {
 }
 
 html:lang(ar) body, html:lang(he) body, html:lang(th) body, html:lang(vi) body {
-  font-family: system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
 html:lang(ar) code,
@@ -248,7 +248,7 @@ html:lang(th) samp, html:lang(vi) code,
 html:lang(vi) kbd,
 html:lang(vi) pre,
 html:lang(vi) samp {
-  font-family: monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+  font-family: monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
 /* 3 字体替换 */
@@ -510,7 +510,7 @@ html:lang(vi) samp {
 /* 4 特定网站适配 */
 @-moz-document domain("baidu.com") {
   * {
-    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
   }
 }
 
@@ -518,36 +518,36 @@ html:lang(vi) samp {
 url-prefix("https://www.baidu.com/?tn=") {
   .s_ipt,
   .new-pmd .c-font-medium {
-    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
   }
 }
 
 @-moz-document domain("greasyfork.org") {
   #script_version_code,
   .ace_editor {
-    font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji !important;
+    font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji !important;
   }
 }
 
 @-moz-document domain("github.com") {
   .text-mono {
-    font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji !important;
+    font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji !important;
   }
   .blob-num,
   .blob-code-inner {
-    font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+    font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
   }
 }
 
 @-moz-document domain("ithome.com") {
   .post_comment {
-    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
   }
 }
 
 @-moz-document domain("jiemian.com") {
   .article-content {
-    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji !important;
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji !important;
   }
   #ad_header_top,
   .cnzz-ads,
@@ -558,7 +558,7 @@ url-prefix("https://www.baidu.com/?tn=") {
 
 @-moz-document domain("so.com") {
   * {
-    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
   }
   #footer a[href="http://mse.360.cn"],
   #footer a[href="http://mse.360.cn"] + span {
@@ -568,7 +568,7 @@ url-prefix("https://www.baidu.com/?tn=") {
 
 @-moz-document domain("sogou.com") {
   * {
-    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji;
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
   }
   .erwm-box {
     display: none !important;
@@ -586,7 +586,7 @@ url-prefix("https://www.baidu.com/?tn=") {
   .content,
   p,
   a {
-    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" "Noto Color Emoji", emoji !important;
+    font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji !important;
   }
 }
 
