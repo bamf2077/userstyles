@@ -300,14 +300,14 @@ html {
   }
 }
 
-@each $font-sans-replace in ("Arial", "Helvetica", "Helvetica Neue", "Segoe UI", "Tahoma", "Trebuchet", "Trebuchet MS", "Verdana") {
+@each $font-sans-replace in ("Arial", "Helvetica", "Helvetica Neue", "Open Sans", "Segoe UI", "Tahoma", "Trebuchet", "Trebuchet MS", "Ubuntu", "Verdana") {
   @font-face {
     font-family: $font-sans-replace;
     src: local($font-sans);
   }
 }
 
-@each $font-mono-replace in ("Consolas", "Courier", "Courier New", "Lucida Console") {
+@each $font-mono-replace in ("Consolas", "Courier", "Courier New", "Lucida Console", "Ubuntu Mono") {
   @font-face {
     font-family: $font-mono-replace;
     src: local($font-mono);

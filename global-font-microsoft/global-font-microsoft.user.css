@@ -283,6 +283,11 @@ html:lang(vi) samp {
 }
 
 @font-face {
+  font-family: "Open Sans";
+  src: local("Segoe UI");
+}
+
+@font-face {
   font-family: "Segoe UI";
   src: local("Segoe UI");
 }
@@ -299,6 +304,11 @@ html:lang(vi) samp {
 
 @font-face {
   font-family: "Trebuchet MS";
+  src: local("Segoe UI");
+}
+
+@font-face {
+  font-family: "Ubuntu";
   src: local("Segoe UI");
 }
 
@@ -324,6 +334,11 @@ html:lang(vi) samp {
 
 @font-face {
   font-family: "Lucida Console";
+  src: local("Cascadia Code");
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
   src: local("Cascadia Code");
 }
 

@@ -284,6 +284,11 @@ html:lang(th) samp {
 }
 
 @font-face {
+  font-family: "Open Sans";
+  src: local("Source Sans 3", "Source Sans Pro");
+}
+
+@font-face {
   font-family: "Segoe UI";
   src: local("Source Sans 3", "Source Sans Pro");
 }
@@ -300,6 +305,11 @@ html:lang(th) samp {
 
 @font-face {
   font-family: "Trebuchet MS";
+  src: local("Source Sans 3", "Source Sans Pro");
+}
+
+@font-face {
+  font-family: "Ubuntu";
   src: local("Source Sans 3", "Source Sans Pro");
 }
 
@@ -325,6 +335,11 @@ html:lang(th) samp {
 
 @font-face {
   font-family: "Lucida Console";
+  src: local("Source Code Pro");
+}
+
+@font-face {
+  font-family: "Ubuntu Mono";
   src: local("Source Code Pro");
 }
 
