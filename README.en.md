@@ -5,7 +5,7 @@
 
 ## Introduction
 
-This repository consists of a bunch of handy user-defined stylesheets with specific purpose, written in [Sass/SCSS](https://sass-lang.com/ "Sass: Syntactically Awesome Style Sheets") language.
+This repository consists of a bunch of handy user-defined stylesheets with various purpose, written in [Sass/SCSS](https://sass-lang.com/ "Sass: Syntactically Awesome Style Sheets") language.
 
 <br>
 
