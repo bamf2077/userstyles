@@ -14,7 +14,7 @@
 @name:en Global Font: Microsoft-branded
 @name 全局微软雅黑
 @namespace franciszhao
-@version 2.2.6
+@version 2.2.7-alpha.1
 @description:en An UserCSS stylesheet to replace all fonts on web pages with Microsoft-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用微软品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -51,7 +51,7 @@ samp {
   font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
-html:lang(zh) body, html:lang(zh-CN) body, html:lang(zh-SG) body {
+html:lang(zh) body, html:lang(zh-CN) body, html:lang(zh-SG) body, html:lang(cmn-Hans) body, html:lang(zh-cmn-Hans) body, html:lang(zh-Hans) body {
   font-family: "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
   quotes: "“" "”";
 }
@@ -65,11 +65,20 @@ html:lang(zh-CN) pre,
 html:lang(zh-CN) samp, html:lang(zh-SG) code,
 html:lang(zh-SG) kbd,
 html:lang(zh-SG) pre,
-html:lang(zh-SG) samp {
+html:lang(zh-SG) samp, html:lang(cmn-Hans) code,
+html:lang(cmn-Hans) kbd,
+html:lang(cmn-Hans) pre,
+html:lang(cmn-Hans) samp, html:lang(zh-cmn-Hans) code,
+html:lang(zh-cmn-Hans) kbd,
+html:lang(zh-cmn-Hans) pre,
+html:lang(zh-cmn-Hans) samp, html:lang(zh-Hans) code,
+html:lang(zh-Hans) kbd,
+html:lang(zh-Hans) pre,
+html:lang(zh-Hans) samp {
   font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft YaHei UI", "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
-html:lang(zh-TW) body {
+html:lang(zh-TW) body, html:lang(cmn-Hant) body, html:lang(zh-cmn-Hant) body, html:lang(zh-Hant) body {
   font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
   quotes: "「" "」";
 }
@@ -77,11 +86,20 @@ html:lang(zh-TW) body {
 html:lang(zh-TW) code,
 html:lang(zh-TW) kbd,
 html:lang(zh-TW) pre,
-html:lang(zh-TW) samp {
+html:lang(zh-TW) samp, html:lang(cmn-Hant) code,
+html:lang(cmn-Hant) kbd,
+html:lang(cmn-Hant) pre,
+html:lang(cmn-Hant) samp, html:lang(zh-cmn-Hant) code,
+html:lang(zh-cmn-Hant) kbd,
+html:lang(zh-cmn-Hant) pre,
+html:lang(zh-cmn-Hant) samp, html:lang(zh-Hant) code,
+html:lang(zh-Hant) kbd,
+html:lang(zh-Hant) pre,
+html:lang(zh-Hant) samp {
   font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
-html:lang(zh-HK) body, html:lang(zh-MO) body {
+html:lang(zh-HK) body, html:lang(zh-MO) body, html:lang(yue-Hant) body, html:lang(zh-yue-Hant) body {
   font-family: "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
   quotes: "「" "」";
 }
@@ -92,7 +110,13 @@ html:lang(zh-HK) pre,
 html:lang(zh-HK) samp, html:lang(zh-MO) code,
 html:lang(zh-MO) kbd,
 html:lang(zh-MO) pre,
-html:lang(zh-MO) samp {
+html:lang(zh-MO) samp, html:lang(yue-Hant) code,
+html:lang(yue-Hant) kbd,
+html:lang(yue-Hant) pre,
+html:lang(yue-Hant) samp, html:lang(zh-yue-Hant) code,
+html:lang(zh-yue-Hant) kbd,
+html:lang(zh-yue-Hant) pre,
+html:lang(zh-yue-Hant) samp {
   font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", "Microsoft JhengHei UI", "Microsoft JhengHei", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
@@ -602,4 +626,3 @@ url-prefix("https://www.baidu.com/?tn=") {
 }
 
 /* 真的到底了 */
-/*# sourceMappingURL=global-font-microsoft.user.css.map */
