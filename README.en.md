@@ -5,7 +5,7 @@
 
 ## Introduction
 
-This repository consists of a bunch of handy user-defined stylesheets with various purpose, written in [Sass/SCSS](https://sass-lang.com/ "Sass: Syntactically Awesome Style Sheets") language.
+A bunch of handy user-defined stylesheets with various purpose, implemented like `userChrome.css`, `Custom.css`, `user.css`, written in [Sass/SCSS](https://sass-lang.com/ "Sass: Syntactically Awesome Style Sheets") language.
 
 <br>
 

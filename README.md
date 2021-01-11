@@ -5,7 +5,7 @@
 
 ## 简介
 
-本仓库包含一系列方便实用的用户自定义样式表，由 [Sass/SCSS](https://sass-lang.com/ "Sass: Syntactically Awesome Style Sheets") 语言写成。
+一系列方便实用的用户自定义样式表，实现原理类似 `userChrome.css`、`Custom.css`、`user.css`，由 [Sass/SCSS](https://sass-lang.com/ "Sass: Syntactically Awesome Style Sheets") 语言写成。
 
 <br>
 
