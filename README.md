@@ -1,5 +1,5 @@
 [<kbd>**`* 简体中文 *`**</kbd>](https://github.com/francis-zhao/user.css#readme "读我")
-[<kbd>English</kbd>](https://github.com/francis-zhao/user.css/blob/master/README.EN.md "Readme")
+[<kbd>English</kbd>](https://github.com/francis-zhao/user.css/blob/master/README.en.md "Readme")
 
 # user.css
 
