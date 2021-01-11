@@ -15,7 +15,7 @@
 @name:en Global Font: Adobe-branded
 @name 全局思源黑体
 @namespace franciszhao
-@version 2.2.5
+@version 2.2.6
 @description:en An UserCSS stylesheet to replace all fonts on web pages with Adobe-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用 Adobe 品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -39,6 +39,7 @@ body {
 button,
 input,
 keygen,
+optgroup,
 select,
 textarea {
   font-family: inherit;
@@ -66,7 +67,7 @@ html:lang(zh-CN) samp, html:lang(zh-SG) code,
 html:lang(zh-SG) kbd,
 html:lang(zh-SG) pre,
 html:lang(zh-SG) samp {
-  font-family: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+  font-family: "Source Han Mono SC", "Noto Sans Mono CJK SC", "Source Code Pro", "Noto Mono", "Roboto Mono", "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 }
 
 html:lang(zh-TW) body {

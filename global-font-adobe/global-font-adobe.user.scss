@@ -15,7 +15,7 @@
 @name:en Global Font: Adobe-branded
 @name 全局思源黑体
 @namespace franciszhao
-@version 2.2.5
+@version 2.2.6
 @description:en An UserCSS stylesheet to replace all fonts on web pages with Adobe-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用 Adobe 品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -106,6 +106,7 @@ body {
 button,
 input,
 keygen,
+optgroup,
 select,
 textarea {
   font-family: inherit;
@@ -133,7 +134,7 @@ html {
     kbd,
     pre,
     samp {
-      font-family: $font-sans-sc, $font-sans-sc-fallback, sans-serif, $font-emoji;
+      font-family: $font-mono-sc, $font-mono-sc-fallback, monospace, $font-emoji;
     }
   }
 
