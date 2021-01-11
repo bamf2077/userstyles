@@ -5,7 +5,7 @@
 
 ## 简介
 
-一系列方便实用的用户自定义样式表，适用于 Stylish、[Stylus](http://add0n.com/stylus.html "Stylus")、[Tampermonkey](https://www.tampermonkey.net/ "Tampermonkey")、[Greasemonkey](https://www.greasespot.net/ "Greasemonkey") 等浏览器扩展。样式表生效原理类似 `userChrome.css`、`Custom.css`、`user.css`，由 [Sass/SCSS](https://sass-lang.com/ "Sass: Syntactically Awesome Style Sheets") 语言写成。
+一系列方便实用的用户自定义样式表，适用于 Stylish、[Stylus](http://add0n.com/stylus.html "Stylus")、[Tampermonkey](https://www.tampermonkey.net/ "Tampermonkey")、[Greasemonkey](https://www.greasespot.net/ "Greasemonkey") 等用户样式表、用户脚本管理类浏览器扩展。样式表生效原理类似 `userChrome.css`、`Custom.css`、`user.css`，由 [Sass/SCSS](https://sass-lang.com/ "Sass: Syntactically Awesome Style Sheets") 语言写成。
 
 <br>
 
