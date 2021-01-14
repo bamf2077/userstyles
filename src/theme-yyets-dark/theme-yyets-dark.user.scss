@@ -9,7 +9,7 @@
 @name:en 💡 TURN OFF THE LIGHT, YYeTs!
 @name 💡 关灯，人人影视！
 @namespace franciszhao
-@version 2.3.2-beta.2
+@version 2.3.2-beta.3
 @description:en An UserCSS stylesheet with dark theme for YYeTs.com.
 @description 一款适用于 YYeTs 人人影视系列网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
@@ -45,8 +45,8 @@ $color-white-010: rgba(255, 255, 255, 0.1);
 $color-white-015: rgba(255, 255, 255, 0.15);
 $color-white-050: rgba(255, 255, 255, 0.5);
 
-$color-button: rgba(52, 116, 249, 0.15);
-$color-button-hover: rgba(52, 116, 249, 0.1);
+$color-button: rgba(52, 116, 249, 0.05);
+$color-button-hover: rgba(52, 116, 249, 0.25);
 
 $border-radius: 4px;
 
@@ -81,14 +81,58 @@ $border-radius: 4px;
   .f4,
   .f4 a,
   .f6,
-  .r-it {
+  .r-it,
+  h3,
+  h3 a,
+  .fl-info h3 a {
     color: $color-text;
+  }
+
+  .f0 {
+    color: $color-link;
   }
 
   a,
   .f3 {
     &:hover {
       color: $color-link;
+    }
+  }
+
+  strong {
+    font-weight: 400 !important;
+  }
+
+  // 通用-控件
+  input[type="text"],
+  input[type="password"],
+  select,
+  textarea {
+    background: $color-black-010 !important;
+    box-shadow: none !important;
+    border-color: $color-link !important;
+    border-radius: $border-radius !important;
+    color: $color-text !important;
+    outline: none !important;
+
+    &:hover,
+    &:focus {
+      border-color: lighten($color-link, 10%) !important;
+    }
+  }
+
+  input[type="button"],
+  input[type="submit"],
+  .res-form .submit {
+    background: $color-link !important;
+    box-shadow: none !important;
+    border-color: $color-link !important;
+    border-radius: $border-radius !important;
+    color: $color-link-nav !important;
+    outline: none !important;
+
+    &:hover {
+      background: lighten($color-link, 10%) !important;
     }
   }
 
@@ -105,21 +149,13 @@ $border-radius: 4px;
 
     //输入框
     .keywords {
-      background: $color-black-010;
-      border-color: $color-link;
-      border-radius: $border-radius !important;
-      color: inherit;
-
-      &:hover,
-      &:focus {
-        border-color: lighten($color-link, 10%);
-      }
+      border-radius: $border-radius 0 0 $border-radius !important;
     }
 
     //提交按钮
     .submit {
       background: url("http://js.jstucdn.com/images/saerch-submit.png") center center/24px 24px no-repeat, $color-link;
-      border-radius: 0 $border-radius $border-radius 0;
+      border-radius: 0 $border-radius $border-radius 0 !important;
 
       &:hover {
         background: url("http://js.jstucdn.com/images/saerch-submit.png") center center/24px 24px no-repeat, lighten($color-link, 10%);
@@ -254,7 +290,11 @@ $border-radius: 4px;
   }
 
   // 通用-模块标题
-  h2 {
+  h2.it,
+  .subtitle-tit,
+  .res-bbs-box .news-bbs h2,
+  .found-box .xy-list .title,
+  .user-main .u_p_set dl.ziliao_dl dt h2 {
     border-color: $color-white-005 !important;
     color: $color-link !important;
 
@@ -273,29 +313,12 @@ $border-radius: 4px;
       width: 85% !important;
       height: 52px !important;
       padding: 4px 6px !important;
-      background: $color-black-010 !important;
-      border-color: $color-link !important;
-      border-radius: $border-radius !important;
-      outline: none !important;
       font-size: 14px !important;
-      color: inherit !important;
-
-      &:hover,
-      &:focus {
-        border-color: lighten($color-link, 10%) !important;
-      }
     }
 
     .submit {
       width: 10% !important;
       vertical-align: baseline !important;
-      background: $color-link !important;
-      border: 1px solid $color-link !important;
-      color: $color-link-nav !important;
-
-      &:hover {
-        background: lighten($color-link, 10%) !important;
-      }
     }
 
     p:last-child {
@@ -306,6 +329,7 @@ $border-radius: 4px;
 
   .bbs-list {
     padding-top: 25px !important;
+    color: $color-info !important;
 
     li {
       border-color: $color-white-005 !important;
@@ -382,6 +406,8 @@ $border-radius: 4px;
         }
 
         a {
+          display: inline-block;
+          width: 170px;
           color: inherit;
         }
       }
@@ -446,17 +472,23 @@ $border-radius: 4px;
 
     // 影视资讯
     .top-news {
-      li .fl-info h3 {
-        a {
-          color: inherit;
+      li {
+        .fl-img > a img {
+          margin: 0 !important;
         }
 
-        span {
-          color: $color-info;
-        }
+        .fl-info h3 {
+          a {
+            color: inherit;
+          }
 
-        .f3 {
-          color: $color-link;
+          span {
+            color: $color-info;
+          }
+
+          .f3 {
+            color: $color-link;
+          }
         }
       }
     }
@@ -582,11 +614,7 @@ $border-radius: 4px;
     .user-login {
       .input-txt {
         padding: 0 10px;
-        background: $color-black-010;
-        box-shadow: none;
-        border-color: $color-white-010;
         font-family: $font-mono, monospace;
-        color: inherit;
       }
 
       p label,
@@ -617,6 +645,110 @@ $border-radius: 4px;
 
       p.c {
         color: $color-info;
+      }
+    }
+  }
+
+  // 用户页
+  .middle-box {
+    .user-main {
+      .u_intro .u_s_intro h2.f_u0 {
+        color: $color-text;
+      }
+
+      #form_basic > div > span,
+      .u_s_intro .u_acount_a1 .sp1,
+      .u_s_intro .u_acount_a1 .sp2,
+      .u_s_intro .u_acount_a1 .sp3,
+      .u_p_set .ziliao_dl dd,
+      .ziliao_ul li label,
+      .u_s_intro div.f4,
+      .u_p_set div.f4,
+      .upgrade_vip form strong {
+        color: $color-info;
+      }
+
+      .u_p_set #upgrade_by_point_form ul.ziliao_ul li span b font,
+      .u_p_set #upgrade_by_code_form ul.ziliao_ul li span b font {
+        color: $color-info !important;
+      }
+
+      .u_s_intro .u_acount_a1 .sp1 font,
+      .u_s_intro .u_acount_a1 .sp2 font,
+      .u_s_intro .u_acount_a1 .sp3 font,
+      .u_p_set .ziliao_dl dd.edit-username-notice a,
+      .u_p_set ul.ziliao_ul li font,
+      .ziliao_ul li font.f_u0,
+      .u_p_set #upgrade_by_code_form ul.ziliao_ul li a.howto {
+        color: $color-link;
+      }
+
+      .u_p_set ul.ziliao_ul li #unbind_btn {
+        color: $color-link !important;
+      }
+
+      .upgrade-item dl.upgrade_vip a.my_verify_code {
+        color: $color-text;
+      }
+
+      .ziliao_ul li .pwd-requirements,
+      .u_p_set ul.ziliao_ul li font[color="#EF4238"],
+      .u_p_set #upgrade_by_code_form ul.ziliao_ul li font[color="red"] {
+        color: brown !important;
+      }
+
+      .upgrade_vip .buy-notice {
+        background: transparent;
+        border-color: brown;
+        color: brown;
+      }
+
+      .u_p_set .upgrade_vip dd {
+        margin-top: 15px;
+      }
+
+      .u_p_set dl.ziliao_dl dt {
+        border-color: $color-white-005;
+
+        h2 {
+          border: none;
+        }
+      }
+      .upgrade-item {
+        .upgrade-pop {
+          top: -160px !important;
+          background: $color-black-090;
+          box-shadow: none;
+          border: 5px solid $color-white-015;
+
+          p {
+            color: $color-info;
+
+            &.tc strong {
+              color: $color-text;
+            }
+
+            &.f3 {
+              border-color: $color-link;
+              color: $color-link;
+            }
+
+            &.f7 {
+              color: brown;
+            }
+          }
+
+          .button {
+            a {
+              background: $color-button;
+              color: $color-link-nav !important;
+            }
+
+            .btn1 {
+              background: $color-button-hover;
+            }
+          }
+        }
       }
     }
   }
@@ -656,7 +788,6 @@ $border-radius: 4px;
 
             strong {
               color: $color-info;
-              font-weight: 400;
             }
 
             a.f3 {
@@ -770,11 +901,9 @@ $border-radius: 4px;
               }
 
               a.f3 {
+                display: inline-block;
+                width: 100%;
                 color: inherit;
-
-                strong {
-                  font-weight: 400;
-                }
               }
             }
           }
@@ -854,7 +983,7 @@ $border-radius: 4px;
             padding: 5px 0 10px 0;
 
             li {
-              padding: 2px 15px;
+              padding: 2px 0;
 
               &:hover {
                 background: $color-black-075;
@@ -865,6 +994,9 @@ $border-radius: 4px;
               }
 
               a {
+                display: inline-block;
+                width: 100%;
+                padding: 0 15px;
                 color: inherit;
               }
             }
@@ -894,6 +1026,95 @@ $border-radius: 4px;
           }
         }
       }
+
+      .subtitle-ralate {
+        .fl-info {
+          color: $color-info;
+        }
+      }
+
+      .subtitle-con {
+        margin-bottom: 15px;
+        padding: 0 20px 20px 20px;
+        color: $color-info;
+
+        .subtitle-info {
+          li {
+            color: $color-info;
+
+            &:last-child {
+              display: none;
+            }
+
+            label {
+              color: $color-info;
+            }
+          }
+        }
+
+        .subtitle-links {
+          width: 100%;
+          height: 3em;
+          margin: 20px auto;
+          background: $color-black-010;
+          border: 1px solid $color-white-010;
+          font-size: 20px;
+          line-height: 3em;
+
+          &:hover {
+            background: $color-black-050;
+            border: 1px solid $color-white-005;
+          }
+
+          a {
+            display: inline-block;
+            width: 100%;
+            line-height: inherit;
+
+            strong {
+              color: $color-text;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 收藏页
+  .middle-box {
+    .usercenter-box {
+      .user-menu {
+        width: 154px;
+        height: 600px;
+        background: $color-black-020;
+        border-right: 2px solid $color-white-005;
+
+        a {
+          background: $color-button;
+          color: $color-info;
+
+          &.cur,
+          &:hover {
+            background: $color-button-hover;
+          }
+        }
+      }
+    }
+
+    .fav-tab {
+      padding-bottom: 18px;
+      border-color: $color-white-005;
+
+      a {
+        padding: 8px;
+        color: $color-info;
+
+        &.selected,
+        &:hover {
+          background: $color-button-hover;
+          color: inherit;
+        }
+      }
     }
   }
 
@@ -908,15 +1129,8 @@ $border-radius: 4px;
 
         &.selected,
         &:hover {
-          color: inherit;
-        }
-
-        &.selected {
-          background: $color-button;
-        }
-
-        &:hover {
           background: $color-button-hover;
+          color: inherit;
         }
       }
     }
@@ -939,6 +1153,10 @@ $border-radius: 4px;
 
     .sidebar-article li {
       border-color: $color-white-005;
+    }
+
+    .information-tit.tc {
+      color: inherit;
     }
 
     .information-desc {

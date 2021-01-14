@@ -9,7 +9,7 @@
 @name:en 💡 TURN OFF THE LIGHT, YYeTs!
 @name 💡 关灯，人人影视！
 @namespace franciszhao
-@version 2.3.2-beta.2
+@version 2.3.2-beta.3
 @description:en An UserCSS stylesheet with dark theme for YYeTs.com.
 @description 一款适用于 YYeTs 人人影视系列网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
@@ -45,12 +45,56 @@
   .f4,
   .f4 a,
   .f6,
-  .r-it {
+  .r-it,
+  h3,
+  h3 a,
+  .fl-info h3 a {
     color: #8c8c8c;
+  }
+  .f0 {
+    color: #005083;
   }
   a:hover,
   .f3:hover {
     color: #005083;
+  }
+  strong {
+    font-weight: 400 !important;
+  }
+  input[type="text"],
+  input[type="password"],
+  select,
+  textarea {
+    background: rgba(0, 0, 0, 0.1) !important;
+    box-shadow: none !important;
+    border-color: #005083 !important;
+    border-radius: 4px !important;
+    color: #8c8c8c !important;
+    outline: none !important;
+  }
+  input[type="text"]:hover, input[type="text"]:focus,
+  input[type="password"]:hover,
+  input[type="password"]:focus,
+  select:hover,
+  select:focus,
+  textarea:hover,
+  textarea:focus {
+    border-color: #006fb6 !important;
+  }
+  input[type="button"],
+  input[type="submit"],
+  .res-form .submit {
+    background: #005083 !important;
+    box-shadow: none !important;
+    border-color: #005083 !important;
+    border-radius: 4px !important;
+    color: #d9d9d9 !important;
+    outline: none !important;
+  }
+  input[type="button"]:hover,
+  input[type="submit"]:hover,
+  .res-form .submit:hover {
+    background: #006fb6 !important;
   }
   .header {
     background: rgba(0, 0, 0, 0.5);
@@ -59,17 +103,11 @@
     width: 300px;
   }
   .search-box .keywords {
-    background: rgba(0, 0, 0, 0.1);
-    border-color: #005083;
-    border-radius: 4px !important;
-    color: inherit;
-  }
-  .search-box .keywords:hover, .search-box .keywords:focus {
-    border-color: #006fb6;
+    border-radius: 4px 0 0 4px !important;
   }
   .search-box .submit {
     background: url("http://js.jstucdn.com/images/saerch-submit.png") center center/24px 24px no-repeat, #005083;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 4px 4px 0 !important;
   }
   .search-box .submit:hover {
     background: url("http://js.jstucdn.com/images/saerch-submit.png") center center/24px 24px no-repeat, #006fb6;
@@ -167,39 +205,37 @@
   .box .box {
     background: transparent !important;
   }
-  h2 {
+  h2.it,
+  .subtitle-tit,
+  .res-bbs-box .news-bbs h2,
+  .found-box .xy-list .title,
+  .user-main .u_p_set dl.ziliao_dl dt h2 {
     border-color: rgba(255, 255, 255, 0.05) !important;
     color: #005083 !important;
   }
-  h2::after {
+  h2.it::after,
+  .subtitle-tit::after,
+  .res-bbs-box .news-bbs h2::after,
+  .found-box .xy-list .title::after,
+  .user-main .u_p_set dl.ziliao_dl dt h2::after {
     background: #005083 !important;
   }
-  h2 a {
+  h2.it a,
+  .subtitle-tit a,
+  .res-bbs-box .news-bbs h2 a,
+  .found-box .xy-list .title a,
+  .user-main .u_p_set dl.ziliao_dl dt h2 a {
     color: #607d8b !important;
   }
   .res-form textarea {
     width: 85% !important;
     height: 52px !important;
     padding: 4px 6px !important;
-    background: rgba(0, 0, 0, 0.1) !important;
-    border-color: #005083 !important;
-    border-radius: 4px !important;
-    outline: none !important;
     font-size: 14px !important;
-    color: inherit !important;
-  }
-  .res-form textarea:hover, .res-form textarea:focus {
-    border-color: #006fb6 !important;
   }
   .res-form .submit {
     width: 10% !important;
     vertical-align: baseline !important;
-    background: #005083 !important;
-    border: 1px solid #005083 !important;
-    color: #d9d9d9 !important;
-  }
-  .res-form .submit:hover {
-    background: #006fb6 !important;
   }
   .res-form p:last-child {
     margin-top: 6px !important;
@@ -207,6 +243,7 @@
   }
   .bbs-list {
     padding-top: 25px !important;
+    color: #607d8b !important;
   }
   .bbs-list li {
     border-color: rgba(255, 255, 255, 0.05) !important;
@@ -259,6 +296,8 @@
     color: #005083;
   }
   .middle-box .top24 li a {
+    display: inline-block;
+    width: 170px;
     color: inherit;
   }
   .middle-box #focus ul#tabs {
@@ -299,6 +338,9 @@
   }
   .middle-box .today-play .jobs-hr li a {
     color: inherit;
+  }
+  .middle-box .top-news li .fl-img > a img {
+    margin: 0 !important;
   }
   .middle-box .top-news li .fl-info h3 a {
     color: inherit;
@@ -389,11 +431,7 @@
   }
   .user-form .user-login .input-txt {
     padding: 0 10px;
-    background: rgba(0, 0, 0, 0.1);
-    box-shadow: none;
-    border-color: rgba(255, 255, 255, 0.1);
     font-family: "Source Han Mono SC", "Noto Sans Mono CJK SC", "Source Code Pro", "Noto Mono", "Roboto Mono", "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC", "PingFang SC", "Microsoft YaHei UI", system-ui, -apple-system, monospace;
-    color: inherit;
   }
   .user-form .user-login p label,
   .user-form .user-login li label strong,
@@ -420,6 +458,84 @@
   .user-form .user-login p.c {
     color: #607d8b;
   }
+  .middle-box .user-main .u_intro .u_s_intro h2.f_u0 {
+    color: #8c8c8c;
+  }
+  .middle-box .user-main #form_basic > div > span,
+  .middle-box .user-main .u_s_intro .u_acount_a1 .sp1,
+  .middle-box .user-main .u_s_intro .u_acount_a1 .sp2,
+  .middle-box .user-main .u_s_intro .u_acount_a1 .sp3,
+  .middle-box .user-main .u_p_set .ziliao_dl dd,
+  .middle-box .user-main .ziliao_ul li label,
+  .middle-box .user-main .u_s_intro div.f4,
+  .middle-box .user-main .u_p_set div.f4,
+  .middle-box .user-main .upgrade_vip form strong {
+    color: #607d8b;
+  }
+  .middle-box .user-main .u_p_set #upgrade_by_point_form ul.ziliao_ul li span b font,
+  .middle-box .user-main .u_p_set #upgrade_by_code_form ul.ziliao_ul li span b font {
+    color: #607d8b !important;
+  }
+  .middle-box .user-main .u_s_intro .u_acount_a1 .sp1 font,
+  .middle-box .user-main .u_s_intro .u_acount_a1 .sp2 font,
+  .middle-box .user-main .u_s_intro .u_acount_a1 .sp3 font,
+  .middle-box .user-main .u_p_set .ziliao_dl dd.edit-username-notice a,
+  .middle-box .user-main .u_p_set ul.ziliao_ul li font,
+  .middle-box .user-main .ziliao_ul li font.f_u0,
+  .middle-box .user-main .u_p_set #upgrade_by_code_form ul.ziliao_ul li a.howto {
+    color: #005083;
+  }
+  .middle-box .user-main .u_p_set ul.ziliao_ul li #unbind_btn {
+    color: #005083 !important;
+  }
+  .middle-box .user-main .upgrade-item dl.upgrade_vip a.my_verify_code {
+    color: #8c8c8c;
+  }
+  .middle-box .user-main .ziliao_ul li .pwd-requirements,
+  .middle-box .user-main .u_p_set ul.ziliao_ul li font[color="#EF4238"],
+  .middle-box .user-main .u_p_set #upgrade_by_code_form ul.ziliao_ul li font[color="red"] {
+    color: brown !important;
+  }
+  .middle-box .user-main .upgrade_vip .buy-notice {
+    background: transparent;
+    border-color: brown;
+    color: brown;
+  }
+  .middle-box .user-main .u_p_set .upgrade_vip dd {
+    margin-top: 15px;
+  }
+  .middle-box .user-main .u_p_set dl.ziliao_dl dt {
+    border-color: rgba(255, 255, 255, 0.05);
+  }
+  .middle-box .user-main .u_p_set dl.ziliao_dl dt h2 {
+    border: none;
+  }
+  .middle-box .user-main .upgrade-item .upgrade-pop {
+    top: -160px !important;
+    background: rgba(0, 0, 0, 0.9);
+    box-shadow: none;
+    border: 5px solid rgba(255, 255, 255, 0.15);
+  }
+  .middle-box .user-main .upgrade-item .upgrade-pop p {
+    color: #607d8b;
+  }
+  .middle-box .user-main .upgrade-item .upgrade-pop p.tc strong {
+    color: #8c8c8c;
+  }
+  .middle-box .user-main .upgrade-item .upgrade-pop p.f3 {
+    border-color: #005083;
+    color: #005083;
+  }
+  .middle-box .user-main .upgrade-item .upgrade-pop p.f7 {
+    color: brown;
+  }
+  .middle-box .user-main .upgrade-item .upgrade-pop .button a {
+    background: rgba(52, 116, 249, 0.05);
+    color: #d9d9d9 !important;
+  }
+  .middle-box .user-main .upgrade-item .upgrade-pop .button .btn1 {
+    background: rgba(52, 116, 249, 0.25);
+  }
   .middle-box .box {
     background: rgba(0, 0, 0, 0.2);
   }
@@ -445,7 +561,6 @@
   }
   .middle-box .res-view-top .view-left .resource-con li strong {
     color: #607d8b;
-    font-weight: 400;
   }
   .middle-box .res-view-top .view-left .resource-con li a.f3 {
     color: inherit;
@@ -530,10 +645,9 @@
     border: 1px solid rgba(255, 255, 255, 0.05);
   }
   .middle-box .res-imgs-box .res-imgs-left .view-res-list .view-res-tips h3 a.f3 {
+    display: inline-block;
+    width: 100%;
     color: inherit;
-  }
-  .middle-box .res-imgs-box .res-imgs-left .view-res-list .view-res-tips h3 a.f3 strong {
-    font-weight: 400;
   }
   .middle-box .res-imgs-box .res-imgs-right .sametyle-list .title a {
     color: inherit;
@@ -576,7 +690,7 @@
     padding: 5px 0 10px 0;
   }
   .middle-box .subtitle-box .area-left .subtitle-topdown ul li {
-    padding: 2px 15px;
+    padding: 2px 0;
   }
   .middle-box .subtitle-box .area-left .subtitle-topdown ul li:hover {
     background: rgba(0, 0, 0, 0.75);
@@ -585,6 +699,9 @@
     color: #005083;
   }
   .middle-box .subtitle-box .area-left .subtitle-topdown ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 0 15px;
     color: inherit;
   }
   .middle-box .subtitle-box .area-left .subtitle-list ul {
@@ -603,6 +720,69 @@
   .middle-box .subtitle-box .area-left .subtitle-list ul li .list_b p:first-child {
     color: inherit;
   }
+  .middle-box .subtitle-box .subtitle-ralate .fl-info {
+    color: #607d8b;
+  }
+  .middle-box .subtitle-box .subtitle-con {
+    margin-bottom: 15px;
+    padding: 0 20px 20px 20px;
+    color: #607d8b;
+  }
+  .middle-box .subtitle-box .subtitle-con .subtitle-info li {
+    color: #607d8b;
+  }
+  .middle-box .subtitle-box .subtitle-con .subtitle-info li:last-child {
+    display: none;
+  }
+  .middle-box .subtitle-box .subtitle-con .subtitle-info li label {
+    color: #607d8b;
+  }
+  .middle-box .subtitle-box .subtitle-con .subtitle-links {
+    width: 100%;
+    height: 3em;
+    margin: 20px auto;
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 20px;
+    line-height: 3em;
+  }
+  .middle-box .subtitle-box .subtitle-con .subtitle-links:hover {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .middle-box .subtitle-box .subtitle-con .subtitle-links a {
+    display: inline-block;
+    width: 100%;
+    line-height: inherit;
+  }
+  .middle-box .subtitle-box .subtitle-con .subtitle-links a strong {
+    color: #8c8c8c;
+  }
+  .middle-box .usercenter-box .user-menu {
+    width: 154px;
+    height: 600px;
+    background: rgba(0, 0, 0, 0.2);
+    border-right: 2px solid rgba(255, 255, 255, 0.05);
+  }
+  .middle-box .usercenter-box .user-menu a {
+    background: rgba(52, 116, 249, 0.05);
+    color: #607d8b;
+  }
+  .middle-box .usercenter-box .user-menu a.cur, .middle-box .usercenter-box .user-menu a:hover {
+    background: rgba(52, 116, 249, 0.25);
+  }
+  .middle-box .fav-tab {
+    padding-bottom: 18px;
+    border-color: rgba(255, 255, 255, 0.05);
+  }
+  .middle-box .fav-tab a {
+    padding: 8px;
+    color: #607d8b;
+  }
+  .middle-box .fav-tab a.selected, .middle-box .fav-tab a:hover {
+    background: rgba(52, 116, 249, 0.25);
+    color: inherit;
+  }
   .middle-box .article-tab {
     border-color: rgba(255, 255, 255, 0.05);
   }
@@ -611,13 +791,8 @@
     color: #607d8b;
   }
   .middle-box .article-tab a.selected, .middle-box .article-tab a:hover {
+    background: rgba(52, 116, 249, 0.25);
     color: inherit;
-  }
-  .middle-box .article-tab a.selected {
-    background: rgba(52, 116, 249, 0.15);
-  }
-  .middle-box .article-tab a:hover {
-    background: rgba(52, 116, 249, 0.1);
   }
   .middle-box .article-list .fl-info h3 a {
     color: #8c8c8c;
@@ -630,6 +805,9 @@
   }
   .middle-box .sidebar-article li {
     border-color: rgba(255, 255, 255, 0.05);
+  }
+  .middle-box .information-tit.tc {
+    color: inherit;
   }
   .middle-box .information-desc * {
     font-family: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC", "PingFang SC", "Microsoft YaHei UI", system-ui, -apple-system, sans-serif !important;
