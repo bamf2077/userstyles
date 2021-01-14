@@ -9,7 +9,7 @@
 @name:en 💡 TURN OFF THE LIGHT, YYeTs!
 @name 💡 关灯，人人影视！
 @namespace franciszhao
-@version 2.3.2-alpha.2
+@version 2.3.2-beta.1
 @description:en An UserCSS stylesheet with dark theme for YYeTs.com.
 @description 一款适用于 YYeTs 人人影视系列网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
@@ -85,12 +85,27 @@ $border-radius: 4px;
     color: $color-text;
   }
 
-  // 首页-标题栏
+  a,
+  .f3 {
+    &:hover {
+      color: $color-link;
+    }
+  }
+
+  .box .box {
+    background: transparent !important;
+  }
+
+  * {
+    transition: color 0.25s, background-color 0.5s, boder-color 0.5s;
+  }
+
+  // 通用-标题栏
   .header {
     background: $color-black-050;
   }
 
-  // 首页-标题栏-搜索框
+  // 通用-标题栏-搜索框
   .search-box {
     $width-searchbar: 300px;
 
@@ -101,7 +116,7 @@ $border-radius: 4px;
       background: $color-black-010;
       border-color: $color-link;
       border-radius: $border-radius !important;
-      color: $color-text;
+      color: inherit;
     }
 
     //提交按钮
@@ -130,7 +145,7 @@ $border-radius: 4px;
       }
 
       a {
-        color: $color-text;
+        color: inherit;
       }
 
       a:hover {
@@ -147,7 +162,7 @@ $border-radius: 4px;
         width: 100%;
         padding: 0;
         background: none !important;
-        color: $color-text;
+        color: inherit;
 
         &:not(:last-child) {
           margin-bottom: 5px;
@@ -156,12 +171,12 @@ $border-radius: 4px;
     }
   }
 
-  // 首页-标题栏-顶部链接
+  // 通用-标题栏-顶部链接
   .zzhu,
   .app_link a,
   .top-login,
   .top-login-before a {
-    color: $color-text !important;
+    color: inherit !important;
   }
 
   .top-login-before {
@@ -170,17 +185,17 @@ $border-radius: 4px;
     }
 
     a {
-      color: $color-text;
+      color: inherit;
     }
   }
 
-  // 首页-标题栏-滚动通知
+  // 通用-标题栏-滚动通知
   .notice {
     background: $color-black-050;
-    color: $color-text;
+    color: inherit;
 
     strong {
-      color: $color-text;
+      color: inherit;
     }
 
     a {
@@ -192,12 +207,12 @@ $border-radius: 4px;
     }
   }
 
-  // 首页-导航栏
+  // 通用-导航栏
   .menu-box {
     background: linear-gradient(180deg, $color-black-050 0%, transparent 100%);
 
     a {
-      color: $color-text;
+      color: inherit;
     }
 
     a.cur,
@@ -211,213 +226,16 @@ $border-radius: 4px;
     }
   }
 
-  // 首页-热门下载、今日播出、影视资讯、热门话题、最新发布、评测推荐、全球上映、最后更新、新剧推荐、好站推荐
-  .top24,
-  .today-play,
-  .top-news,
-  .wonder-comment,
-  .lastest-release,
-  .short-comment,
-  .world-playing,
-  .top-update,
-  .top-tv,
-  .friendlinks {
-    background: $color-black-020 !important;
-
-    h2.it {
-      border-color: $color-white-005;
-      color: $color-link;
-
-      &::after {
-        background: $color-link;
-      }
-
-      a {
-        color: $color-info;
-      }
-    }
-  }
-
-  // 首页-热门下载
-  .top24 {
-    li {
-      &:hover {
-        background: $color-black-075;
-      }
-
-      a {
-        color: $color-text;
-      }
-    }
-  }
-
-  // 首页-今日播出
-  .today-play {
-    .list {
-      margin: 0;
-      border-color: $color-white-005;
-
-      li {
-        margin: 0;
-
-        a {
-          padding: 4px 20px;
-          color: $color-text;
-
-          &:hover {
-            background: $color-black-075;
-          }
-
-          .fl-info h3 a {
-            color: $color-text;
-
-            &:hover {
-              color: $color-link;
-            }
-          }
-        }
-      }
-    }
-
-    .jobs-hr li a {
-      color: $color-text;
-    }
-  }
-
-  // 首页-影视资讯
-  .top-news {
-    li .fl-info h3 {
-      a {
-        color: $color-text;
-      }
-
-      span {
-        color: $color-info;
-      }
-
-      .f3 {
-        color: $color-link;
-      }
-    }
-  }
-
-  // 首页-热门话题
-  .wonder-comment {
-    .commentBox {
-      height: 726px;
-      padding: 13px 0;
-
-      li .fl-info {
-        color: $color-info;
-
-        h3 a {
-          color: $color-link;
-        }
-
-        .ico {
-          color: $color-text;
-
-          .use-act {
-            color: $color-info;
-          }
-        }
-      }
-    }
-  }
-
-  // 首页-最新发布
-  .lastest-release {
-    .f4 {
-      color: $color-info;
-    }
-  }
-
-  // 首页-评测推荐
-  .short-comment {
-    li {
-      .fl-info {
-        h3 a {
-          color: $color-text;
-        }
-
-        p {
-          color: $color-info;
-        }
-      }
-    }
-  }
-
-  // 首页-全球上映
-  .world-playing {
-    .list-playing {
-      width: 320px;
-
-      a {
-        background: $color-black-010;
-      }
-
-      li.cur a,
-      li a:hover {
-        background: $color-black-050;
-        color: $color-link;
-
-        &::before {
-          width: 6px;
-          background: $color-link;
-        }
-      }
-    }
-
-    .con-playing {
-      color: $color-info;
-
-      li:nth-of-type(1) a,
-      li:nth-of-type(2) a,
-      li:nth-of-type(3) a,
-      li:nth-of-type(4) a,
-      li:nth-of-type(5) a,
-      li:nth-of-type(6) a {
-        color: $color-text;
-
-        &:hover {
-          color: $color-link;
-        }
-      }
-    }
-  }
-
-  // 最后更新
-  .top-update {
-    li .t a {
-      color: $color-text;
-    }
-  }
-
-  // 新剧推荐
-  .top-tv {
-    li .fl-info h3 a {
-      color: $color-text;
-    }
-  }
-
-  // 首页-好站推荐
-  .friendlinks {
-    .imgs li {
-      background: $color-black-010;
-      border-color: $color-white-005;
-    }
-  }
-
-  // 首页-页脚
+  // 通用-页脚
   .footer {
     height: auto;
     padding: 40px 0;
     background: linear-gradient(180deg, transparent 0%, $color-black-075 100%);
-    color: $color-text;
+    color: inherit;
 
     a {
       min-width: auto;
-      color: $color-text;
+      color: inherit;
 
       &:not(:last-child) {
         margin-right: 16px;
@@ -429,6 +247,234 @@ $border-radius: 4px;
     }
   }
 
+  // 首页
+  .middle-box {
+    // 热门下载、今日播出、影视资讯、热门话题、最新发布、评测推荐、全球上映、最后更新、新剧推荐、好站推荐
+    .top24,
+    .today-play,
+    .top-news,
+    .wonder-comment,
+    .lastest-release,
+    .short-comment,
+    .world-playing,
+    .top-update,
+    .top-tv,
+    .friendlinks {
+      background: transparent;
+
+      h2.it {
+        border-color: $color-white-005;
+        color: $color-link;
+
+        &::after {
+          background: $color-link;
+        }
+
+        a {
+          color: $color-info;
+        }
+      }
+    }
+
+    // 热门下载
+    .top24 {
+      li {
+        &:hover {
+          background: $color-black-075;
+
+          a {
+            color: $color-link;
+          }
+        }
+
+        a {
+          color: inherit;
+        }
+      }
+    }
+
+    // 焦点图
+    #focus {
+      ul#tabs {
+        background: $color-black-075;
+
+        li a {
+          filter: brightness(80%);
+        }
+      }
+
+      ul#output {
+        h2 {
+          color: inherit;
+        }
+      }
+    }
+
+    // 今日播出
+    .today-play {
+      background: $color-black-020;
+
+      .box {
+        background: transparent !important;
+      }
+
+      .list {
+        margin: 0;
+        border-color: $color-white-005;
+
+        li {
+          margin: 0;
+
+          a {
+            padding: 4px 20px;
+            color: inherit;
+
+            &:hover {
+              background: $color-black-075;
+              color: $color-link;
+            }
+
+            .fl-info h3 a {
+              color: inherit;
+
+              &:hover {
+                color: $color-link;
+              }
+            }
+          }
+        }
+      }
+
+      .jobs-hr li a {
+        color: inherit;
+      }
+    }
+
+    // 影视资讯
+    .top-news {
+      li .fl-info h3 {
+        a {
+          color: inherit;
+        }
+
+        span {
+          color: $color-info;
+        }
+
+        .f3 {
+          color: $color-link;
+        }
+      }
+    }
+
+    // 热门话题
+    .wonder-comment {
+      .commentBox {
+        height: 726px;
+        margin: 13px 0;
+
+        li .fl-info {
+          color: $color-info;
+
+          h3 a {
+            color: $color-link;
+          }
+
+          .ico {
+            color: inherit;
+
+            .use-act {
+              color: $color-info;
+            }
+          }
+        }
+      }
+    }
+
+    // 最新发布
+    .lastest-release {
+      .f4 {
+        color: $color-info;
+      }
+    }
+
+    // 评测推荐
+    .short-comment {
+      li {
+        .fl-info {
+          h3 a {
+            color: inherit;
+          }
+
+          p {
+            color: $color-info;
+          }
+        }
+      }
+    }
+
+    // 全球上映
+    .world-playing {
+      .list-playing {
+        width: 320px;
+
+        a {
+          background: $color-black-010;
+        }
+
+        li.cur a,
+        li a:hover {
+          background: $color-black-050;
+          color: $color-link;
+
+          &::before {
+            width: 6px;
+            background: $color-link;
+          }
+        }
+      }
+
+      .con-playing {
+        color: $color-info;
+
+        li:nth-of-type(1) a,
+        li:nth-of-type(2) a,
+        li:nth-of-type(3) a,
+        li:nth-of-type(4) a,
+        li:nth-of-type(5) a,
+        li:nth-of-type(6) a {
+          color: $color-text;
+
+          &:hover {
+            color: $color-link;
+          }
+        }
+      }
+    }
+
+    // 最后更新
+    .top-update {
+      li .t a {
+        color: $color-text;
+      }
+    }
+
+    // 新剧推荐
+    .top-tv {
+      li .fl-info h3 a {
+        color: inherit;
+      }
+    }
+
+    // 好站推荐
+    .friendlinks {
+      .imgs li {
+        background: $color-black-010;
+        border-color: $color-white-005;
+      }
+    }
+  }
+
   // 登录页
   .user-form {
     background: $color-black-020;
@@ -436,7 +482,7 @@ $border-radius: 4px;
     .it {
       background: $color-black-025;
       border: none;
-      color: $color-text;
+      color: inherit;
     }
 
     .user-login {
@@ -446,7 +492,7 @@ $border-radius: 4px;
         box-shadow: none;
         border-color: $color-white-010;
         font-family: $font-mono, monospace;
-        color: $color-text;
+        color: inherit;
       }
 
       p label,
@@ -455,13 +501,13 @@ $border-radius: 4px;
       li.a label font.f1,
       li.b a.f1,
       li.b font.f14 {
-        color: $color-text;
+        color: inherit;
       }
 
       li.b input.btn3 {
         background: $color-black-010;
         border: 1px solid $color-white-010;
-        color: $color-text;
+        color: inherit;
 
         &:hover {
           background: $color-black-050;
@@ -484,11 +530,13 @@ $border-radius: 4px;
   // 资源页
   .middle-box {
     .box {
-      background: transparent;
+      background: $color-black-020;
     }
 
     // 资源页-简介区
     .res-view-top {
+      background: transparent !important;
+
       .view-left,
       .view-right {
         background: $color-black-020;
@@ -496,14 +544,18 @@ $border-radius: 4px;
 
       .view-left {
         .resource-tit {
+          color: $color-text;
+
           h2,
           p {
-            color: $color-text;
+            color: inherit;
           }
         }
 
         .resource-con {
           li {
+            color: $color-text;
+
             span {
               color: $color-info;
             }
@@ -514,7 +566,7 @@ $border-radius: 4px;
             }
 
             a.f3 {
-              color: $color-text;
+              color: inherit;
 
               &:hover {
                 color: $color-link;
@@ -537,7 +589,7 @@ $border-radius: 4px;
           .score-con {
             li {
               border-color: $color-white-005;
-              color: $color-text;
+              color: inherit;
 
               p,
               font.f4,
@@ -595,7 +647,7 @@ $border-radius: 4px;
               height: 3em;
               font-size: 20px;
               line-height: 3em;
-              color: $color-text;
+              color: inherit;
             }
 
             p {
@@ -620,7 +672,7 @@ $border-radius: 4px;
               }
 
               a.f3 {
-                color: $color-text;
+                color: inherit;
 
                 strong {
                   font-weight: 400;
@@ -635,6 +687,12 @@ $border-radius: 4px;
         .r-it {
           a.corner {
             color: $color-info;
+          }
+        }
+
+        .sametyle-list {
+          .title a {
+            color: inherit;
           }
         }
       }
@@ -666,7 +724,7 @@ $border-radius: 4px;
             background: $color-black-010;
             border-color: $color-link;
             border-radius: $border-radius !important;
-            color: $color-text;
+            color: inherit;
           }
 
           p:last-child {
@@ -677,7 +735,7 @@ $border-radius: 4px;
         .bbs-list {
           li {
             border-color: $color-white-005;
-            color: $color-text;
+            color: inherit;
 
             .info {
               .tit strong,
@@ -705,7 +763,7 @@ $border-radius: 4px;
           a {
             background: $color-black-010;
             border: 1px solid $color-white-010;
-            color: $color-text;
+            color: inherit;
 
             &.cur,
             &:hover {
@@ -734,6 +792,73 @@ $border-radius: 4px;
 
             &::after {
               background: $color-link;
+            }
+          }
+          .fl-info {
+            a .f14 {
+              color: inherit;
+            }
+
+            p {
+              color: $color-info;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // 字幕页
+  .middle-box {
+    .subtitle-box {
+      .subtitle-serch-sidebar {
+        a {
+          color: inherit;
+        }
+      }
+
+      .area-left {
+        .subtitle-topdown {
+          ul {
+            padding: 5px 0 10px 0;
+
+            li {
+              padding: 2px 15px;
+
+              &:hover {
+                background: $color-black-075;
+
+                a {
+                  color: $color-link;
+                }
+              }
+
+              a {
+                color: inherit;
+              }
+            }
+          }
+        }
+
+        .subtitle-list {
+          ul {
+            color: $color-info;
+
+            li {
+              border-color: $color-white-005;
+
+              a {
+                color: $color-text;
+              }
+
+              .list_b {
+                background-color: $color-black-010;
+                border: none;
+
+                p:first-child {
+                  color: inherit;
+                }
+              }
             }
           }
         }
