@@ -9,7 +9,7 @@
 @name:en 💡 TURN OFF THE LIGHT, YYeTs!
 @name 💡 关灯，人人影视！
 @namespace franciszhao
-@version 2.3.2-beta.1
+@version 2.3.2-beta.2
 @description:en An UserCSS stylesheet with dark theme for YYeTs.com.
 @description 一款适用于 YYeTs 人人影视系列网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
@@ -52,13 +52,6 @@
   .f3:hover {
     color: #005083;
   }
-  .box .box {
-    background: transparent !important;
-  }
-  * {
-    -webkit-transition: color 0.25s, background-color 0.5s, boder-color 0.5s;
-    transition: color 0.25s, background-color 0.5s, boder-color 0.5s;
-  }
   .header {
     background: rgba(0, 0, 0, 0.5);
   }
@@ -71,9 +64,15 @@
     border-radius: 4px !important;
     color: inherit;
   }
+  .search-box .keywords:hover, .search-box .keywords:focus {
+    border-color: #006fb6;
+  }
   .search-box .submit {
     background: url("http://js.jstucdn.com/images/saerch-submit.png") center center/24px 24px no-repeat, #005083;
     border-radius: 0 4px 4px 0;
+  }
+  .search-box .submit:hover {
+    background: url("http://js.jstucdn.com/images/saerch-submit.png") center center/24px 24px no-repeat, #006fb6;
   }
   .search-box .key-result,
   .search-box #top_search_list {
@@ -165,6 +164,82 @@
   .footer a:hover {
     color: #005083;
   }
+  .box .box {
+    background: transparent !important;
+  }
+  h2 {
+    border-color: rgba(255, 255, 255, 0.05) !important;
+    color: #005083 !important;
+  }
+  h2::after {
+    background: #005083 !important;
+  }
+  h2 a {
+    color: #607d8b !important;
+  }
+  .res-form textarea {
+    width: 85% !important;
+    height: 52px !important;
+    padding: 4px 6px !important;
+    background: rgba(0, 0, 0, 0.1) !important;
+    border-color: #005083 !important;
+    border-radius: 4px !important;
+    outline: none !important;
+    font-size: 14px !important;
+    color: inherit !important;
+  }
+  .res-form textarea:hover, .res-form textarea:focus {
+    border-color: #006fb6 !important;
+  }
+  .res-form .submit {
+    width: 10% !important;
+    vertical-align: baseline !important;
+    background: #005083 !important;
+    border: 1px solid #005083 !important;
+    color: #d9d9d9 !important;
+  }
+  .res-form .submit:hover {
+    background: #006fb6 !important;
+  }
+  .res-form p:last-child {
+    margin-top: 6px !important;
+    color: brown !important;
+  }
+  .bbs-list {
+    padding-top: 25px !important;
+  }
+  .bbs-list li {
+    border-color: rgba(255, 255, 255, 0.05) !important;
+    color: inherit !important;
+  }
+  .bbs-list li .info .tit strong,
+  .bbs-list li .info .reicos p.fl {
+    color: #8c8c8c !important;
+  }
+  .bbs-list li .info p,
+  .bbs-list li .info .reicos p.fr a {
+    color: #607d8b !important;
+  }
+  .bbs-list li .info .bbs-reply {
+    background: rgba(0, 0, 0, 0.1) !important;
+  }
+  .bbs-list li .info .bbs-reply .arrow {
+    filter: brightness(9%) !important;
+  }
+  .pages a {
+    background: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: inherit;
+  }
+  .pages a.cur, .pages a:hover {
+    background: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    color: inherit;
+  }
+  * {
+    -webkit-transition: color 0.25s, background-color 0.5s, border-color 0.5s;
+    transition: color 0.25s, background-color 0.5s, border-color 0.5s;
+  }
   .middle-box .top24,
   .middle-box .today-play,
   .middle-box .top-news,
@@ -176,43 +251,6 @@
   .middle-box .top-tv,
   .middle-box .friendlinks {
     background: transparent;
-  }
-  .middle-box .top24 h2.it,
-  .middle-box .today-play h2.it,
-  .middle-box .top-news h2.it,
-  .middle-box .wonder-comment h2.it,
-  .middle-box .lastest-release h2.it,
-  .middle-box .short-comment h2.it,
-  .middle-box .world-playing h2.it,
-  .middle-box .top-update h2.it,
-  .middle-box .top-tv h2.it,
-  .middle-box .friendlinks h2.it {
-    border-color: rgba(255, 255, 255, 0.05);
-    color: #005083;
-  }
-  .middle-box .top24 h2.it::after,
-  .middle-box .today-play h2.it::after,
-  .middle-box .top-news h2.it::after,
-  .middle-box .wonder-comment h2.it::after,
-  .middle-box .lastest-release h2.it::after,
-  .middle-box .short-comment h2.it::after,
-  .middle-box .world-playing h2.it::after,
-  .middle-box .top-update h2.it::after,
-  .middle-box .top-tv h2.it::after,
-  .middle-box .friendlinks h2.it::after {
-    background: #005083;
-  }
-  .middle-box .top24 h2.it a,
-  .middle-box .today-play h2.it a,
-  .middle-box .top-news h2.it a,
-  .middle-box .wonder-comment h2.it a,
-  .middle-box .lastest-release h2.it a,
-  .middle-box .short-comment h2.it a,
-  .middle-box .world-playing h2.it a,
-  .middle-box .top-update h2.it a,
-  .middle-box .top-tv h2.it a,
-  .middle-box .friendlinks h2.it a {
-    color: #607d8b;
   }
   .middle-box .top24 li:hover {
     background: rgba(0, 0, 0, 0.75);
@@ -449,6 +487,10 @@
   .middle-box .res-imgs-box .res-imgs-right .r-it::after {
     background: #005083;
   }
+  .middle-box .res-imgs-box .res-imgs-left .r-it a.corner,
+  .middle-box .res-imgs-box .res-imgs-right .r-it a.corner {
+    color: #607d8b;
+  }
   .middle-box .res-imgs-box .res-imgs-left {
     width: 734px;
   }
@@ -493,9 +535,6 @@
   .middle-box .res-imgs-box .res-imgs-left .view-res-list .view-res-tips h3 a.f3 strong {
     font-weight: 400;
   }
-  .middle-box .res-imgs-box .res-imgs-right .r-it a.corner {
-    color: #607d8b;
-  }
   .middle-box .res-imgs-box .res-imgs-right .sametyle-list .title a {
     color: inherit;
   }
@@ -505,53 +544,6 @@
   }
   .middle-box .res-bbs-box .res-bbs-left {
     width: 734px;
-  }
-  .middle-box .res-bbs-box .res-bbs-left .news-bbs h2 {
-    border-color: rgba(255, 255, 255, 0.05);
-    color: #005083;
-  }
-  .middle-box .res-bbs-box .res-bbs-left .news-bbs h2 a {
-    color: #607d8b;
-  }
-  .middle-box .res-bbs-box .res-bbs-left .news-bbs h2::after {
-    background: #005083;
-  }
-  .middle-box .res-bbs-box .res-bbs-left .res-form .fl {
-    background: rgba(0, 0, 0, 0.1);
-    border-color: #005083;
-    border-radius: 4px !important;
-    color: inherit;
-  }
-  .middle-box .res-bbs-box .res-bbs-left .res-form p:last-child {
-    margin-top: 6px;
-  }
-  .middle-box .res-bbs-box .res-bbs-left .bbs-list li {
-    border-color: rgba(255, 255, 255, 0.05);
-    color: inherit;
-  }
-  .middle-box .res-bbs-box .res-bbs-left .bbs-list li .info .tit strong,
-  .middle-box .res-bbs-box .res-bbs-left .bbs-list li .info .reicos p.fl {
-    color: inherit;
-  }
-  .middle-box .res-bbs-box .res-bbs-left .bbs-list li .info p,
-  .middle-box .res-bbs-box .res-bbs-left .bbs-list li .info .reicos p.fr a {
-    color: #607d8b;
-  }
-  .middle-box .res-bbs-box .res-bbs-left .bbs-list li .info .bbs-reply {
-    background: rgba(0, 0, 0, 0.1);
-  }
-  .middle-box .res-bbs-box .res-bbs-left .bbs-list li .info .bbs-reply .arrow {
-    filter: brightness(9%);
-  }
-  .middle-box .res-bbs-box .res-bbs-left .pages a {
-    background: rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    color: inherit;
-  }
-  .middle-box .res-bbs-box .res-bbs-left .pages a.cur, .middle-box .res-bbs-box .res-bbs-left .pages a:hover {
-    background: rgba(0, 0, 0, 0.5);
-    border: 1px solid rgba(255, 255, 255, 0.05);
-    color: inherit;
   }
   .middle-box .res-bbs-box .res-bbs-right {
     width: 286px;
@@ -574,7 +566,10 @@
   .middle-box .res-bbs-box .res-bbs-right .res-users .fl-info p {
     color: #607d8b;
   }
-  .middle-box .subtitle-box .subtitle-serch-sidebar a {
+  .middle-box .subtitle-box .subtitle-serch-sidebar li:nth-child(2n + 1) {
+    border-color: rgba(255, 255, 255, 0.05);
+  }
+  .middle-box .subtitle-box .subtitle-serch-sidebar li a {
     color: inherit;
   }
   .middle-box .subtitle-box .area-left .subtitle-topdown ul {
@@ -607,6 +602,38 @@
   }
   .middle-box .subtitle-box .area-left .subtitle-list ul li .list_b p:first-child {
     color: inherit;
+  }
+  .middle-box .article-tab {
+    border-color: rgba(255, 255, 255, 0.05);
+  }
+  .middle-box .article-tab a {
+    padding: 8px;
+    color: #607d8b;
+  }
+  .middle-box .article-tab a.selected, .middle-box .article-tab a:hover {
+    color: inherit;
+  }
+  .middle-box .article-tab a.selected {
+    background: rgba(52, 116, 249, 0.15);
+  }
+  .middle-box .article-tab a:hover {
+    background: rgba(52, 116, 249, 0.1);
+  }
+  .middle-box .article-list .fl-info h3 a {
+    color: #8c8c8c;
+  }
+  .middle-box .article-list .fl-info p {
+    color: #607d8b;
+  }
+  .middle-box .article-list .fl-info p a {
+    color: #8c8c8c;
+  }
+  .middle-box .sidebar-article li {
+    border-color: rgba(255, 255, 255, 0.05);
+  }
+  .middle-box .information-desc * {
+    font-family: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC", "PingFang SC", "Microsoft YaHei UI", system-ui, -apple-system, sans-serif !important;
+    font-size: 16px !important;
   }
 }
 

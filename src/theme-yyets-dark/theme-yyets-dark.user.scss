@@ -9,7 +9,7 @@
 @name:en 💡 TURN OFF THE LIGHT, YYeTs!
 @name 💡 关灯，人人影视！
 @namespace franciszhao
-@version 2.3.2-beta.1
+@version 2.3.2-beta.2
 @description:en An UserCSS stylesheet with dark theme for YYeTs.com.
 @description 一款适用于 YYeTs 人人影视系列网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
@@ -53,7 +53,7 @@ $border-radius: 4px;
 /* 人人影视主站 */
 @-moz-document regexp('https?://[\w-\.]*rrys\d{4}\.com/.*'), regexp('https?://[\w-\.]*zmz\d{4}\.com/.*'), regexp('https?://[\w-\.]*zimuzu\.\w+/.*')
 {
-  // 通用
+  // 通用-字体
   body {
     background-color: $color-bg;
     color: $color-text;
@@ -92,14 +92,6 @@ $border-radius: 4px;
     }
   }
 
-  .box .box {
-    background: transparent !important;
-  }
-
-  * {
-    transition: color 0.25s, background-color 0.5s, boder-color 0.5s;
-  }
-
   // 通用-标题栏
   .header {
     background: $color-black-050;
@@ -117,12 +109,21 @@ $border-radius: 4px;
       border-color: $color-link;
       border-radius: $border-radius !important;
       color: inherit;
+
+      &:hover,
+      &:focus {
+        border-color: lighten($color-link, 10%);
+      }
     }
 
     //提交按钮
     .submit {
       background: url("http://js.jstucdn.com/images/saerch-submit.png") center center/24px 24px no-repeat, $color-link;
       border-radius: 0 $border-radius $border-radius 0;
+
+      &:hover {
+        background: url("http://js.jstucdn.com/images/saerch-submit.png") center center/24px 24px no-repeat, lighten($color-link, 10%);
+      }
     }
 
     // 热门搜索、搜索候选
@@ -247,6 +248,112 @@ $border-radius: 4px;
     }
   }
 
+  // 通用-模块外形
+  .box .box {
+    background: transparent !important;
+  }
+
+  // 通用-模块标题
+  h2 {
+    border-color: $color-white-005 !important;
+    color: $color-link !important;
+
+    &::after {
+      background: $color-link !important;
+    }
+
+    a {
+      color: $color-info !important;
+    }
+  }
+
+  // 通用-评论区
+  .res-form {
+    textarea {
+      width: 85% !important;
+      height: 52px !important;
+      padding: 4px 6px !important;
+      background: $color-black-010 !important;
+      border-color: $color-link !important;
+      border-radius: $border-radius !important;
+      outline: none !important;
+      font-size: 14px !important;
+      color: inherit !important;
+
+      &:hover,
+      &:focus {
+        border-color: lighten($color-link, 10%) !important;
+      }
+    }
+
+    .submit {
+      width: 10% !important;
+      vertical-align: baseline !important;
+      background: $color-link !important;
+      border: 1px solid $color-link !important;
+      color: $color-link-nav !important;
+
+      &:hover {
+        background: lighten($color-link, 10%) !important;
+      }
+    }
+
+    p:last-child {
+      margin-top: 6px !important;
+      color: brown !important;
+    }
+  }
+
+  .bbs-list {
+    padding-top: 25px !important;
+
+    li {
+      border-color: $color-white-005 !important;
+      color: inherit !important;
+
+      .info {
+        .tit strong,
+        .reicos p.fl {
+          color: $color-text !important;
+        }
+
+        p,
+        .reicos p.fr a {
+          color: $color-info !important;
+        }
+
+        .bbs-reply {
+          background: $color-black-010 !important;
+
+          .arrow {
+            filter: brightness(9%) !important;
+          }
+        }
+      }
+    }
+  }
+
+  // 通用-页码
+  .pages {
+    a {
+      background: $color-black-010;
+      border: 1px solid $color-white-010;
+      color: inherit;
+
+      &.cur,
+      &:hover {
+        background: $color-black-050;
+        border: 1px solid $color-white-005;
+        color: inherit;
+      }
+    }
+  }
+
+  // 通用-动画效果
+  * {
+    transition: color 0.25s, background-color 0.5s, border-color 0.5s;
+  }
+
   // 首页
   .middle-box {
     // 热门下载、今日播出、影视资讯、热门话题、最新发布、评测推荐、全球上映、最后更新、新剧推荐、好站推荐
@@ -261,19 +368,6 @@ $border-radius: 4px;
     .top-tv,
     .friendlinks {
       background: transparent;
-
-      h2.it {
-        border-color: $color-white-005;
-        color: $color-link;
-
-        &::after {
-          background: $color-link;
-        }
-
-        a {
-          color: $color-info;
-        }
-      }
     }
 
     // 热门下载
@@ -627,6 +721,10 @@ $border-radius: 4px;
           &::after {
             background: $color-link;
           }
+
+          a.corner {
+            color: $color-info;
+          }
         }
       }
 
@@ -684,12 +782,6 @@ $border-radius: 4px;
       }
 
       .res-imgs-right {
-        .r-it {
-          a.corner {
-            color: $color-info;
-          }
-        }
-
         .sametyle-list {
           .title a {
             color: inherit;
@@ -705,74 +797,6 @@ $border-radius: 4px;
 
       .res-bbs-left {
         width: 734px;
-
-        .news-bbs h2 {
-          border-color: $color-white-005;
-          color: $color-link;
-
-          a {
-            color: $color-info;
-          }
-
-          &::after {
-            background: $color-link;
-          }
-        }
-
-        .res-form {
-          .fl {
-            background: $color-black-010;
-            border-color: $color-link;
-            border-radius: $border-radius !important;
-            color: inherit;
-          }
-
-          p:last-child {
-            margin-top: 6px;
-          }
-        }
-
-        .bbs-list {
-          li {
-            border-color: $color-white-005;
-            color: inherit;
-
-            .info {
-              .tit strong,
-              .reicos p.fl {
-                color: inherit;
-              }
-
-              p,
-              .reicos p.fr a {
-                color: $color-info;
-              }
-
-              .bbs-reply {
-                background: $color-black-010;
-
-                .arrow {
-                  filter: brightness(9%);
-                }
-              }
-            }
-          }
-        }
-
-        .pages {
-          a {
-            background: $color-black-010;
-            border: 1px solid $color-white-010;
-            color: inherit;
-
-            &.cur,
-            &:hover {
-              background: $color-black-050;
-              border: 1px solid $color-white-005;
-              color: inherit;
-            }
-          }
-        }
       }
 
       .res-bbs-right {
@@ -794,6 +818,7 @@ $border-radius: 4px;
               background: $color-link;
             }
           }
+
           .fl-info {
             a .f14 {
               color: inherit;
@@ -812,8 +837,14 @@ $border-radius: 4px;
   .middle-box {
     .subtitle-box {
       .subtitle-serch-sidebar {
-        a {
-          color: inherit;
+        li {
+          &:nth-child(2n + 1) {
+            border-color: $color-white-005;
+          }
+
+          a {
+            color: inherit;
+          }
         }
       }
 
@@ -862,6 +893,58 @@ $border-radius: 4px;
             }
           }
         }
+      }
+    }
+  }
+
+  // 资讯页
+  .middle-box {
+    .article-tab {
+      border-color: $color-white-005;
+
+      a {
+        padding: 8px;
+        color: $color-info;
+
+        &.selected,
+        &:hover {
+          color: inherit;
+        }
+
+        &.selected {
+          background: $color-button;
+        }
+
+        &:hover {
+          background: $color-button-hover;
+        }
+      }
+    }
+
+    .article-list {
+      .fl-info {
+        h3 a {
+          color: $color-text;
+        }
+
+        p {
+          color: $color-info;
+
+          a {
+            color: $color-text;
+          }
+        }
+      }
+    }
+
+    .sidebar-article li {
+      border-color: $color-white-005;
+    }
+
+    .information-desc {
+      * {
+        font-family: $font-sans, sans-serif !important;
+        font-size: 16px !important;
       }
     }
   }
