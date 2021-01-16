@@ -16,6 +16,7 @@
 @x-note 这个版本没什么需要重点说明的事项……
 @x-note --------------------
 ==/UserStyle== */
+
 @-moz-document regexp('https?://[\w-\.]*rrys\d{4}\.com/.*'), regexp('https?://[\w-\.]*zmz\d{4}\.com/.*'), regexp('https?://[\w-\.]*zimuzu\.\w+/.*')
 {
   body {
