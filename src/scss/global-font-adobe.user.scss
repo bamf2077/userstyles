@@ -1,21 +1,8 @@
-/*!
- *                     重要说明
- *
- * Adobe 自 3.028 版本将 Source Sans Pro 更名为 Source Sans 3，
- * 本样式表自 2.2.3 版本开始跟进更名，同时适配思源等宽 (Source Han Mono) 字体，
- * 并将思源黑体等配套字体最新版本一并打包，请务必重新下载安装，以免字体无法正常显示。
- * 下载地址：https://n2o.io/p/user.css/
- *
- * 温馨提示：为避免覆盖安装可能出现的新旧版本共存、旧版占据硬盘空间导致的浪费问题，
- *         建议重启系统后首先删除旧字体，再次重启系统后安装新字体。
- *
- */
-
 /* ==UserStyle==
 @name:en Global Font: Adobe-branded
 @name 全局思源黑体
 @namespace franciszhao
-@version 2.2.6
+@version 2.2.7
 @description:en An UserCSS stylesheet to replace all fonts on web pages with Adobe-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用 Adobe 品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -23,9 +10,20 @@
 @supportURL https://n2o.io/go?page=user.css
 @license MIT
 @preprocessor default
+@x-note --------------------
+@x-note * 重 要 说 明 *
+@x-note
+@x-note Adobe 自 3.028 版本将 Source Sans Pro 更名为 Source Sans 3，
+@x-note 本样式表自 2.2.3 版本开始跟进更名，同时适配思源等宽 (Source Han Mono) 字体，
+@x-note 并将思源黑体等配套字体最新版本一并打包，请务必重新下载安装，以免字体无法正常显示。
+@x-note 下载地址：https://n2o.io/p/user.css/
+@x-note
+@x-note 温馨提示：为避免覆盖安装可能出现的新旧版本共存、旧版占据硬盘空间导致的浪费问题，
+@x-note 建议重启系统后首先删除旧字体，再次重启系统后安装新字体。
+@x-note --------------------
 ==/UserStyle== */
 
-/* 1 全局字体定义 */
+// 1 全局字体定义
 
 // 1.1 默认字体
 $font-system: system-ui, -apple-system;
@@ -90,7 +88,7 @@ $font-mono-k-fallback: "Noto Sans Mono CJK KR", $font-mono, $font-mono-fallback,
 // 1.5 绘文字字体
 $font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
 
-/* 2 字体设定 */
+// 2 字体设定
 
 // 2.1 通用页面规则
 html {
@@ -124,7 +122,10 @@ html {
   // 2.2.1 中文、简体中文 (中国)、简体中文 (新加坡)
   &:lang(zh),
   &:lang(zh-CN),
-  &:lang(zh-SG) {
+  &:lang(zh-SG),
+  &:lang(cmn-Hans),
+  &:lang(zh-cmn-Hans),
+  &:lang(zh-Hans) {
     body {
       font-family: $font-sans-sc, $font-sans-sc-fallback, sans-serif, $font-emoji;
       quotes: "“" "”";
@@ -139,7 +140,10 @@ html {
   }
 
   // 2.2.2 繁体中文 (台湾)
-  &:lang(zh-TW) {
+  &:lang(zh-TW),
+  &:lang(cmn-Hant),
+  &:lang(zh-cmn-Hant),
+  &:lang(zh-Hant) {
     body {
       font-family: $font-sans-tc, $font-sans-tc-fallback, sans-serif, $font-emoji;
       quotes: "「" "」";
@@ -155,7 +159,9 @@ html {
 
   // 2.2.3 繁体中文 (香港)、繁体中文 (澳门)
   &:lang(zh-HK),
-  &:lang(zh-MO) {
+  &:lang(zh-MO),
+  &:lang(yue-Hant),
+  &:lang(zh-yue-Hant) {
     body {
       font-family: $font-sans-hc, $font-sans-hc-fallback, sans-serif, $font-emoji;
       quotes: "「" "」";
@@ -291,7 +297,7 @@ html {
   }
 }
 
-/* 3 字体替换 */
+// 3 字体替换
 
 // 3.1 拉丁字母、西里尔字母、希腊文、阿拉伯字母
 @each $font-serif-replace in ("Georgia", "Times", "Time New Roman") {
@@ -376,7 +382,7 @@ html {
   }
 }
 
-/* 4 特定网站适配 */
+// 4 特定网站适配
 
 @-moz-document domain("baidu.com") {
   * {
@@ -476,4 +482,4 @@ url-prefix("https://www.baidu.com/?tn=")
   }
 }
 
-/* 真的到底了 */
+// 真的到底了

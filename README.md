@@ -11,7 +11,7 @@
 
 ## 项目
 
-### [全局思源黑体](https://github.com/francis-zhao/user.css/tree/master/global-font-adobe)
+### [全局思源黑体](https://github.com/francis-zhao/user.css/blob/master/src/scss/global-font-adobe.user.scss)
 
 一款使用 [Adobe 品牌字体](https://github.com/francis-zhao/user.css/wiki/字体清单#adobe_fonts)替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 
@@ -21,7 +21,7 @@
 
 <br>
 
-### [全局微软雅黑](https://github.com/francis-zhao/user.css/tree/master/global-font-microsoft)
+### [全局微软雅黑](https://github.com/francis-zhao/user.css/blob/master/src/scss/global-font-microsoft.user.scss)
 
 一款使用[微软品牌字体](https://github.com/francis-zhao/user.css/wiki/字体清单#msft_fonts)替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 
@@ -31,7 +31,7 @@
 
 <br>
 
-### [💡 关灯，人人影视！](https://github.com/francis-zhao/user.css/tree/master/theme-yyets-dark)
+### [💡 关灯，人人影视！](https://github.com/francis-zhao/user.css/blob/master/src/scss/theme-yyets-dark.user.scss)
 
 一款适用于 YYeTs 人人影视系列网站的深色主题用户样式表。
 
