@@ -2,7 +2,7 @@
 @name:en 💡 TURN OFF THE LIGHT, YYeTs!
 @name 💡 关灯，人人影视！
 @namespace franciszhao
-@version 2.3.2
+@version 2.3.3
 @description:en An UserCSS stylesheet with dark theme for YYeTs.com.
 @description 一款适用于 YYeTs 人人影视系列网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
@@ -696,6 +696,15 @@
   .middle-box .res-bbs-box .res-bbs-left {
     width: 734px;
   }
+  .middle-box .res-bbs-box .res-bbs-left .news-bbs h2 span a.btn2 {
+    background: rgba(52, 116, 249, 0.05);
+    border: none;
+  }
+  .middle-box .res-bbs-box .res-bbs-left .news-bbs h2 span a.btn3 {
+    background: rgba(52, 116, 249, 0.25);
+    border: none;
+    color: #8c8c8c !important;
+  }
   .middle-box .res-bbs-box .res-bbs-left .news-bbs ul {
     border-color: rgba(255, 255, 255, 0.05);
   }
@@ -1000,6 +1009,7 @@
     background: rgba(0, 0, 0, 0.2);
   }
   .middle-box .found-box .xy-tags a {
+    border-radius: 3px;
     color: #607d8b;
   }
   .middle-box .found-box .xy-tags a:hover,
@@ -1007,10 +1017,10 @@
     background: rgba(52, 116, 249, 0.25);
     color: #8c8c8c;
   }
-  .middle-box .found-box .a0::after {
+  .middle-box .found-box .xy-list .a0::after {
     background: #005083 !important;
   }
-  .middle-box .found-box .a0 strong {
+  .middle-box .found-box .xy-list .a0 strong {
     color: #8c8c8c;
   }
   .middle-box .found-box p {
@@ -1112,15 +1122,26 @@
     color: #607d8b;
   }
   .middle-box .play-schedule td dl dd {
+    padding: 0;
     background: rgba(0, 0, 0, 0.2);
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+  }
+  .middle-box .play-schedule td dl dd:hover {
+    background: rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
   }
   .middle-box .play-schedule td dl dd.even {
     background: rgba(255, 255, 255, 0.01);
+  }
+  .middle-box .play-schedule td dl dd.even:hover {
+    background: rgba(255, 255, 255, 0.05);
   }
   .middle-box .play-schedule td dl dd.even a {
     color: #086a87;
   }
   .middle-box .play-schedule td dl dd a {
+    padding: 6px 8px;
     color: #8c8c8c;
   }
   .middle-box .play-schedule td.cur dl dt {
@@ -1140,6 +1161,148 @@
   }
   .middle-box .play-schedule span.new {
     background: #003a8c;
+  }
+  .middle-box .qiudang-box .qd-right {
+    width: 770px;
+  }
+  .middle-box .qiudang-box .res-users .fl-info {
+    width: 180px;
+  }
+  .middle-box .qiudang-box .qd-search {
+    height: 65px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px 8px 0 0;
+  }
+  .middle-box .qiudang-box .qd-search form {
+    top: 25px;
+    background: transparent;
+  }
+  .middle-box .qiudang-box .qd-search form input[type="text"] {
+    padding: 4px 10px;
+    border-width: 1px;
+    border-style: solid;
+    text-indent: unset;
+  }
+  .middle-box .qiudang-box .qd-search form input[type="image"] {
+    width: 35px;
+    height: 35px;
+    top: 0;
+    right: -21px;
+  }
+  .middle-box .qiudang-box .qd-desc {
+    padding: 20px 30px;
+    border-radius: 0;
+  }
+  .middle-box .qiudang-box .qd-btn {
+    border-radius: 0;
+  }
+  .middle-box .qiudang-box .qd-btn a.bg-btn {
+    border-radius: 4px;
+    text-indent: 40px;
+    font-family: inherit;
+    filter: brightness(60%);
+  }
+  .middle-box .qiudang-box .qd-sum {
+    border-radius: 0 0 8px 8px;
+    border-color: rgba(255, 255, 255, 0.05);
+  }
+  .middle-box .qiudang-box .qd-sum span {
+    border-color: rgba(52, 116, 249, 0.25);
+  }
+  .middle-box .qiudang-box .qd-list {
+    padding: 20px 30px 10px 30px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  .middle-box .qiudang-box .qd-list li {
+    padding: 10px 0 20px 0;
+    background: transparent;
+    border-top: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  .middle-box .qiudang-box .qd-list li:last-child {
+    border-bottom: none;
+  }
+  .middle-box .qiudang-box .qd-list .fl-info {
+    width: 590px;
+  }
+  .middle-box .qiudang-box .qd-list .fl-info h3 .tag {
+    padding: 0 5px;
+    line-height: 21px;
+    color: #8c8c8c;
+  }
+  .middle-box .qiudang-box .qd-list .fl-info h3 .mov {
+    background: rgba(52, 116, 249, 0.25);
+  }
+  .middle-box .qiudang-box .qd-list .fl-info p {
+    color: #607d8b;
+  }
+  .middle-box .qiudang-box .qd-list .fl-info .qd-ico {
+    border-radius: 4px;
+    font-family: inherit;
+    color: #d9d9d9;
+  }
+  .middle-box .qiudang-box .qd-list .fl-info .qd-ico2 {
+    background: #4d0d68;
+  }
+  .middle-box .qiudang-box .qd-list .fl-info .qd-ico3 {
+    background: rgba(52, 116, 249, 0.25);
+  }
+  .middle-box .qiudang-box .qd-view {
+    border: none;
+    font-size: 14px;
+  }
+  .middle-box .qiudang-box .qd-view h2 {
+    padding: 20px 10px;
+    border-color: rgba(255, 255, 255, 0.05);
+    font-size: 18px;
+  }
+  .middle-box .qiudang-box .qd-view .res-users {
+    margin: 0;
+  }
+  .middle-box .qiudang-box .qd-view .res-users .f4 {
+    color: #607d8b;
+  }
+  .middle-box .qiudang-box .qd-view .qd-detial {
+    margin-left: 30px;
+    color: #607d8b;
+  }
+  .middle-box .qiudang-box .qd-form {
+    padding: 20px;
+  }
+  .middle-box .qiudang-box .qd-form textarea {
+    width: 97%;
+    padding: 6px 10px;
+    font-size: 14px;
+  }
+  .middle-box .qiudang-box .qd-form .submit input {
+    margin-top: 10px;
+    background: url(http://js.jstucdn.com/images/bg-btn.png) no-repeat !important;
+    font-family: inherit;
+    filter: brightness(60%);
+  }
+  .middle-box .qiudang-box .bbs-list {
+    margin-top: 25px;
+    padding: 0 !important;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+  .middle-box .qiudang-box .bbs-list .tit {
+    color: #607d8b;
+  }
+  .middle-box .qiudang-box .bbs-list2 .avatar {
+    top: 22px;
+    left: 20px;
+  }
+  .middle-box .qiudang-box .qd-msglist .answer .corner {
+    background: #4d0d68;
+    color: #d9d9d9;
+  }
+  .middle-box .qiudang-box .qd-msglist li {
+    margin: 0;
+    padding: 20px 20px 20px 80px;
+    background: transparent;
+    border: none;
   }
   .middle-box .article-item h2.it {
     height: 62px !important;
@@ -1174,6 +1337,46 @@
   .middle-box .article-item .article-top li strong a {
     display: inline-block;
     width: 785px;
+  }
+  .middle-box .article-box {
+    background: transparent;
+  }
+  .middle-box .article-box .article-box-head {
+    background: rgba(52, 116, 249, 0.25);
+    border: none;
+    color: #8c8c8c;
+  }
+  .middle-box .article-box h2.it {
+    background: rgba(0, 0, 0, 0.2) !important;
+    color: #8c8c8c !important;
+  }
+  .middle-box .article-box .article-con {
+    border-radius: 0 0 8px 8px;
+  }
+  .middle-box .article-box .article-con .article-share {
+    color: #607d8b;
+  }
+  .middle-box .article-box .article-con .article-share .s-split {
+    background: #607d8b;
+  }
+  .middle-box .article-box .article-con .article-share #share_link {
+    display: none;
+  }
+  .middle-box .article-box .article-con .article-resume {
+    color: #8c8c8c;
+  }
+  .middle-box .article-box .article-con .article-resume p a {
+    color: #005083 !important;
+  }
+  .middle-box .article-box .article-con .article-resume p a u {
+    text-decoration: none;
+  }
+  .middle-box .article-box .article-con .article-resume p a span {
+    color: #005083 !important;
+  }
+  .middle-box .article-box .article-con .article-tip {
+    border-color: brown;
+    color: brown;
   }
 }
 
