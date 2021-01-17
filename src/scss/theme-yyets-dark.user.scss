@@ -2,7 +2,7 @@
 @name:en 💡 TURN OFF THE LIGHT, YYeTs!
 @name 💡 关灯，人人影视！
 @namespace franciszhao
-@version 2.3.2
+@version 2.3.3
 @description:en An UserCSS stylesheet with dark theme for YYeTs.com.
 @description 一款适用于 YYeTs 人人影视系列网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
@@ -976,23 +976,38 @@ $border-radius: 4px;
       .res-bbs-left {
         width: 734px;
 
-        .news-bbs ul {
-          border-color: $color-white-005;
-
-          li {
-            border-color: $color-white-005;
-            color: $color-text;
-
-            span {
-              color: $color-info !important;
-
-              &.tag3 {
-                margin-right: 6px;
-              }
+        .news-bbs {
+          h2 {
+            span a.btn2 {
+              background: $color-button;
+              border: none;
             }
 
-            a {
+            span a.btn3 {
+              background: $color-button-hover;
+              border: none;
+              color: $color-text !important;
+            }
+          }
+
+          ul {
+            border-color: $color-white-005;
+
+            li {
+              border-color: $color-white-005;
               color: $color-text;
+
+              span {
+                color: $color-info !important;
+
+                &.tag3 {
+                  margin-right: 6px;
+                }
+              }
+
+              a {
+                color: $color-text;
+              }
             }
           }
         }
@@ -1420,6 +1435,7 @@ $border-radius: 4px;
         background: $color-black-020;
 
         a {
+          border-radius: 3px;
           color: $color-info;
 
           &:hover,
@@ -1430,13 +1446,15 @@ $border-radius: 4px;
         }
       }
 
-      .a0 {
-        &::after {
-          background: $color-link !important;
-        }
+      .xy-list {
+        .a0 {
+          &::after {
+            background: $color-link !important;
+          }
 
-        strong {
-          color: $color-text;
+          strong {
+            color: $color-text;
+          }
         }
       }
 
@@ -1584,10 +1602,21 @@ $border-radius: 4px;
           }
 
           dd {
+            padding: 0;
             background: $color-black-020;
+            transition: all 0.25s;
+
+            &:hover {
+              background: $color-black-050;
+              transform: scale(1.2);
+            }
 
             &.even {
               background: rgba(255, 255, 255, 0.01);
+
+              &:hover {
+                background: rgba(255, 255, 255, 0.05);
+              }
 
               a {
                 color: #086a87;
@@ -1595,6 +1624,7 @@ $border-radius: 4px;
             }
 
             a {
+              padding: 6px 8px;
               color: $color-text;
             }
           }
@@ -1622,6 +1652,191 @@ $border-radius: 4px;
 
       span.new {
         background: #003a8c;
+      }
+    }
+  }
+
+  // 求档
+  .middle-box {
+    .qiudang-box {
+      .qd-right {
+        width: 770px;
+      }
+
+      .res-users .fl-info {
+        width: 180px;
+      }
+
+      .qd-search {
+        height: 65px;
+        background: $color-black-020;
+        border-radius: 8px 8px 0 0;
+
+        form {
+          top: 25px;
+          background: transparent;
+
+          input[type="text"] {
+            padding: 4px 10px;
+            border-width: 1px;
+            border-style: solid;
+            text-indent: unset;
+          }
+
+          input[type="image"] {
+            width: 35px;
+            height: 35px;
+            top: 0;
+            right: -21px;
+          }
+        }
+      }
+
+      .qd-desc {
+        padding: 20px 30px;
+        border-radius: 0;
+      }
+
+      .qd-btn {
+        border-radius: 0;
+
+        a.bg-btn {
+          border-radius: 4px;
+          text-indent: 40px;
+          font-family: inherit;
+          filter: brightness(60%);
+        }
+      }
+
+      .qd-sum {
+        border-radius: 0 0 8px 8px;
+        border-color: $color-white-005;
+
+        span {
+          border-color: $color-button-hover;
+        }
+      }
+
+      .qd-list {
+        padding: 20px 30px 10px 30px;
+        background: $color-black-020;
+        border-radius: 8px;
+
+        li {
+          padding: 10px 0 20px 0;
+          background: transparent;
+          border-top: none;
+          border-bottom: 1px solid $color-white-005;
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+
+        .fl-info {
+          width: 590px;
+
+          h3 {
+            .tag {
+              padding: 0 5px;
+              line-height: 21px;
+              color: $color-text;
+            }
+
+            .mov {
+              background: $color-button-hover;
+            }
+          }
+
+          p {
+            color: $color-info;
+          }
+
+          .qd-ico {
+            border-radius: $border-radius;
+            font-family: inherit;
+            color: $color-link-nav;
+          }
+
+          .qd-ico2 {
+            background: darken(#bf57ea, 40%);
+          }
+
+          .qd-ico3 {
+            background: $color-button-hover;
+          }
+        }
+      }
+
+      .qd-view {
+        border: none;
+        font-size: 14px;
+
+        h2 {
+          padding: 20px 10px;
+          border-color: $color-white-005;
+          font-size: 18px;
+        }
+
+        .res-users {
+          margin: 0;
+
+          .f4 {
+            color: $color-info;
+          }
+        }
+
+        .qd-detial {
+          margin-left: 30px;
+          color: $color-info;
+        }
+      }
+
+      .qd-form {
+        padding: 20px;
+
+        textarea {
+          width: 97%;
+          padding: 6px 10px;
+          font-size: 14px;
+        }
+
+        .submit input {
+          margin-top: 10px;
+          background: url(http://js.jstucdn.com/images/bg-btn.png) no-repeat !important;
+          font-family: inherit;
+          filter: brightness(60%);
+        }
+      }
+
+      .bbs-list {
+        margin-top: 25px;
+        padding: 0 !important;
+        background: $color-black-020;
+        border-radius: 8px;
+
+        .tit {
+          color: $color-info;
+        }
+      }
+
+      .bbs-list2 .avatar {
+        top: 22px;
+        left: 20px;
+      }
+
+      .qd-msglist {
+        .answer .corner {
+          background: darken(#bf57ea, 40%);
+          color: $color-link-nav;
+        }
+
+        li {
+          margin: 0;
+          padding: 20px 20px 20px 80px;
+          background: transparent;
+          border: none;
+        }
       }
     }
   }
@@ -1669,6 +1884,58 @@ $border-radius: 4px;
               width: 785px;
             }
           }
+        }
+      }
+    }
+
+    .article-box {
+      background: transparent;
+
+      .article-box-head {
+        background: $color-button-hover;
+        border: none;
+        color: $color-text;
+      }
+
+      h2.it {
+        background: $color-black-020 !important;
+        color: $color-text !important;
+      }
+
+      .article-con {
+        border-radius: 0 0 8px 8px;
+
+        .article-share {
+          color: $color-info;
+
+          .s-split {
+            background: $color-info;
+          }
+
+          #share_link {
+            display: none;
+          }
+        }
+
+        .article-resume {
+          color: $color-text;
+
+          p a {
+            color: $color-link !important;
+
+            u {
+              text-decoration: none;
+            }
+
+            span {
+              color: $color-link !important;
+            }
+          }
+        }
+
+        .article-tip {
+          border-color: brown;
+          color: brown;
         }
       }
     }
