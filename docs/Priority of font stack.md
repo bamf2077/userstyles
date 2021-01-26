@@ -1,25 +1,27 @@
-[<kbd>简体中文</kbd>](https://github.com/francis-zhao/user.css/wiki/字体栈优先级 "字体栈优先级")
-[<kbd>**`* English *`**</kbd>](https://github.com/francis-zhao/user.css/wiki/Priority-of-font-stack "Priority of font stack")
+[<kbd>简体中文</kbd>](https://github.com/francis-zhao/userstyles/wiki/字体栈优先级 "字体栈优先级")
+[<kbd>**`* English *`**</kbd>](https://github.com/francis-zhao/userstyles/wiki/Priority-of-font-stack "Priority of font stack")
 
 <h1 id="index">Index</h1>
 
 1. [Global Font: Adobe-branded](#adobe_fonts)
-    1. [Chinese, Simplified Chinese (China), Simplified Chinese (Singapore)](#adobe_fonts_sc)
-    2. [Traditional Chinese (Taiwan)](#adobe_fonts_tc)
-    3. [Traditional Chinese (Hong Kong), Traditional Chinese (Macao)](#adobe_fonts_hc)
-    4. [Japanese](#adobe_fonts_j)
-    5. [Korean](#adobe_fonts_k)
-    6. [Latin, Cyrillic, Greek, Khmer](#adobe_fonts_lcgv)
-    7. [Arabic, Hebrew, Thai](#adobe_fonts_aht)
+
+   1. [Chinese, Simplified Chinese (China), Simplified Chinese (Singapore)](#adobe_fonts_sc)
+   2. [Traditional Chinese (Taiwan)](#adobe_fonts_tc)
+   3. [Traditional Chinese (Hong Kong), Traditional Chinese (Macao)](#adobe_fonts_hc)
+   4. [Japanese](#adobe_fonts_j)
+   5. [Korean](#adobe_fonts_k)
+   6. [Latin, Cyrillic, Greek, Khmer](#adobe_fonts_lcgv)
+   7. [Arabic, Hebrew, Thai](#adobe_fonts_aht)
 
 2. [Global Font: Microsoft-branded](#msft_fonts)
-    1. [Chinese, Simplified Chinese (China), Simplified Chinese (Singapore)](#msft_fonts_sc)
-    2. [Traditional Chinese (Taiwan)](#msft_fonts_tc)
-    3. [Traditional Chinese (Hong Kong), Traditional Chinese (Macao)](#msft_fonts_hc)
-    4. [Japanese](#msft_fonts_j)
-    5. [Korean](#msft_fonts_k)
-    6. [Latin, Cyrillic, Greek](#msft_fonts_lcg)
-    7. [Arabic, Hebrew, Thai, Khmer](#msft_fonts_ahtv)
+
+   1. [Chinese, Simplified Chinese (China), Simplified Chinese (Singapore)](#msft_fonts_sc)
+   2. [Traditional Chinese (Taiwan)](#msft_fonts_tc)
+   3. [Traditional Chinese (Hong Kong), Traditional Chinese (Macao)](#msft_fonts_hc)
+   4. [Japanese](#msft_fonts_j)
+   5. [Korean](#msft_fonts_k)
+   6. [Latin, Cyrillic, Greek](#msft_fonts_lcg)
+   7. [Arabic, Hebrew, Thai, Khmer](#msft_fonts_ahtv)
 
 ---
 

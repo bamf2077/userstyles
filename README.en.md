@@ -1,7 +1,7 @@
-[<kbd>简体中文</kbd>](https://github.com/francis-zhao/user.css#readme "读我")
-[<kbd>**`* English *`**</kbd>](https://github.com/francis-zhao/user.css/blob/master/README.en.md "Readme")
+[<kbd>简体中文</kbd>](https://github.com/francis-zhao/userstyles#readme "读我")
+[<kbd>**`* English *`**</kbd>](https://github.com/francis-zhao/userstyles/blob/master/README.en.md "Readme")
 
-# user.css
+# UserStyles
 
 ## Introduction
 
@@ -11,29 +11,29 @@ A bunch of handy user stylesheets with multiple purposes, applicable to userstyl
 
 ## Items
 
-### [Global Font: Adobe-branded](https://github.com/francis-zhao/user.css/blob/master/src/scss/global-font-adobe.user.scss)
+### [Global Font: Adobe-branded](https://github.com/francis-zhao/userstyles/blob/master/src/scss/global-font-adobe.user.scss)
 
-An UserCSS stylesheet to replace all fonts on web pages with [Adobe-branded fonts](https://github.com/francis-zhao/user.css/wiki/Font-lists#adobe_fonts), brings you a more unified and beautiful visual style.
+An user stylesheet to replace all fonts on web pages with [Adobe-branded fonts](https://github.com/francis-zhao/userstyles/wiki/Font-lists#adobe_fonts), brings you a more unified and beautiful visual style.
 
-You may get more details about what priority of fonts this stylesheet uses from [here](https://github.com/francis-zhao/user.css/wiki/Priority-of-font-stack).
+You may get more details about what priority of fonts this stylesheet uses from [here](https://github.com/francis-zhao/userstyles/wiki/Priority-of-font-stack).
 
 You can subscribe to the latest stable version as `user.css` or `user.js` via [Greasy Fork](https://greasyfork.org/scripts/419362 "Greasy Fork").
 
 <br>
 
-### [Global Font: Microsoft-branded](https://github.com/francis-zhao/user.css/blob/master/src/scss/global-font-microsoft.user.scss)
+### [Global Font: Microsoft-branded](https://github.com/francis-zhao/userstyles/blob/master/src/scss/global-font-microsoft.user.scss)
 
-An UserCSS stylesheet to replace all fonts on web pages with [Microsoft-branded fonts](https://github.com/francis-zhao/user.css/wiki/Font-lists#msft_fonts), brings you a more unified and beautiful visual style.
+An user stylesheet to replace all fonts on web pages with [Microsoft-branded fonts](https://github.com/francis-zhao/userstyles/wiki/Font-lists#msft_fonts), brings you a more unified and beautiful visual style.
 
-You may get more details about what priority of fonts this stylesheet uses from [here](https://github.com/francis-zhao/user.css/wiki/Priority-of-font-stack).
+You may get more details about what priority of fonts this stylesheet uses from [here](https://github.com/francis-zhao/userstyles/wiki/Priority-of-font-stack).
 
 You can subscribe to the latest stable version as `user.css` or `user.js` via [Greasy Fork](https://greasyfork.org/scripts/419363 "Greasy Fork").
 
 <br>
 
-### [💡 TURN OFF THE LIGHT, YYeTs!](https://github.com/francis-zhao/user.css/blob/master/src/scss/theme-yyets-dark.user.scss)
+### [💡 TURN OFF THE LIGHT, YYeTs!](https://github.com/francis-zhao/userstyles/blob/master/src/scss/theme-yyets-dark.user.scss)
 
-An UserCSS stylesheet with dark theme for YYeTs.com.
+An user stylesheet with dark theme for YYeTs.com.
 
 You can subscribe to the latest stable version as `user.css` or `user.js` via [Greasy Fork](https://greasyfork.org/scripts/419366 "Greasy Fork").
 

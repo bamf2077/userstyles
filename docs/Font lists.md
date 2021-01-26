@@ -1,24 +1,27 @@
-[<kbd>简体中文</kbd>](https://github.com/francis-zhao/user.css/wiki/字体清单 "字体清单")
-[<kbd>**`* English *`**</kbd>](https://github.com/francis-zhao/user.css/wiki/Font-lists "Font lists")
+[<kbd>简体中文</kbd>](https://github.com/francis-zhao/userstyles/wiki/字体清单 "字体清单")
+[<kbd>**`* English *`**</kbd>](https://github.com/francis-zhao/userstyles/wiki/Font-lists "Font lists")
 
 
 <h1 id="index">Index</h1>
 
 1. [Adobe-branded fonts](#adobe_fonts)
-    1. [Overview](#adobe_fonts_ov)
-    2. [Sans serif typeface](#adobe_fonts_sans)
-    3. [Serif typeface](#adobe_fonts_serif)
-    4. [Monospaced typeface](#adobe_fonts_mono)
+
+   1. [Overview](#adobe_fonts_ov)
+   2. [Sans serif typeface](#adobe_fonts_sans)
+   3. [Serif typeface](#adobe_fonts_serif)
+   4. [Monospaced typeface](#adobe_fonts_mono)
 
 2. [Microsoft-branded fonts](#msft_fonts)
-    1. [Overview](#msft_fonts_ov)
-    2. [Sans serif typeface](#msft_fonts_sans)
-    3. [Monospaced typeface](#msft_fonts_mono)
-    4. [Emoji typeface](#msft_fonts_emj)
+
+   1. [Overview](#msft_fonts_ov)
+   2. [Sans serif typeface](#msft_fonts_sans)
+   3. [Monospaced typeface](#msft_fonts_mono)
+   4. [Emoji typeface](#msft_fonts_emj)
 
 3. [Other-branded fonts](#other_fonts)
-    1. [Overview](#other_fonts_ov)
-    2. [Emoji typeface](#other_fonts_emj)
+
+   1. [Overview](#other_fonts_ov)
+   2. [Emoji typeface](#other_fonts_emj)
 
 ---
 
