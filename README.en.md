@@ -15,7 +15,7 @@ A bunch of handy user stylesheets with multiple purposes, applicable to userstyl
 
 An user stylesheet to replace all fonts on web pages with [Adobe-branded fonts](https://github.com/francis-zhao/userstyles/blob/master/docs/Font%20lists.md#adobe_fonts), brings you a more unified and beautiful visual style.
 
-You may get more details about what priority of fonts this stylesheet uses from [here](https://github.com/francis-zhao/userstyles/blob/master/docs/Priority%20of%20font%20stack.md).
+You may get more details about what priority of fonts this stylesheet uses from [here](https://github.com/francis-zhao/userstyles/blob/master/docs/Priority%20of%20font%20stack.md#adobe_fonts).
 
 You can subscribe to the latest stable version as `user.css` or `user.js` via [Greasy Fork](https://greasyfork.org/scripts/419362 "Greasy Fork").
 
@@ -25,7 +25,7 @@ You can subscribe to the latest stable version as `user.css` or `user.js` via [G
 
 An user stylesheet to replace all fonts on web pages with [Microsoft-branded fonts](https://github.com/francis-zhao/userstyles/blob/master/docs/Font%20lists.md#msft_fonts), brings you a more unified and beautiful visual style.
 
-You may get more details about what priority of fonts this stylesheet uses from [here](https://github.com/francis-zhao/userstyles/blob/master/docs/Priority%20of%20font%20stack.md).
+You may get more details about what priority of fonts this stylesheet uses from [here](https://github.com/francis-zhao/userstyles/blob/master/docs/Priority%20of%20font%20stack.md#msft_fonts).
 
 You can subscribe to the latest stable version as `user.css` or `user.js` via [Greasy Fork](https://greasyfork.org/scripts/419363 "Greasy Fork").
 
