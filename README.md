@@ -13,9 +13,9 @@
 
 ### [全局思源黑体](https://github.com/francis-zhao/userstyles/blob/master/src/scss/global-font-adobe.user.scss)
 
-一款使用 [Adobe 品牌字体](https://github.com/francis-zhao/userstyles/wiki/字体清单#adobe_fonts)替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
+一款使用 [Adobe 品牌字体](https://github.com/francis-zhao/userstyles/blob/master/docs/字体清单.md#adobe_fonts)替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 
-你可以在[这里](https://github.com/francis-zhao/userstyles/wiki/字体栈优先级)查看该样式表使用的字体的优先级详情。
+你可以在[这里](https://github.com/francis-zhao/userstyles/blob/master/docs/字体栈优先级.md)查看该样式表使用的字体的优先级详情。
 
 你可以在 [Greasy Fork](https://greasyfork.org/scripts/419362 "Greasy Fork") 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。
 
@@ -23,9 +23,9 @@
 
 ### [全局微软雅黑](https://github.com/francis-zhao/userstyles/blob/master/src/scss/global-font-microsoft.user.scss)
 
-一款使用[微软品牌字体](https://github.com/francis-zhao/userstyles/wiki/字体清单#msft_fonts)替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
+一款使用[微软品牌字体](https://github.com/francis-zhao/userstyles/blob/master/docs/字体清单.md#msft_fonts)替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 
-你可以在[这里](https://github.com/francis-zhao/userstyles/wiki/字体栈优先级)查看该样式表使用的字体的优先级详情。
+你可以在[这里](https://github.com/francis-zhao/userstyles/blob/master/docs/字体栈优先级.md)查看该样式表使用的字体的优先级详情。
 
 你可以在 [Greasy Fork](https://greasyfork.org/scripts/419363 "Greasy Fork") 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。
 

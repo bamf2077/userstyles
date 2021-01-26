@@ -1,5 +1,5 @@
-[<kbd>简体中文</kbd>](https://github.com/francis-zhao/userstyles/wiki/字体清单 "字体清单")
-[<kbd>**`* English *`**</kbd>](https://github.com/francis-zhao/userstyles/wiki/Font-lists "Font lists")
+[<kbd>简体中文</kbd>](https://github.com/francis-zhao/userstyles/blob/master/docs/字体清单.md "字体清单")
+[<kbd>**`* English *`**</kbd>](https://github.com/francis-zhao/userstyles/blob/master/docs/Font%20lists.md "Font lists")
 
 
 <h1 id="index">Index</h1>
