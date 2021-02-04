@@ -13,7 +13,7 @@
 @x-note --------------------
 @x-note * 重 要 说 明 *
 @x-note
-@x-note 人人影视倒了，再次强调了“永远不要鸡蛋放在同一只篮子里”的深刻教训！
+@x-note 人人影视倒了，再次强调了“永远不要把鸡蛋放在同一只篮子里”的深刻教训！
 @x-note 下面给大家提供一些我平时常用的宝藏资源网站：
 @x-note
 @x-note  1. RARBG - 欧美影视剧片源
@@ -49,13 +49,14 @@
 @x-note --------------------
 ==/UserStyle== */
 
-@-moz-document regexp('https?://[\w-\.]*rrys\d{4}\.com/.*'), regexp('https?://[\w-\.]*zmz\d{4}\.com/.*'), regexp('https?://[\w-\.]*zimuzu\.\w+/.*')
-{
+@-moz-document regexp("https?:\/\/[\w-\.]*rrys\d{4}\.com\/.*"),
+               regexp("https?:\/\/[\w-\.]*zmz\d{4}\.com\/.*"),
+               regexp("https?:\/\/[\w-\.]*zimuzu\.\w+\/.*") {
   body {
     background-color: #1f1f1f;
     color: #8c8c8c;
-    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC', 'PingFang SC',
-      'Microsoft YaHei UI', system-ui, -apple-system, sans-serif;
+    font-family: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC",
+      "PingFang SC", "Microsoft YaHei UI", system-ui, -apple-system, sans-serif;
   }
   button,
   input,
@@ -69,9 +70,10 @@
   kbd,
   pre,
   samp {
-    font-family: 'Source Han Mono SC', 'Noto Sans Mono CJK SC', 'Source Code Pro', 'Noto Mono',
-      'Roboto Mono', 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC', 'PingFang SC',
-      'Microsoft YaHei UI', system-ui, -apple-system, monospace;
+    font-family: "Source Han Mono SC", "Noto Sans Mono CJK SC",
+      "Source Code Pro", "Noto Mono", "Roboto Mono", "Source Han Sans SC",
+      "Noto Sans CJK SC", "HanHei SC", "PingFang SC", "Microsoft YaHei UI",
+      system-ui, -apple-system, monospace;
   }
   a,
   .f3,
@@ -102,8 +104,8 @@
   strong {
     font-weight: 400 !important;
   }
-  input[type='text'],
-  input[type='password'],
+  input[type="text"],
+  input[type="password"],
   select,
   textarea {
     background: rgba(0, 0, 0, 0.1) !important;
@@ -113,18 +115,18 @@
     color: #8c8c8c !important;
     outline: none !important;
   }
-  input[type='text']:hover,
-  input[type='text']:focus,
-  input[type='password']:hover,
-  input[type='password']:focus,
+  input[type="text"]:hover,
+  input[type="text"]:focus,
+  input[type="password"]:hover,
+  input[type="password"]:focus,
   select:hover,
   select:focus,
   textarea:hover,
   textarea:focus {
     border-color: #006fb6 !important;
   }
-  input[type='button'],
-  input[type='submit'],
+  input[type="button"],
+  input[type="submit"],
   .res-form .submit {
     background: #005083 !important;
     box-shadow: none !important;
@@ -133,8 +135,8 @@
     color: #d9d9d9 !important;
     outline: none !important;
   }
-  input[type='button']:hover,
-  input[type='submit']:hover,
+  input[type="button"]:hover,
+  input[type="submit"]:hover,
   .res-form .submit:hover {
     background: #006fb6 !important;
   }
@@ -148,14 +150,14 @@
     border-radius: 4px 0 0 4px !important;
   }
   .header .search-box .submit {
-    background: url('http://js.jstucdn.com/images/saerch-submit.png') center center/24px 24px
-        no-repeat,
+    background: url("http://js.jstucdn.com/images/saerch-submit.png") center
+        center/24px 24px no-repeat,
       #005083 !important;
     border-radius: 0 4px 4px 0 !important;
   }
   .header .search-box .submit:hover {
-    background: url('http://js.jstucdn.com/images/saerch-submit.png') center center/24px 24px
-        no-repeat,
+    background: url("http://js.jstucdn.com/images/saerch-submit.png") center
+        center/24px 24px no-repeat,
       #006fb6 !important;
   }
   .header .search-box .key-result,
@@ -218,7 +220,11 @@
     color: #005083;
   }
   .menu-box {
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, transparent 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      transparent 100%
+    );
   }
   .menu-box a {
     color: inherit;
@@ -226,7 +232,11 @@
   .menu-box a.cur,
   .menu-box a:hover {
     color: #d9d9d9;
-    background: linear-gradient(180deg, transparent 0%, rgba(255, 255, 255, 0.15) 100%);
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.15) 100%
+    );
   }
   .menu-box a.cur::after,
   .menu-box a:hover::after {
@@ -235,7 +245,11 @@
   .footer {
     height: auto;
     padding: 40px 0;
-    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+    background: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.75) 100%
+    );
     color: inherit;
   }
   .footer a {
@@ -476,9 +490,10 @@
   }
   .user-form .user-login .input-txt {
     padding: 0 10px;
-    font-family: 'Source Han Mono SC', 'Noto Sans Mono CJK SC', 'Source Code Pro', 'Noto Mono',
-      'Roboto Mono', 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC', 'PingFang SC',
-      'Microsoft YaHei UI', system-ui, -apple-system, monospace;
+    font-family: "Source Han Mono SC", "Noto Sans Mono CJK SC",
+      "Source Code Pro", "Noto Mono", "Roboto Mono", "Source Han Sans SC",
+      "Noto Sans CJK SC", "HanHei SC", "PingFang SC", "Microsoft YaHei UI",
+      system-ui, -apple-system, monospace;
   }
   .user-form .user-login p label,
   .user-form .user-login li label strong,
@@ -519,8 +534,24 @@
   .middle-box .user-main .upgrade_vip form strong {
     color: #607d8b;
   }
-  .middle-box .user-main .u_p_set #upgrade_by_point_form ul.ziliao_ul li span b font,
-  .middle-box .user-main .u_p_set #upgrade_by_code_form ul.ziliao_ul li span b font {
+  .middle-box
+    .user-main
+    .u_p_set
+    #upgrade_by_point_form
+    ul.ziliao_ul
+    li
+    span
+    b
+    font,
+  .middle-box
+    .user-main
+    .u_p_set
+    #upgrade_by_code_form
+    ul.ziliao_ul
+    li
+    span
+    b
+    font {
     color: #607d8b !important;
   }
   .middle-box .user-main .u_s_intro .u_acount_a1 .sp1 font,
@@ -529,7 +560,13 @@
   .middle-box .user-main .u_p_set .ziliao_dl dd.edit-username-notice a,
   .middle-box .user-main .u_p_set ul.ziliao_ul li font,
   .middle-box .user-main .ziliao_ul li font.f_u0,
-  .middle-box .user-main .u_p_set #upgrade_by_code_form ul.ziliao_ul li a.howto {
+  .middle-box
+    .user-main
+    .u_p_set
+    #upgrade_by_code_form
+    ul.ziliao_ul
+    li
+    a.howto {
     color: #005083;
   }
   .middle-box .user-main .u_p_set ul.ziliao_ul li #unbind_btn {
@@ -539,8 +576,14 @@
     color: #8c8c8c;
   }
   .middle-box .user-main .ziliao_ul li .pwd-requirements,
-  .middle-box .user-main .u_p_set ul.ziliao_ul li font[color='#EF4238'],
-  .middle-box .user-main .u_p_set #upgrade_by_code_form ul.ziliao_ul li font[color='red'] {
+  .middle-box .user-main .u_p_set ul.ziliao_ul li font[color="#EF4238"],
+  .middle-box
+    .user-main
+    .u_p_set
+    #upgrade_by_code_form
+    ul.ziliao_ul
+    li
+    font[color="red"] {
     color: brown !important;
   }
   .middle-box .user-main .upgrade_vip .buy-notice {
@@ -629,7 +672,13 @@
   .middle-box .res-view-top .view-left .resource-desc .t ul.fl {
     border-radius: 0;
   }
-  .middle-box .res-view-top .view-left .resource-desc .t ul.fl:hover li.selected {
+  .middle-box
+    .res-view-top
+    .view-left
+    .resource-desc
+    .t
+    ul.fl:hover
+    li.selected {
     border-radius: 0;
   }
   .middle-box .res-view-top .view-left .resource-desc .t ul li {
@@ -710,19 +759,40 @@
     line-height: 1;
     color: #607d8b;
   }
-  .middle-box .res-imgs-box .res-imgs-left .view-res-list .view-res-nolog p:not(:last-child),
-  .middle-box .res-imgs-box .res-imgs-left .view-res-list .view-res-tips p:not(:last-child) {
+  .middle-box
+    .res-imgs-box
+    .res-imgs-left
+    .view-res-list
+    .view-res-nolog
+    p:not(:last-child),
+  .middle-box
+    .res-imgs-box
+    .res-imgs-left
+    .view-res-list
+    .view-res-tips
+    p:not(:last-child) {
     margin-top: 20px;
   }
   .middle-box .res-imgs-box .res-imgs-left .view-res-list .view-res-tips h3 {
     background: rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
   }
-  .middle-box .res-imgs-box .res-imgs-left .view-res-list .view-res-tips h3:hover {
+  .middle-box
+    .res-imgs-box
+    .res-imgs-left
+    .view-res-list
+    .view-res-tips
+    h3:hover {
     background: rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(255, 255, 255, 0.05);
   }
-  .middle-box .res-imgs-box .res-imgs-left .view-res-list .view-res-tips h3 a.f3 {
+  .middle-box
+    .res-imgs-box
+    .res-imgs-left
+    .view-res-list
+    .view-res-tips
+    h3
+    a.f3 {
     display: inline-block;
     width: 100%;
     color: inherit;
@@ -765,7 +835,7 @@
   .middle-box .res-bbs-box .res-bbs-right {
     width: 286px;
   }
-  .middle-box .res-bbs-box .res-bbs-right div[style='margin-bottom:15px;'] {
+  .middle-box .res-bbs-box .res-bbs-right div[style="margin-bottom:15px;"] {
     display: none;
   }
   .middle-box .res-bbs-box .res-bbs-right .res-users .r-it {
@@ -872,8 +942,8 @@
     color: inherit;
   }
   .middle-box .information-desc * {
-    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC', 'PingFang SC',
-      'Microsoft YaHei UI', system-ui, -apple-system, sans-serif !important;
+    font-family: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC",
+      "PingFang SC", "Microsoft YaHei UI", system-ui, -apple-system, sans-serif !important;
     font-size: 16px !important;
   }
   .middle-box .subtitle-box .subtitle-serch-sidebar li:nth-child(2n + 1) {
@@ -917,7 +987,14 @@
     background-color: rgba(0, 0, 0, 0.1);
     border: none;
   }
-  .middle-box .subtitle-box .area-left .subtitle-list ul li .list_b p:first-child {
+  .middle-box
+    .subtitle-box
+    .area-left
+    .subtitle-list
+    ul
+    li
+    .list_b
+    p:first-child {
     color: inherit;
   }
   .middle-box .subtitle-box .subtitle-ralate .fl-info {
@@ -1035,7 +1112,14 @@
   .middle-box .resource-box .resource-list .resource-showlist li .fl-info h3 a {
     font-size: 18px;
   }
-  .middle-box .resource-box .resource-list .resource-showlist li .fl-info h3 .f4 {
+  .middle-box
+    .resource-box
+    .resource-list
+    .resource-showlist
+    li
+    .fl-info
+    h3
+    .f4 {
     font-weight: 400;
     color: #607d8b;
   }
@@ -1044,7 +1128,13 @@
   .middle-box .resource-box .resource-list .resource-showlist li .fl-info p {
     color: #607d8b;
   }
-  .middle-box .resource-box .resource-list .resource-showlist li .fl-info .ranking {
+  .middle-box
+    .resource-box
+    .resource-list
+    .resource-showlist
+    li
+    .fl-info
+    .ranking {
     color: brown;
   }
   .middle-box .found-box .xy-tags {
@@ -1219,13 +1309,13 @@
     top: 25px;
     background: transparent;
   }
-  .middle-box .qiudang-box .qd-search form input[type='text'] {
+  .middle-box .qiudang-box .qd-search form input[type="text"] {
     padding: 4px 10px;
     border-width: 1px;
     border-style: solid;
     text-indent: unset;
   }
-  .middle-box .qiudang-box .qd-search form input[type='image'] {
+  .middle-box .qiudang-box .qd-search form input[type="image"] {
     width: 35px;
     height: 35px;
     top: 0;
@@ -1359,7 +1449,7 @@
     left: 0;
     width: 80px;
     height: 4px;
-    content: '';
+    content: "";
   }
   .middle-box .article-item .article-top li {
     color: #607d8b;
@@ -1422,12 +1512,11 @@
   }
 }
 
-@-moz-document regexp("https?://[\w-\.]*got\d{3}\.com/.*")
-{
+@-moz-document regexp("https?:\/\/[\w-\.]*got\d{3}\.com\/.*") {
   *,
   .ui-header .ui-limit .logo-wrapper .desc {
-    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC', 'PingFang SC',
-      'Microsoft YaHei UI', system-ui, -apple-system, sans-serif;
+    font-family: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC",
+      "PingFang SC", "Microsoft YaHei UI", system-ui, -apple-system, sans-serif;
     font-weight: 400 !important;
   }
   .down-list > li .title > span.filesize,
@@ -1503,7 +1592,13 @@
   .down-list > li .down-links > li .btn:hover,
   .down-list > li .down-links > li .copy-link:hover::before,
   .down-list > li .title > a.outside-btn:hover,
-  .ui-content .row-content .col-box.col-sidebar .sidebar-warpper .tab-side > li > a:hover,
+  .ui-content
+    .row-content
+    .col-box.col-sidebar
+    .sidebar-warpper
+    .tab-side
+    > li
+    > a:hover,
   .down-list-toolbar .btn-group .btn:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
@@ -1511,7 +1606,13 @@
   .ui-header .ui-limit .view-count,
   .ui-header .ui-limit .count-down .minfo .count,
   .ui-content .row-content .col-box.col-sidebar .sidebar-warpper,
-  .ui-content .row-content .col-box.col-sidebar .sidebar-warpper .tab-side > li > a,
+  .ui-content
+    .row-content
+    .col-box.col-sidebar
+    .sidebar-warpper
+    .tab-side
+    > li
+    > a,
   .btn-default,
   .down-list > li:hover,
   .down-list > li .down-links > li .btn,
@@ -1524,7 +1625,13 @@
   .down-list-toolbar .btn-group .btn {
     background-color: rgba(0, 0, 0, 0.25);
   }
-  .ui-content .row-content .col-box.col-sidebar .sidebar-warpper .tab-side > li.active > a {
+  .ui-content
+    .row-content
+    .col-box.col-sidebar
+    .sidebar-warpper
+    .tab-side
+    > li.active
+    > a {
     background-color: rgba(0, 0, 0, 0.5);
   }
   .down-popup {

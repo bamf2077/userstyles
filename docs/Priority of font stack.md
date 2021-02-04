@@ -32,52 +32,52 @@
 ```css
 /* Sans Serif Fonts */
 font-family: "Source Han Sans SC",
-             "Noto Sans CJK SC",
-             "HanHei SC",
-             "方正兰亭黑_GB18030",
-             "方正兰亭黑_GBK",
-             system-ui,
-             -apple-system,
-             sans-serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Sans CJK SC",
+  "HanHei SC",
+  "方正兰亭黑_GB18030",
+  "方正兰亭黑_GBK",
+  system-ui,
+  -apple-system,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Serif Fonts */
 font-family: "思源宋体",
-             "Noto Serif CJK SC",
-             "方正新书宋_GBK",
-             "Source Serif Pro",
-             "Noto Serif",
-             "Roboto Slab",
-             serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Serif CJK SC",
+  "方正新书宋_GBK",
+  "Source Serif Pro",
+  "Noto Serif",
+  "Roboto Slab",
+  serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Monospaced Fonts */
 font-family: "Source Han Mono SC",
-             "Noto Sans Mono CJK SC",
-             "Source Code Pro",
-             "Noto Mono",
-             "Roboto Mono",
-             "Source Han Sans SC",
-             "Noto Sans CJK SC",
-             "HanHei SC",
-             "方正兰亭黑_GB18030",
-             "方正兰亭黑_GBK",
-             system-ui,
-             -apple-system,
-             monospace,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Sans Mono CJK SC",
+  "Source Code Pro",
+  "Noto Mono",
+  "Roboto Mono",
+  "Source Han Sans SC",
+  "Noto Sans CJK SC",
+  "HanHei SC",
+  "方正兰亭黑_GB18030",
+  "方正兰亭黑_GBK",
+  system-ui,
+  -apple-system,
+  monospace,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 ```
 
 <h2 id="adobe_fonts_tc">Traditional Chinese (Taiwan)</h2>
@@ -85,46 +85,46 @@ font-family: "Source Han Mono SC",
 ```css
 /* Sans Serif Fonts */
 font-family: "Source Han Sans TC",
-             "Noto Sans CJK TC",
-             "HanHei TC",
-             system-ui,
-             -apple-system,
-             sans-serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Sans CJK TC",
+  "HanHei TC",
+  system-ui,
+  -apple-system,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Noto Color Emoji",
+  emoji;
 
 /* Serif Fonts */
 font-family: "Source Han Serif TC",
-             "Noto Serif CJK TC",
-             "Source Serif Pro",
-             "Noto Serif",
-             "Roboto Slab",
-             serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Serif CJK TC",
+  "Source Serif Pro",
+  "Noto Serif",
+  "Roboto Slab",
+  serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Monospaced Fonts */
 font-family: "Source Han Mono TC",
-             "Noto Sans Mono CJK TC",
-             "Source Code Pro",
-             "Noto Mono",
-             "Roboto Mono",
-             "Source Han Sans TC",
-             "Noto Sans CJK TC",
-             "HanHei TC",
-             system-ui,
-             -apple-system,
-             monospace,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Sans Mono CJK TC",
+  "Source Code Pro",
+  "Noto Mono",
+  "Roboto Mono",
+  "Source Han Sans TC",
+  "Noto Sans CJK TC",
+  "HanHei TC",
+  system-ui,
+  -apple-system,
+  monospace,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 ```
 
 <h2 id="adobe_fonts_hc">Traditional Chinese (Hong Kong), Traditional Chinese (Macao)</h2>
@@ -133,57 +133,57 @@ font-family: "Source Han Mono TC",
 /* Sans Serif Fonts */
 /* Google has not yet released "Noto Sans CJK TC", this code is for advance adaptation */
 font-family: "Source Han Sans HC"
-             "Noto Sans CJK HC",
-             "Source Han Sans TC",
-             "Noto Sans CJK TC",
-             "HanHei TC",
-             system-ui,
-             -apple-system,
-             sans-serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+    "Noto Sans CJK HC",
+  "Source Han Sans TC",
+  "Noto Sans CJK TC",
+  "HanHei TC",
+  system-ui,
+  -apple-system,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Serif Fonts */
 /* Adobe has not yet released "Source Han Serif HC"，nor has Google released "Noto Serif CJK TC", this code is for advance adaptation */
 font-family: "Source Han Serif HC"
-             "Noto Serif CJK HC",
-             "Source Han Serif TC",
-             "Noto Serif CJK TC",
-             "Source Serif Pro",
-             "Noto Serif",
-             "Roboto Slab",
-             serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+    "Noto Serif CJK HC",
+  "Source Han Serif TC",
+  "Noto Serif CJK TC",
+  "Source Serif Pro",
+  "Noto Serif",
+  "Roboto Slab",
+  serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Monospaced Fonts */
 /* Google has not yet released "Noto Sans Mono CJK HC", this code is for advance adaptation */
 font-family: "Source Han Mono HC",
-             "Noto Sans Mono CJK HC",
-             "Source Han Mono TC",
-             "Noto Sans Mono CJK TC",
-             "Source Code Pro",
-             "Noto Mono",
-             "Roboto Mono",
-             "Source Han Sans HC"
-             "Noto Sans CJK HC",
-             "Source Han Sans TC",
-             "Noto Sans CJK TC",
-             "HanHei TC",
-             system-ui,
-             -apple-system,
-             monospace,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Sans Mono CJK HC",
+  "Source Han Mono TC",
+  "Noto Sans Mono CJK TC",
+  "Source Code Pro",
+  "Noto Mono",
+  "Roboto Mono",
+  "Source Han Sans HC"
+    "Noto Sans CJK HC",
+  "Source Han Sans TC",
+  "Noto Sans CJK TC",
+  "HanHei TC",
+  system-ui,
+  -apple-system,
+  monospace,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 ```
 
 <h2 id="adobe_fonts_j">Japanese</h2>
@@ -191,47 +191,47 @@ font-family: "Source Han Mono HC",
 ```css
 /* Sans Serif Fonts */
 font-family: "Source Han Sans",
-             "Noto Sans CJK JP",
-             "Hiragino Kaku Gothic Pro",
-             system-ui,
-             -apple-system,
-             sans-serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Sans CJK JP",
+  "Hiragino Kaku Gothic Pro",
+  system-ui,
+  -apple-system,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Serif Fonts */
 font-family: "Source Han Serif",
-             "Noto Serif CJK JP",
-             "Source Serif Pro",
-             "Noto Serif",
-             "Roboto Slab",
-             serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Serif CJK JP",
+  "Source Serif Pro",
+  "Noto Serif",
+  "Roboto Slab",
+  serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Monospaced Fonts */
 font-family: "Source Han Mono",
-             "Noto Sans Mono CJK JP"
-             "Source Code Pro",
-             "Noto Mono",
-             "Roboto Mono",
-             "Source Han Sans",
-             "Noto Sans CJK JP",
-             "Hiragino Kaku Gothic Pro",
-             system-ui,
-             -apple-system,
-             monospace,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Sans Mono CJK JP"
+    "Source Code Pro",
+  "Noto Mono",
+  "Roboto Mono",
+  "Source Han Sans",
+  "Noto Sans CJK JP",
+  "Hiragino Kaku Gothic Pro",
+  system-ui,
+  -apple-system,
+  monospace,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 ```
 
 <h2 id="adobe_fonts_k">Korean</h2>
@@ -239,78 +239,82 @@ font-family: "Source Han Mono",
 ```css
 /* Sans Serif Fonts */
 font-family: "Source Han Sans K",
-             "Noto Sans CJK KR",
-             "Apple SD Gothic Neo",
-             system-ui,
-             -apple-system,
-             sans-serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Sans CJK KR",
+  "Apple SD Gothic Neo",
+  system-ui,
+  -apple-system,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Serif Fonts */
 font-family: "Source Han Serif K",
-             "Noto Serif CJK KR",
-             "Source Serif Pro",
-             "Noto Serif",
-             "Roboto Slab",
-             serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Serif CJK KR",
+  "Source Serif Pro",
+  "Noto Serif",
+  "Roboto Slab",
+  serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Monospaced Fonts */
 font-family: "Source Han Mono K",
-             "Noto Sans Mono CJK KR"
-             "Source Code Pro",
-             "Noto Mono",
-             "Roboto Mono",
-             "Source Han Sans K",
-             "Noto Sans CJK KR",
-             "Apple SD Gothic Neo",
-             system-ui,
-             -apple-system,
-             monospace,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Sans Mono CJK KR"
+    "Source Code Pro",
+  "Noto Mono",
+  "Roboto Mono",
+  "Source Han Sans K",
+  "Noto Sans CJK KR",
+  "Apple SD Gothic Neo",
+  system-ui,
+  -apple-system,
+  monospace,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 ```
 
 <h2 id="adobe_fonts_lcgv">Latin, Cyrillic, Greek, Khmer</h2>
 
-> Works with English, Deutsch, Nederlands, Svenska, Bokmål, Nynorsk, Dansk, Íslenska, Français, Italiano, Español, Português, Română, Lietuvių, Latviešu, Русский, Беларуская, Українська, Polski, Čeština, Slovenčina, Български, Slovenščina, Srpski, Hrvatski, Bosanski, Ελληνικά, Suomi, Eesti, Magyar, Türkçe, Tiếng việt, Bahasa Indonesia, Bahasa Melayu.
+> Works with English, Deutsch, Nederlands, Svenska, Bokmål, Nynorsk, Dansk,
+> Íslenska, Français, Italiano, Español, Português, Română, Lietuvių, Latviešu,
+> Русский, Беларуская, Українська, Polski, Čeština, Slovenčina, Български,
+> Slovenščina, Srpski, Hrvatski, Bosanski, Ελληνικά, Suomi, Eesti, Magyar,
+> Türkçe, Tiếng việt, Bahasa Indonesia, Bahasa Melayu.
 
 ```css
 /* Sans Serif Fonts */
 font-family: "Source Sans 3",
-             "Source Sans Pro",
-             "Noto Sans",
-             "Roboto",
-             system-ui,
-             -apple-system,
-             sans-serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Source Sans Pro",
+  "Noto Sans",
+  "Roboto",
+  system-ui,
+  -apple-system,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Monospaced Fonts */
 font-family: "Source Code Pro",
-             "Noto Mono",
-             "Roboto Mono",
-             monospace,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Mono",
+  "Roboto Mono",
+  monospace,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 ```
 
 <h2 id="adobe_fonts_aht">Arabic, Hebrew, Thai</h2>
@@ -320,21 +324,21 @@ font-family: "Source Code Pro",
 ```css
 /* Sans Serif Fonts */
 font-family: system-ui,
-             -apple-system,
-             sans-serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  -apple-system,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Monospaced Fonts */
 font-family: monospace,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 ```
 
 ---
@@ -346,47 +350,47 @@ font-family: monospace,
 ```css
 /* Sans Serif Fonts */
 font-family: "Microsoft YaHei UI",
-             "Microsoft YaHei",
-             "方正兰亭黑_GB18030",
-             "方正兰亭黑_GBK",
-             system-ui,
-             -apple-system,
-             sans-serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Microsoft YaHei",
+  "方正兰亭黑_GB18030",
+  "方正兰亭黑_GBK",
+  system-ui,
+  -apple-system,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Serif Fonts */
 font-family: "方正新书宋_GBK",
-             "Georgia",
-             "Noto Serif",
-             "Roboto Slab",
-             serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Georgia",
+  "Noto Serif",
+  "Roboto Slab",
+  serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Monospaced Fonts */
 font-family: "Cascadia Code",
-             "Noto Mono",
-             "Roboto Mono",
-             "Consolas",
-             "Microsoft YaHei UI",
-             "Microsoft YaHei",
-             "方正兰亭黑_GB18030",
-             "方正兰亭黑_GBK",
-             system-ui,
-             -apple-system,
-             monospace,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Mono",
+  "Roboto Mono",
+  "Consolas",
+  "Microsoft YaHei UI",
+  "Microsoft YaHei",
+  "方正兰亭黑_GB18030",
+  "方正兰亭黑_GBK",
+  system-ui,
+  -apple-system,
+  monospace,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 ```
 
 <h2 id="msft_fonts_tc">Traditional Chinese (Taiwan)</h2>
@@ -394,42 +398,42 @@ font-family: "Cascadia Code",
 ```css
 /* Sans Serif Fonts */
 font-family: "Microsoft JhengHei UI",
-             "Microsoft JhengHei",
-             system-ui,
-             -apple-system,
-             sans-serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Microsoft JhengHei",
+  system-ui,
+  -apple-system,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Serif Fonts */
 font-family: "PMingLiU",
-             "Noto Serif",
-             "Roboto Slab",
-             serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Serif",
+  "Roboto Slab",
+  serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Monospaced Fonts */
 font-family: "Cascadia Code",
-             "Noto Mono",
-             "Roboto Mono",
-             "Consolas",
-             "Microsoft JhengHei UI",
-             "Microsoft JhengHei",
-             system-ui,
-             -apple-system,
-             monospace,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Mono",
+  "Roboto Mono",
+  "Consolas",
+  "Microsoft JhengHei UI",
+  "Microsoft JhengHei",
+  system-ui,
+  -apple-system,
+  monospace,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 ```
 
 <h2 id="msft_fonts_hc">Traditional Chinese (Hong Kong), Traditional Chinese (Macao)</h2>
@@ -437,43 +441,43 @@ font-family: "Cascadia Code",
 ```css
 /* Sans Serif Fonts */
 font-family: "Microsoft JhengHei UI",
-             "Microsoft JhengHei",
-             system-ui,
-             -apple-system,
-             sans-serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Microsoft JhengHei",
+  system-ui,
+  -apple-system,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Serif Fonts */
 font-family: "MingLiU_HKSCS",
-             "PMingLiU",
-             "Noto Serif",
-             "Roboto Slab",
-             serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "PMingLiU",
+  "Noto Serif",
+  "Roboto Slab",
+  serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Monospaced Fonts */
 font-family: "Cascadia Code",
-             "Noto Mono",
-             "Roboto Mono",
-             "Consolas",
-             "Microsoft JhengHei UI",
-             "Microsoft JhengHei",
-             system-ui,
-             -apple-system,
-             monospace,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Mono",
+  "Roboto Mono",
+  "Consolas",
+  "Microsoft JhengHei UI",
+  "Microsoft JhengHei",
+  system-ui,
+  -apple-system,
+  monospace,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 ```
 
 <h2 id="msft_fonts_j">Japanese</h2>
@@ -481,42 +485,42 @@ font-family: "Cascadia Code",
 ```css
 /* Sans Serif Fonts */
 font-family: "Yu Gothic UI",
-             "Yu Gothic",
-             system-ui,
-             -apple-system,
-             sans-serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Yu Gothic",
+  system-ui,
+  -apple-system,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Serif Fonts */
 font-family: "Georgia",
-             "Noto Serif",
-             "Roboto Slab",
-             serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Serif",
+  "Roboto Slab",
+  serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Monospaced Fonts */
 font-family: "Cascadia Code",
-             "Noto Mono",
-             "Roboto Mono",
-             "Consolas",
-             "Yu Gothic UI",
-             "Yu Gothic",
-             system-ui,
-             -apple-system,
-             monospace,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Mono",
+  "Roboto Mono",
+  "Consolas",
+  "Yu Gothic UI",
+  "Yu Gothic",
+  system-ui,
+  -apple-system,
+  monospace,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 ```
 
 <h2 id="msft_fonts_k">Korean</h2>
@@ -524,71 +528,75 @@ font-family: "Cascadia Code",
 ```css
 /* Sans Serif Fonts */
 font-family: "Malgun Gothic",
-             system-ui,
-             -apple-system,
-             sans-serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  system-ui,
+  -apple-system,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Serif Fonts */
 font-family: "Georgia",
-             "Noto Serif",
-             "Roboto Slab",
-             serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Serif",
+  "Roboto Slab",
+  serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Monospaced Fonts */
 font-family: "Cascadia Code",
-             "Noto Mono",
-             "Roboto Mono",
-             "Consolas",
-             "Malgun Gothic",
-             system-ui,
-             -apple-system,
-             monospace,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Mono",
+  "Roboto Mono",
+  "Consolas",
+  "Malgun Gothic",
+  system-ui,
+  -apple-system,
+  monospace,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 ```
 
 <h2 id="msft_fonts_lcg">Latin, Cyrillic, Greek</h2>
 
-> Works with English, Deutsch, Nederlands, Svenska, Bokmål, Nynorsk, Dansk, Íslenska, Français, Italiano, Español, Português, Română, Lietuvių, Latviešu, Русский, Беларуская, Українська, Polski, Čeština, Slovenčina, Български, Slovenščina, Srpski, Hrvatski, Bosanski, Ελληνικά, Suomi, Eesti, Magyar, Türkçe, Bahasa Indonesia, Bahasa Melayu.
+> Works with English, Deutsch, Nederlands, Svenska, Bokmål, Nynorsk, Dansk,
+> Íslenska, Français, Italiano, Español, Português, Română, Lietuvių, Latviešu,
+> Русский, Беларуская, Українська, Polski, Čeština, Slovenčina, Български,
+> Slovenščina, Srpski, Hrvatski, Bosanski, Ελληνικά, Suomi, Eesti, Magyar,
+> Türkçe, Bahasa Indonesia, Bahasa Melayu.
 
 ```css
 /* Sans Serif Fonts */
 font-family: "Segoe UI",
-             "Noto Sans",
-             "Roboto",
-             system-ui,
-             -apple-system,
-             sans-serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Sans",
+  "Roboto",
+  system-ui,
+  -apple-system,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Monospaced Fonts */
 font-family: "Cascadia Code",
-             "Noto Mono",
-             "Roboto Mono",
-             "Consolas",
-             monospace,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Noto Mono",
+  "Roboto Mono",
+  "Consolas",
+  monospace,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 ```
 
 <h2 id="msft_fonts_ahtv">Arabic, Hebrew, Thai, Khmer</h2>
@@ -598,21 +606,21 @@ font-family: "Cascadia Code",
 ```css
 /* Sans Serif Fonts */
 font-family: system-ui,
-             -apple-system,
-             sans-serif,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  -apple-system,
+  sans-serif,
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 
 /* Monospaced Fonts */
 font-family: monospace,
-             "Apple Color Emoji",
-             "Segoe UI Emoji",
-             "Segoe UI Symbol",
-             "Noto Color Emoji",
-             emoji;
+  "Apple Color Emoji",
+  "Segoe UI Emoji",
+  "Segoe UI Symbol",
+  "Noto Color Emoji",
+  emoji;
 ```
 
 <br>

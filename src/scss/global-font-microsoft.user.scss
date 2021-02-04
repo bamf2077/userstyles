@@ -2,7 +2,7 @@
 @name:en Global Font: Microsoft-branded
 @name 全局微软雅黑
 @namespace franciszhao
-@version 2.2.8
+@version 2.2.9-alpha
 @description:en An user stylesheet to replace all fonts on web pages with Microsoft-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用微软品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -32,7 +32,8 @@ $font-sans: "Segoe UI";
 $font-sans-fallback: "Noto Sans", "Roboto";
 
 $font-sans-sc: "Microsoft YaHei UI";
-$font-sans-sc-fallback: "Microsoft YaHei", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", $font-system;
+$font-sans-sc-fallback: "Microsoft YaHei", "方正兰亭黑_GB18030",
+  "方正兰亭黑_GBK", $font-system;
 
 $font-sans-tc: "Microsoft JhengHei UI";
 $font-sans-tc-fallback: "Microsoft JhengHei", $font-system;
@@ -70,13 +71,16 @@ $font-mono: "Cascadia Code";
 $font-mono-fallback: "Noto Mono", "Roboto Mono", "Consolas";
 
 $font-mono-sc: "Cascadia Code";
-$font-mono-sc-fallback: $font-mono-fallback, $font-sans-sc, $font-sans-sc-fallback;
+$font-mono-sc-fallback: $font-mono-fallback, $font-sans-sc,
+  $font-sans-sc-fallback;
 
 $font-mono-tc: "Cascadia Code";
-$font-mono-tc-fallback: $font-mono-fallback, $font-sans-tc, $font-sans-tc-fallback;
+$font-mono-tc-fallback: $font-mono-fallback, $font-sans-tc,
+  $font-sans-tc-fallback;
 
 $font-mono-hc: "Cascadia Code";
-$font-mono-hc-fallback: $font-mono-fallback, $font-sans-hc, $font-sans-hc-fallback;
+$font-mono-hc-fallback: $font-mono-fallback, $font-sans-hc,
+  $font-sans-hc-fallback;
 
 $font-mono-j: "Cascadia Code";
 $font-mono-j-fallback: $font-mono-fallback, $font-sans-j, $font-sans-j-fallback;
@@ -85,7 +89,8 @@ $font-mono-k: "Cascadia Code";
 $font-mono-k-fallback: $font-mono-fallback, $font-sans-k, $font-sans-k-fallback;
 
 // 1.5 绘文字字体
-$font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+$font-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji", emoji;
 
 // 2 字体设定
 
@@ -126,7 +131,8 @@ html {
   &:lang(zh-cmn-Hans),
   &:lang(zh-Hans) {
     body {
-      font-family: $font-sans-sc, $font-sans-sc-fallback, sans-serif, $font-emoji;
+      font-family: $font-sans-sc, $font-sans-sc-fallback, sans-serif,
+        $font-emoji;
       quotes: "“" "”";
     }
 
@@ -144,7 +150,8 @@ html {
   &:lang(zh-cmn-Hant),
   &:lang(zh-Hant) {
     body {
-      font-family: $font-sans-tc, $font-sans-tc-fallback, sans-serif, $font-emoji;
+      font-family: $font-sans-tc, $font-sans-tc-fallback, sans-serif,
+        $font-emoji;
       quotes: "「" "」";
     }
 
@@ -162,7 +169,8 @@ html {
   &:lang(yue-Hant),
   &:lang(zh-yue-Hant) {
     body {
-      font-family: $font-sans-hc, $font-sans-hc-fallback, sans-serif, $font-emoji;
+      font-family: $font-sans-hc, $font-sans-hc-fallback, sans-serif,
+        $font-emoji;
       quotes: "「" "」";
     }
 
@@ -306,14 +314,29 @@ html {
   }
 }
 
-@each $font-sans-replace in ("Arial", "Helvetica", "Helvetica Neue", "Open Sans", "Segoe UI", "Tahoma", "Trebuchet", "Trebuchet MS", "Ubuntu", "Verdana") {
+@each $font-sans-replace
+  in (
+    "Arial",
+    "Helvetica",
+    "Helvetica Neue",
+    "Open Sans",
+    "Segoe UI",
+    "Tahoma",
+    "Trebuchet",
+    "Trebuchet MS",
+    "Ubuntu",
+    "Verdana"
+  )
+{
   @font-face {
     font-family: $font-sans-replace;
     src: local($font-sans);
   }
 }
 
-@each $font-mono-replace in ("Consolas", "Courier", "Courier New", "Lucida Console", "Ubuntu Mono") {
+@each $font-mono-replace
+  in ("Consolas", "Courier", "Courier New", "Lucida Console", "Ubuntu Mono")
+{
   @font-face {
     font-family: $font-mono-replace;
     src: local($font-mono);
@@ -321,14 +344,27 @@ html {
 }
 
 // 3.2 中文、简体中文 (中国)、简体中文 (新加坡)
-@each $font-serif-sc-replace in ("SimSun", "SimSun-ExtB", "宋体", "NSimSun", "新宋体") {
+@each $font-serif-sc-replace
+  in ("SimSun", "SimSun-ExtB", "宋体", "NSimSun", "新宋体")
+{
   @font-face {
     font-family: $font-serif-sc-replace;
     src: local($font-sans-sc);
   }
 }
 
-@each $font-sans-sc-replace in ("SimHei", "黑体", "Microsoft YaHei UI", "Microsoft YaHei", "微软雅黑", "STHeiti SC", "PingFang SC", "苹方-简") {
+@each $font-sans-sc-replace
+  in (
+    "SimHei",
+    "黑体",
+    "Microsoft YaHei UI",
+    "Microsoft YaHei",
+    "微软雅黑",
+    "STHeiti SC",
+    "PingFang SC",
+    "苹方-简"
+  )
+{
   @font-face {
     font-family: $font-sans-sc-replace;
     src: local($font-sans-sc);
@@ -336,14 +372,25 @@ html {
 }
 
 // 3.3 繁体中文 (台湾)
-@each $font-serif-tc-replace in ("MingLiU", "MingLiU-ExtB", "PMingLiU", "PMingLiU-ExtB") {
+@each $font-serif-tc-replace
+  in ("MingLiU", "MingLiU-ExtB", "PMingLiU", "PMingLiU-ExtB")
+{
   @font-face {
     font-family: $font-serif-tc-replace;
     src: local($font-sans-tc);
   }
 }
 
-@each $font-sans-tc-replace in ("Microsoft JhengHei UI", "Microsoft JhengHei", "微軟正黑體", "STHeiti TC", "PingFang TC", "蘋方-繁") {
+@each $font-sans-tc-replace
+  in (
+    "Microsoft JhengHei UI",
+    "Microsoft JhengHei",
+    "微軟正黑體",
+    "STHeiti TC",
+    "PingFang TC",
+    "蘋方-繁"
+  )
+{
   @font-face {
     font-family: $font-sans-tc-replace;
     src: local($font-sans-tc);
@@ -366,7 +413,9 @@ html {
 }
 
 // 3.5 日文
-@each $font-sans-j-replace in ("MS Gothic", "MS PGothic", "MS UI Gothic", "Yu Gothic", "Yu Gothic UI") {
+@each $font-sans-j-replace
+  in ("MS Gothic", "MS PGothic", "MS UI Gothic", "Yu Gothic", "Yu Gothic UI")
+{
   @font-face {
     font-family: $font-sans-j-replace;
     src: local($font-sans-j);
@@ -389,8 +438,8 @@ html {
   }
 }
 
-@-moz-document regexp("https://www.baidu.com/#?"),
-url-prefix("https://www.baidu.com/?tn=")
+@-moz-document regexp("https:\/\/www.baidu.com\/#?"),
+               url-prefix("https://www.baidu.com/?tn=")
 {
   .s_ipt,
   .new-pmd .c-font-medium {
