@@ -1,11 +1,11 @@
-[<kbd>**`* 简体中文 *`**</kbd>](https://github.com/francis-zhao/userstyles#readme '读我')
-[<kbd>English</kbd>](https://github.com/francis-zhao/userstyles/blob/master/README.en.md 'Readme')
+[<kbd>**`* 简体中文 *`**</kbd>](https://github.com/francis-zhao/userstyles#readme "读我")
+[<kbd>English</kbd>](https://github.com/francis-zhao/userstyles/blob/master/README.en.md "Readme")
 
 # UserStyles
 
 ## 简介
 
-一系列方便实用的用户样式表，适用于 Stylish、[Stylus](http://add0n.com/stylus.html 'Stylus')、[Tampermonkey](https://www.tampermonkey.net/ 'Tampermonkey')、[Greasemonkey](https://www.greasespot.net/ 'Greasemonkey') 等用户样式表、用户脚本管理类浏览器扩展。样式表生效原理类似 `userChrome.css`、`Custom.css`、`user.css`，由 [![Sass/SCSS](https://img.shields.io/github/languages/top/francis-zhao/userstyles?style=flat-square)](https://sass-lang.com/ 'Sass: Syntactically Awesome Style Sheets') 语言写成。
+一系列方便实用的用户样式表，适用于 Stylish、[Stylus](http://add0n.com/stylus.html "Stylus")、[Tampermonkey](https://www.tampermonkey.net/ "Tampermonkey")、[Greasemonkey](https://www.greasespot.net/ "Greasemonkey") 等用户样式表、用户脚本管理类浏览器扩展。样式表生效原理类似 `userChrome.css`、`Custom.css`、`user.css`，由 [![Sass/SCSS](https://img.shields.io/github/languages/top/francis-zhao/userstyles?style=flat-square)](https://sass-lang.com/ "Sass: Syntactically Awesome Style Sheets") 语言写成。
 
 <br>
 
@@ -17,7 +17,7 @@
 
 你可以在[这里](https://github.com/francis-zhao/userstyles/blob/master/docs/字体栈优先级.md#adobe_fonts)查看该样式表使用的字体的优先级详情。
 
-你可以在 [Greasy Fork](https://greasyfork.org/scripts/419362 'Greasy Fork') 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。
+你可以在 [Greasy Fork](https://greasyfork.org/scripts/419362 "Greasy Fork") 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。
 
 <br>
 
@@ -27,7 +27,7 @@
 
 你可以在[这里](https://github.com/francis-zhao/userstyles/blob/master/docs/字体栈优先级.md#msft_fonts)查看该样式表使用的字体的优先级详情。
 
-你可以在 [Greasy Fork](https://greasyfork.org/scripts/419363 'Greasy Fork') 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。
+你可以在 [Greasy Fork](https://greasyfork.org/scripts/419363 "Greasy Fork") 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。
 
 <br>
 
@@ -35,7 +35,7 @@
 
 <del>一款适用于 YYeTs 人人影视系列网站的深色主题用户样式表。</del>
 
-<del>你可以在 [Greasy Fork](https://greasyfork.org/scripts/419366 'Greasy Fork') 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。</del>
+<del>你可以在 [Greasy Fork](https://greasyfork.org/scripts/419366 "Greasy Fork") 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。</del>
 
 人人影视倒了，再次强调了“永远不要把鸡蛋放在同一只篮子里”的深刻教训！下面给大家提供一些我平时常用的宝藏资源网站：
 
@@ -62,4 +62,4 @@
 <br>
 <br>
 
-[<kbd>返回顶部</kbd>](# '返回顶部')
+[<kbd>返回顶部</kbd>](# "返回顶部")
