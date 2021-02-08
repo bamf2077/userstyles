@@ -1,6 +1,4 @@
 {
-  "trailingComma": "es5",
-  "semi": false,
   "overrides": [
     {
       "files": ["*.js", "*.jsx", "*.ts", "*.tsx"],
