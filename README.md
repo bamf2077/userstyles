@@ -4,8 +4,8 @@
 # UserStyles
 
 ## 简介
-<a href="" target="_blank" title=></a>
-一系列方便实用的用户样式表，适用于 Stylish、<a href="http://add0n.com/stylus.html" target="_blank" title="Stylus">Stylus</a>、<a href="https://www.tampermonkey.net/" target="_blank" title="Tampermonkey">Tampermonkey</a>、<a href="https://www.greasespot.net/" target="_blank" title="Greasemonkey">Greasemonkey</a> 等用户样式表、用户脚本管理类浏览器扩展。样式表生效原理类似 `userChrome.css`、`Custom.css`、`user.css`，由 [![Sass/SCSS](https://img.shields.io/github/languages/top/francis-zhao/userstyles?style=flat-square)](https://sass-lang.com/ "Sass: Syntactically Awesome Style Sheets") 语言写成。
+
+一系列方便实用的用户样式表，适用于 Stylish、[Stylus](http://add0n.com/stylus.html "Stylus")、[Tampermonkey](https://www.tampermonkey.net/ "Tampermonkey")、[Greasemonkey](https://www.greasespot.net/ "Greasemonkey") 等用户样式表、用户脚本管理类浏览器扩展。样式表生效原理类似 `userChrome.css`、`Custom.css`、`user.css`，由 ![Sass/SCSS](https://img.shields.io/github/languages/top/francis-zhao/userstyles?style=flat-square) 语言写成。
 
 <br>
 
@@ -17,7 +17,7 @@
 
 你可以在[这里](https://github.com/francis-zhao/userstyles/blob/master/docs/字体栈优先级.md#adobe_fonts)查看该样式表使用的字体的优先级详情。
 
-你可以在 <a href="https://greasyfork.org/scripts/419362" target="_blank" title="Greasy Fork">Greasy Fork</a> 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。
+你可以在 [Greasy Fork](https://greasyfork.org/scripts/419362 "Greasy Fork") 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。
 
 <br>
 
@@ -27,7 +27,7 @@
 
 你可以在[这里](https://github.com/francis-zhao/userstyles/blob/master/docs/字体栈优先级.md#msft_fonts)查看该样式表使用的字体的优先级详情。
 
-你可以在 <a href="https://greasyfork.org/scripts/419363" target="_blank" title="Greasy Fork">Greasy Fork</a> 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。
+你可以在 [Greasy Fork](https://greasyfork.org/scripts/419363 "Greasy Fork") 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。
 
 <br>
 
@@ -35,29 +35,29 @@
 
 <del>一款适用于 YYeTs 人人影视系列网站的深色主题用户样式表。</del>
 
-<del>你可以在 <a href="https://greasyfork.org/scripts/419366" target="_blank" title="Greasy Fork">Greasy Fork</a> 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。</del>
+<del>你可以在 [Greasy Fork](https://greasyfork.org/scripts/419366 "Greasy Fork") 上以 `user.css` 或 `user.js` 的形式直接订阅使用最新的稳定版。</del>
 
 人人影视倒了，再次强调了“永远不要把鸡蛋放在同一只篮子里”的深刻教训！下面给大家提供一些我平时常用的宝藏资源网站：
 
-- RARBG（<a href="https://rarbgmirror.org/torrents.php?category=41;49" target="_blank">https://rarbgmirror.org/torrents.php?category=41;49</a>）——欧美影视剧片源
+- RARBG (https://rarbgmirror.org/torrents.php?category=41;49) ——欧美影视剧片源
 
-- RARBG（<a href="https://rarbgmirror.org/torrents.php?category=45;44;50;54;51;52;46;42" target="_blank">https://rarbgmirror.org/torrents.php?category=45;44;50;54;51;52;46;42</a>）——欧美电影片源
+- RARBG (https://rarbgmirror.org/torrents.php?category=45;44;50;54;51;52;46;42) ——欧美电影片源
 
-- 海盗湾（<a href="https://pirateproxy.page/" target="_blank">https://pirateproxy.page/</a>）——欧美音乐专辑，需要魔法上网
+- 海盗湾 (https://pirateproxy.page/) ——欧美音乐专辑，需要魔法上网
 
-- ED2000（<a href="https://www.ed2000k.com/" target="_blank">https://www.ed2000k.com/</a>）——综合影视剧，疑似 2021 年 2 月 4 日已凉凉
+- ED2000 (https://www.ed2000k.com/) ——综合影视剧，疑似 2021 年 2 月 4 日已凉凉
 
-- 下片片（<a href="http://www.xiepp.com/" target="_blank">http://www.xiepp.com/</a>）——综合影视剧（偏中日韩）
+- 下片片 (http://www.xiepp.com/) ——综合影视剧（偏中日韩）
 
-- FIX 字幕侠（<a href="https://www.zimuxia.cn/" target="_blank">https://www.zimuxia.cn/</a>）——综合影视剧、字幕
+- FIX 字幕侠 (https://www.zimuxia.cn/) ——综合影视剧、字幕
 
-- 蜜柑计划（<a href="https://mikanani.me/" target="_blank">https://mikanani.me/</a>）——ACG
+- 蜜柑计划 (https://mikanani.me/) ——ACG
 
-- 漫猫动漫（<a href="https://www.comicat.org/" target="_blank">https://www.comicat.org/</a>）——ACG
+- 漫猫动漫 (https://www.comicat.org/) ——ACG
 
-- SubHD.tv（<a href="https://subhd.tv/" target="_blank">https://subhd.tv/</a>）——综合字幕
+- SubHD.tv (https://subhd.tv/) ——综合字幕
 
-- 人人影视磁力站（<a href="http://mag234.com/index/" target="_blank">http://mag234.com/index/</a>）——仅有 2020 年 5 月前资源
+- 人人影视磁力站 (http://mag234.com/index/) ——仅有 2020 年 5 月前资源
 
 <br>
 <br>
