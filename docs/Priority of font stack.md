@@ -1,7 +1,9 @@
 [<kbd>简体中文</kbd>](https://github.com/francis-zhao/userstyles/blob/master/docs/字体栈优先级.md "字体栈优先级")
 [<kbd>**`* English *`**</kbd>](https://github.com/francis-zhao/userstyles/blob/master/docs/Priority%20of%20font%20stack.md "Priority of font stack")
 
-<h1 id="index">Index</h1>
+# UserStyles - Priority of font stack
+
+<h2 id="index">Index</h2>
 
 1. [Global Font: Adobe-branded](#adobe_fonts)
 
@@ -23,11 +25,11 @@
    6. [Latin, Cyrillic, Greek](#msft_fonts_lcg)
    7. [Arabic, Hebrew, Thai, Khmer](#msft_fonts_ahtv)
 
----
+<br>
 
-<h1 id="adobe_fonts">Global Font: Adobe-branded</h1>
+<h2 id="adobe_fonts">Global Font: Adobe-branded</h2>
 
-<h2 id="adobe_fonts_sc">Chinese, Simplified Chinese (China), Simplified Chinese (Singapore)</h2>
+<h3 id="adobe_fonts_sc">Chinese, Simplified Chinese (China), Simplified Chinese (Singapore)</h3>
 
 ```css
 /* Sans Serif Fonts */
@@ -80,7 +82,7 @@ font-family: "Source Han Mono SC",
   emoji;
 ```
 
-<h2 id="adobe_fonts_tc">Traditional Chinese (Taiwan)</h2>
+<h3 id="adobe_fonts_tc">Traditional Chinese (Taiwan)</h3>
 
 ```css
 /* Sans Serif Fonts */
@@ -112,8 +114,7 @@ font-family: "Source Han Serif TC",
 font-family: "Source Han Mono TC",
   "Noto Sans Mono CJK TC",
   "Source Code Pro",
-  "Noto Mono",
-  "Roboto Mono",
+  "Noto Mono", "Roboto Mono",
   "Source Han Sans TC",
   "Noto Sans CJK TC",
   "HanHei TC",
@@ -127,13 +128,13 @@ font-family: "Source Han Mono TC",
   emoji;
 ```
 
-<h2 id="adobe_fonts_hc">Traditional Chinese (Hong Kong), Traditional Chinese (Macao)</h2>
+<h3 id="adobe_fonts_hc">Traditional Chinese (Hong Kong), Traditional Chinese (Macao)</h3>
 
 ```css
 /* Sans Serif Fonts */
 /* Google has not yet released "Noto Sans CJK TC", this code is for advance adaptation */
-font-family: "Source Han Sans HC"
-    "Noto Sans CJK HC",
+font-family: "Source Han Sans HC",
+  "Noto Sans CJK HC",
   "Source Han Sans TC",
   "Noto Sans CJK TC",
   "HanHei TC",
@@ -148,8 +149,8 @@ font-family: "Source Han Sans HC"
 
 /* Serif Fonts */
 /* Adobe has not yet released "Source Han Serif HC"，nor has Google released "Noto Serif CJK TC", this code is for advance adaptation */
-font-family: "Source Han Serif HC"
-    "Noto Serif CJK HC",
+font-family: "Source Han Serif HC",
+  "Noto Serif CJK HC",
   "Source Han Serif TC",
   "Noto Serif CJK TC",
   "Source Serif Pro",
@@ -171,8 +172,8 @@ font-family: "Source Han Mono HC",
   "Source Code Pro",
   "Noto Mono",
   "Roboto Mono",
-  "Source Han Sans HC"
-    "Noto Sans CJK HC",
+  "Source Han Sans HC",
+  "Noto Sans CJK HC",
   "Source Han Sans TC",
   "Noto Sans CJK TC",
   "HanHei TC",
@@ -186,7 +187,7 @@ font-family: "Source Han Mono HC",
   emoji;
 ```
 
-<h2 id="adobe_fonts_j">Japanese</h2>
+<h3 id="adobe_fonts_j">Japanese</h3>
 
 ```css
 /* Sans Serif Fonts */
@@ -217,8 +218,7 @@ font-family: "Source Han Serif",
 
 /* Monospaced Fonts */
 font-family: "Source Han Mono",
-  "Noto Sans Mono CJK JP"
-    "Source Code Pro",
+  "Noto Sans Mono CJK JP" "Source Code Pro",
   "Noto Mono",
   "Roboto Mono",
   "Source Han Sans",
@@ -234,7 +234,7 @@ font-family: "Source Han Mono",
   emoji;
 ```
 
-<h2 id="adobe_fonts_k">Korean</h2>
+<h3 id="adobe_fonts_k">Korean</h3>
 
 ```css
 /* Sans Serif Fonts */
@@ -265,8 +265,7 @@ font-family: "Source Han Serif K",
 
 /* Monospaced Fonts */
 font-family: "Source Han Mono K",
-  "Noto Sans Mono CJK KR"
-    "Source Code Pro",
+  "Noto Sans Mono CJK KR" "Source Code Pro",
   "Noto Mono",
   "Roboto Mono",
   "Source Han Sans K",
@@ -282,7 +281,7 @@ font-family: "Source Han Mono K",
   emoji;
 ```
 
-<h2 id="adobe_fonts_lcgv">Latin, Cyrillic, Greek, Khmer</h2>
+<h3 id="adobe_fonts_lcgv">Latin, Cyrillic, Greek, Khmer</h3>
 
 > Works with English, Deutsch, Nederlands, Svenska, Bokmål, Nynorsk, Dansk,
 > Íslenska, Français, Italiano, Español, Português, Română, Lietuvių, Latviešu,
@@ -317,7 +316,7 @@ font-family: "Source Code Pro",
   emoji;
 ```
 
-<h2 id="adobe_fonts_aht">Arabic, Hebrew, Thai</h2>
+<h3 id="adobe_fonts_aht">Arabic, Hebrew, Thai</h3>
 
 > Works with עברית ,العربية, ไทย.
 
@@ -343,9 +342,9 @@ font-family: monospace,
 
 ---
 
-<h1 id="msft_fonts">Global Font: Microsoft-branded</h1>
+<h2 id="msft_fonts">Global Font: Microsoft-branded</h2>
 
-<h2 id="msft_fonts_sc">Chinese, Simplified Chinese (China), Simplified Chinese (Singapore)</h2>
+<h3 id="msft_fonts_sc">Chinese, Simplified Chinese (China), Simplified Chinese (Singapore)</h3>
 
 ```css
 /* Sans Serif Fonts */
@@ -393,7 +392,7 @@ font-family: "Cascadia Code",
   emoji;
 ```
 
-<h2 id="msft_fonts_tc">Traditional Chinese (Taiwan)</h2>
+<h3 id="msft_fonts_tc">Traditional Chinese (Taiwan)</h3>
 
 ```css
 /* Sans Serif Fonts */
@@ -436,7 +435,7 @@ font-family: "Cascadia Code",
   emoji;
 ```
 
-<h2 id="msft_fonts_hc">Traditional Chinese (Hong Kong), Traditional Chinese (Macao)</h2>
+<h3 id="msft_fonts_hc">Traditional Chinese (Hong Kong), Traditional Chinese (Macao)</h3>
 
 ```css
 /* Sans Serif Fonts */
@@ -480,7 +479,7 @@ font-family: "Cascadia Code",
   emoji;
 ```
 
-<h2 id="msft_fonts_j">Japanese</h2>
+<h3 id="msft_fonts_j">Japanese</h3>
 
 ```css
 /* Sans Serif Fonts */
@@ -523,7 +522,7 @@ font-family: "Cascadia Code",
   emoji;
 ```
 
-<h2 id="msft_fonts_k">Korean</h2>
+<h3 id="msft_fonts_k">Korean</h3>
 
 ```css
 /* Sans Serif Fonts */
@@ -564,7 +563,7 @@ font-family: "Cascadia Code",
   emoji;
 ```
 
-<h2 id="msft_fonts_lcg">Latin, Cyrillic, Greek</h2>
+<h3 id="msft_fonts_lcg">Latin, Cyrillic, Greek</h3>
 
 > Works with English, Deutsch, Nederlands, Svenska, Bokmål, Nynorsk, Dansk,
 > Íslenska, Français, Italiano, Español, Português, Română, Lietuvių, Latviešu,
@@ -599,7 +598,7 @@ font-family: "Cascadia Code",
   emoji;
 ```
 
-<h2 id="msft_fonts_ahtv">Arabic, Hebrew, Thai, Khmer</h2>
+<h3 id="msft_fonts_ahtv">Arabic, Hebrew, Thai, Khmer</h3>
 
 > Works with עברית ,العربية, ไทย, Tiếng việt.
 

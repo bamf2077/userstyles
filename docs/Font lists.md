@@ -1,7 +1,9 @@
 [<kbd>简体中文</kbd>](https://github.com/francis-zhao/userstyles/blob/master/docs/字体清单.md "字体清单")
 [<kbd>**`* English *`**</kbd>](https://github.com/francis-zhao/userstyles/blob/master/docs/Font%20lists.md "Font lists")
 
-<h1 id="index">Index</h1>
+# UserStyles - Font lists
+
+<h2 id="index">Index</h2>
 
 1. [Adobe-branded fonts](#adobe_fonts)
 
@@ -22,11 +24,11 @@
    1. [Overview](#other_fonts_ov)
    2. [Emoji typeface](#other_fonts_emj)
 
----
+<br>
 
-<h1 id="adobe_fonts">Adobe-branded fonts</h1>
+<h2 id="adobe_fonts">Adobe-branded fonts</h2>
 
-<h2 id="adobe_fonts_ov">Overview</h2>
+<h3 id="adobe_fonts_ov">Overview</h3>
 
 |  SN   | Typeface name                                                                                        |    Type    | Weight                                                    |     Style      |      Stretch       | Version | Format          | Language                                                                                                                           |
 | :---: | ---------------------------------------------------------------------------------------------------- | :--------: | --------------------------------------------------------- | :------------: | :----------------: | ------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,7 +41,7 @@
 
 <br>
 
-<h2 id="adobe_fonts_sans">Sans serif typeface</h2>
+<h3 id="adobe_fonts_sans">Sans serif typeface</h3>
 
 ### Source Han Sans
 
@@ -112,7 +114,7 @@
 
 <br>
 
-<h2 id="adobe_fonts_serif">Serif typeface</h2>
+<h3 id="adobe_fonts_serif">Serif typeface</h3>
 
 ### Source Han Serif
 
@@ -168,7 +170,7 @@
 
 <br>
 
-<h2 id="adobe_fonts_mono">Monospaced typeface</h2>
+<h3 id="adobe_fonts_mono">Monospaced typeface</h3>
 
 ### Source Han Mono
 
@@ -270,9 +272,9 @@
 
 ---
 
-<h1 id="msft_fonts">Microsoft-branded fonts</h1>
+<h2 id="msft_fonts">Microsoft-branded fonts</h2>
 
-<h2 id="msft_fonts_ov">Overview</h2>
+<h3 id="msft_fonts_ov">Overview</h3>
 
 |  SN   | Typeface name                                                                                                                                                             |    Type    | Weight                                                      |     Style      | Stretch | Version  | Format          | Language                                      |
 | :---: | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------: | ----------------------------------------------------------- | :------------: | :-----: | -------- | --------------- | --------------------------------------------- |
@@ -286,7 +288,7 @@
 
 <br>
 
-<h2 id="msft_fonts_sans">Sans serif typeface</h2>
+<h3 id="msft_fonts_sans">Sans serif typeface</h3>
 
 ### Microsoft YaHei
 
@@ -359,7 +361,7 @@
 
 <br>
 
-<h2 id="msft_fonts_mono">Monospaced typeface</h2>
+<h3 id="msft_fonts_mono">Monospaced typeface</h3>
 
 ### Cascadia Code
 
@@ -369,7 +371,7 @@
 
 <br>
 
-<h2 id="msft_fonts_emj">Emoji typeface</h2>
+<h3 id="msft_fonts_emj">Emoji typeface</h3>
 
 ### Segoe UI Emoji
 
@@ -381,9 +383,9 @@
 
 ---
 
-<h1 id="other_fonts">Other-branded fonts</h1>
+<h2 id="other_fonts">Other-branded fonts</h2>
 
-<h2 id="other_fonts_ov">Overview</h2>
+<h3 id="other_fonts_ov">Overview</h3>
 
 |  SN   | Typeface name                                                            | Type  | Weight  | Style  | Stretch | Version   | Format | Language |
 | :---: | ------------------------------------------------------------------------ | :---: | ------- | :----: | :-----: | --------- | ------ | -------- |
@@ -392,7 +394,7 @@
 
 <br>
 
-<h2 id="other_fonts_emj">Emoji typeface</h2>
+<h3 id="other_fonts_emj">Emoji typeface</h3>
 
 ### Apple Color Emoji
 
