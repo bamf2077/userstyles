@@ -1,34 +1,75 @@
-[<kbd>**`* 简体中文 *`**</kbd>](https://github.com/francis-zhao/userstyles/blob/master/docs/字体清单.md "字体清单")
-[<kbd>English</kbd>](https://github.com/francis-zhao/userstyles/blob/master/docs/Font%20lists.md "Font lists")
+[<kbd>**`* 简体中文 *`**</kbd>](https://github.com/francis-zhao/userstyles/tree/master/src/global-font/scss#readme "读我")
+[<kbd>English</kbd>](https://github.com/francis-zhao/userstyles/blob/master/src/global-font/scss/README.en.md "Readme")
 
-# UserStyles - 字体清单
+# UserStyles - 使用说明
 
 <h2 id="index">索引</h2>
 
-1. [Adobe 品牌字体](#adobe_fonts)
+1. [安装](#install)
 
-   1. [总览](#adobe_fonts_ov)
-   2. [无衬线字体](#adobe_fonts_sans)
-   3. [衬线字体](#adobe_fonts_serif)
-   4. [等宽字体](#adobe_fonts_mono)
+   1. [全局思源黑体](#install_adobe)
+   2. [全局微软雅黑](install_msft)
 
-2. [微软品牌字体](#msft_fonts)
+2. [字体清单](#font_lists)
 
-   1. [总览](#msft_fonts_ov)
-   2. [无衬线字体](#msft_fonts_sans)
-   3. [等宽字体](#msft_fonts_mono)
-   4. [绘文字字体](#msft_fonts_emj)
+   1. [Adobe 品牌](#font_adobe)
 
-3. [其他品牌字体](#other_fonts)
+      1. [总览](#font_adobe_ov)
+      2. [无衬线字体](#font_adobe_sans)
+      3. [衬线字体](#font_adobe_serif)
+      4. [等宽字体](#font_adobe_mono)
 
-   1. [总览](#other_fonts_ov)
-   2. [绘文字字体](#other_fonts_emj)
+   2. [微软品牌](#font_msft)
+
+      1. [总览](#font_msft_ov)
+      2. [无衬线字体](#font_msft_sans)
+      3. [等宽字体](#font_msft_mono)
+      4. [绘文字字体](#font_msft_emj)
+
+   3. [其他品牌](#font_others)
+
+      1. [总览](#font_others_ov)
+      2. [绘文字字体](#font_others_emj)
 
 <br>
 
-<h2 id="adobe_fonts">Adobe 品牌字体</h2>
+<h2 id="install">安装</h2>
 
-<h3 id="adobe_fonts_ov">总览</h3>
+<h3 id="install_adobe">全局思源黑体</h2>
+
+如果你正在使用 [Stylus](http://add0n.com/stylus.html "Stylus") 等用户样式表管理类浏览器扩展……
+
+- 通过 [Greasy Fork](https://greasyfork.org/scripts/419362 "Greasy Fork") 安装 (首选)
+
+- 通过 [jsDelivr](https://cdn.jsdelivr.net/gh/francis-zhao/userstyles/dist/css/global-font-adobe.user.css "jsDelivr") 安装
+
+如果你正在使用 [Tampermonkey](https://www.tampermonkey.net/ "Tampermonkey")、[Greasemonkey](https://www.greasespot.net/ "Greasemonkey") 等用户脚本管理类浏览器扩展……
+
+- 通过 [Greasy Fork](https://greasyfork.org/scripts/419362 "Greasy Fork") 安装
+
+<br>
+
+<h3 id="install_msft">全局微软雅黑</h2>
+
+如果你正在使用 [Stylus](http://add0n.com/stylus.html "Stylus") 等用户样式表管理类浏览器扩展……
+
+- 通过 [Greasy Fork](https://greasyfork.org/scripts/419363 "Greasy Fork") 安装 (首选)
+
+- 通过 [jsDelivr](https://cdn.jsdelivr.net/gh/francis-zhao/userstyles/dist/css/global-font-microsoft.user.css "jsDelivr") 安装
+
+<br>
+
+如果你正在使用 [Tampermonkey](https://www.tampermonkey.net/ "Tampermonkey")、[Greasemonkey](https://www.greasespot.net/ "Greasemonkey") 等用户脚本管理类浏览器扩展……
+
+- 通过 [Greasy Fork](https://greasyfork.org/scripts/419363 "Greasy Fork") 安装
+
+<br>
+
+<h2 id="font-list">字体清单</h2>
+
+<h3 id="font_adobe">Adobe 品牌</h3>
+
+<h4 id="font_adobe_ov">总览</h4>
 
 | 编号  | 字体名称                                                                                        |  类型  | 字重                                                      |    字形    |    字宽    | 版本  | 文件格式        | 语种                                                                                           |
 | :---: | ----------------------------------------------------------------------------------------------- | :----: | --------------------------------------------------------- | :--------: | :--------: | ----- | --------------- | ---------------------------------------------------------------------------------------------- |
@@ -41,9 +82,9 @@
 
 <br>
 
-<h3 id="adobe_fonts_sans">无衬线字体</h3>
+<h4 id="font_adobe_sans">无衬线字体</h4>
 
-### Source Han Sans
+Source Han Sans
 
 |   编号   | 字型名称                  | 版本  | 文件格式 | 语种            | 文件名                         |
 | :------: | ------------------------- | ----- | :------: | --------------- | ------------------------------ |
@@ -95,7 +136,7 @@
 
 <br>
 
-### Source Sans 3
+Source Sans 3
 
 |   编号   | 字型名称                        | 版本  | 文件格式 | 语种 | 文件名                       |
 | :------: | ------------------------------- | ----- | :------: | ---- | ---------------------------- |
@@ -114,9 +155,9 @@
 
 <br>
 
-<h3 id="adobe_fonts_serif">衬线字体</h3>
+<h4 id="font_adobe_serif">衬线字体</h4>
 
-### Source Han Serif
+Source Han Serif
 
 |   编号    | 字型名称            | 版本  | 文件格式 | 语种            | 文件名                          |
 | :-------: | ------------------- | ----- | :------: | --------------- | ------------------------------- |
@@ -151,7 +192,7 @@
 
 <br>
 
-### Source Serif Pro
+Source Serif Pro
 
 |   编号    | 字型名称                           | 版本  | 文件格式 | 语种 | 文件名                          |
 | :-------: | ---------------------------------- | ----- | :------: | ---- | ------------------------------- |
@@ -170,9 +211,9 @@
 
 <br>
 
-<h3 id="adobe_fonts_mono">等宽字体</h3>
+<h4 id="font_adobe_mono">等宽字体</h4>
 
-### Source Han Mono
+Source Han Mono
 
 |   编号   | 字型名称                | 版本  | 文件格式 | 语种            | 文件名                           |
 | :------: | ----------------------- | ----- | :------: | --------------- | -------------------------------- |
@@ -249,7 +290,7 @@
 
 <br>
 
-### Source Code Pro
+Source Code Pro
 
 |   编号   | 字型名称                          | 版本  | 文件格式 | 语种 | 文件名                         |
 | :------: | --------------------------------- | ----- | :------: | ---- | ------------------------------ |
@@ -270,11 +311,9 @@
 
 <br>
 
----
+<h3 id="font_msft">微软品牌字体</h3>
 
-<h2 id="msft_fonts">微软品牌字体</h2>
-
-<h3 id="msft_fonts_ov">总览</h3>
+<h4 id="font_msft_ov">总览</h4>
 
 | 编号  | 字体名称                                                                                                                                               |  类型  | 字重                                                        |    字形    | 字宽 | 版本     | 文件格式        | 语种                                                       |
 | :---: | ------------------------------------------------------------------------------------------------------------------------------------------------------ | :----: | ----------------------------------------------------------- | :--------: | :--: | -------- | --------------- | ---------------------------------------------------------- |
@@ -288,9 +327,9 @@
 
 <br>
 
-<h3 id="msft_fonts_sans">无衬线字体</h3>
+<h4 id="font_msft_sans">无衬线字体</h4>
 
-### Microsoft YaHei
+Microsoft YaHei
 
 |   编号   | 字型名称            | 版本 | 文件格式 | 语种     | 文件名     |
 | :------: | ------------------- | ---- | :------: | -------- | ---------- |
@@ -303,7 +342,7 @@
 
 <br>
 
-### Microsoft JhengHei
+Microsoft JhengHei
 
 |   编号   | 字型名称              | 版本 | 文件格式 | 语种     | 文件名     |
 | :------: | --------------------- | ---- | :------: | -------- | ---------- |
@@ -316,7 +355,7 @@
 
 <br>
 
-### Yu Gothic
+Yu Gothic
 
 |   编号   | 字型名称               | 版本 | 文件格式 | 语种 | 文件名      |
 | :------: | ---------------------- | ---- | :------: | ---- | ----------- |
@@ -332,7 +371,7 @@
 
 <br>
 
-### Malgun Gothic
+Malgun Gothic
 
 |   编号   | 字型名称                | 版本 | 文件格式 | 语种   | 文件名       |
 | :------: | ----------------------- | ---- | :------: | ------ | ------------ |
@@ -342,7 +381,7 @@
 
 <br>
 
-### Segoe UI
+Segoe UI
 
 |   编号   | 字型名称                  | 版本 | 文件格式 | 语种 | 文件名        |
 | :------: | ------------------------- | ---- | :------: | ---- | ------------- |
@@ -361,9 +400,9 @@
 
 <br>
 
-<h3 id="msft_fonts_mono">等宽字体</h3>
+<h4 id="font_msft_mono">等宽字体</h4>
 
-### Cascadia Code
+Cascadia Code
 
 |   编号   | 字型名称      | 版本     |    文件格式     | 语种 | 文件名           |
 | :------: | ------------- | -------- | :-------------: | ---- | ---------------- |
@@ -371,9 +410,9 @@
 
 <br>
 
-<h3 id="msft_fonts_emj">绘文字字体</h3>
+<h4 id="font_msft_emj">绘文字字体</h4>
 
-### Segoe UI Emoji
+Segoe UI Emoji
 
 |   编号    | 字型名称       | 版本 | 文件格式 | 语种 | 文件名       |
 | :-------: | -------------- | ---- | :------: | ---- | ------------ |
@@ -381,11 +420,9 @@
 
 <br>
 
----
+<h3 id="font_others">其他品牌字体</h3>
 
-<h2 id="other_fonts">其他品牌字体</h2>
-
-<h3 id="other_fonts_ov">总览</h3>
+<h4 id="font_others_ov">总览</h4>
 
 | 编号  | 字体名称                                                                 | 类型 | 字重    | 字形 | 字宽 | 版本      | 文件格式 | 语种 |
 | :---: | ------------------------------------------------------------------------ | :--: | ------- | :--: | :--: | --------- | -------- | ---- |
@@ -394,9 +431,9 @@
 
 <br>
 
-<h3 id="other_fonts_emj">绘文字字体</h3>
+<h4 id="font_others_emj">绘文字字体</h4>
 
-### Apple Color Emoji
+Apple Color Emoji
 
 |   编号    | 字型名称          | 版本      | 文件格式 | 语种 | 文件名                |
 | :-------: | ----------------- | --------- | :------: | ---- | --------------------- |
@@ -404,7 +441,7 @@
 
 <br>
 
-### Noto Color Emoji
+Noto Color Emoji
 
 |   编号    | 字型名称         | 版本  | 文件格式 | 语种 | 文件名             |
 | :-------: | ---------------- | ----- | :------: | ---- | ------------------ |
