@@ -5,7 +5,7 @@
 
 ## Introduction
 
-A bunch of handy user stylesheets with multiple purposes, applicable to userstyle/userscript management browser extensions such as Stylish, [Stylus](http://add0n.com/stylus.html "Stylus"), [Tampermonkey](https://www.tampermonkey.net/ "Tampermonkey"), [Greasemonkey](https://www.greasespot.net/ "Greasemonkey"). The stylesheets are implemented like `userChrome.css`, `Custom.css`, `user.css`, written in ![Sass/SCSS](https://img.shields.io/github/languages/top/francis-zhao/userstyles?style=flat-square) language.
+A bunch of handy user stylesheets with multiple purposes, applicable to user style / user script management browser extensions such as Stylish, [Stylus](http://add0n.com/stylus.html "Stylus"), [Tampermonkey](https://www.tampermonkey.net/ "Tampermonkey"), [Greasemonkey](https://www.greasespot.net/ "Greasemonkey"). The stylesheets are implemented like `userChrome.css`, `Custom.css`, `user.css`, written in ![Sass/SCSS](https://img.shields.io/github/languages/top/francis-zhao/userstyles?style=flat-square) language.
 
 <br>
 

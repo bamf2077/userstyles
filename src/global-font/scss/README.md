@@ -65,7 +65,7 @@
 
 <br>
 
-<h2 id="font-list">字体清单</h2>
+<h2 id="font_lists">字体清单</h2>
 
 <h3 id="font_adobe">Adobe 品牌</h3>
 
@@ -311,7 +311,7 @@ Source Code Pro
 
 <br>
 
-<h3 id="font_msft">微软品牌字体</h3>
+<h3 id="font_msft">微软品牌</h3>
 
 <h4 id="font_msft_ov">总览</h4>
 
@@ -329,7 +329,7 @@ Source Code Pro
 
 <h4 id="font_msft_sans">无衬线字体</h4>
 
-Microsoft YaHei
+微软雅黑
 
 |   编号   | 字型名称            | 版本 | 文件格式 | 语种     | 文件名     |
 | :------: | ------------------- | ---- | :------: | -------- | ---------- |
@@ -342,7 +342,7 @@ Microsoft YaHei
 
 <br>
 
-Microsoft JhengHei
+微軟正黑體
 
 |   编号   | 字型名称              | 版本 | 文件格式 | 语种     | 文件名     |
 | :------: | --------------------- | ---- | :------: | -------- | ---------- |
@@ -420,7 +420,7 @@ Segoe UI Emoji
 
 <br>
 
-<h3 id="font_others">其他品牌字体</h3>
+<h3 id="font_others">其他品牌</h3>
 
 <h4 id="font_others_ov">总览</h4>
 
