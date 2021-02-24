@@ -11,7 +11,7 @@
 
 ## 项目
 
-### [全局思源黑体](https://github.com/francis-zhao/userstyles/blob/master/src/scss/global-font-adobe.user.scss)
+### [全局思源黑体](https://github.com/francis-zhao/userstyles/blob/master/src/global-font/scss/global-font-adobe.user.scss)
 
 一款使用 [Adobe 品牌字体](https://github.com/francis-zhao/userstyles/blob/master/src/global-font/scss/README.md#font_adobe)替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 
@@ -19,7 +19,7 @@
 
 <br>
 
-### [全局微软雅黑](https://github.com/francis-zhao/userstyles/blob/master/src/scss/global-font-microsoft.user.scss)
+### [全局微软雅黑](https://github.com/francis-zhao/userstyles/blob/master/src/global-font/scss/global-font-microsoft.user.scss)
 
 一款使用[微软品牌字体](https://github.com/francis-zhao/userstyles/blob/master/src/global-font/scss/README.md#font_msft)替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 
@@ -27,11 +27,11 @@
 
 <br>
 
-### [💡 关灯，人人影视！](https://github.com/francis-zhao/userstyles/blob/master/src/scss/theme-yyets-dark.user.scss)
+### [💡 关灯，人人影视！](https://github.com/francis-zhao/userstyles/blob/master/src/theme-yyets-dark/scss/theme-yyets-dark.user.scss)
 
-<del>一款适用于 YYeTs 人人影视系列网站的深色主题用户样式表。</del>
+~~一款适用于 YYeTs 人人影视系列网站的深色主题用户样式表。~~
 
-<del>你可以在 [Greasy Fork](https://greasyfork.org/scripts/419366 "Greasy Fork") 上以 `.user.css` 或 `.user.js` 的形式直接订阅使用最新的稳定版。</del>
+~~你可以在 [Greasy Fork](https://greasyfork.org/scripts/419366 "Greasy Fork") 上以 `.user.css` 或 `.user.js` 的形式直接订阅使用最新的稳定版。~~
 
 因网站关停，目前不可用。
 

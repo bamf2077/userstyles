@@ -8,7 +8,7 @@
 1. [安装](#install)
 
    1. [全局思源黑体](#install_adobe)
-   2. [全局微软雅黑](install_msft)
+   2. [全局微软雅黑](#install_msft)
 
 2. [字体清单](#font_lists)
 
@@ -30,6 +30,28 @@
 
       1. [总览](#font_others_ov)
       2. [绘文字字体](#font_others_emj)
+
+3. [字体栈优先级](#priority)
+
+   1. [全局思源黑体](#priority_adobe)
+
+      1. [中文、简体中文 (中国)、简体中文 (新加坡)](#priority_adobe_sc)
+      2. [繁体中文 (台湾)](#priority_adobe_tc)
+      3. [繁体中文 (香港)、繁体中文 (澳门)](#priority_adobe_hc)
+      4. [日文](#priority_adobe_j)
+      5. [朝鲜文](#priority_adobe_k)
+      6. [拉丁字母、西里尔字母、希腊文、高棉文](#priority_adobe_lcgv)
+      7. [阿拉伯字母、希伯来文、泰文](#priority_adobe_aht)
+
+   2. [全局微软雅黑](#priority_msft)
+
+      1. [中文、简体中文 (中国)、简体中文 (新加坡)](#priority_msft_sc)
+      2. [繁体中文 (台湾)](#priority_msft_tc)
+      3. [繁体中文 (香港)、繁体中文 (澳门)](#priority_msft_hc)
+      4. [日文](#priority_msft_j)
+      5. [朝鲜文](#priority_msft_k)
+      6. [拉丁字母、西里尔字母、希腊文](#priority_msft_lcg)
+      7. [阿拉伯字母、希伯来文、泰文、高棉文](#priority_msft_ahtv)
 
 <br>
 
@@ -447,6 +469,278 @@ Noto Color Emoji
 | :-------: | ---------------- | ----- | :------: | ---- | ------------------ |
 | Emoji#301 | Noto Color Emoji | 2.011 |   TTF    | 中性 | NotoColorEmoji.ttf |
 
+<br>
+
+<h2 id="priority">字体栈优先级</h2>
+
+<h3 id="priority_adobe">全局思源黑体</h3>
+
+<h4 id="priority_adobe_sc">中文、简体中文 (中国)、简体中文 (新加坡)</h4>
+
+```css
+/* 无衬线字体 */
+font-family: "思源黑体", "Noto Sans CJK SC", "HanHei SC", "方正兰亭黑_GB18030",
+  "方正兰亭黑_GBK", system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 衬线字体 */
+font-family: "思源宋体", "Noto Serif CJK SC", "方正新书宋_GBK",
+  "Source Serif Pro", "Noto Serif", "Roboto Slab", serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 等宽字体 */
+font-family: "思源等宽", "Noto Sans Mono CJK SC", "Source Code Pro",
+  "Noto Mono", "Roboto Mono", "思源黑体", "Noto Sans CJK SC", "HanHei SC",
+  "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui, -apple-system, monospace, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+```
+
+<h4 id="priority_adobe_tc">繁体中文 (台湾)</h4>
+
+```css
+/* 无衬线字体 */
+font-family: "思源黑體", "Noto Sans CJK TC", "HanHei TC", system-ui,
+  -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji",
+  emoji;
+
+/* 衬线字体 */
+font-family: "思源宋體", "Noto Serif CJK TC", "Source Serif Pro", "Noto Serif",
+  "Roboto Slab", serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 等宽字体 */
+font-family: "思源等寬", "Noto Sans Mono CJK TC", "Source Code Pro",
+  "Noto Mono", "Roboto Mono", "思源黑體", "Noto Sans CJK TC", "HanHei TC",
+  system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji", emoji;
+```
+
+<h4 id="priority_adobe_hc">繁体中文 (香港)、繁体中文 (澳门)</h4>
+
+```css
+/* 无衬线字体 */
+/* Google 目前并未推出“Noto Sans CJK TC”，此处仅为提前适配 */
+font-family: "思源黑體 香港" "Noto Sans CJK HC", "思源黑體", "Noto Sans CJK TC",
+  "HanHei TC", system-ui, -apple-system, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 衬线字体 */
+/* Adobe 目前并未推出“思源宋體 香港”，Google 也未推出“Noto Serif CJK HC”，此处仅为提前适配 */
+font-family: "思源宋體 香港" "Noto Serif CJK HC", "思源宋體", "Noto Serif CJK TC",
+  "Source Serif Pro", "Noto Serif", "Roboto Slab", serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 等宽字体 */
+/* Google 目前并未推出“Noto Sans Mono CJK HC”，此处仅为提前适配 */
+font-family: "思源等寬 香港", "Noto Sans Mono CJK HC", "思源等寬",
+  "Noto Sans Mono CJK TC", "Source Code Pro", "Noto Mono", "Roboto Mono",
+  "思源黑體 香港" "Noto Sans CJK HC", "思源黑體", "Noto Sans CJK TC", "HanHei TC",
+  system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji", emoji;
+```
+
+<h4 id="priority_adobe_j">日文</h4>
+
+```css
+/* 无衬线字体 */
+font-family: "源ノ角ゴシック", "Noto Sans CJK JP", "Hiragino Kaku Gothic Pro",
+  system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji", emoji;
+
+/* 衬线字体 */
+font-family: "源ノ明朝", "Noto Serif CJK JP", "Source Serif Pro", "Noto Serif",
+  "Roboto Slab", serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 等宽字体 */
+font-family: "源ノ等幅", "Noto Sans Mono CJK JP" "Source Code Pro", "Noto Mono",
+  "Roboto Mono", "源ノ角ゴシック", "Noto Sans CJK JP", "Hiragino Kaku Gothic Pro",
+  system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji", emoji;
+```
+
+<h4 id="priority_adobe_k">朝鲜文</h4>
+
+```css
+/* 无衬线字体 */
+font-family: "본고딕", "Noto Sans CJK KR", "Apple SD Gothic Neo", system-ui,
+  -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji", emoji;
+
+/* 衬线字体 */
+font-family: "본명조", "Noto Serif CJK KR", "Source Serif Pro", "Noto Serif",
+  "Roboto Slab", serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 等宽字体 */
+font-family: "본모노", "Noto Sans Mono CJK KR" "Source Code Pro", "Noto Mono", "Roboto Mono",
+  "본고딕", "Noto Sans CJK KR", "Apple SD Gothic Neo", system-ui, -apple-system,
+  monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji", emoji;
+```
+
+<h4 id="priority_adobe_lcgv">拉丁字母、西里尔字母、希腊文、高棉文</h4>
+
+> 已适配英语、德语、荷兰语、瑞典语、挪威语、丹麦语、冰岛语、法语、意大利语、西班
+> 牙语、葡萄牙语、罗马尼亚语、立陶宛语、拉脱维亚语、俄语、白俄罗斯语、乌克兰语、
+> 波兰语、捷克语、斯洛伐克语、保加利亚语、斯洛文尼亚语、塞尔维亚语、克罗地亚语、
+> 波斯尼亚语、希腊语、芬兰语、爱沙尼亚语、匈牙利语、土耳其语、高棉文、印度尼西亚
+> 语、马来语。
+
+```css
+/* 无衬线字体 */
+font-family: "Source Sans 3", "Source Sans Pro", "Noto Sans", "Roboto",
+  system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji", emoji;
+
+/* 等宽字体 */
+font-family: "Source Code Pro", "Noto Mono", "Roboto Mono", monospace,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
+  emoji;
+```
+
+<h4 id="priority_adobe_aht">阿拉伯字母、希伯来文、泰文</h4>
+
+> 已适配阿拉伯语、希伯来语、泰语。
+
+```css
+/* 无衬线字体 */
+font-family: system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 等宽字体 */
+font-family: monospace, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji", emoji;
+```
+
+<br>
+
+<h3 id="priority_msft">全局微软雅黑</h3>
+
+<h4 id="priority_msft_sc">中文、简体中文 (中国)、简体中文 (新加坡)</h4>
+
+```css
+/* 无衬线字体 */
+font-family: "微软雅黑 UI", "微软雅黑", "方正兰亭黑_GB18030", "方正兰亭黑_GBK",
+  system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji", emoji;
+
+/* 衬线字体 */
+font-family: "方正新书宋_GBK", "Georgia", "Noto Serif", "Roboto Slab", serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
+  emoji;
+
+/* 等宽字体 */
+font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas",
+  "微软雅黑 UI", "微软雅黑", "方正兰亭黑_GB18030", "方正兰亭黑_GBK", system-ui,
+  -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+  "Noto Color Emoji", emoji;
+```
+
+<h4 id="priority_msft_tc">繁体中文 (台湾)</h4>
+
+```css
+/* 无衬线字体 */
+font-family: "微軟正黑體 UI", "微軟正黑體", system-ui, -apple-system, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 衬线字体 */
+font-family: "PMingLiU", "Noto Serif", "Roboto Slab", serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
+  emoji;
+
+/* 等宽字体 */
+font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas",
+  "微軟正黑體 UI", "微軟正黑體", system-ui, -apple-system, monospace, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+```
+
+<h4 id="priority_msft_hc">繁体中文 (香港)、繁体中文 (澳门)</h4>
+
+```css
+/* 无衬线字体 */
+font-family: "微軟正黑體 UI", "微軟正黑體", system-ui, -apple-system, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 衬线字体 */
+font-family: "MingLiU_HKSCS", "PMingLiU", "Noto Serif", "Roboto Slab", serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
+  emoji;
+
+/* 等宽字体 */
+font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas",
+  "微軟正黑體 UI", "微軟正黑體", system-ui, -apple-system, monospace, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+```
+
+<h4 id="priority_msft_j">日文</h4>
+
+```css
+/* 无衬线字体 */
+font-family: "Yu Gothic UI", "Yu Gothic", system-ui, -apple-system, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 衬线字体 */
+font-family: "Georgia", "Noto Serif", "Roboto Slab", serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 等宽字体 */
+font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas",
+  "Yu Gothic UI", "Yu Gothic", system-ui, -apple-system, monospace, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+```
+
+<h4 id="priority_msft_k">朝鲜文</h4>
+
+```css
+/* 无衬线字体 */
+font-family: "Malgun Gothic", system-ui, -apple-system, sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 衬线字体 */
+font-family: "Georgia", "Noto Serif", "Roboto Slab", serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 等宽字体 */
+font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas",
+  "Malgun Gothic", system-ui, -apple-system, monospace, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji", emoji;
+```
+
+<h4 id="priority_msft_lcg">拉丁字母、西里尔字母、希腊文</h4>
+
+> 已适配英语、德语、荷兰语、瑞典语、挪威语、丹麦语、冰岛语、法语、意大利语、西班
+> 牙语、葡萄牙语、罗马尼亚语、立陶宛语、拉脱维亚语、俄语、白俄罗斯语、乌克兰语、
+> 波兰语、捷克语、斯洛伐克语、保加利亚语、斯洛文尼亚语、塞尔维亚语、克罗地亚语、
+> 波斯尼亚语、希腊语、芬兰语、爱沙尼亚语、匈牙利语、土耳其语、印度尼西亚语、马来
+> 语。
+
+```css
+/* 无衬线字体 */
+font-family: "Segoe UI", "Noto Sans", "Roboto", system-ui, -apple-system, sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 等宽字体 */
+font-family: "Cascadia Code", "Noto Mono", "Roboto Mono", "Consolas", monospace,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji",
+  emoji;
+```
+
+<h4 id="priority_msft_ahtv">阿拉伯字母、希伯来文、泰文、高棉文</h4>
+
+> 已适配阿拉伯语、希伯来语、泰语、越南语。
+
+```css
+/* 无衬线字体 */
+font-family: system-ui, -apple-system, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji", emoji;
+
+/* 等宽字体 */
+font-family: monospace, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol", "Noto Color Emoji", emoji;
+```
+
+<br>
 <br>
 
 [<kbd>返回顶部</kbd>](# "返回顶部")

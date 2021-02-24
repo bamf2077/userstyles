@@ -11,7 +11,7 @@ A bunch of handy user stylesheets with multiple purposes, applicable to user sty
 
 ## Items
 
-### [Global Font: Adobe-branded](https://github.com/francis-zhao/userstyles/blob/master/src/scss/global-font-adobe.user.scss)
+### [Global Font: Adobe-branded](https://github.com/francis-zhao/userstyles/blob/master/src/global-font/scss/global-font-adobe.user.scss)
 
 An user stylesheet to replace all fonts on web pages with [Adobe-branded fonts](https://github.com/francis-zhao/userstyles/blob/master/src/global-font/scss/README.en.md#font_adobe), brings you a more unified and beautiful visual style.
 
@@ -19,7 +19,7 @@ You can subscribe to the latest stable version as `.user.css` or `.user.js` via 
 
 <br>
 
-### [Global Font: Microsoft-branded](https://github.com/francis-zhao/userstyles/blob/master/src/scss/global-font-microsoft.user.scss)
+### [Global Font: Microsoft-branded](https://github.com/francis-zhao/userstyles/blob/master/src/global-font/scss/global-font-microsoft.user.scss)
 
 An user stylesheet to replace all fonts on web pages with [Microsoft-branded fonts](https://github.com/francis-zhao/userstyles/blob/master/src/global-font/scss/README.en.md#font_msft), brings you a more unified and beautiful visual style.
 
@@ -27,11 +27,11 @@ You can subscribe to the latest stable version as `.user.css` or `.user.js` via 
 
 <br>
 
-### [💡 TURN OFF THE LIGHT, YYeTs!](https://github.com/francis-zhao/userstyles/blob/master/src/scss/theme-yyets-dark.user.scss)
+### [💡 TURN OFF THE LIGHT, YYeTs!](https://github.com/francis-zhao/userstyles/blob/master/src/theme-yyets-dark/scss/theme-yyets-dark.user.scss)
 
-<del>An user stylesheet with dark theme for YYeTs.com.</del>
+~~An user stylesheet with dark theme for YYeTs.com.~~
 
-<del>You can subscribe to the latest stable version as `.user.css` or `.user.js` via [Greasy Fork](https://greasyfork.org/scripts/419366 "Greasy Fork").</del>
+~~You can subscribe to the latest stable version as `.user.css` or `.user.js` via [Greasy Fork](https://greasyfork.org/scripts/419366 "Greasy Fork").~~
 
 Because the site has been shut down, it is currently unavailable.
 
