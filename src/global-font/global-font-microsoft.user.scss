@@ -1,0 +1,231 @@
+/* ==UserStyle==
+@name:en Global Font: Microsoft-branded
+@name 全局微软雅黑
+@namespace franciszhao
+@version 2.3.0
+@description:en An user stylesheet to replace all fonts on web pages with Microsoft-branded fonts, brings you a more unified and beautiful visual style.
+@description 一款使用微软品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
+@author Francis Zhao <francis@n2o.io>
+@homepageURL https://n2o.io/go?page=userstyles
+@supportURL https://n2o.io/go?page=userstyles
+@license MIT
+@preprocessor default
+==/UserStyle== */
+
+@use 'foundation';
+
+// 全局字体定义
+
+// 衬线字体
+$font-serif: 'Georgia';
+$font-serif-fallback: 'Noto Serif', 'Roboto Slab';
+
+$font-serif-sc: '方正新书宋_GBK';
+$font-serif-sc-fallback: $font-serif, $font-serif-fallback;
+
+$font-serif-tc: 'PMingLiU';
+$font-serif-tc-fallback: $font-serif, $font-serif-fallback;
+
+$font-serif-hc: 'MingLiU_HKSCS';
+$font-serif-hc-fallback: $font-serif-tc, $font-serif-tc-fallback;
+
+$font-serif-j: 'MS PMincho';
+$font-serif-j-fallback: $font-serif, $font-serif-fallback;
+
+$font-serif-k: '';
+$font-serif-k-fallback: $font-serif, $font-serif-fallback;
+
+// 无衬线字体
+$font-sans-serif: 'Segoe UI';
+$font-sans-serif-fallback: 'Noto Sans', 'Roboto';
+
+$font-sans-serif-sc: 'Microsoft YaHei UI';
+$font-sans-serif-sc-fallback: 'Microsoft YaHei', '方正兰亭黑_GB18030',
+  '方正兰亭黑_GBK', foundation.$font-system-ui;
+
+$font-sans-serif-tc: 'Microsoft JhengHei UI';
+$font-sans-serif-tc-fallback: 'Microsoft JhengHei', foundation.$font-system-ui;
+
+$font-sans-serif-hc: 'Microsoft JhengHei UI';
+$font-sans-serif-hc-fallback: $font-sans-serif-tc-fallback;
+
+$font-sans-serif-j: 'Yu Gothic UI';
+$font-sans-serif-j-fallback: 'Yu Gothic', foundation.$font-system-ui;
+
+$font-sans-serif-k: 'Malgun Gothic';
+$font-sans-serif-k-fallback: foundation.$font-system-ui;
+
+// 等宽字体
+$font-monospace: 'Cascadia Code';
+$font-monospace-fallback: 'Noto Mono', 'SF Mono', 'Roboto Mono';
+
+$font-monospace-sc: 'Cascadia Code';
+$font-monospace-sc-fallback: $font-monospace-fallback;
+
+$font-monospace-tc: 'Cascadia Code';
+$font-monospace-tc-fallback: $font-monospace-fallback;
+
+$font-monospace-hc: 'Cascadia Code';
+$font-monospace-hc-fallback: $font-monospace-fallback;
+
+$font-monospace-j: 'Cascadia Code';
+$font-monospace-j-fallback: $font-monospace-fallback;
+
+$font-monospace-k: 'Cascadia Code';
+$font-monospace-k-fallback: $font-monospace-fallback;
+
+/* 字体设定 */
+
+// ✔️ 拉丁字母、西里尔字母、希腊文
+// ❌ 阿拉伯字母、希伯来文、泰文
+
+$vendor: 'microsoft';
+
+@include foundation.default-font-families(
+  $font-sans-serif:
+    foundation.get-default(
+      $type: 'sans-serif',
+      $font-list: (
+        $font-sans-serif,
+        $font-sans-serif-fallback,
+      )
+    ),
+  $font-monospace:
+    foundation.get-default(
+      $type: 'monospace',
+      $font-list: (
+        $font-monospace,
+        $font-monospace-fallback,
+      )
+    ),
+  $font-sans-serif-sc:
+    foundation.get-default(
+      $type: 'sans-serif',
+      $font-list: (
+        $font-sans-serif-sc,
+        $font-sans-serif-sc-fallback,
+      )
+    ),
+  $font-monospace-sc:
+    foundation.get-default(
+      $type: 'monospace',
+      $font-list: (
+        $font-monospace-sc,
+        $font-monospace-sc-fallback,
+      )
+    ),
+  $font-sans-serif-tc:
+    foundation.get-default(
+      $type: 'sans-serif',
+      $font-list: (
+        $font-sans-serif-tc,
+        $font-sans-serif-tc-fallback,
+      )
+    ),
+  $font-monospace-tc:
+    foundation.get-default(
+      $type: 'monospace',
+      $font-list: (
+        $font-monospace-tc,
+        $font-monospace-tc-fallback,
+      )
+    ),
+  $font-sans-serif-hc:
+    foundation.get-default(
+      $type: 'sans-serif',
+      $font-list: (
+        $font-sans-serif-hc,
+        $font-sans-serif-hc-fallback,
+      )
+    ),
+  $font-monospace-hc:
+    foundation.get-default(
+      $type: 'monospace',
+      $font-list: (
+        $font-monospace-hc,
+        $font-monospace-hc-fallback,
+      )
+    ),
+  $font-sans-serif-j:
+    foundation.get-default(
+      $type: 'sans-serif',
+      $font-list: (
+        $font-sans-serif-j,
+        $font-sans-serif-j-fallback,
+      )
+    ),
+  $font-monospace-j:
+    foundation.get-default(
+      $type: 'monospace',
+      $font-list: (
+        $font-monospace-j,
+        $font-monospace-j-fallback,
+      )
+    ),
+  $font-sans-serif-k:
+    foundation.get-default(
+      $type: 'sans-serif',
+      $font-list: (
+        $font-sans-serif-k,
+        $font-sans-serif-k-fallback,
+      )
+    ),
+  $font-monospace-k:
+    foundation.get-default(
+      $type: 'monospace',
+      $font-list: (
+        $font-monospace-k,
+        $font-monospace-k-fallback,
+      )
+    ),
+  $vendor: $vendor
+);
+
+/* 字体替换 */
+
+@include foundation.font-face-replace(
+  $font-serif: $font-serif,
+  $font-sans-serif: $font-sans-serif,
+  $font-monospace: $font-monospace,
+  $font-serif-sc: $font-sans-serif-sc,
+  $font-sans-serif-sc: $font-sans-serif-sc,
+  $font-serif-tc: $font-sans-serif-tc,
+  $font-sans-serif-tc: $font-sans-serif-tc,
+  $font-serif-hc: $font-sans-serif-hc,
+  $font-sans-serif-hc: $font-sans-serif-hc,
+  $font-serif-j: $font-sans-serif-j,
+  $font-sans-serif-j: $font-sans-serif-j,
+  $font-serif-k: $font-sans-serif-k,
+  $font-sans-serif-k: $font-sans-serif-k
+);
+
+/* 特定网站适配 */
+
+@include foundation.specific-websites(
+  $font-serif:
+    foundation.get-default(
+      $type: 'serif',
+      $font-list: (
+        $font-serif-sc,
+        $font-serif-sc-fallback,
+      )
+    ),
+  $font-sans-serif:
+    foundation.get-default(
+      $type: 'sans-serif',
+      $font-list: (
+        $font-sans-serif-sc,
+        $font-sans-serif-sc-fallback,
+      )
+    ),
+  $font-monospace:
+    foundation.get-default(
+      $type: 'monospace',
+      $font-list: (
+        $font-monospace-sc,
+        $font-monospace-sc-fallback,
+      )
+    )
+);
+
+// 真的到底了

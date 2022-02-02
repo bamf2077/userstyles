@@ -1,0 +1,729 @@
+/* ==UserStyle==
+@name:en Global Font: Microsoft-branded
+@name 全局微软雅黑
+@namespace franciszhao
+@version 2.3.0
+@description:en An user stylesheet to replace all fonts on web pages with Microsoft-branded fonts, brings you a more unified and beautiful visual style.
+@description 一款使用微软品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
+@author Francis Zhao <francis@n2o.io>
+@homepageURL https://n2o.io/go?page=userstyles
+@supportURL https://n2o.io/go?page=userstyles
+@license MIT
+@preprocessor default
+==/UserStyle== */
+/* 字体设定 */
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', '方正兰亭黑_GB18030',
+    '方正兰亭黑_GBK', system-ui, -apple-system, ui-sans-serif, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
+    emoji;
+}
+
+pre,
+code,
+kbd,
+samp {
+  font-family: 'Cascadia Code', 'Noto Mono', 'SF Mono', 'Roboto Mono',
+    ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+}
+
+button,
+input,
+keygen,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+}
+
+html:lang(zh) body,
+html:lang(zh-CN) body,
+html:lang(zh-SG) body,
+html:lang(zh-Hans) body,
+html:lang(cmn) body,
+html:lang(cmn-Hans) body,
+html:lang(zh-cmn-Hans) body {
+  font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', '方正兰亭黑_GB18030',
+    '方正兰亭黑_GBK', system-ui, -apple-system, ui-sans-serif, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
+    emoji;
+  quotes: '“' '”';
+}
+html:lang(zh) pre,
+html:lang(zh) code,
+html:lang(zh) kbd,
+html:lang(zh) samp,
+html:lang(zh-CN) pre,
+html:lang(zh-CN) code,
+html:lang(zh-CN) kbd,
+html:lang(zh-CN) samp,
+html:lang(zh-SG) pre,
+html:lang(zh-SG) code,
+html:lang(zh-SG) kbd,
+html:lang(zh-SG) samp,
+html:lang(zh-Hans) pre,
+html:lang(zh-Hans) code,
+html:lang(zh-Hans) kbd,
+html:lang(zh-Hans) samp,
+html:lang(cmn) pre,
+html:lang(cmn) code,
+html:lang(cmn) kbd,
+html:lang(cmn) samp,
+html:lang(cmn-Hans) pre,
+html:lang(cmn-Hans) code,
+html:lang(cmn-Hans) kbd,
+html:lang(cmn-Hans) samp,
+html:lang(zh-cmn-Hans) pre,
+html:lang(zh-cmn-Hans) code,
+html:lang(zh-cmn-Hans) kbd,
+html:lang(zh-cmn-Hans) samp {
+  font-family: 'Cascadia Code', 'Noto Mono', 'SF Mono', 'Roboto Mono',
+    ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+}
+html:lang(zh-TW) body,
+html:lang(zh-Hant) body,
+html:lang(cmn-Hant) body,
+html:lang(zh-cmn-Hant) body {
+  font-family: 'Microsoft JhengHei UI', 'Microsoft JhengHei', system-ui,
+    -apple-system, ui-sans-serif, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+  quotes: '「' '」';
+}
+html:lang(zh-TW) pre,
+html:lang(zh-TW) code,
+html:lang(zh-TW) kbd,
+html:lang(zh-TW) samp,
+html:lang(zh-Hant) pre,
+html:lang(zh-Hant) code,
+html:lang(zh-Hant) kbd,
+html:lang(zh-Hant) samp,
+html:lang(cmn-Hant) pre,
+html:lang(cmn-Hant) code,
+html:lang(cmn-Hant) kbd,
+html:lang(cmn-Hant) samp,
+html:lang(zh-cmn-Hant) pre,
+html:lang(zh-cmn-Hant) code,
+html:lang(zh-cmn-Hant) kbd,
+html:lang(zh-cmn-Hant) samp {
+  font-family: 'Cascadia Code', 'Noto Mono', 'SF Mono', 'Roboto Mono',
+    ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+}
+html:lang(zh-HK) body,
+html:lang(zh-MO) body,
+html:lang(yue) body,
+html:lang(yue-Hant) body,
+html:lang(zh-yue-Hant) body {
+  font-family: 'Microsoft JhengHei UI', 'Microsoft JhengHei', system-ui,
+    -apple-system, ui-sans-serif, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+  quotes: '「' '」';
+}
+html:lang(zh-HK) pre,
+html:lang(zh-HK) code,
+html:lang(zh-HK) kbd,
+html:lang(zh-HK) samp,
+html:lang(zh-MO) pre,
+html:lang(zh-MO) code,
+html:lang(zh-MO) kbd,
+html:lang(zh-MO) samp,
+html:lang(yue) pre,
+html:lang(yue) code,
+html:lang(yue) kbd,
+html:lang(yue) samp,
+html:lang(yue-Hant) pre,
+html:lang(yue-Hant) code,
+html:lang(yue-Hant) kbd,
+html:lang(yue-Hant) samp,
+html:lang(zh-yue-Hant) pre,
+html:lang(zh-yue-Hant) code,
+html:lang(zh-yue-Hant) kbd,
+html:lang(zh-yue-Hant) samp {
+  font-family: 'Cascadia Code', 'Noto Mono', 'SF Mono', 'Roboto Mono',
+    ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+}
+html:lang(ja) body {
+  font-family: 'Yu Gothic UI', 'Yu Gothic', system-ui, -apple-system,
+    ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+  quotes: '「' '」';
+}
+html:lang(ja) pre,
+html:lang(ja) code,
+html:lang(ja) kbd,
+html:lang(ja) samp {
+  font-family: 'Cascadia Code', 'Noto Mono', 'SF Mono', 'Roboto Mono',
+    ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+}
+html:lang(ko) body {
+  font-family: 'Malgun Gothic', system-ui, -apple-system, ui-sans-serif,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji', emoji;
+}
+html:lang(ko) pre,
+html:lang(ko) code,
+html:lang(ko) kbd,
+html:lang(ko) samp {
+  font-family: 'Cascadia Code', 'Noto Mono', 'SF Mono', 'Roboto Mono',
+    ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+}
+html:lang(de) body,
+html:lang(nl) body,
+html:lang(en) body,
+html:lang(nb) body,
+html:lang(no) body,
+html:lang(is) body,
+html:lang(da) body,
+html:lang(sv) body,
+html:lang(pt) body,
+html:lang(es) body,
+html:lang(fr) body,
+html:lang(it) body,
+html:lang(ro) body,
+html:lang(lv) body,
+html:lang(lt) body,
+html:lang(pl) body,
+html:lang(cs) body,
+html:lang(sk) body,
+html:lang(bs) body,
+html:lang(hr) body,
+html:lang(sr) body,
+html:lang(bg) body,
+html:lang(sl) body,
+html:lang(ru) body,
+html:lang(uk) body,
+html:lang(be) body,
+html:lang(el) body,
+html:lang(hu) body,
+html:lang(et) body,
+html:lang(fi) body,
+html:lang(tr) body,
+html:lang(id) body,
+html:lang(ms) body {
+  font-family: 'Segoe UI', 'Noto Sans', 'Roboto', ui-sans-serif, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
+    emoji;
+}
+html:lang(de) pre,
+html:lang(de) code,
+html:lang(de) kbd,
+html:lang(de) samp,
+html:lang(nl) pre,
+html:lang(nl) code,
+html:lang(nl) kbd,
+html:lang(nl) samp,
+html:lang(en) pre,
+html:lang(en) code,
+html:lang(en) kbd,
+html:lang(en) samp,
+html:lang(nb) pre,
+html:lang(nb) code,
+html:lang(nb) kbd,
+html:lang(nb) samp,
+html:lang(no) pre,
+html:lang(no) code,
+html:lang(no) kbd,
+html:lang(no) samp,
+html:lang(is) pre,
+html:lang(is) code,
+html:lang(is) kbd,
+html:lang(is) samp,
+html:lang(da) pre,
+html:lang(da) code,
+html:lang(da) kbd,
+html:lang(da) samp,
+html:lang(sv) pre,
+html:lang(sv) code,
+html:lang(sv) kbd,
+html:lang(sv) samp,
+html:lang(pt) pre,
+html:lang(pt) code,
+html:lang(pt) kbd,
+html:lang(pt) samp,
+html:lang(es) pre,
+html:lang(es) code,
+html:lang(es) kbd,
+html:lang(es) samp,
+html:lang(fr) pre,
+html:lang(fr) code,
+html:lang(fr) kbd,
+html:lang(fr) samp,
+html:lang(it) pre,
+html:lang(it) code,
+html:lang(it) kbd,
+html:lang(it) samp,
+html:lang(ro) pre,
+html:lang(ro) code,
+html:lang(ro) kbd,
+html:lang(ro) samp,
+html:lang(lv) pre,
+html:lang(lv) code,
+html:lang(lv) kbd,
+html:lang(lv) samp,
+html:lang(lt) pre,
+html:lang(lt) code,
+html:lang(lt) kbd,
+html:lang(lt) samp,
+html:lang(pl) pre,
+html:lang(pl) code,
+html:lang(pl) kbd,
+html:lang(pl) samp,
+html:lang(cs) pre,
+html:lang(cs) code,
+html:lang(cs) kbd,
+html:lang(cs) samp,
+html:lang(sk) pre,
+html:lang(sk) code,
+html:lang(sk) kbd,
+html:lang(sk) samp,
+html:lang(bs) pre,
+html:lang(bs) code,
+html:lang(bs) kbd,
+html:lang(bs) samp,
+html:lang(hr) pre,
+html:lang(hr) code,
+html:lang(hr) kbd,
+html:lang(hr) samp,
+html:lang(sr) pre,
+html:lang(sr) code,
+html:lang(sr) kbd,
+html:lang(sr) samp,
+html:lang(bg) pre,
+html:lang(bg) code,
+html:lang(bg) kbd,
+html:lang(bg) samp,
+html:lang(sl) pre,
+html:lang(sl) code,
+html:lang(sl) kbd,
+html:lang(sl) samp,
+html:lang(ru) pre,
+html:lang(ru) code,
+html:lang(ru) kbd,
+html:lang(ru) samp,
+html:lang(uk) pre,
+html:lang(uk) code,
+html:lang(uk) kbd,
+html:lang(uk) samp,
+html:lang(be) pre,
+html:lang(be) code,
+html:lang(be) kbd,
+html:lang(be) samp,
+html:lang(el) pre,
+html:lang(el) code,
+html:lang(el) kbd,
+html:lang(el) samp,
+html:lang(hu) pre,
+html:lang(hu) code,
+html:lang(hu) kbd,
+html:lang(hu) samp,
+html:lang(et) pre,
+html:lang(et) code,
+html:lang(et) kbd,
+html:lang(et) samp,
+html:lang(fi) pre,
+html:lang(fi) code,
+html:lang(fi) kbd,
+html:lang(fi) samp,
+html:lang(tr) pre,
+html:lang(tr) code,
+html:lang(tr) kbd,
+html:lang(tr) samp,
+html:lang(id) pre,
+html:lang(id) code,
+html:lang(id) kbd,
+html:lang(id) samp,
+html:lang(ms) pre,
+html:lang(ms) code,
+html:lang(ms) kbd,
+html:lang(ms) samp {
+  font-family: 'Cascadia Code', 'Noto Mono', 'SF Mono', 'Roboto Mono',
+    ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+}
+html:lang(de) body {
+  quotes: '„' '“';
+}
+html:lang(nb) body,
+html:lang(no) body,
+html:lang(es) body {
+  quotes: '«' '»';
+}
+html:lang(fr) body {
+  quotes: '« ' ' »';
+}
+html:lang(ar) body,
+html:lang(he) body,
+html:lang(th) body,
+html:lang(vi) body {
+  font-family: system-ui, -apple-system, ui-sans-serif, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
+    emoji;
+}
+html:lang(ar) pre,
+html:lang(ar) code,
+html:lang(ar) kbd,
+html:lang(ar) samp,
+html:lang(he) pre,
+html:lang(he) code,
+html:lang(he) kbd,
+html:lang(he) samp,
+html:lang(th) pre,
+html:lang(th) code,
+html:lang(th) kbd,
+html:lang(th) samp,
+html:lang(vi) pre,
+html:lang(vi) code,
+html:lang(vi) kbd,
+html:lang(vi) samp {
+  font-family: ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+}
+
+/* 字体替换 */
+@font-face {
+  font-family: 'New York';
+  src: local('Georgia');
+}
+@font-face {
+  font-family: 'Times';
+  src: local('Georgia');
+}
+@font-face {
+  font-family: 'Time New Roman';
+  src: local('Georgia');
+}
+@font-face {
+  font-family: 'Arial';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'San Francisco' 'Segoe UI';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Tahoma';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Trebuchet';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Verdana';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Consolas';
+  src: local('Cascadia Code');
+}
+@font-face {
+  font-family: 'Courier';
+  src: local('Cascadia Code');
+}
+@font-face {
+  font-family: 'Courier New';
+  src: local('Cascadia Code');
+}
+@font-face {
+  font-family: 'DejaVu Sans Mono';
+  src: local('Cascadia Code');
+}
+@font-face {
+  font-family: 'Lucida Console';
+  src: local('Cascadia Code');
+}
+@font-face {
+  font-family: 'SF Mono';
+  src: local('Cascadia Code');
+}
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: local('Cascadia Code');
+}
+@font-face {
+  font-family: 'SimSun';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: 'SimSun-ExtB';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: '宋体';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: 'NSimSun';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: '新宋体';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: 'SimHei';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: '黑体';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: 'Microsoft YaHei';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: '微软雅黑';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: 'STHeiti SC';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: 'PingFang SC';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: '苹方-简';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: 'MingLiU';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'MingLiU-ExtB';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'PMingLiU';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'PMingLiU-ExtB';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'Microsoft JhengHei';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: '微軟正黑體';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'STHeiti TC';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'PingFang TC';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: '蘋方-繁';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'MingLiU_HKSCS';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'MingLiU_HKSCS-ExtB';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'PingFang HK';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: '蘋方-港';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'MS Mincho';
+  src: local('Yu Gothic UI');
+}
+@font-face {
+  font-family: 'MS PMincho';
+  src: local('Yu Gothic UI');
+}
+@font-face {
+  font-family: 'Meiryo';
+  src: local('Yu Gothic UI');
+}
+@font-face {
+  font-family: 'Meiryo UI';
+  src: local('Yu Gothic UI');
+}
+@font-face {
+  font-family: 'MS Gothic';
+  src: local('Yu Gothic UI');
+}
+@font-face {
+  font-family: 'MS PGothic';
+  src: local('Yu Gothic UI');
+}
+@font-face {
+  font-family: 'MS UI Gothic';
+  src: local('Yu Gothic UI');
+}
+@font-face {
+  font-family: 'Yu Gothic';
+  src: local('Yu Gothic UI');
+}
+/* 特定网站适配 */
+@-moz-document domain("423down.com") {
+  .excerpt h2 {
+    height: unset;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
+@-moz-document domain("baidu.com") {
+  * {
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', '方正兰亭黑_GB18030',
+      '方正兰亭黑_GBK', system-ui, -apple-system, ui-sans-serif, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji', emoji;
+  }
+}
+@-moz-document regexp("https://www.baidu.com/#?"),
+               url-prefix("https://www.baidu.com/?tn=")
+{
+  .s_ipt,
+  .new-pmd .c-font-medium {
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', '方正兰亭黑_GB18030',
+      '方正兰亭黑_GBK', system-ui, -apple-system, ui-sans-serif, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji', emoji;
+  }
+}
+@-moz-document domain("greasyfork.org") {
+  #script_version_code,
+  .ace_editor {
+    font-family: 'Cascadia Code', 'Noto Mono', 'SF Mono', 'Roboto Mono',
+      ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol', 'Noto Color Emoji', emoji !important;
+  }
+}
+@-moz-document domain("github.com") {
+  .text-mono {
+    font-family: 'Cascadia Code', 'Noto Mono', 'SF Mono', 'Roboto Mono',
+      ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol', 'Noto Color Emoji', emoji !important;
+  }
+
+  .blob-num,
+  .blob-code-inner {
+    font-family: 'Cascadia Code', 'Noto Mono', 'SF Mono', 'Roboto Mono',
+      ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+  }
+}
+@-moz-document domain("ithome.com") {
+  .post_comment {
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', '方正兰亭黑_GB18030',
+      '方正兰亭黑_GBK', system-ui, -apple-system, ui-sans-serif, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji', emoji;
+  }
+}
+@-moz-document domain("jiemian.com") {
+  .article-content {
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', '方正兰亭黑_GB18030',
+      '方正兰亭黑_GBK', system-ui, -apple-system, ui-sans-serif, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji', emoji !important;
+  }
+
+  #ad_header_top,
+  .cnzz-ads,
+  .jm-app {
+    display: none !important;
+  }
+}
+@-moz-document domain("so.com") {
+  * {
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', '方正兰亭黑_GB18030',
+      '方正兰亭黑_GBK', system-ui, -apple-system, ui-sans-serif, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji', emoji;
+  }
+
+  #footer a[href="http://mse.360.cn"],
+#footer a[href="http://mse.360.cn"] + span
+  {
+    display: none !important;
+  }
+}
+@-moz-document domain("sogou.com") {
+  * {
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', '方正兰亭黑_GB18030',
+      '方正兰亭黑_GBK', system-ui, -apple-system, ui-sans-serif, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji', emoji;
+  }
+
+  .erwm-box {
+    display: none !important;
+  }
+}
+@-moz-document domain("sspai.com") {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .title,
+  .content,
+  p,
+  a {
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', '方正兰亭黑_GB18030',
+      '方正兰亭黑_GBK', system-ui, -apple-system, ui-sans-serif, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji', emoji !important;
+  }
+}
+@-moz-document domain("userstyles.org") {
+  .ad,
+  #top_android_button,
+  .android_button_button,
+  .android_button_banner,
+  .walking {
+    display: none !important;
+  }
+}

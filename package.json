@@ -1,0 +1,15 @@
+{
+  "name": "userstyles",
+  "author": "Francis Zhao",
+  "scripts": {
+    "watch": "sass --no-charset --update --no-source-map --watch src:dist",
+    "build": "prettier --write src && sass --no-charset --no-source-map src:dist && prettier --write dist"
+  },
+  "devDependencies": {
+    "prettier": "^2.5.1",
+    "sass": "^1.49.0"
+  },
+  "browserslist": [
+    "last 2 years"
+  ]
+}

@@ -10,54 +10,28 @@
 @supportURL https://n2o.io/go?page=userstyles
 @license MIT
 @preprocessor default
-@x-note --------------------
-@x-note * 重 要 说 明 *
-@x-note
-@x-note 人人影视倒了，再次强调了“永远不要把鸡蛋放在同一只篮子里”的深刻教训！
-@x-note 下面给大家提供一些我平时常用的宝藏资源网站：
-@x-note
-@x-note  1. RARBG - 欧美影视剧片源
-@x-note    https://rarbgmirror.org/torrents.php?category=41;49
-@x-note
-@x-note  2. RARBG - 欧美电影片源
-@x-note    https://rarbgmirror.org/torrents.php?category=45;44;50;54;51;52;46;42
-@x-note
-@x-note  3. 海盗湾 - 欧美音乐专辑 - 需要魔法上网
-@x-note    https://pirateproxy.page/
-@x-note
-@x-note  4. ED2000 - 综合影视剧 - 疑似 2021 年 2 月 4 日已凉凉
-@x-note    https://www.ed2000k.com/
-@x-note
-@x-note  5. 下片片 - 综合影视剧（偏中日韩）
-@x-note    http://www.xiepp.com/
-@x-note
-@x-note  6. FIX 字幕侠 - 综合影视剧、字幕
-@x-note    https://www.zimuxia.cn/
-@x-note
-@x-note  7. 蜜柑计划 - ACG
-@x-note    https://mikanani.me/
-@x-note
-@x-note  8. 漫猫动漫 - ACG
-@x-note    https://www.comicat.org/
-@x-note
-@x-note  9. SubHD.tv - 综合字幕
-@x-note    https://subhd.tv/
-@x-note
-@x-note 10. 人人影视磁力站 - 仅有 2020 年 5 月前资源
-@x-note    http://mag234.com/index/
-@x-note
-@x-note --------------------
 ==/UserStyle== */
-
-@-moz-document regexp("https?:\/\/[\w-\.]*rrys\d{4}\.com\/.*"),
-               regexp("https?:\/\/[\w-\.]*zmz\d{4}\.com\/.*"),
-               regexp("https?:\/\/[\w-\.]*zimuzu\.\w+\/.*") {
+@-moz-document regexp("https?://[w-.]*rrys\a{4}.com/.*"),
+               regexp("https?://[w-.]*zmz\a{4}.com/.*"),
+               regexp("https?://[w-.]*zimuzu.w+/.*")
+{
   body {
     background-color: #1f1f1f;
     color: #8c8c8c;
-    font-family: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC",
-      "PingFang SC", "Microsoft YaHei UI", system-ui, -apple-system, sans-serif;
+    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
+      'PingFang SC', 'Microsoft YaHei UI', system-ui, -apple-system, sans-serif;
   }
+
+  pre,
+  code,
+  kbd,
+  samp {
+    font-family: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
+      'Source Code Pro', 'Noto Mono', 'Roboto Mono', 'Source Han Sans SC',
+      'Noto Sans CJK SC', 'HanHei SC', 'PingFang SC', 'Microsoft YaHei UI',
+      system-ui, -apple-system, monospace;
+  }
+
   button,
   input,
   keygen,
@@ -66,15 +40,7 @@
   textarea {
     font-family: inherit;
   }
-  code,
-  kbd,
-  pre,
-  samp {
-    font-family: "Source Han Mono SC", "Noto Sans Mono CJK SC",
-      "Source Code Pro", "Noto Mono", "Roboto Mono", "Source Han Sans SC",
-      "Noto Sans CJK SC", "HanHei SC", "PingFang SC", "Microsoft YaHei UI",
-      system-ui, -apple-system, monospace;
-  }
+
   a,
   .f3,
   .f4,
@@ -86,26 +52,32 @@
   .fl-info h3 a {
     color: #8c8c8c;
   }
+
   .f14 {
     color: #607d8b;
   }
+
   .f0 {
     color: #005083;
   }
+
   a:hover,
   .f3:hover {
     color: #005083;
   }
+
   .f1,
   .f7 {
     color: brown !important;
   }
+
   b,
   strong {
     font-weight: 400 !important;
   }
-  input[type="text"],
-  input[type="password"],
+
+  input[type='text'],
+  input[type='password'],
   select,
   textarea {
     background: rgba(0, 0, 0, 0.1) !important;
@@ -115,18 +87,19 @@
     color: #8c8c8c !important;
     outline: none !important;
   }
-  input[type="text"]:hover,
-  input[type="text"]:focus,
-  input[type="password"]:hover,
-  input[type="password"]:focus,
+  input[type='text']:hover,
+  input[type='text']:focus,
+  input[type='password']:hover,
+  input[type='password']:focus,
   select:hover,
   select:focus,
   textarea:hover,
   textarea:focus {
     border-color: #006fb6 !important;
   }
-  input[type="button"],
-  input[type="submit"],
+
+  input[type='button'],
+  input[type='submit'],
   .res-form .submit {
     background: #005083 !important;
     box-shadow: none !important;
@@ -135,11 +108,12 @@
     color: #d9d9d9 !important;
     outline: none !important;
   }
-  input[type="button"]:hover,
-  input[type="submit"]:hover,
+  input[type='button']:hover,
+  input[type='submit']:hover,
   .res-form .submit:hover {
     background: #006fb6 !important;
   }
+
   .header {
     background: rgba(0, 0, 0, 0.5);
   }
@@ -150,13 +124,13 @@
     border-radius: 4px 0 0 4px !important;
   }
   .header .search-box .submit {
-    background: url("http://js.jstucdn.com/images/saerch-submit.png") center
+    background: url('http://js.jstucdn.com/images/saerch-submit.png') center
         center/24px 24px no-repeat,
       #005083 !important;
     border-radius: 0 4px 4px 0 !important;
   }
   .header .search-box .submit:hover {
-    background: url("http://js.jstucdn.com/images/saerch-submit.png") center
+    background: url('http://js.jstucdn.com/images/saerch-submit.png') center
         center/24px 24px no-repeat,
       #006fb6 !important;
   }
@@ -206,6 +180,7 @@
   .header .top-login-before a {
     color: inherit;
   }
+
   .notice {
     background: rgba(0, 0, 0, 0.5);
     color: inherit;
@@ -219,6 +194,7 @@
   .notice a:hover {
     color: #005083;
   }
+
   .menu-box {
     background: linear-gradient(
       180deg,
@@ -242,6 +218,7 @@
   .menu-box a:hover::after {
     background: rgba(255, 255, 255, 0.5);
   }
+
   .footer {
     height: auto;
     padding: 40px 0;
@@ -262,9 +239,11 @@
   .footer a:hover {
     color: #005083;
   }
+
   .box .box {
     background: transparent !important;
   }
+
   h2.it,
   .res-bbs-box .news-bbs h2,
   .found-box .xy-list .title,
@@ -285,6 +264,7 @@
   .user-main .u_p_set dl.ziliao_dl dt h2 a {
     color: #607d8b !important;
   }
+
   .res-form textarea {
     width: 85% !important;
     height: 52px !important;
@@ -299,6 +279,7 @@
     margin-top: 6px !important;
     color: brown !important;
   }
+
   .bbs-list {
     padding-top: 25px !important;
     color: #607d8b !important;
@@ -321,6 +302,7 @@
   .bbs-list li .info .bbs-reply .arrow {
     filter: brightness(9%) !important;
   }
+
   .pages a {
     background: rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -332,10 +314,11 @@
     border: 1px solid rgba(255, 255, 255, 0.05);
     color: inherit;
   }
+
   * {
-    -webkit-transition: color 0.25s, background-color 0.5s, border-color 0.5s;
     transition: color 0.25s, background-color 0.5s, border-color 0.5s;
   }
+
   .middle-box .top24,
   .middle-box .today-play,
   .middle-box .top-news,
@@ -480,6 +463,7 @@
     background: rgba(0, 0, 0, 0.1);
     border-color: rgba(255, 255, 255, 0.05);
   }
+
   .user-form {
     background: rgba(0, 0, 0, 0.2);
   }
@@ -490,9 +474,9 @@
   }
   .user-form .user-login .input-txt {
     padding: 0 10px;
-    font-family: "Source Han Mono SC", "Noto Sans Mono CJK SC",
-      "Source Code Pro", "Noto Mono", "Roboto Mono", "Source Han Sans SC",
-      "Noto Sans CJK SC", "HanHei SC", "PingFang SC", "Microsoft YaHei UI",
+    font-family: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
+      'Source Code Pro', 'Noto Mono', 'Roboto Mono', 'Source Han Sans SC',
+      'Noto Sans CJK SC', 'HanHei SC', 'PingFang SC', 'Microsoft YaHei UI',
       system-ui, -apple-system, monospace;
   }
   .user-form .user-login p label,
@@ -520,6 +504,7 @@
   .user-form .user-login p.c {
     color: #607d8b;
   }
+
   .middle-box .user-main .u_intro .u_s_intro h2.f_u0 {
     color: #8c8c8c;
   }
@@ -576,14 +561,14 @@
     color: #8c8c8c;
   }
   .middle-box .user-main .ziliao_ul li .pwd-requirements,
-  .middle-box .user-main .u_p_set ul.ziliao_ul li font[color="#EF4238"],
+  .middle-box .user-main .u_p_set ul.ziliao_ul li font[color='#EF4238'],
   .middle-box
     .user-main
     .u_p_set
     #upgrade_by_code_form
     ul.ziliao_ul
     li
-    font[color="red"] {
+    font[color='red'] {
     color: brown !important;
   }
   .middle-box .user-main .upgrade_vip .buy-notice {
@@ -627,6 +612,7 @@
   .middle-box .user-main .upgrade-item .upgrade-pop .button .btn1 {
     background: rgba(52, 116, 249, 0.25);
   }
+
   .middle-box .box {
     background: rgba(0, 0, 0, 0.2);
   }
@@ -835,7 +821,7 @@
   .middle-box .res-bbs-box .res-bbs-right {
     width: 286px;
   }
-  .middle-box .res-bbs-box .res-bbs-right div[style="margin-bottom:15px;"] {
+  .middle-box .res-bbs-box .res-bbs-right div[style='margin-bottom:15px;'] {
     display: none;
   }
   .middle-box .res-bbs-box .res-bbs-right .res-users .r-it {
@@ -853,6 +839,7 @@
   .middle-box .res-bbs-box .res-bbs-right .res-users .fl-info p {
     color: #607d8b;
   }
+
   .middle-box .usercenter-box .user-menu {
     width: 154px;
     height: 600px;
@@ -880,6 +867,7 @@
     background: rgba(52, 116, 249, 0.25);
     color: inherit;
   }
+
   .middle-box .task-list-wrap > .title {
     background: rgba(0, 0, 0, 0.2);
   }
@@ -914,6 +902,7 @@
   .middle-box .task-list li .a1 p {
     color: #607d8b;
   }
+
   .middle-box .article-tab {
     border-color: rgba(255, 255, 255, 0.05);
   }
@@ -942,10 +931,11 @@
     color: inherit;
   }
   .middle-box .information-desc * {
-    font-family: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC",
-      "PingFang SC", "Microsoft YaHei UI", system-ui, -apple-system, sans-serif !important;
+    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
+      'PingFang SC', 'Microsoft YaHei UI', system-ui, -apple-system, sans-serif !important;
     font-size: 16px !important;
   }
+
   .middle-box .subtitle-box .subtitle-serch-sidebar li:nth-child(2n + 1) {
     border-color: rgba(255, 255, 255, 0.05);
   }
@@ -1048,6 +1038,7 @@
   .middle-box .subtitle-box .subtitle-con .subtitle-links a strong {
     color: #8c8c8c;
   }
+
   .middle-box .resource-box .resource-sidebar li {
     border-color: rgba(255, 255, 255, 0.15);
   }
@@ -1137,6 +1128,7 @@
     .ranking {
     color: brown;
   }
+
   .middle-box .found-box .xy-tags {
     background: rgba(0, 0, 0, 0.2);
   }
@@ -1179,6 +1171,7 @@
   .middle-box .found-box .xy-list2 li .a0 .fl-info strong.f14 {
     color: #8c8c8c;
   }
+
   .middle-box .resource-box .t_s {
     background: rgba(0, 0, 0, 0.2);
     color: #607d8b;
@@ -1235,6 +1228,7 @@
     color: #d9d9d9;
     text-decoration: none;
   }
+
   .middle-box .play-schedule {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
@@ -1256,7 +1250,6 @@
   .middle-box .play-schedule td dl dd {
     padding: 0;
     background: rgba(0, 0, 0, 0.2);
-    -webkit-transition: all 0.25s;
     transition: all 0.25s;
   }
   .middle-box .play-schedule td dl dd:hover {
@@ -1294,6 +1287,7 @@
   .middle-box .play-schedule span.new {
     background: #003a8c;
   }
+
   .middle-box .qiudang-box .qd-right {
     width: 770px;
   }
@@ -1309,13 +1303,13 @@
     top: 25px;
     background: transparent;
   }
-  .middle-box .qiudang-box .qd-search form input[type="text"] {
+  .middle-box .qiudang-box .qd-search form input[type='text'] {
     padding: 4px 10px;
     border-width: 1px;
     border-style: solid;
     text-indent: unset;
   }
-  .middle-box .qiudang-box .qd-search form input[type="image"] {
+  .middle-box .qiudang-box .qd-search form input[type='image'] {
     width: 35px;
     height: 35px;
     top: 0;
@@ -1436,6 +1430,7 @@
     background: transparent;
     border: none;
   }
+
   .middle-box .article-item h2.it {
     height: 62px !important;
     margin: 0 20px;
@@ -1449,7 +1444,7 @@
     left: 0;
     width: 80px;
     height: 4px;
-    content: "";
+    content: '';
   }
   .middle-box .article-item .article-top li {
     color: #607d8b;
@@ -1511,18 +1506,20 @@
     color: brown;
   }
 }
-
-@-moz-document regexp("https?:\/\/[\w-\.]*got\d{3}\.com\/.*") {
+@-moz-document regexp("https?://[w-.]*got\a{3}.com/.*")
+{
   *,
   .ui-header .ui-limit .logo-wrapper .desc {
-    font-family: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC",
-      "PingFang SC", "Microsoft YaHei UI", system-ui, -apple-system, sans-serif;
+    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
+      'PingFang SC', 'Microsoft YaHei UI', system-ui, -apple-system, sans-serif;
     font-weight: 400 !important;
   }
+
   .down-list > li .title > span.filesize,
   .down-list > li .title > span.date {
     font-style: italic;
   }
+
   .ui-header .ui-limit .view-count,
   .btn-default,
   .down-list > li .down-links > li .btn,
@@ -1532,6 +1529,7 @@
   .down-list-toolbar .btn-group .btn {
     border-color: #333333;
   }
+
   .btn-default:hover,
   .down-list > li .down-links > li .btn:hover,
   .down-list > li .down-links > li .copy-link:hover:before,
@@ -1540,6 +1538,7 @@
   .down-list-toolbar .btn-group .btn:hover {
     border-color: #666666;
   }
+
   .btn-default,
   .down-list > li .title > span.filesize,
   .down-list > li .title > span.date,
@@ -1552,9 +1551,11 @@
   .ui-footer .copyright {
     color: #666666;
   }
+
   .down-list > li .title > span.filename {
     color: #888888;
   }
+
   a,
   .ui-header .ui-limit .count-down .minfo .count,
   .ui-header .ui-limit .view-count .desc,
@@ -1570,19 +1571,24 @@
   .down-list-toolbar .btn-group .btn:hover {
     color: #999999;
   }
+
   .btn-danger {
     color: #eeeeee;
   }
+
   a {
     text-decoration: none !important;
   }
+
   body {
     background-color: #222222 !important;
   }
+
   .btn-default,
   .down-popup .panel-inner-down .panel-body .btn {
     background-color: rgba(255, 255, 255, 0.1);
   }
+
   .btn-default:hover,
   .btn-default:focus,
   .btn-default.focus,
@@ -1602,6 +1608,7 @@
   .down-list-toolbar .btn-group .btn:hover {
     background-color: rgba(255, 255, 255, 0.1);
   }
+
   .ui-header,
   .ui-header .ui-limit .view-count,
   .ui-header .ui-limit .count-down .minfo .count,
@@ -1625,6 +1632,7 @@
   .down-list-toolbar .btn-group .btn {
     background-color: rgba(0, 0, 0, 0.25);
   }
+
   .ui-content
     .row-content
     .col-box.col-sidebar
@@ -1634,21 +1642,26 @@
     > a {
     background-color: rgba(0, 0, 0, 0.5);
   }
+
   .down-popup {
     background-color: rgba(0, 0, 0, 0.95);
   }
+
   .down-list > li .down-links > li:not(:first-child) {
     margin-left: 10px;
   }
+
   .down-list > li .down-links > li .btn-download {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
+
   .down-list > li .down-links > li .copy-link::before {
     margin-left: 4px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
+
   .down-list-toolbar {
     margin-top: 40px;
     padding: 10px 20px;

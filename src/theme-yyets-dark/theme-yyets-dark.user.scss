@@ -10,53 +10,17 @@
 @supportURL https://n2o.io/go?page=userstyles
 @license MIT
 @preprocessor default
-@x-note --------------------
-@x-note * 重 要 说 明 *
-@x-note
-@x-note 人人影视倒了，再次强调了“永远不要把鸡蛋放在同一只篮子里”的深刻教训！
-@x-note 下面给大家提供一些我平时常用的宝藏资源网站：
-@x-note
-@x-note  1. RARBG - 欧美影视剧片源
-@x-note    https://rarbgmirror.org/torrents.php?category=41;49
-@x-note
-@x-note  2. RARBG - 欧美电影片源
-@x-note    https://rarbgmirror.org/torrents.php?category=45;44;50;54;51;52;46;42
-@x-note
-@x-note  3. 海盗湾 - 欧美音乐专辑 - 需要魔法上网
-@x-note    https://pirateproxy.page/
-@x-note
-@x-note  4. ED2000 - 综合影视剧 - 疑似 2021 年 2 月 4 日已凉凉
-@x-note    https://www.ed2000k.com/
-@x-note
-@x-note  5. 下片片 - 综合影视剧（偏中日韩）
-@x-note    http://www.xiepp.com/
-@x-note
-@x-note  6. FIX 字幕侠 - 综合影视剧、字幕
-@x-note    https://www.zimuxia.cn/
-@x-note
-@x-note  7. 蜜柑计划 - ACG
-@x-note    https://mikanani.me/
-@x-note
-@x-note  8. 漫猫动漫 - ACG
-@x-note    https://www.comicat.org/
-@x-note
-@x-note  9. SubHD.tv - 综合字幕
-@x-note    https://subhd.tv/
-@x-note
-@x-note 10. 人人影视磁力站 - 仅有 2020 年 5 月前资源
-@x-note    http://mag234.com/index/
-@x-note
-@x-note --------------------
 ==/UserStyle== */
 
 // 外观定义
 
-$font-sans: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC", "PingFang SC",
-  "Microsoft YaHei UI", system-ui, -apple-system;
+$font-sans-serif: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
+  'PingFang SC', 'Microsoft YaHei UI', system-ui, -apple-system;
 
-$font-mono: "Source Han Mono SC", "Noto Sans Mono CJK SC", "Source Code Pro",
-  "Noto Mono", "Roboto Mono", "Source Han Sans SC", "Noto Sans CJK SC",
-  "HanHei SC", "PingFang SC", "Microsoft YaHei UI", system-ui, -apple-system;
+$font-monospace: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
+  'Source Code Pro', 'Noto Mono', 'Roboto Mono', 'Source Han Sans SC',
+  'Noto Sans CJK SC', 'HanHei SC', 'PingFang SC', 'Microsoft YaHei UI',
+  system-ui, -apple-system;
 
 $color-link: #005083;
 $color-link-alt: #518248;
@@ -91,7 +55,14 @@ $border-radius: 4px;
   body {
     background-color: $color-bg;
     color: $color-text;
-    font-family: $font-sans, sans-serif;
+    font-family: $font-sans-serif, sans-serif;
+  }
+
+  pre,
+  code,
+  kbd,
+  samp {
+    font-family: $font-monospace, monospace;
   }
 
   button,
@@ -101,13 +72,6 @@ $border-radius: 4px;
   select,
   textarea {
     font-family: inherit;
-  }
-
-  code,
-  kbd,
-  pre,
-  samp {
-    font-family: $font-mono, monospace;
   }
 
   a,
@@ -148,8 +112,8 @@ $border-radius: 4px;
   }
 
   // 通用-控件
-  input[type="text"],
-  input[type="password"],
+  input[type='text'],
+  input[type='password'],
   select,
   textarea {
     background: $color-black-010 !important;
@@ -165,8 +129,8 @@ $border-radius: 4px;
     }
   }
 
-  input[type="button"],
-  input[type="submit"],
+  input[type='button'],
+  input[type='submit'],
   .res-form .submit {
     background: $color-link !important;
     box-shadow: none !important;
@@ -197,13 +161,13 @@ $border-radius: 4px;
 
       //提交按钮
       .submit {
-        background: url("http://js.jstucdn.com/images/saerch-submit.png") center
+        background: url('http://js.jstucdn.com/images/saerch-submit.png') center
             center/24px 24px no-repeat,
           $color-link !important;
         border-radius: 0 $border-radius $border-radius 0 !important;
 
         &:hover {
-          background: url("http://js.jstucdn.com/images/saerch-submit.png")
+          background: url('http://js.jstucdn.com/images/saerch-submit.png')
               center center/24px 24px no-repeat,
             lighten($color-link, 10%) !important;
         }
@@ -666,7 +630,7 @@ $border-radius: 4px;
     .user-login {
       .input-txt {
         padding: 0 10px;
-        font-family: $font-mono, monospace;
+        font-family: $font-monospace, monospace;
       }
 
       p label,
@@ -744,8 +708,8 @@ $border-radius: 4px;
       }
 
       .ziliao_ul li .pwd-requirements,
-      .u_p_set ul.ziliao_ul li font[color="#EF4238"],
-      .u_p_set #upgrade_by_code_form ul.ziliao_ul li font[color="red"] {
+      .u_p_set ul.ziliao_ul li font[color='#EF4238'],
+      .u_p_set #upgrade_by_code_form ul.ziliao_ul li font[color='red'] {
         color: brown !important;
       }
 
@@ -1060,7 +1024,7 @@ $border-radius: 4px;
       .res-bbs-right {
         width: 286px;
 
-        div[style="margin-bottom:15px;"] {
+        div[style='margin-bottom:15px;'] {
           display: none;
         }
 
@@ -1220,7 +1184,7 @@ $border-radius: 4px;
 
     .information-desc {
       * {
-        font-family: $font-sans, sans-serif !important;
+        font-family: $font-sans-serif, sans-serif !important;
         font-size: 16px !important;
       }
     }
@@ -1720,14 +1684,14 @@ $border-radius: 4px;
           top: 25px;
           background: transparent;
 
-          input[type="text"] {
+          input[type='text'] {
             padding: 4px 10px;
             border-width: 1px;
             border-style: solid;
             text-indent: unset;
           }
 
-          input[type="image"] {
+          input[type='image'] {
             width: 35px;
             height: 35px;
             top: 0;
@@ -1901,7 +1865,7 @@ $border-radius: 4px;
           left: 0;
           width: 80px;
           height: 4px;
-          content: "";
+          content: '';
         }
       }
 
@@ -1990,7 +1954,7 @@ $border-radius: 4px;
 @-moz-document regexp("https?:\/\/[\w-\.]*got\d{3}\.com\/.*") {
   *,
   .ui-header .ui-limit .logo-wrapper .desc {
-    font-family: $font-sans, sans-serif;
+    font-family: $font-sans-serif, sans-serif;
     font-weight: 400 !important;
   }
 
