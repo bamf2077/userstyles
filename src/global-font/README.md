@@ -73,7 +73,6 @@
 如果你正在使用 [Stylus](http://add0n.com/stylus.html 'Stylus') 等用户样式表管理类浏览器扩展……
 
 - 通过 [Greasy Fork](https://greasyfork.org/scripts/419362 'Greasy Fork') 安装 (首选)
-
 - 通过 [jsDelivr](https://cdn.jsdelivr.net/gh/francis-zhao/userstyles/dist/global-font/global-font-adobe.user.css 'jsDelivr') 安装
 
 如果你正在使用 [Tampermonkey](https://www.tampermonkey.net/ 'Tampermonkey')、[Greasemonkey](https://www.greasespot.net/ 'Greasemonkey') 等用户脚本管理类浏览器扩展……
@@ -87,7 +86,6 @@
 如果你正在使用 [Stylus](http://add0n.com/stylus.html 'Stylus') 等用户样式表管理类浏览器扩展……
 
 - 通过 [Greasy Fork](https://greasyfork.org/scripts/419363 'Greasy Fork') 安装 (首选)
-
 - 通过 [jsDelivr](https://cdn.jsdelivr.net/gh/francis-zhao/userstyles/dist/global-font/global-font-microsoft.user.css 'jsDelivr') 安装
 
 <br>
@@ -102,15 +100,14 @@
 
 如果你正在使用 [Stylus](http://add0n.com/stylus.html 'Stylus') 等用户样式表管理类浏览器扩展……
 
-- 通过 [Greasy Fork](https://greasyfork.org/scripts/419363 'Greasy Fork') 安装 (首选)
-
+- 通过 [Greasy Fork](https://greasyfork.org/scripts/439505 'Greasy Fork') 安装 (首选)
 - 通过 [jsDelivr](https://cdn.jsdelivr.net/gh/francis-zhao/userstyles/dist/global-font/global-font-huawei.user.css 'jsDelivr') 安装
 
 <br>
 
 如果你正在使用 [Tampermonkey](https://www.tampermonkey.net/ 'Tampermonkey')、[Greasemonkey](https://www.greasespot.net/ 'Greasemonkey') 等用户脚本管理类浏览器扩展……
 
-- 通过 [Greasy Fork](https://greasyfork.org/scripts/419363 'Greasy Fork') 安装
+- 通过 [Greasy Fork](https://greasyfork.org/scripts/439505 'Greasy Fork') 安装
 
 <br>
 

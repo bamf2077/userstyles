@@ -73,7 +73,6 @@
 If you're using user style management browser extensions such as [Stylus](http://add0n.com/stylus.html 'Stylus')...
 
 - Install from [Greasy Fork](https://greasyfork.org/scripts/419362 'Greasy Fork') (Preferred)
-
 - Install via [jsDelivr](https://cdn.jsdelivr.net/gh/francis-zhao/userstyles/dist/global-font/global-font-adobe.user.css 'jsDelivr')
 
 If you're using user script management browser extensions such as [Tampermonkey](https://www.tampermonkey.net/ 'Tampermonkey')、[Greasemonkey](https://www.greasespot.net/ 'Greasemonkey')...
@@ -87,7 +86,6 @@ If you're using user script management browser extensions such as [Tampermonkey]
 If you're using user style management browser extensions such as [Stylus](http://add0n.com/stylus.html 'Stylus')...
 
 - Install from [Greasy Fork](https://greasyfork.org/scripts/419363 'Greasy Fork') (Preferred)
-
 - Install via [jsDelivr](https://cdn.jsdelivr.net/gh/francis-zhao/userstyles/dist/global-font/global-font-microsoft.user.css 'jsDelivr')
 
 <br>
@@ -102,15 +100,14 @@ If you're using user script management browser extensions such as [Tampermonkey]
 
 If you're using user style management browser extensions such as [Stylus](http://add0n.com/stylus.html 'Stylus')...
 
-- Install from [Greasy Fork](https://greasyfork.org/scripts/419363 'Greasy Fork') (Preferred)
-
+- Install from [Greasy Fork](https://greasyfork.org/scripts/439505 'Greasy Fork') (Preferred)
 - Install via [jsDelivr](https://cdn.jsdelivr.net/gh/francis-zhao/userstyles/dist/global-font/global-font-huawei.user.css 'jsDelivr')
 
 <br>
 
 If you're using user script management browser extensions such as [Tampermonkey](https://www.tampermonkey.net/ 'Tampermonkey')、[Greasemonkey](https://www.greasespot.net/ 'Greasemonkey')...
 
-- Install from [Greasy Fork](https://greasyfork.org/scripts/419363 'Greasy Fork')
+- Install from [Greasy Fork](https://greasyfork.org/scripts/439505 'Greasy Fork')
 
 <br>
 
