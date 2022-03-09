@@ -15,7 +15,7 @@
 
 使用 Adobe、微软、华为等品牌的“思源黑体””微软雅黑“”鸿蒙黑体“等系列字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 
-你可以在 Greasy Fork 上以`用户样式`（原生）或`用户脚本`（自动转制）的形式直接订阅使用最新的稳定版。
+你可以在 Greasy Fork 上以原生的`用户样式`或自动转制的`用户脚本`的形式直接订阅使用最新的稳定版。
 
 - [全局思源黑体](https://greasyfork.org/scripts/419362)
 - [全局微软雅黑](https://greasyfork.org/scripts/419363)
@@ -29,7 +29,7 @@
 
 一款适用于 YYeTs 人人影视 ( http://yysub.net/ ) 网站的深色主题用户样式表。
 
-你可以在 [Greasy Fork](https://greasyfork.org/scripts/419366 'Greasy Fork') 上以`用户样式`（原生）或`用户脚本`（自动转制）的形式直接订阅使用最新的稳定版。
+你可以在 [Greasy Fork](https://greasyfork.org/scripts/419366 'Greasy Fork') 上以原生的`用户样式`或自动转制的`用户脚本`的形式直接订阅使用最新的稳定版。
 
 推荐一些宝藏资源网站：
 
