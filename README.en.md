@@ -25,13 +25,11 @@ NOTE: Due to the lack of mutil-language supporting, `HarmonyOS` series fonts onl
 
 <br>
 
-### [💡 TURN OFF THE LIGHT, YYeTs!](https://github.com/francis-zhao/userstyles/blob/master/src/theme-yyets-dark/theme-yyets-dark.user.scss)
+### [💡 TURN OFF THE LIGHT, YYeTs!](https://github.com/francis-zhao/userstyles/blob/master/src/yyets-dark-theme/yyets-dark-theme.user.scss)
 
-~~An user stylesheet with dark theme for YYeTs.com.~~
+A dark theme stylesheet for the website of YYeTs subtitle group ( http://yysub.net/ ).
 
-~~You can subscribe to the latest stable version as `UserCSS` (native) or `UserScript` (automatically converted) via [Greasy Fork](https://greasyfork.org/scripts/419366 'Greasy Fork').~~
-
-Because the site has been shut down, it is currently unavailable.
+You can subscribe to the latest stable version as `UserCSS` (native) or `UserScript` (automatically converted) via [Greasy Fork](https://greasyfork.org/scripts/419366 'Greasy Fork').
 
 <br>
 <br>

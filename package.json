@@ -2,14 +2,21 @@
   "name": "userstyles",
   "author": "Francis Zhao",
   "scripts": {
-    "watch": "sass --no-charset --update --no-source-map --watch src:dist",
-    "build": "prettier --write src && sass --no-charset --no-source-map src:dist && prettier --write dist"
+    "sass:watch": "sass --no-charset --update --no-source-map --watch src:dist",
+    "sass": "sass --no-charset --no-source-map src:dist",
+    "postcss": "postcss dist/**/*.css --use postcss-preset-env --replace --no-map",
+    "prebuild": "prettier --write src",
+    "build": "npm run sass && npm run postcss",
+    "postbuild": "prettier --write dist"
   },
   "devDependencies": {
+    "postcss": "^8.4.8",
+    "postcss-cli": "^9.1.0",
+    "postcss-preset-env": "^7.4.2",
     "prettier": "^2.5.1",
     "sass": "^1.49.0"
   },
   "browserslist": [
-    "last 2 years"
+    "last 3 years"
   ]
 }
