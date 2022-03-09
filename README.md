@@ -25,7 +25,7 @@
 
 <br>
 
-### [💡 关灯，人人影视！](https://github.com/francis-zhao/userstyles/blob/master/src/yyets-dark-theme/scss/yyets-dark-theme.user.scss)
+### [💡 关灯，人人影视！](https://github.com/francis-zhao/userstyles/blob/master/src/yyets-dark-theme/yyets-dark-theme.user.scss)
 
 一款适用于 YYeTs 人人影视 ( http://yysub.net/ ) 网站的深色主题用户样式表。
 
