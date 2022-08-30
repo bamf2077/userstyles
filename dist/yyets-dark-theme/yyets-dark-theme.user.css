@@ -115,14 +115,14 @@
     border-radius: 4px 0 0 4px !important;
   }
   .header .search-box .submit {
-    background: url('../images/saerch-submit.png') center center/24px 24px
-        no-repeat,
+    background: url('https://jstu.yysub.net/images/saerch-submit.png') center
+        center/24px 24px no-repeat,
       #005083 !important;
     border-radius: 0 4px 4px 0 !important;
   }
   .header .search-box .submit:hover {
-    background: url('../images/saerch-submit.png') center center/24px 24px
-        no-repeat,
+    background: url('https://jstu.yysub.net/images/saerch-submit.png') center
+        center/24px 24px no-repeat,
       #006fb6 !important;
   }
   .header .search-box .key-result,
