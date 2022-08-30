@@ -2,7 +2,7 @@
 @name:en 💡 TURN OFF THE LIGHT, YYeTs!
 @name 💡 关灯，人人影视！
 @namespace franciszhao
-@version 2.4.0
+@version 2.4.1
 @description:en A dark theme stylesheet for the website of YYeTs subtitle group.
 @description 一款适用于 YYeTs 人人影视网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
@@ -11,7 +11,7 @@
 @license MIT
 @preprocessor default
 ==/UserStyle== */
-@-moz-document regexp("https?://([w-]+.)?yysub.net/.*")
+@-moz-document regexp("https?://(\\w+\\.)?yysub\\.net/.*")
 {
   body {
     background-color: #1f1f1f;
@@ -23,7 +23,6 @@
       'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
       'Noto Color Emoji', emoji, sans-serif;
   }
-
   pre,
   code,
   kbd,
@@ -33,7 +32,6 @@
       ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
       'Segoe UI Symbol', 'Noto Color Emoji', emoji, monospace;
   }
-
   button,
   input,
   keygen,
@@ -42,7 +40,6 @@
   textarea {
     font-family: inherit;
   }
-
   a,
   .f3,
   .f4,
@@ -54,30 +51,24 @@
   .fl-info h3 a {
     color: #8c8c8c;
   }
-
   .f14 {
     color: #607d8b;
   }
-
   .f0 {
     color: #005083;
   }
-
   a:hover,
   .f3:hover {
     color: #005083;
   }
-
   .f1,
   .f7 {
     color: brown !important;
   }
-
   b,
   strong {
     font-weight: 400 !important;
   }
-
   input[type='text'],
   input[type='password'],
   select,
@@ -99,7 +90,6 @@
   textarea:focus {
     border-color: #006fb6 !important;
   }
-
   input[type='button'],
   input[type='submit'],
   .res-form .submit {
@@ -115,7 +105,6 @@
   .res-form .submit:hover {
     background: #006fb6 !important;
   }
-
   .header {
     background: rgba(0, 0, 0, 0.5);
   }
@@ -126,14 +115,14 @@
     border-radius: 4px 0 0 4px !important;
   }
   .header .search-box .submit {
-    background: url('http://js.jstucdn.com/images/saerch-submit.png') center
-        center/24px 24px no-repeat,
+    background: url('../images/saerch-submit.png') center center/24px 24px
+        no-repeat,
       #005083 !important;
     border-radius: 0 4px 4px 0 !important;
   }
   .header .search-box .submit:hover {
-    background: url('http://js.jstucdn.com/images/saerch-submit.png') center
-        center/24px 24px no-repeat,
+    background: url('../images/saerch-submit.png') center center/24px 24px
+        no-repeat,
       #006fb6 !important;
   }
   .header .search-box .key-result,
@@ -162,9 +151,11 @@
     padding: 10px;
   }
   .header .search-box #top_search_list li {
+    background: none !important;
+  }
+  .header .search-box #top_search_list li {
     width: 100%;
     padding: 0;
-    background: none !important;
     color: inherit;
   }
   .header .search-box #top_search_list li:not(:last-child) {
@@ -182,7 +173,6 @@
   .header .top-login-before a {
     color: inherit;
   }
-
   .notice {
     background: rgba(0, 0, 0, 0.5);
     color: inherit;
@@ -196,7 +186,6 @@
   .notice a:hover {
     color: #005083;
   }
-
   .menu-box {
     background: linear-gradient(
       180deg,
@@ -220,7 +209,6 @@
   .menu-box a:hover::after {
     background: rgba(255, 255, 255, 0.5);
   }
-
   .footer {
     height: auto;
     padding: 40px 0;
@@ -241,11 +229,9 @@
   .footer a:hover {
     color: #005083;
   }
-
   .box .box {
     background: transparent !important;
   }
-
   h2.it,
   .res-bbs-box .news-bbs h2,
   .found-box .xy-list .title,
@@ -266,7 +252,6 @@
   .user-main .u_p_set dl.ziliao_dl dt h2 a {
     color: #607d8b !important;
   }
-
   .res-form textarea {
     width: 85% !important;
     height: 52px !important;
@@ -281,7 +266,6 @@
     margin-top: 6px !important;
     color: brown !important;
   }
-
   .bbs-list {
     padding-top: 25px !important;
     color: #607d8b !important;
@@ -304,7 +288,6 @@
   .bbs-list li .info .bbs-reply .arrow {
     filter: brightness(9%) !important;
   }
-
   .pages a {
     background: rgba(0, 0, 0, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
@@ -316,11 +299,9 @@
     border: 1px solid rgba(255, 255, 255, 0.05);
     color: inherit;
   }
-
   * {
     transition: color 0.25s, background-color 0.5s, border-color 0.5s;
   }
-
   .middle-box .top24,
   .middle-box .today-play,
   .middle-box .top-news,
@@ -465,7 +446,6 @@
     background: rgba(0, 0, 0, 0.1);
     border-color: rgba(255, 255, 255, 0.05);
   }
-
   .user-form {
     background: rgba(0, 0, 0, 0.2);
   }
@@ -506,7 +486,6 @@
   .user-form .user-login p.c {
     color: #607d8b;
   }
-
   .middle-box .user-main .u_intro .u_s_intro h2.f_u0 {
     color: #8c8c8c;
   }
@@ -589,6 +568,8 @@
   }
   .middle-box .user-main .upgrade-item .upgrade-pop {
     top: -160px !important;
+  }
+  .middle-box .user-main .upgrade-item .upgrade-pop {
     background: rgba(0, 0, 0, 0.9);
     box-shadow: none;
     border: 3px solid rgba(255, 255, 255, 0.15);
@@ -608,13 +589,14 @@
     color: brown;
   }
   .middle-box .user-main .upgrade-item .upgrade-pop .button a {
-    background: rgba(52, 116, 249, 0.05);
     color: #d9d9d9 !important;
+  }
+  .middle-box .user-main .upgrade-item .upgrade-pop .button a {
+    background: rgba(52, 116, 249, 0.05);
   }
   .middle-box .user-main .upgrade-item .upgrade-pop .button .btn1 {
     background: rgba(52, 116, 249, 0.25);
   }
-
   .middle-box .box {
     background: rgba(0, 0, 0, 0.2);
   }
@@ -800,9 +782,11 @@
     border: none;
   }
   .middle-box .res-bbs-box .res-bbs-left .news-bbs h2 span a.btn3 {
+    color: #8c8c8c !important;
+  }
+  .middle-box .res-bbs-box .res-bbs-left .news-bbs h2 span a.btn3 {
     background: rgba(52, 116, 249, 0.25);
     border: none;
-    color: #8c8c8c !important;
   }
   .middle-box .res-bbs-box .res-bbs-left .news-bbs ul {
     border-color: rgba(255, 255, 255, 0.05);
@@ -841,7 +825,6 @@
   .middle-box .res-bbs-box .res-bbs-right .res-users .fl-info p {
     color: #607d8b;
   }
-
   .middle-box .usercenter-box .user-menu {
     width: 154px;
     height: 600px;
@@ -869,7 +852,6 @@
     background: rgba(52, 116, 249, 0.25);
     color: inherit;
   }
-
   .middle-box .task-list-wrap > .title {
     background: rgba(0, 0, 0, 0.2);
   }
@@ -904,7 +886,6 @@
   .middle-box .task-list li .a1 p {
     color: #607d8b;
   }
-
   .middle-box .article-tab {
     border-color: rgba(255, 255, 255, 0.05);
   }
@@ -941,7 +922,6 @@
       'Noto Color Emoji', emoji, sans-serif !important;
     font-size: 16px !important;
   }
-
   .middle-box .subtitle-box .subtitle-serch-sidebar li:nth-child(2n + 1) {
     border-color: rgba(255, 255, 255, 0.05);
   }
@@ -1044,7 +1024,6 @@
   .middle-box .subtitle-box .subtitle-con .subtitle-links a strong {
     color: #8c8c8c;
   }
-
   .middle-box .resource-box .resource-sidebar li {
     border-color: rgba(255, 255, 255, 0.15);
   }
@@ -1134,7 +1113,6 @@
     .ranking {
     color: brown;
   }
-
   .middle-box .found-box .xy-tags {
     background: rgba(0, 0, 0, 0.2);
   }
@@ -1177,7 +1155,6 @@
   .middle-box .found-box .xy-list2 li .a0 .fl-info strong.f14 {
     color: #8c8c8c;
   }
-
   .middle-box .resource-box .t_s {
     background: rgba(0, 0, 0, 0.2);
     color: #607d8b;
@@ -1200,8 +1177,10 @@
     background: rgba(0, 0, 0, 0.2);
   }
   .middle-box .resource-box .day_data .d_r_t tbody tr {
-    background: rgba(0, 0, 0, 0.2);
     color: inherit !important;
+  }
+  .middle-box .resource-box .day_data .d_r_t tbody tr {
+    background: rgba(0, 0, 0, 0.2);
   }
   .middle-box .resource-box .day_data .d_r_t tbody tr td.d2,
   .middle-box .resource-box .day_data .d_r_t tbody tr td.dr_ico,
@@ -1234,7 +1213,6 @@
     color: #d9d9d9;
     text-decoration: none;
   }
-
   .middle-box .play-schedule {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
@@ -1293,7 +1271,6 @@
   .middle-box .play-schedule span.new {
     background: #003a8c;
   }
-
   .middle-box .qiudang-box .qd-right {
     width: 770px;
   }
@@ -1313,7 +1290,7 @@
     padding: 4px 10px;
     border-width: 1px;
     border-style: solid;
-    text-indent: unset;
+    text-indent: inherit;
   }
   .middle-box .qiudang-box .qd-search form input[type='image'] {
     width: 35px;
@@ -1408,14 +1385,18 @@
     font-size: 14px;
   }
   .middle-box .qiudang-box .qd-form .submit input {
-    margin-top: 10px;
     background: url(http://js.jstucdn.com/images/bg-btn.png) no-repeat !important;
+  }
+  .middle-box .qiudang-box .qd-form .submit input {
+    margin-top: 10px;
     font-family: inherit;
     filter: brightness(60%);
   }
   .middle-box .qiudang-box .bbs-list {
-    margin-top: 25px;
     padding: 0 !important;
+  }
+  .middle-box .qiudang-box .bbs-list {
+    margin-top: 25px;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
   }
@@ -1436,13 +1417,14 @@
     background: transparent;
     border: none;
   }
-
   .middle-box .article-item h2.it {
     height: 62px !important;
-    margin: 0 20px;
     padding: 0 !important;
-    font-size: 20px;
     line-height: 60px !important;
+  }
+  .middle-box .article-item h2.it {
+    margin: 0 20px;
+    font-size: 20px;
   }
   .middle-box .article-item h2.it::after {
     position: absolute;
@@ -1464,7 +1446,8 @@
   }
   .middle-box .article-item .article-top li strong {
     width: 785px;
-    max-width: unset;
+    max-width: none;
+    max-width: initial;
     color: #8c8c8c;
   }
   .middle-box .article-item .article-top li strong a {

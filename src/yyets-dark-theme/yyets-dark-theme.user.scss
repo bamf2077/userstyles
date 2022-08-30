@@ -2,7 +2,7 @@
 @name:en 💡 TURN OFF THE LIGHT, YYeTs!
 @name 💡 关灯，人人影视！
 @namespace franciszhao
-@version 2.4.0
+@version 2.4.1
 @description:en A dark theme stylesheet for the website of YYeTs subtitle group.
 @description 一款适用于 YYeTs 人人影视网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
@@ -51,7 +51,8 @@ $color-button-hover: rgba(52, 116, 249, 0.25);
 $border-radius: 4px;
 
 // 人人影视主站
-@-moz-document regexp("https?:\/\/([\w-]+.)?yysub.net\/.*") {
+@-moz-document regexp("https?://(\\w+\\.)?yysub\\.net/.*")
+{
   // 通用-字体
   body {
     background-color: $color-bg;
@@ -162,14 +163,14 @@ $border-radius: 4px;
 
       //提交按钮
       .submit {
-        background: url('http://js.jstucdn.com/images/saerch-submit.png') center
-            center/24px 24px no-repeat,
+        background: url('../images/saerch-submit.png') center center/24px 24px
+            no-repeat,
           $color-link !important;
         border-radius: 0 $border-radius $border-radius 0 !important;
 
         &:hover {
-          background: url('http://js.jstucdn.com/images/saerch-submit.png')
-              center center/24px 24px no-repeat,
+          background: url('../images/saerch-submit.png') center center/24px 24px
+              no-repeat,
             lighten($color-link, 10%) !important;
         }
       }

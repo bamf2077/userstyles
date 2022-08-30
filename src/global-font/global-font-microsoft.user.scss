@@ -2,7 +2,7 @@
 @name:en Global Font: Microsoft-branded
 @name 全局微软雅黑
 @namespace franciszhao
-@version 2.3.0
+@version 2.3.1
 @description:en An user stylesheet to replace all fonts on web pages with Microsoft-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用微软品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -68,8 +68,8 @@ $font-monospace-tc-fallback: $font-monospace-fallback;
 $font-monospace-hc: 'Cascadia Code';
 $font-monospace-hc-fallback: $font-monospace-fallback;
 
-$font-monospace-j: 'Cascadia Code';
-$font-monospace-j-fallback: $font-monospace-fallback;
+$font-monospace-j: 'MS Gothic';
+$font-monospace-j-fallback: $font-monospace, $font-monospace-fallback;
 
 $font-monospace-k: 'Cascadia Code';
 $font-monospace-k-fallback: $font-monospace-fallback;

@@ -2,7 +2,7 @@
 @name:en Global Font: Adobe-branded
 @name 全局思源黑体
 @namespace franciszhao
-@version 2.3.0
+@version 2.3.1
 @description:en An user stylesheet to replace all fonts on web pages with Adobe-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用 Adobe 品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -640,7 +640,8 @@ html:lang(vi) samp {
 /* 特定网站适配 */
 @-moz-document domain("423down.com") {
   .excerpt h2 {
-    height: unset;
+    height: auto;
+    height: initial;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -655,15 +656,18 @@ html:lang(vi) samp {
       'Noto Color Emoji', emoji;
   }
 }
-@-moz-document regexp("https://www.baidu.com/#?"),
-               url-prefix("https://www.baidu.com/?tn=")
-{
-  .s_ipt,
-  .new-pmd .c-font-medium {
-    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system, Segoe UI,
-      Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, ui-sans-serif,
-      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+@-moz-document domain("github.com") {
+  .text-mono {
+    font-family: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
+      'Source Code Pro', 'Noto Mono', 'SF Mono', 'Roboto Mono', ui-monospace,
+      monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji', emoji !important;
+  }
+  .blob-num,
+  .blob-code-inner {
+    font-family: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
+      'Source Code Pro', 'Noto Mono', 'SF Mono', 'Roboto Mono', ui-monospace,
+      monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
       'Noto Color Emoji', emoji;
   }
 }
@@ -674,22 +678,6 @@ html:lang(vi) samp {
       'Source Code Pro', 'Noto Mono', 'SF Mono', 'Roboto Mono', ui-monospace,
       monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
       'Noto Color Emoji', emoji !important;
-  }
-}
-@-moz-document domain("github.com") {
-  .text-mono {
-    font-family: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
-      'Source Code Pro', 'Noto Mono', 'SF Mono', 'Roboto Mono', ui-monospace,
-      monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji', emoji !important;
-  }
-
-  .blob-num,
-  .blob-code-inner {
-    font-family: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
-      'Source Code Pro', 'Noto Mono', 'SF Mono', 'Roboto Mono', ui-monospace,
-      monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji', emoji;
   }
 }
 @-moz-document domain("ithome.com") {
@@ -709,38 +697,9 @@ html:lang(vi) samp {
       sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
       'Noto Color Emoji', emoji !important;
   }
-
   #ad_header_top,
   .cnzz-ads,
   .jm-app {
-    display: none !important;
-  }
-}
-@-moz-document domain("so.com") {
-  * {
-    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system, Segoe UI,
-      Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, ui-sans-serif,
-      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji', emoji;
-  }
-
-  #footer a[href="http://mse.360.cn"],
-#footer a[href="http://mse.360.cn"] + span
-  {
-    display: none !important;
-  }
-}
-@-moz-document domain("sogou.com") {
-  * {
-    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system, Segoe UI,
-      Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, ui-sans-serif,
-      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji', emoji;
-  }
-
-  .erwm-box {
     display: none !important;
   }
 }
@@ -769,5 +728,19 @@ html:lang(vi) samp {
   .android_button_banner,
   .walking {
     display: none !important;
+  }
+}
+@-moz-document regexp("https://www\\.baidu\\.com/(s|#)?.*"),
+                 regexp("https://(\\w+\\.)?bing\\.com/(search)?.*"),
+                 regexp("https://www\\.google(\\.\\w+){1,2}/(search)?.*"),
+                 regexp("https://www\\.so\\.com/s?.*"),
+                 regexp("https://(www\\.)?sogou\\.com/(web|sogou)?.*")
+{
+  * {
+    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
+      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system, Segoe UI,
+      Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, ui-sans-serif,
+      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji', emoji !important;
   }
 }
