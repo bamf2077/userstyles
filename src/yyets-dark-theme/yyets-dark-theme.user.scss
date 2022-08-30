@@ -163,14 +163,14 @@ $border-radius: 4px;
 
       //提交按钮
       .submit {
-        background: url('../images/saerch-submit.png') center center/24px 24px
-            no-repeat,
+        background: url('https://jstu.yysub.net/images/saerch-submit.png')
+            center center/24px 24px no-repeat,
           $color-link !important;
         border-radius: 0 $border-radius $border-radius 0 !important;
 
         &:hover {
-          background: url('../images/saerch-submit.png') center center/24px 24px
-              no-repeat,
+          background: url('https://jstu.yysub.net/images/saerch-submit.png')
+              center center/24px 24px no-repeat,
             lighten($color-link, 10%) !important;
         }
       }
