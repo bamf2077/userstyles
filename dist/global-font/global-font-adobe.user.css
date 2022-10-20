@@ -20,10 +20,9 @@ html {
 
 body {
   font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-    '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system, Segoe UI,
-    Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, ui-sans-serif, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
-    emoji;
+    '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system,
+    ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
 }
 
 pre,
@@ -53,10 +52,9 @@ html:lang(cmn) body,
 html:lang(cmn-Hans) body,
 html:lang(zh-cmn-Hans) body {
   font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-    '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system, Segoe UI,
-    Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, ui-sans-serif, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
-    emoji;
+    '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system,
+    ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
   quotes: '“' '”';
 }
 html:lang(zh) pre,
@@ -97,9 +95,8 @@ html:lang(zh-Hant) body,
 html:lang(cmn-Hant) body,
 html:lang(zh-cmn-Hant) body {
   font-family: 'Source Han Sans TC', 'Noto Sans CJK TC', 'HanHei TC', system-ui,
-    -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif,
-    ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+    -apple-system, ui-sans-serif, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji;
   quotes: '「' '」';
 }
 html:lang(zh-TW) pre,
@@ -129,10 +126,9 @@ html:lang(yue) body,
 html:lang(yue-Hant) body,
 html:lang(zh-yue-Hant) body {
   font-family: 'Source Han Sans HC', 'Noto Sans CJK HC', 'Source Han Sans TC',
-    'Noto Sans CJK TC', 'HanHei TC', system-ui, -apple-system, Segoe UI, Roboto,
-    Ubuntu, Cantarell, Noto Sans, sans-serif, ui-sans-serif, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
-    emoji;
+    'Noto Sans CJK TC', 'HanHei TC', system-ui, -apple-system, ui-sans-serif,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji', emoji;
   quotes: '「' '」';
 }
 html:lang(zh-HK) pre,
@@ -163,9 +159,8 @@ html:lang(zh-yue-Hant) samp {
 }
 html:lang(ja) body {
   font-family: 'Source Han Sans', 'Noto Sans CJK JP', 'Hiragino Kaku Gothic Pro',
-    system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
-    sans-serif, ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+    system-ui, -apple-system, ui-sans-serif, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji;
   quotes: '「' '」';
 }
 html:lang(ja) pre,
@@ -179,9 +174,8 @@ html:lang(ja) samp {
 }
 html:lang(ko) body {
   font-family: 'Source Han Sans K', 'Noto Sans CJK KR', 'Apple SD Gothic Neo',
-    system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
-    sans-serif, ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+    system-ui, -apple-system, ui-sans-serif, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji;
 }
 html:lang(ko) pre,
 html:lang(ko) code,
@@ -380,9 +374,9 @@ html:lang(ar) body,
 html:lang(he) body,
 html:lang(th) body,
 html:lang(vi) body {
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-    Noto Sans, sans-serif, ui-sans-serif, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+  font-family: system-ui, -apple-system, ui-sans-serif, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
+    emoji;
 }
 html:lang(ar) pre,
 html:lang(ar) code,
@@ -426,6 +420,10 @@ html:lang(vi) samp {
   src: local('Source Sans 3');
 }
 @font-face {
+  font-family: 'Calibri';
+  src: local('Source Sans 3');
+}
+@font-face {
   font-family: 'Helvetica';
   src: local('Source Sans 3');
 }
@@ -434,11 +432,23 @@ html:lang(vi) samp {
   src: local('Source Sans 3');
 }
 @font-face {
+  font-family: 'Lucida Sans Unicode';
+  src: local('Source Sans 3');
+}
+@font-face {
+  font-family: 'Microsoft Sans Serif';
+  src: local('Source Sans 3');
+}
+@font-face {
   font-family: 'Open Sans';
   src: local('Source Sans 3');
 }
 @font-face {
-  font-family: 'San Francisco' 'Segoe UI';
+  font-family: 'San Francisco';
+  src: local('Source Sans 3');
+}
+@font-face {
+  font-family: 'Segoe UI';
   src: local('Source Sans 3');
 }
 @font-face {
@@ -515,6 +525,14 @@ html:lang(vi) samp {
 }
 @font-face {
   font-family: '黑体';
+  src: local('Source Han Sans SC');
+}
+@font-face {
+  font-family: 'DengXian';
+  src: local('Source Han Sans SC');
+}
+@font-face {
+  font-family: '等线';
   src: local('Source Han Sans SC');
 }
 @font-face {
@@ -606,6 +624,10 @@ html:lang(vi) samp {
   src: local('Source Han Sans');
 }
 @font-face {
+  font-family: 'Yu Mincho';
+  src: local('Source Han Sans');
+}
+@font-face {
   font-family: 'Meiryo';
   src: local('Source Han Sans');
 }
@@ -650,10 +672,9 @@ html:lang(vi) samp {
 @-moz-document domain("baidu.com") {
   * {
     font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system, Segoe UI,
-      Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, ui-sans-serif,
-      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji', emoji;
+      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system,
+      ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol', 'Noto Color Emoji', emoji;
   }
 }
 @-moz-document domain("github.com") {
@@ -683,19 +704,17 @@ html:lang(vi) samp {
 @-moz-document domain("ithome.com") {
   .post_comment {
     font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system, Segoe UI,
-      Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, ui-sans-serif,
-      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji', emoji;
+      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system,
+      ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol', 'Noto Color Emoji', emoji;
   }
 }
 @-moz-document domain("jiemian.com") {
   .article-content {
     font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system, Segoe UI,
-      Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, ui-sans-serif,
-      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji', emoji !important;
+      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system,
+      ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol', 'Noto Color Emoji', emoji !important;
   }
   #ad_header_top,
   .cnzz-ads,
@@ -715,10 +734,9 @@ html:lang(vi) samp {
   p,
   a {
     font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system, Segoe UI,
-      Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, ui-sans-serif,
-      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji', emoji !important;
+      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system,
+      ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol', 'Noto Color Emoji', emoji !important;
   }
 }
 @-moz-document domain("userstyles.org") {
@@ -738,9 +756,8 @@ html:lang(vi) samp {
 {
   * {
     font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system, Segoe UI,
-      Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, ui-sans-serif,
-      sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji', emoji !important;
+      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui, -apple-system,
+      ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol', 'Noto Color Emoji', emoji !important;
   }
 }

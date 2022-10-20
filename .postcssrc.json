@@ -1,0 +1,10 @@
+{
+  "map": false,
+  "plugins": {
+    "postcss-preset-env": {
+      "features": {
+        "system-ui-font-family": false
+      }
+    }
+  }
+}

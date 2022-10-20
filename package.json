@@ -4,7 +4,7 @@
   "scripts": {
     "sass:watch": "sass --no-charset --update --no-source-map --watch src:dist",
     "sass": "sass --no-charset --no-source-map src:dist",
-    "postcss": "postcss dist/**/*.css --use postcss-preset-env --replace --no-map",
+    "postcss": "postcss dist/**/*.css --replace",
     "prebuild": "prettier --write src",
     "build": "npm run sass && npm run postcss",
     "postbuild": "prettier --write dist"

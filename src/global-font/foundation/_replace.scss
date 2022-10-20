@@ -32,8 +32,9 @@
 
   // 拉丁字母、西里尔字母、希腊文、阿拉伯字母：无衬线字体
   @if $font-sans-serif {
-    $font-sans-serif-list: 'Arial', 'Helvetica', 'Helvetica Neue', 'Open Sans',
-      'San Francisco' 'Segoe UI', 'Tahoma', 'Trebuchet', 'Trebuchet MS',
+    $font-sans-serif-list: 'Arial', 'Calibri', 'Helvetica', 'Helvetica Neue',
+      'Lucida Sans Unicode', 'Microsoft Sans Serif', 'Open Sans',
+      'San Francisco', 'Segoe UI', 'Tahoma', 'Trebuchet', 'Trebuchet MS',
       'Ubuntu', 'Verdana';
 
     @each $font in $font-sans-serif-list {
@@ -77,8 +78,9 @@
 
   // 简体中文 (中国、新加坡)：无衬线字体
   @if $font-sans-serif-sc {
-    $font-sans-serif-sc-list: 'SimHei', '黑体', 'Microsoft YaHei UI',
-      'Microsoft YaHei', '微软雅黑', 'STHeiti SC', 'PingFang SC', '苹方-简';
+    $font-sans-serif-sc-list: 'SimHei', '黑体', 'DengXian', '等线',
+      'Microsoft YaHei UI', 'Microsoft YaHei', '微软雅黑', 'STHeiti SC',
+      'PingFang SC', '苹方-简';
 
     @each $font in $font-sans-serif-sc-list {
       @if $font-sans-serif-sc != $font {
@@ -149,7 +151,7 @@
 
   // 日文：衬线字体
   @if $font-serif-j {
-    $font-serif-j-list: 'MS Mincho', 'MS PMincho';
+    $font-serif-j-list: 'MS Mincho', 'MS PMincho', 'Yu Mincho';
 
     @each $font in $font-serif-j-list {
       @if $font-serif-j != $font {
