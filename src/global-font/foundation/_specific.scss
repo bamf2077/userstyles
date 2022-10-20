@@ -1,7 +1,11 @@
 // 适配特定网站
 // Adapt to specific websites
 
-@mixin specific-websites($font-serif, $font-sans-serif, $font-monospace) {
+@mixin specific-websites(
+  $font-serif: null,
+  $font-sans-serif,
+  $font-monospace: null
+) {
   @-moz-document domain("423down.com") {
     .excerpt h2 {
       height: unset;
@@ -17,21 +21,25 @@
     }
   }
 
-  @-moz-document domain("github.com") {
-    .text-mono {
-      font-family: $font-monospace !important;
-    }
+  @if $font-monospace {
+    @-moz-document domain("github.com") {
+      .text-mono {
+        font-family: $font-monospace !important;
+      }
 
-    .blob-num,
-    .blob-code-inner {
-      font-family: $font-monospace;
+      .blob-num,
+      .blob-code-inner {
+        font-family: $font-monospace;
+      }
     }
   }
 
-  @-moz-document domain("greasyfork.org") {
-    #script_version_code,
-    .ace_editor {
-      font-family: $font-monospace !important;
+  @if $font-monospace {
+    @-moz-document domain("greasyfork.org") {
+      #script_version_code,
+      .ace_editor {
+        font-family: $font-monospace !important;
+      }
     }
   }
 

@@ -4,6 +4,7 @@
 
 ### 新增 Add
 
+- [全局字体] 增加全局苹方。
 - [全局字体] 字体替换西文增加“Calibri”“Lucida Sans Unicode”“Microsoft Sans Serif”，简体中文增加“等线”，日文增加“Yu Mincho”。
 
 ### 变更 Changed
