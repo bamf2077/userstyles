@@ -1,0 +1,55 @@
+@use 'sass:list';
+
+// 印欧语系/日耳曼语族：德语 Deutsch、荷兰语 Nederlands、英语 English、挪威语 Bokmål & Nynorsk、冰岛语 Íslenska、丹麦语 Dansk、瑞典语 Svenska
+$language-list-germanic: de, nl, en, nb, no, is, da, sv;
+
+// 印欧语系/意大利（罗曼）语族：葡萄牙语 Português、西班牙语 Español、法语 Français、意大利语 Italiano、罗马尼亚语 Română
+$language-list-italic: pt, es, fr, it, ro;
+
+// 印欧语系/波罗的-斯拉夫语族：拉脱维亚语 Latviešu、立陶宛语 Lietuvių、波兰语 Polski、捷克语 Čeština、斯洛伐克语 Slovenčina、波斯尼亚语 Bosanski、克罗地亚语 Hrvatski、塞尔维亚语 Srpski、保加利亚语 Български、斯洛文尼亚语 Slovenščina、俄语 Русский、乌克兰语 Українська、白俄罗斯语 Беларуская、
+$language-list-balto-slavic: lv, lt, pl, cs, sk, bs, hr, sr, bg, sl, ru, uk, be;
+
+// 印欧语系/希腊语族：希腊语 Ελληνικά
+$language-list-hellenic: el;
+
+// 印欧语系
+$language-list-indo-european: list.join(
+  list.join($language-list-germanic, $language-list-italic),
+  list.join($language-list-balto-slavic, $language-list-hellenic)
+);
+
+// 乌拉尔语系/匈牙利语族：匈牙利语 Magyar
+$language-list-magyar: hu;
+
+// 乌拉尔语系/波罗的-芬兰语族：爱沙尼亚语 Eesti、芬兰语 Suomi
+$language-list-finnic: et, fi;
+
+// 乌拉尔语系
+$language-list-uralic: list.join($language-list-magyar, $language-list-finnic);
+
+// 突厥语系：土耳其语 Türkçe
+$language-list-turkic: tr;
+
+// 南岛语系/马来-玻利尼西亚语族：印度尼西亚语 Bahasa Indonesia、马来语 Bahasa Melayu
+$language-list-malayo-polynesian: id, ms;
+
+// 南岛语系
+$language-list-austronesian: $language-list-malayo-polynesian;
+
+// 阿非罗–亚细亚语系/闪米特语族：العربية 阿拉伯语、עברית 希伯来语
+$language-list-semitic: ar, he;
+
+// 阿非罗–亚细亚语系
+$language-list-afroasiatic: $language-list-semitic;
+
+// 仡央-傣语系/傣语族：泰语 ไทย
+$language-list-tai: th;
+
+// 仡央-傣语系
+$language-list-kra-dai: $language-list-tai;
+
+// 南亚语系/越语族：越南语 Tiếng việt
+$language-list-vietic: vi;
+
+// 南亚语系
+$language-list-austroasiatic: $language-list-vietic;

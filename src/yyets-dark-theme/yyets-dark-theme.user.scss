@@ -2,61 +2,28 @@
 @name:en 💡 TURN OFF THE LIGHT, YYeTs!
 @name 💡 关灯，人人影视！
 @namespace franciszhao
-@version 2.3.5
-@description:en An user stylesheet with dark theme for YYeTs.com.
-@description 一款适用于 YYeTs 人人影视系列网站的深色主题用户样式表。
+@version 2.4.1
+@description:en A dark theme stylesheet for the website of YYeTs subtitle group.
+@description 一款适用于 YYeTs 人人影视网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
 @homepageURL https://n2o.io/go?page=userstyles
 @supportURL https://n2o.io/go?page=userstyles
 @license MIT
 @preprocessor default
-@x-note --------------------
-@x-note * 重 要 说 明 *
-@x-note
-@x-note 人人影视倒了，再次强调了“永远不要把鸡蛋放在同一只篮子里”的深刻教训！
-@x-note 下面给大家提供一些我平时常用的宝藏资源网站：
-@x-note
-@x-note  1. RARBG - 欧美影视剧片源
-@x-note    https://rarbgmirror.org/torrents.php?category=41;49
-@x-note
-@x-note  2. RARBG - 欧美电影片源
-@x-note    https://rarbgmirror.org/torrents.php?category=45;44;50;54;51;52;46;42
-@x-note
-@x-note  3. 海盗湾 - 欧美音乐专辑 - 需要魔法上网
-@x-note    https://pirateproxy.page/
-@x-note
-@x-note  4. ED2000 - 综合影视剧 - 疑似 2021 年 2 月 4 日已凉凉
-@x-note    https://www.ed2000k.com/
-@x-note
-@x-note  5. 下片片 - 综合影视剧（偏中日韩）
-@x-note    http://www.xiepp.com/
-@x-note
-@x-note  6. FIX 字幕侠 - 综合影视剧、字幕
-@x-note    https://www.zimuxia.cn/
-@x-note
-@x-note  7. 蜜柑计划 - ACG
-@x-note    https://mikanani.me/
-@x-note
-@x-note  8. 漫猫动漫 - ACG
-@x-note    https://www.comicat.org/
-@x-note
-@x-note  9. SubHD.tv - 综合字幕
-@x-note    https://subhd.tv/
-@x-note
-@x-note 10. 人人影视磁力站 - 仅有 2020 年 5 月前资源
-@x-note    http://mag234.com/index/
-@x-note
-@x-note --------------------
 ==/UserStyle== */
 
 // 外观定义
 
-$font-sans: "Source Han Sans SC", "Noto Sans CJK SC", "HanHei SC", "PingFang SC",
-  "Microsoft YaHei UI", system-ui, -apple-system;
+$font-sans-serif: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
+  'HarmonyOS Sans SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK', 'Microsoft YaHei',
+  system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
+  sans-serif, ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol', 'Noto Color Emoji', emoji;
 
-$font-mono: "Source Han Mono SC", "Noto Sans Mono CJK SC", "Source Code Pro",
-  "Noto Mono", "Roboto Mono", "Source Han Sans SC", "Noto Sans CJK SC",
-  "HanHei SC", "PingFang SC", "Microsoft YaHei UI", system-ui, -apple-system;
+$font-monospace: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
+  'Source Code Pro', 'Noto Mono', 'SF Mono', 'Roboto Mono', 'Cascadia Code',
+  ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol', 'Noto Color Emoji', emoji;
 
 $color-link: #005083;
 $color-link-alt: #518248;
@@ -84,14 +51,20 @@ $color-button-hover: rgba(52, 116, 249, 0.25);
 $border-radius: 4px;
 
 // 人人影视主站
-@-moz-document regexp("https?:\/\/[\w-\.]*rrys\d{4}\.com\/.*"),
-               regexp("https?:\/\/[\w-\.]*zmz\d{4}\.com\/.*"),
-               regexp("https?:\/\/[\w-\.]*zimuzu\.\w+\/.*") {
+@-moz-document regexp("https?://(\\w+\\.)?yysub\\.net/.*")
+{
   // 通用-字体
   body {
     background-color: $color-bg;
     color: $color-text;
-    font-family: $font-sans, sans-serif;
+    font-family: $font-sans-serif, sans-serif;
+  }
+
+  pre,
+  code,
+  kbd,
+  samp {
+    font-family: $font-monospace, monospace;
   }
 
   button,
@@ -101,13 +74,6 @@ $border-radius: 4px;
   select,
   textarea {
     font-family: inherit;
-  }
-
-  code,
-  kbd,
-  pre,
-  samp {
-    font-family: $font-mono, monospace;
   }
 
   a,
@@ -148,8 +114,8 @@ $border-radius: 4px;
   }
 
   // 通用-控件
-  input[type="text"],
-  input[type="password"],
+  input[type='text'],
+  input[type='password'],
   select,
   textarea {
     background: $color-black-010 !important;
@@ -165,8 +131,8 @@ $border-radius: 4px;
     }
   }
 
-  input[type="button"],
-  input[type="submit"],
+  input[type='button'],
+  input[type='submit'],
   .res-form .submit {
     background: $color-link !important;
     box-shadow: none !important;
@@ -197,13 +163,13 @@ $border-radius: 4px;
 
       //提交按钮
       .submit {
-        background: url("http://js.jstucdn.com/images/saerch-submit.png") center
-            center/24px 24px no-repeat,
+        background: url('https://jstu.yysub.net/images/saerch-submit.png')
+            center center/24px 24px no-repeat,
           $color-link !important;
         border-radius: 0 $border-radius $border-radius 0 !important;
 
         &:hover {
-          background: url("http://js.jstucdn.com/images/saerch-submit.png")
+          background: url('https://jstu.yysub.net/images/saerch-submit.png')
               center center/24px 24px no-repeat,
             lighten($color-link, 10%) !important;
         }
@@ -666,7 +632,7 @@ $border-radius: 4px;
     .user-login {
       .input-txt {
         padding: 0 10px;
-        font-family: $font-mono, monospace;
+        font-family: $font-monospace, monospace;
       }
 
       p label,
@@ -744,8 +710,8 @@ $border-radius: 4px;
       }
 
       .ziliao_ul li .pwd-requirements,
-      .u_p_set ul.ziliao_ul li font[color="#EF4238"],
-      .u_p_set #upgrade_by_code_form ul.ziliao_ul li font[color="red"] {
+      .u_p_set ul.ziliao_ul li font[color='#EF4238'],
+      .u_p_set #upgrade_by_code_form ul.ziliao_ul li font[color='red'] {
         color: brown !important;
       }
 
@@ -1060,7 +1026,7 @@ $border-radius: 4px;
       .res-bbs-right {
         width: 286px;
 
-        div[style="margin-bottom:15px;"] {
+        div[style='margin-bottom:15px;'] {
           display: none;
         }
 
@@ -1220,7 +1186,7 @@ $border-radius: 4px;
 
     .information-desc {
       * {
-        font-family: $font-sans, sans-serif !important;
+        font-family: $font-sans-serif, sans-serif !important;
         font-size: 16px !important;
       }
     }
@@ -1720,14 +1686,14 @@ $border-radius: 4px;
           top: 25px;
           background: transparent;
 
-          input[type="text"] {
+          input[type='text'] {
             padding: 4px 10px;
             border-width: 1px;
             border-style: solid;
             text-indent: unset;
           }
 
-          input[type="image"] {
+          input[type='image'] {
             width: 35px;
             height: 35px;
             top: 0;
@@ -1901,7 +1867,7 @@ $border-radius: 4px;
           left: 0;
           width: 80px;
           height: 4px;
-          content: "";
+          content: '';
         }
       }
 
@@ -1983,168 +1949,6 @@ $border-radius: 4px;
         }
       }
     }
-  }
-}
-
-// 人人影视资源分享站
-@-moz-document regexp("https?:\/\/[\w-\.]*got\d{3}\.com\/.*") {
-  *,
-  .ui-header .ui-limit .logo-wrapper .desc {
-    font-family: $font-sans, sans-serif;
-    font-weight: 400 !important;
-  }
-
-  .down-list > li .title > span.filesize,
-  .down-list > li .title > span.date {
-    font-style: italic;
-  }
-
-  .ui-header .ui-limit .view-count,
-  .btn-default,
-  .down-list > li .down-links > li .btn,
-  .down-list > li .down-links > li .copy-link:before,
-  .down-list > li .down-links > li .copy-pass:before,
-  .down-list > li .title > a.outside-btn,
-  .down-list-toolbar .btn-group .btn {
-    border-color: #333333;
-  }
-
-  .btn-default:hover,
-  .down-list > li .down-links > li .btn:hover,
-  .down-list > li .down-links > li .copy-link:hover:before,
-  .down-list > li .down-links > li .copy-pass:hover:before,
-  .down-list > li .title > a.outside-btn:hover,
-  .down-list-toolbar .btn-group .btn:hover {
-    border-color: #666666;
-  }
-
-  .btn-default,
-  .down-list > li .title > span.filesize,
-  .down-list > li .title > span.date,
-  .down-list > li .down-links > li .btn,
-  .down-list > li .down-links > li .copy-link:before,
-  .down-list > li .down-links > li .copy-pass:before,
-  .down-list > li .title > a.outside-btn,
-  .down-list-toolbar .title,
-  .down-list-toolbar .btn-group .btn,
-  .ui-footer .copyright {
-    color: #666666;
-  }
-
-  .down-list > li .title > span.filename {
-    color: #888888;
-  }
-
-  a,
-  .ui-header .ui-limit .count-down .minfo .count,
-  .ui-header .ui-limit .view-count .desc,
-  .ui-header .ui-limit .view-count .count,
-  .btn-default:hover,
-  .ui-header .ui-limit .film-title,
-  .tab-content .tab-pane > .tab-header > li a,
-  .tab-content .tab-pane > .tab-header > div a,
-  .down-list > li .down-links > li .btn:hover,
-  .down-list > li .down-links > li .copy-link:hover:before,
-  .down-list > li .down-links > li .copy-pass:hover:before,
-  .down-list > li .title > a.outside-btn:hover,
-  .down-list-toolbar .btn-group .btn:hover {
-    color: #999999;
-  }
-
-  .btn-danger {
-    color: #eeeeee;
-  }
-
-  a {
-    text-decoration: none !important;
-  }
-
-  body {
-    background-color: #222222 !important;
-  }
-
-  .btn-default,
-  .down-popup .panel-inner-down .panel-body .btn {
-    background-color: $color-white-010;
-  }
-
-  .btn-default:hover,
-  .btn-default:focus,
-  .btn-default.focus,
-  .btn-default:active,
-  .btn-default.active,
-  .open > .dropdown-toggle.btn-default,
-  .down-list > li .down-links > li .btn:hover,
-  .down-list > li .down-links > li .copy-link:hover::before,
-  .down-list > li .title > a.outside-btn:hover,
-  .ui-content
-    .row-content
-    .col-box.col-sidebar
-    .sidebar-warpper
-    .tab-side
-    > li
-    > a:hover,
-  .down-list-toolbar .btn-group .btn:hover {
-    background-color: $color-white-010;
-  }
-
-  .ui-header,
-  .ui-header .ui-limit .view-count,
-  .ui-header .ui-limit .count-down .minfo .count,
-  .ui-content .row-content .col-box.col-sidebar .sidebar-warpper,
-  .ui-content
-    .row-content
-    .col-box.col-sidebar
-    .sidebar-warpper
-    .tab-side
-    > li
-    > a,
-  .btn-default,
-  .down-list > li:hover,
-  .down-list > li .down-links > li .btn,
-  .down-list > li .down-links > li .copy-link,
-  .down-list > li .down-links > li .copy-link::before,
-  .down-list > li .title > a.outside-btn,
-  .ui-footer,
-  .ui-footer.ui-footer-simple .copyright,
-  .down-list-toolbar,
-  .down-list-toolbar .btn-group .btn {
-    background-color: $color-black-025;
-  }
-
-  .ui-content
-    .row-content
-    .col-box.col-sidebar
-    .sidebar-warpper
-    .tab-side
-    > li.active
-    > a {
-    background-color: $color-black-050;
-  }
-
-  .down-popup {
-    background-color: rgba(0, 0, 0, 0.95);
-  }
-
-  .down-list > li .down-links > li:not(:first-child) {
-    margin-left: 10px;
-  }
-
-  .down-list > li .down-links > li .btn-download {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  .down-list > li .down-links > li .copy-link::before {
-    margin-left: 4px;
-    border-top-left-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
-  .down-list-toolbar {
-    margin-top: 40px;
-    padding: 10px 20px;
-    border: none;
   }
 }
 

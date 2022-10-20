@@ -1,0 +1,196 @@
+// 替换字体
+// Replace font families via @font-face
+
+@mixin font-face-replace(
+  $font-serif: null,
+  $font-sans-serif: null,
+  $font-monospace: null,
+  $font-serif-sc: null,
+  $font-sans-serif-sc: null,
+  $font-serif-tc: null,
+  $font-sans-serif-tc: null,
+  $font-serif-hc: null,
+  $font-sans-serif-hc: null,
+  $font-serif-j: null,
+  $font-sans-serif-j: null,
+  $font-serif-k: null,
+  $font-sans-serif-k: null
+) {
+  // 拉丁字母、西里尔字母、希腊文、阿拉伯字母：衬线字体
+  @if $font-serif {
+    $font-serif-list: 'Georgia', 'New York', 'Times', 'Time New Roman';
+
+    @each $font in $font-serif-list {
+      @if $font-serif != $font {
+        @font-face {
+          font-family: $font;
+          src: local($font-serif);
+        }
+      }
+    }
+  }
+
+  // 拉丁字母、西里尔字母、希腊文、阿拉伯字母：无衬线字体
+  @if $font-sans-serif {
+    $font-sans-serif-list: 'Arial', 'Helvetica', 'Helvetica Neue', 'Open Sans',
+      'San Francisco' 'Segoe UI', 'Tahoma', 'Trebuchet', 'Trebuchet MS',
+      'Ubuntu', 'Verdana';
+
+    @each $font in $font-sans-serif-list {
+      @if $font-sans-serif != $font {
+        @font-face {
+          font-family: $font;
+          src: local($font-sans-serif);
+        }
+      }
+    }
+  }
+
+  // 拉丁字母、西里尔字母、希腊文、阿拉伯字母：等宽字体
+  @if $font-monospace {
+    $font-monospace-list: 'Consolas', 'Courier', 'Courier New',
+      'DejaVu Sans Mono', 'Lucida Console', 'SF Mono', 'Ubuntu Mono';
+
+    @each $font in $font-monospace-list {
+      @if $font-monospace != $font {
+        @font-face {
+          font-family: $font;
+          src: local($font-monospace);
+        }
+      }
+    }
+  }
+
+  // 简体中文 (中国、新加坡)：衬线字体
+  @if $font-serif-sc {
+    $font-serif-sc-list: 'SimSun', 'SimSun-ExtB', '宋体', 'NSimSun', '新宋体';
+
+    @each $font in $font-serif-sc-list {
+      @if $font-serif-sc != $font {
+        @font-face {
+          font-family: $font;
+          src: local($font-serif-sc);
+        }
+      }
+    }
+  }
+
+  // 简体中文 (中国、新加坡)：无衬线字体
+  @if $font-sans-serif-sc {
+    $font-sans-serif-sc-list: 'SimHei', '黑体', 'Microsoft YaHei UI',
+      'Microsoft YaHei', '微软雅黑', 'STHeiti SC', 'PingFang SC', '苹方-简';
+
+    @each $font in $font-sans-serif-sc-list {
+      @if $font-sans-serif-sc != $font {
+        @font-face {
+          font-family: $font;
+          src: local($font-sans-serif-sc);
+        }
+      }
+    }
+  }
+
+  // 繁体中文 (台湾)：衬线字体
+  @if $font-serif-tc {
+    $font-serif-tc-list: 'MingLiU', 'MingLiU-ExtB', 'PMingLiU', 'PMingLiU-ExtB';
+
+    @each $font in $font-serif-tc-list {
+      @if $font-serif-tc != $font {
+        @font-face {
+          font-family: $font;
+          src: local($font-serif-tc);
+        }
+      }
+    }
+  }
+
+  // 繁体中文 (台湾)：无衬线字体
+  @if $font-sans-serif-tc {
+    $font-sans-serif-tc-list: 'Microsoft JhengHei UI', 'Microsoft JhengHei',
+      '微軟正黑體', 'STHeiti TC', 'PingFang TC', '蘋方-繁';
+
+    @each $font in $font-sans-serif-tc-list {
+      @if $font-sans-serif-tc != $font {
+        @font-face {
+          font-family: $font;
+          src: local($font-sans-serif-tc);
+        }
+      }
+    }
+  }
+
+  // 繁体中文 (香港、澳门)：衬线字体
+  @if $font-serif-hc {
+    $font-serif-hc-list: 'MingLiU_HKSCS', 'MingLiU_HKSCS-ExtB';
+
+    @each $font in $font-serif-hc-list {
+      @if $font-serif-hc != $font {
+        @font-face {
+          font-family: $font;
+          src: local($font-serif-hc);
+        }
+      }
+    }
+  }
+
+  // 繁体中文 (香港、澳门)：无衬线字体
+  @if $font-sans-serif-hc {
+    $font-sans-serif-hc-list: 'PingFang HK', '蘋方-港';
+
+    @each $font in $font-sans-serif-hc-list {
+      @if $font-sans-serif-hc != $font {
+        @font-face {
+          font-family: $font;
+          src: local($font-sans-serif-hc);
+        }
+      }
+    }
+  }
+
+  // 日文：衬线字体
+  @if $font-serif-j {
+    $font-serif-j-list: 'MS Mincho', 'MS PMincho';
+
+    @each $font in $font-serif-j-list {
+      @if $font-serif-j != $font {
+        @font-face {
+          font-family: $font;
+          src: local($font-serif-j);
+        }
+      }
+    }
+  }
+
+  // 日文：无衬线字体
+  @if $font-sans-serif-j {
+    $font-sans-serif-j-list: 'Meiryo', 'Meiryo UI', 'MS Gothic', 'MS PGothic',
+      'MS UI Gothic', 'Yu Gothic', 'Yu Gothic UI';
+
+    @each $font in $font-sans-serif-j-list {
+      @if $font-sans-serif-j != $font {
+        @font-face {
+          font-family: $font;
+          src: local($font-sans-serif-j);
+        }
+      }
+    }
+  }
+
+  // 朝鲜文：无衬线字体
+  @if $font-serif-k {
+  }
+
+  // 朝鲜文：无衬线字体
+  @if $font-sans-serif-k {
+    $font-sans-serif-k-list: 'Malgun Gothic';
+
+    @each $font in $font-sans-serif-k-list {
+      @if $font-sans-serif-k != $font {
+        @font-face {
+          font-family: $font;
+          src: local($font-sans-serif-k);
+        }
+      }
+    }
+  }
+}

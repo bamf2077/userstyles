@@ -1,0 +1,190 @@
+@use 'variables';
+
+// 定义默认字体
+// Define default font families
+
+@mixin generic-content($font-sans-serif, $font-monospace, $quotes: null) {
+  body {
+    font-family: $font-sans-serif;
+    @if quotes {
+      quotes: $quotes;
+    }
+  }
+
+  pre,
+  code,
+  kbd,
+  samp {
+    font-family: $font-monospace;
+  }
+}
+
+@mixin default-font-families(
+  $font-sans-serif,
+  $font-monospace,
+  $font-sans-serif-sc,
+  $font-monospace-sc,
+  $font-sans-serif-tc: null,
+  $font-monospace-tc: null,
+  $font-sans-serif-hc: null,
+  $font-monospace-hc: null,
+  $font-sans-serif-j: null,
+  $font-monospace-j: null,
+  $font-sans-serif-k: null,
+  $font-monospace-k: null,
+  $vendor
+) {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    font-family: $font-sans-serif-sc;
+  }
+
+  pre,
+  code,
+  kbd,
+  samp {
+    font-family: $font-monospace-sc;
+  }
+
+  button,
+  input,
+  keygen,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+  }
+
+  html {
+    // 中文、简体中文、简体中文 (中国、新加坡)
+    &:lang(zh),
+    &:lang(zh-CN),
+    &:lang(zh-SG),
+    &:lang(zh-Hans),
+    &:lang(cmn),
+    &:lang(cmn-Hans),
+    &:lang(zh-cmn-Hans) {
+      @include generic-content(
+        $font-sans-serif: $font-sans-serif-sc,
+        $font-monospace: $font-monospace-sc,
+        $quotes: '“' '”'
+      );
+    }
+
+    // 繁体中文、繁体中文 (台湾)
+    @if $font-sans-serif-tc and $font-monospace-tc {
+      &:lang(zh-TW),
+      &:lang(zh-Hant),
+      &:lang(cmn-Hant),
+      &:lang(zh-cmn-Hant) {
+        @include generic-content(
+          $font-sans-serif: $font-sans-serif-tc,
+          $font-monospace: $font-monospace-tc,
+          $quotes: '「' '」'
+        );
+      }
+    }
+
+    // 繁体中文 (香港、澳门)
+    @if $font-sans-serif-hc and $font-monospace-hc {
+      &:lang(zh-HK),
+      &:lang(zh-MO),
+      &:lang(yue),
+      &:lang(yue-Hant),
+      &:lang(zh-yue-Hant) {
+        @include generic-content(
+          $font-sans-serif: $font-sans-serif-hc,
+          $font-monospace: $font-monospace-hc,
+          $quotes: '「' '」'
+        );
+      }
+    }
+
+    // 日文
+    @if $font-sans-serif-j and $font-monospace-j {
+      &:lang(ja) {
+        @include generic-content(
+          $font-sans-serif: $font-sans-serif-j,
+          $font-monospace: $font-monospace-j,
+          $quotes: '「' '」'
+        );
+      }
+    }
+
+    // 朝鲜文
+    @if $font-sans-serif-k and $font-monospace-k {
+      &:lang(ko) {
+        @include generic-content(
+          $font-sans-serif: $font-sans-serif-k,
+          $font-monospace: $font-monospace-k
+        );
+      }
+    }
+
+    // 其他语言
+    // prettier-ignore
+    &:lang(de), &:lang(nl), &:lang(en),
+    &:lang(nb), &:lang(no), &:lang(is), &:lang(da), &:lang(sv),
+    &:lang(pt), &:lang(es), &:lang(fr), &:lang(it), &:lang(ro),
+    &:lang(lv), &:lang(lt), &:lang(pl), &:lang(cs), &:lang(sk),
+    &:lang(bs), &:lang(hr), &:lang(sr), &:lang(bg), &:lang(sl),
+    &:lang(ru), &:lang(uk), &:lang(be),
+    &:lang(el),
+    &:lang(hu), &:lang(et), &:lang(fi),
+    &:lang(tr),
+    &:lang(id), &:lang(ms) {
+      @include generic-content(
+        $font-sans-serif: $font-sans-serif,
+        $font-monospace: $font-monospace
+      );
+    }
+
+    &:lang(de) {
+      body {
+        quotes: '„' '“';
+      }
+    }
+
+    &:lang(nb),
+    &:lang(no),
+    &:lang(es) {
+      body {
+        quotes: '«' '»';
+      }
+    }
+
+    &:lang(fr) {
+      body {
+        quotes: '« ' ' »';
+      }
+    }
+
+    // prettier-ignore
+    &:lang(ar), &:lang(he), &:lang(th), &:lang(vi) {
+      @include generic-content(
+        $font-sans-serif: (variables.$font-system-ui, variables.$font-sans-serif, variables.$font-emoji),
+        $font-monospace: (variables.$font-monospace, variables.$font-emoji)
+      );
+    }
+  }
+}
+
+// 获取默认字体
+// Get default font families
+
+@function get-default($type, $font-list) {
+  $default: '';
+  @if $type == 'serif' {
+    $default: $font-list, variables.$font-serif, variables.$font-emoji;
+  } @else if $type == 'sans-serif' {
+    $default: $font-list, variables.$font-sans-serif, variables.$font-emoji;
+  } @else if $type == 'monospace' {
+    $default: $font-list, variables.$font-monospace, variables.$font-emoji;
+  }
+  @return $default;
+}

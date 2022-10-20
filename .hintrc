@@ -1,0 +1,12 @@
+{
+  "extends": ["web-recommended"],
+  "hints": {
+    "compat-api/css": [
+      "warning",
+      {
+        "ignore": ["@-moz-document"]
+      }
+    ],
+    "sri": "off"
+  }
+}
