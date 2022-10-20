@@ -4,11 +4,16 @@
 
 ### 新增 Add
 
+- [全局字体] 增加全局苹方。
 - [全局字体] 字体替换西文增加“Calibri”“Lucida Sans Unicode”“Microsoft Sans Serif”，简体中文增加“等线”，日文增加“Yu Mincho”。
 
 ### 变更 Changed
 
 - [全局字体] 微软品牌字体日文默认无衬线体由“MS PMincho”变更为“Yu Mincho”。
+
+### 修复 Fixed
+
+- [全局字体] 禁用 PostCSS 对通用字体 `system-ui` 的处理以解决重复添加西文字体的问题。
 
 ## 2022-08-30
 

@@ -1,10 +1,10 @@
 /* ==UserStyle==
-@name:en Global Font: Huawei-branded
-@name 全局鸿蒙黑体
+@name:en Global Font: Apple-branded
+@name 全局苹方
 @namespace franciszhao
-@version 2.3.2
-@description:en An user stylesheet to replace all fonts on web pages with Huawei-branded fonts, brings you a more unified and beautiful visual style.
-@description 一款使用华为品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
+@version 2.4.0
+@description:en An user stylesheet to replace all fonts on web pages with Apple-branded fonts, brings you a more unified and beautiful visual style.
+@description 一款使用苹果品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
 @homepageURL https://n2o.io/go?page=userstyles
 @supportURL https://n2o.io/go?page=userstyles
@@ -19,8 +19,7 @@ html {
 }
 
 body {
-  font-family: 'HarmonyOS Sans SC', 'Source Han Sans SC', 'Noto Sans CJK SC',
-    'HanHei SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui,
+  font-family: 'PingFang SC', 'Source Han Sans SC', 'HanHei SC', system-ui,
     -apple-system, ui-sans-serif, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji;
 }
@@ -29,8 +28,7 @@ pre,
 code,
 kbd,
 samp {
-  font-family: 'Source Han Mono SC', 'Noto Sans Mono CJK SC', 'Source Code Pro',
-    'Noto Mono', 'SF Mono', 'Roboto Mono', ui-monospace, monospace,
+  font-family: 'SF Mono', 'PingFang SC', ui-monospace, monospace,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
     emoji;
 }
@@ -51,8 +49,7 @@ html:lang(zh-Hans) body,
 html:lang(cmn) body,
 html:lang(cmn-Hans) body,
 html:lang(zh-cmn-Hans) body {
-  font-family: 'HarmonyOS Sans SC', 'Source Han Sans SC', 'Noto Sans CJK SC',
-    'HanHei SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui,
+  font-family: 'PingFang SC', 'Source Han Sans SC', 'HanHei SC', system-ui,
     -apple-system, ui-sans-serif, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji;
   quotes: '“' '”';
@@ -85,8 +82,7 @@ html:lang(zh-cmn-Hans) pre,
 html:lang(zh-cmn-Hans) code,
 html:lang(zh-cmn-Hans) kbd,
 html:lang(zh-cmn-Hans) samp {
-  font-family: 'Source Han Mono SC', 'Noto Sans Mono CJK SC', 'Source Code Pro',
-    'Noto Mono', 'SF Mono', 'Roboto Mono', ui-monospace, monospace,
+  font-family: 'SF Mono', 'PingFang SC', ui-monospace, monospace,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
     emoji;
 }
@@ -94,10 +90,9 @@ html:lang(zh-TW) body,
 html:lang(zh-Hant) body,
 html:lang(cmn-Hant) body,
 html:lang(zh-cmn-Hant) body {
-  font-family: 'HarmonyOS Sans TC', 'Source Han Sans TC', 'Noto Sans CJK TC',
-    'HanHei TC', system-ui, -apple-system, ui-sans-serif, sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
-    emoji;
+  font-family: 'PingFang TC', 'Source Han Sans TC', 'HanHei TC', system-ui,
+    -apple-system, ui-sans-serif, sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji;
   quotes: '「' '」';
 }
 html:lang(zh-TW) pre,
@@ -116,8 +111,7 @@ html:lang(zh-cmn-Hant) pre,
 html:lang(zh-cmn-Hant) code,
 html:lang(zh-cmn-Hant) kbd,
 html:lang(zh-cmn-Hant) samp {
-  font-family: 'Source Han Mono TC', 'Noto Sans Mono CJK TC', 'Source Code Pro',
-    'Noto Mono', 'SF Mono', 'Roboto Mono', ui-monospace, monospace,
+  font-family: 'SF Mono', 'PingFang TC', ui-monospace, monospace,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
     emoji;
 }
@@ -126,10 +120,10 @@ html:lang(zh-MO) body,
 html:lang(yue) body,
 html:lang(yue-Hant) body,
 html:lang(zh-yue-Hant) body {
-  font-family: 'HarmonyOS Sans TC', 'Source Han Sans HC', 'Noto Sans CJK HC',
-    'HarmonyOS Sans TC', 'Source Han Sans TC', 'Noto Sans CJK TC', 'HanHei TC',
-    system-ui, -apple-system, ui-sans-serif, sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+  font-family: 'PingFang HK', 'Source Han Sans HC', 'PingFang TC',
+    'Source Han Sans TC', 'HanHei TC', system-ui, -apple-system, ui-sans-serif,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    'Noto Color Emoji', emoji;
   quotes: '「' '」';
 }
 html:lang(zh-HK) pre,
@@ -152,9 +146,7 @@ html:lang(zh-yue-Hant) pre,
 html:lang(zh-yue-Hant) code,
 html:lang(zh-yue-Hant) kbd,
 html:lang(zh-yue-Hant) samp {
-  font-family: 'Source Han Mono HC', 'Noto Sans Mono CJK HC',
-    'Source Han Mono TC', 'Noto Sans Mono CJK TC', 'Source Code Pro',
-    'Noto Mono', 'SF Mono', 'Roboto Mono', ui-monospace, monospace,
+  font-family: 'SF Mono', 'PingFang HK', ui-monospace, monospace,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
     emoji;
 }
@@ -191,9 +183,9 @@ html:lang(fi) body,
 html:lang(tr) body,
 html:lang(id) body,
 html:lang(ms) body {
-  font-family: 'HarmonyOS Sans', 'Source Sans 3', 'Source Sans Pro', 'Noto Sans',
-    'Roboto', ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+  font-family: 'San Francisco', 'Source Sans 3', ui-sans-serif, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
+    emoji;
 }
 html:lang(de) pre,
 html:lang(de) code,
@@ -327,9 +319,9 @@ html:lang(ms) pre,
 html:lang(ms) code,
 html:lang(ms) kbd,
 html:lang(ms) samp {
-  font-family: 'Source Code Pro', 'Noto Mono', 'SF Mono', 'Roboto Mono',
-    ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+  font-family: 'SF Mono', 'Source Code Pro', ui-monospace, monospace,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
+    emoji;
 }
 html:lang(de) body {
   quotes: '„' '“';
@@ -372,220 +364,140 @@ html:lang(vi) samp {
 
 /* 字体替换 */
 @font-face {
-  font-family: 'Georgia';
-  src: local('Source Serif 4');
-}
-@font-face {
-  font-family: 'New York';
-  src: local('Source Serif 4');
-}
-@font-face {
-  font-family: 'Times';
-  src: local('Source Serif 4');
-}
-@font-face {
-  font-family: 'Time New Roman';
-  src: local('Source Serif 4');
-}
-@font-face {
   font-family: 'Arial';
-  src: local('HarmonyOS Sans');
+  src: local('San Francisco');
 }
 @font-face {
   font-family: 'Calibri';
-  src: local('HarmonyOS Sans');
+  src: local('San Francisco');
 }
 @font-face {
   font-family: 'Helvetica';
-  src: local('HarmonyOS Sans');
+  src: local('San Francisco');
 }
 @font-face {
   font-family: 'Helvetica Neue';
-  src: local('HarmonyOS Sans');
+  src: local('San Francisco');
 }
 @font-face {
   font-family: 'Lucida Sans Unicode';
-  src: local('HarmonyOS Sans');
+  src: local('San Francisco');
 }
 @font-face {
   font-family: 'Microsoft Sans Serif';
-  src: local('HarmonyOS Sans');
+  src: local('San Francisco');
 }
 @font-face {
   font-family: 'Open Sans';
-  src: local('HarmonyOS Sans');
-}
-@font-face {
-  font-family: 'San Francisco';
-  src: local('HarmonyOS Sans');
+  src: local('San Francisco');
 }
 @font-face {
   font-family: 'Segoe UI';
-  src: local('HarmonyOS Sans');
+  src: local('San Francisco');
 }
 @font-face {
   font-family: 'Tahoma';
-  src: local('HarmonyOS Sans');
+  src: local('San Francisco');
 }
 @font-face {
   font-family: 'Trebuchet';
-  src: local('HarmonyOS Sans');
+  src: local('San Francisco');
 }
 @font-face {
   font-family: 'Trebuchet MS';
-  src: local('HarmonyOS Sans');
+  src: local('San Francisco');
 }
 @font-face {
   font-family: 'Ubuntu';
-  src: local('HarmonyOS Sans');
+  src: local('San Francisco');
 }
 @font-face {
   font-family: 'Verdana';
-  src: local('HarmonyOS Sans');
+  src: local('San Francisco');
 }
 @font-face {
   font-family: 'Consolas';
-  src: local('Source Code Pro');
+  src: local('SF Mono');
 }
 @font-face {
   font-family: 'Courier';
-  src: local('Source Code Pro');
+  src: local('SF Mono');
 }
 @font-face {
   font-family: 'Courier New';
-  src: local('Source Code Pro');
+  src: local('SF Mono');
 }
 @font-face {
   font-family: 'DejaVu Sans Mono';
-  src: local('Source Code Pro');
+  src: local('SF Mono');
 }
 @font-face {
   font-family: 'Lucida Console';
-  src: local('Source Code Pro');
-}
-@font-face {
-  font-family: 'SF Mono';
-  src: local('Source Code Pro');
+  src: local('SF Mono');
 }
 @font-face {
   font-family: 'Ubuntu Mono';
-  src: local('Source Code Pro');
-}
-@font-face {
-  font-family: 'SimSun';
-  src: local('HarmonyOS Sans SC');
-}
-@font-face {
-  font-family: 'SimSun-ExtB';
-  src: local('HarmonyOS Sans SC');
-}
-@font-face {
-  font-family: '宋体';
-  src: local('HarmonyOS Sans SC');
-}
-@font-face {
-  font-family: 'NSimSun';
-  src: local('HarmonyOS Sans SC');
-}
-@font-face {
-  font-family: '新宋体';
-  src: local('HarmonyOS Sans SC');
+  src: local('SF Mono');
 }
 @font-face {
   font-family: 'SimHei';
-  src: local('HarmonyOS Sans SC');
+  src: local('PingFang SC');
 }
 @font-face {
   font-family: '黑体';
-  src: local('HarmonyOS Sans SC');
+  src: local('PingFang SC');
 }
 @font-face {
   font-family: 'DengXian';
-  src: local('HarmonyOS Sans SC');
+  src: local('PingFang SC');
 }
 @font-face {
   font-family: '等线';
-  src: local('HarmonyOS Sans SC');
+  src: local('PingFang SC');
 }
 @font-face {
   font-family: 'Microsoft YaHei UI';
-  src: local('HarmonyOS Sans SC');
+  src: local('PingFang SC');
 }
 @font-face {
   font-family: 'Microsoft YaHei';
-  src: local('HarmonyOS Sans SC');
+  src: local('PingFang SC');
 }
 @font-face {
   font-family: '微软雅黑';
-  src: local('HarmonyOS Sans SC');
+  src: local('PingFang SC');
 }
 @font-face {
   font-family: 'STHeiti SC';
-  src: local('HarmonyOS Sans SC');
-}
-@font-face {
-  font-family: 'PingFang SC';
-  src: local('HarmonyOS Sans SC');
+  src: local('PingFang SC');
 }
 @font-face {
   font-family: '苹方-简';
-  src: local('HarmonyOS Sans SC');
-}
-@font-face {
-  font-family: 'MingLiU';
-  src: local('HarmonyOS Sans TC');
-}
-@font-face {
-  font-family: 'MingLiU-ExtB';
-  src: local('HarmonyOS Sans TC');
-}
-@font-face {
-  font-family: 'PMingLiU';
-  src: local('HarmonyOS Sans TC');
-}
-@font-face {
-  font-family: 'PMingLiU-ExtB';
-  src: local('HarmonyOS Sans TC');
+  src: local('PingFang SC');
 }
 @font-face {
   font-family: 'Microsoft JhengHei UI';
-  src: local('HarmonyOS Sans TC');
+  src: local('PingFang TC');
 }
 @font-face {
   font-family: 'Microsoft JhengHei';
-  src: local('HarmonyOS Sans TC');
+  src: local('PingFang TC');
 }
 @font-face {
   font-family: '微軟正黑體';
-  src: local('HarmonyOS Sans TC');
+  src: local('PingFang TC');
 }
 @font-face {
   font-family: 'STHeiti TC';
-  src: local('HarmonyOS Sans TC');
-}
-@font-face {
-  font-family: 'PingFang TC';
-  src: local('HarmonyOS Sans TC');
+  src: local('PingFang TC');
 }
 @font-face {
   font-family: '蘋方-繁';
-  src: local('HarmonyOS Sans TC');
-}
-@font-face {
-  font-family: 'MingLiU_HKSCS';
-  src: local('HarmonyOS Sans TC');
-}
-@font-face {
-  font-family: 'MingLiU_HKSCS-ExtB';
-  src: local('HarmonyOS Sans TC');
-}
-@font-face {
-  font-family: 'PingFang HK';
-  src: local('HarmonyOS Sans TC');
+  src: local('PingFang TC');
 }
 @font-face {
   font-family: '蘋方-港';
-  src: local('HarmonyOS Sans TC');
+  src: local('PingFang HK');
 }
 /* 特定网站适配 */
 @-moz-document domain("423down.com") {
@@ -599,48 +511,42 @@ html:lang(vi) samp {
 }
 @-moz-document domain("baidu.com") {
   * {
-    font-family: 'HarmonyOS Sans SC', 'Source Han Sans SC', 'Noto Sans CJK SC',
-      'HanHei SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui,
+    font-family: 'PingFang SC', 'Source Han Sans SC', 'HanHei SC', system-ui,
       -apple-system, ui-sans-serif, sans-serif, 'Apple Color Emoji',
       'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji;
   }
 }
 @-moz-document domain("github.com") {
   .text-mono {
-    font-family: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
-      'Source Code Pro', 'Noto Mono', 'SF Mono', 'Roboto Mono', ui-monospace,
-      monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    font-family: 'SF Mono', 'PingFang SC', ui-monospace, monospace,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
       'Noto Color Emoji', emoji !important;
   }
   .blob-num,
   .blob-code-inner {
-    font-family: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
-      'Source Code Pro', 'Noto Mono', 'SF Mono', 'Roboto Mono', ui-monospace,
-      monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    font-family: 'SF Mono', 'PingFang SC', ui-monospace, monospace,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
       'Noto Color Emoji', emoji;
   }
 }
 @-moz-document domain("greasyfork.org") {
   #script_version_code,
   .ace_editor {
-    font-family: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
-      'Source Code Pro', 'Noto Mono', 'SF Mono', 'Roboto Mono', ui-monospace,
-      monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+    font-family: 'SF Mono', 'PingFang SC', ui-monospace, monospace,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
       'Noto Color Emoji', emoji !important;
   }
 }
 @-moz-document domain("ithome.com") {
   .post_comment {
-    font-family: 'HarmonyOS Sans SC', 'Source Han Sans SC', 'Noto Sans CJK SC',
-      'HanHei SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui,
+    font-family: 'PingFang SC', 'Source Han Sans SC', 'HanHei SC', system-ui,
       -apple-system, ui-sans-serif, sans-serif, 'Apple Color Emoji',
       'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji;
   }
 }
 @-moz-document domain("jiemian.com") {
   .article-content {
-    font-family: 'HarmonyOS Sans SC', 'Source Han Sans SC', 'Noto Sans CJK SC',
-      'HanHei SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui,
+    font-family: 'PingFang SC', 'Source Han Sans SC', 'HanHei SC', system-ui,
       -apple-system, ui-sans-serif, sans-serif, 'Apple Color Emoji',
       'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji !important;
   }
@@ -661,8 +567,7 @@ html:lang(vi) samp {
   .content,
   p,
   a {
-    font-family: 'HarmonyOS Sans SC', 'Source Han Sans SC', 'Noto Sans CJK SC',
-      'HanHei SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui,
+    font-family: 'PingFang SC', 'Source Han Sans SC', 'HanHei SC', system-ui,
       -apple-system, ui-sans-serif, sans-serif, 'Apple Color Emoji',
       'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji !important;
   }
@@ -683,8 +588,7 @@ html:lang(vi) samp {
                  regexp("https://(www\\.)?sogou\\.com/(web|sogou)?.*")
 {
   * {
-    font-family: 'HarmonyOS Sans SC', 'Source Han Sans SC', 'Noto Sans CJK SC',
-      'HanHei SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK', system-ui,
+    font-family: 'PingFang SC', 'Source Han Sans SC', 'HanHei SC', system-ui,
       -apple-system, ui-sans-serif, sans-serif, 'Apple Color Emoji',
       'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', emoji !important;
   }

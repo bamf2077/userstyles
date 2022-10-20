@@ -1,10 +1,10 @@
 /* ==UserStyle==
-@name:en Global Font: Huawei-branded
-@name 全局鸿蒙黑体
+@name:en Global Font: Apple-branded
+@name 全局苹方
 @namespace franciszhao
 @version 2.4.0
-@description:en An user stylesheet to replace all fonts on web pages with Huawei-branded fonts, brings you a more unified and beautiful visual style.
-@description 一款使用华为品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
+@description:en An user stylesheet to replace all fonts on web pages with Apple-branded fonts, brings you a more unified and beautiful visual style.
+@description 一款使用苹果品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
 @homepageURL https://n2o.io/go?page=userstyles
 @supportURL https://n2o.io/go?page=userstyles
@@ -16,61 +16,41 @@
 
 // 全局字体定义
 
-// 衬线字体
-$font-serif: 'Source Serif 4';
-$font-serif-fallback: 'Source Serif Pro', 'Noto Serif', 'Roboto Slab';
-
-$font-serif-sc: 'Source Han Serif SC';
-$font-serif-sc-fallback: 'Noto Serif CJK SC', '方正新书宋_GBK', $font-serif,
-  $font-serif-fallback;
-
-$font-serif-tc: 'Source Han Serif TC';
-$font-serif-tc-fallback: 'Noto Serif CJK TC', $font-serif, $font-serif-fallback;
-
-$font-serif-hc: 'Source Han Serif HC';
-$font-serif-hc-fallback: 'Noto Serif CJK HC', $font-serif-tc,
-  $font-serif-tc-fallback;
-
 // 无衬线字体
-$font-sans-serif: 'HarmonyOS Sans';
-$font-sans-serif-fallback: 'Source Sans 3', 'Source Sans Pro', 'Noto Sans',
-  'Roboto';
+$font-sans-serif: 'San Francisco';
+$font-sans-serif-fallback: 'Source Sans 3';
 
-$font-sans-serif-sc: 'HarmonyOS Sans SC';
-$font-sans-serif-sc-fallback: 'Source Han Sans SC', 'Noto Sans CJK SC',
-  'HanHei SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK',
+$font-sans-serif-sc: 'PingFang SC';
+$font-sans-serif-sc-fallback: 'Source Han Sans SC', 'HanHei SC',
   foundation.$font-system-ui;
 
-$font-sans-serif-tc: 'HarmonyOS Sans TC';
-$font-sans-serif-tc-fallback: 'Source Han Sans TC', 'Noto Sans CJK TC',
-  'HanHei TC', foundation.$font-system-ui;
+$font-sans-serif-tc: 'PingFang TC';
+$font-sans-serif-tc-fallback: 'Source Han Sans TC', 'HanHei TC',
+  foundation.$font-system-ui;
 
-$font-sans-serif-hc: 'HarmonyOS Sans TC';
-$font-sans-serif-hc-fallback: 'Source Han Sans HC', 'Noto Sans CJK HC',
-  $font-sans-serif-tc, $font-sans-serif-tc-fallback;
+$font-sans-serif-hc: 'PingFang HK';
+$font-sans-serif-hc-fallback: 'Source Han Sans HC', $font-sans-serif-tc,
+  $font-sans-serif-tc-fallback;
 
 // 等宽字体
-$font-monospace: 'Source Code Pro';
-$font-monospace-fallback: 'Noto Mono', 'SF Mono', 'Roboto Mono';
+$font-monospace: 'SF Mono';
+$font-monospace-fallback: 'Source Code Pro';
 
-$font-monospace-sc: 'Source Han Mono SC';
-$font-monospace-sc-fallback: 'Noto Sans Mono CJK SC', $font-monospace,
-  $font-monospace-fallback;
+$font-monospace-sc: 'SF Mono';
+$font-monospace-sc-fallback: 'PingFang SC';
 
-$font-monospace-tc: 'Source Han Mono TC';
-$font-monospace-tc-fallback: 'Noto Sans Mono CJK TC', $font-monospace,
-  $font-monospace-fallback;
+$font-monospace-tc: 'SF Mono';
+$font-monospace-tc-fallback: 'PingFang TC';
 
-$font-monospace-hc: 'Source Han Mono HC';
-$font-monospace-hc-fallback: 'Noto Sans Mono CJK HC', $font-monospace-tc,
-  $font-monospace-tc-fallback;
+$font-monospace-hc: 'SF Mono';
+$font-monospace-hc-fallback: 'PingFang HK';
 
 /* 字体设定 */
 
 // ✔️ 拉丁字母、西里尔字母、希腊文
 // ❌ 阿拉伯字母、希伯来文、泰文
 
-$vendor: 'huawei';
+$vendor: 'apple';
 
 @include foundation.default-font-families(
   $font-sans-serif:
@@ -143,28 +123,16 @@ $vendor: 'huawei';
 /* 字体替换 */
 
 @include foundation.font-face-replace(
-  $font-serif: $font-serif,
   $font-sans-serif: $font-sans-serif,
   $font-monospace: $font-monospace,
-  $font-serif-sc: $font-sans-serif-sc,
   $font-sans-serif-sc: $font-sans-serif-sc,
-  $font-serif-tc: $font-sans-serif-tc,
   $font-sans-serif-tc: $font-sans-serif-tc,
-  $font-serif-hc: $font-sans-serif-hc,
   $font-sans-serif-hc: $font-sans-serif-hc
 );
 
 /* 特定网站适配 */
 
 @include foundation.specific-websites(
-  $font-serif:
-    foundation.get-default(
-      $type: 'serif',
-      $font-list: (
-        $font-serif-sc,
-        $font-serif-sc-fallback,
-      )
-    ),
   $font-sans-serif:
     foundation.get-default(
       $type: 'sans-serif',
