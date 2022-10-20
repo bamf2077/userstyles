@@ -1,5 +1,15 @@
 # 更新日志 Changelog
 
+## 2022-10-21
+
+### 新增 Add
+
+- [全局字体] 字体替换西文增加“Calibri”“Lucida Sans Unicode”“Microsoft Sans Serif”，简体中文增加“等线”，日文增加“Yu Mincho”。
+
+### 变更 Changed
+
+- [全局字体] 微软品牌字体日文默认无衬线体由“MS PMincho”变更为“Yu Mincho”。
+
 ## 2022-08-30
 
 ### 变更 Changed
