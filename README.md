@@ -24,15 +24,15 @@
 
 <br>
 
-### [💡 关灯，人人影视！](https://github.com/francis-zhao/userstyles/blob/master/src/yyets-dark-theme/yyets-dark-theme.user.scss)
+### [关灯，人人影视！](https://github.com/francis-zhao/userstyles/blob/master/src/yyets-dark-theme/yyets-dark-theme.user.scss)
 
-一款适用于 YYeTs 人人影视 ( http://yysub.net/ ) 网站的深色主题用户样式表。
+一款适用于 YYeTs 人人影视 ( http://yysub.cc/ ) 网站的深色主题用户样式表。
 
 你可以在 [Greasy Fork](https://greasyfork.org/scripts/419366 "Greasy Fork") 上以原生的`用户样式`或自动转制的`用户脚本`的形式直接订阅使用最新的稳定版。
 
 推荐一些宝藏资源网站：
 
-- RARBG ( https://rarbgunblocked.org/ ) ---- 欧美影视剧片源
+- TGx ( https://torrentgalaxy.to/ ) ---- 综合影音
 - 海盗湾 ( https://ukpiratebay.org ) ---- 综合影音
 - ED2000 ( https://www.ed2000k.com/ ) ---- 综合影音
 - FIX 字幕侠 ( https://www.zimuxia.cn/ ) ---- 综合影视剧、字幕
