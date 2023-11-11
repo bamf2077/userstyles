@@ -1,8 +1,8 @@
 /* ==UserStyle==
-@name:en 💡 TURN OFF THE LIGHT, YYeTs!
-@name 💡 关灯，人人影视！
+@name:en Dark Theme: YYeTs
+@name 关灯，人人影视！
 @namespace franciszhao
-@version 2.4.1
+@version 2.4.2
 @description:en A dark theme stylesheet for the website of YYeTs subtitle group.
 @description 一款适用于 YYeTs 人人影视网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
@@ -14,11 +14,28 @@
 
 // 外观定义
 
-$font-sans-serif: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-  'HarmonyOS Sans SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK', 'Microsoft YaHei',
-  system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans,
-  sans-serif, ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-  'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+$font-sans-serif:
+  'Source Han Sans SC',
+  'Noto Sans CJK SC',
+  'HanHei SC',
+  'HarmonyOS Sans SC',
+  '方正兰亭黑_GB18030',
+  '方正兰亭黑_GBK',
+  'Microsoft YaHei',
+  system-ui,
+  Segoe UI,
+  Roboto,
+  Ubuntu,
+  Cantarell,
+  Noto Sans,
+  sans-serif,
+  ui-sans-serif,
+  sans-serif,
+  'Apple Color Emoji',
+  'Segoe UI Emoji',
+  'Segoe UI Symbol',
+  'Noto Color Emoji',
+  emoji;
 
 $font-monospace: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
   'Source Code Pro', 'Noto Mono', 'SF Mono', 'Roboto Mono', 'Cascadia Code',
@@ -51,8 +68,7 @@ $color-button-hover: rgba(52, 116, 249, 0.25);
 $border-radius: 4px;
 
 // 人人影视主站
-@-moz-document regexp("https?://(\\w+\\.)?yysub\\.net/.*")
-{
+@document regexp("https?:\/\/(\\w+\\.)?yysub\\.\\w+\/.*") {
   // 通用-字体
   body {
     background-color: $color-bg;
@@ -163,14 +179,16 @@ $border-radius: 4px;
 
       //提交按钮
       .submit {
-        background: url('https://jstu.yysub.net/images/saerch-submit.png')
-            center center/24px 24px no-repeat,
+        background:
+          url('https://jstu.yysub.net/images/saerch-submit.png') center
+            center/24px 24px no-repeat,
           $color-link !important;
         border-radius: 0 $border-radius $border-radius 0 !important;
 
         &:hover {
-          background: url('https://jstu.yysub.net/images/saerch-submit.png')
-              center center/24px 24px no-repeat,
+          background:
+            url('https://jstu.yysub.net/images/saerch-submit.png') center
+              center/24px 24px no-repeat,
             lighten($color-link, 10%) !important;
         }
       }
@@ -393,7 +411,10 @@ $border-radius: 4px;
 
   // 通用-动画效果
   * {
-    transition: color 0.25s, background-color 0.5s, border-color 0.5s;
+    transition:
+      color 0.25s,
+      background-color 0.5s,
+      border-color 0.5s;
   }
 
   // 首页
@@ -732,6 +753,7 @@ $border-radius: 4px;
           border: none;
         }
       }
+
       .upgrade-item {
         .upgrade-pop {
           top: -160px !important;
@@ -1121,6 +1143,7 @@ $border-radius: 4px;
           color: inherit;
         }
       }
+
       .zm-task-tag.recruiting {
         background: darken(#bf57ea, 40%);
         color: $color-link-nav;
@@ -1540,6 +1563,7 @@ $border-radius: 4px;
             tr {
               background: $color-black-020;
               color: inherit !important;
+
               td.d2,
               td.dr_ico,
               td.d6 {
@@ -1813,7 +1837,7 @@ $border-radius: 4px;
 
         .submit input {
           margin-top: 10px;
-          background: url(http://js.jstucdn.com/images/bg-btn.png) no-repeat !important;
+          background: url('http://js.jstucdn.com/images/bg-btn.png') no-repeat !important;
           font-family: inherit;
           filter: brightness(60%);
         }

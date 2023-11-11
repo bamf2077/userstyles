@@ -1,0 +1,11 @@
+@mixin style($font-sans-serif, $font-serif: null, $font-monospace: null) {
+  @document domain('userstyles.org') {
+    .ad,
+    #top_android_button,
+    .android_button_button,
+    .android_button_banner,
+    .walking {
+      display: none !important;
+    }
+  }
+}

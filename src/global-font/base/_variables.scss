@@ -1,5 +1,5 @@
-// 定义通用字体变量
-// Define generic font family variables
+// 通用字体变量
+// Generic font family variables
 // https://www.w3.org/TR/css-fonts-4/#generic-font-families
 
 $font-serif: ui-serif, serif;
@@ -11,4 +11,4 @@ $font-emoji: 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
 $font-math: math;
 $font-fangsong: '方正仿宋_GB18030', '方正仿宋_GBK', 'SimFang', '仿宋', fangsong;
 
-$font-system-ui: system-ui, -apple-system;
+$font-system-ui: system-ui;

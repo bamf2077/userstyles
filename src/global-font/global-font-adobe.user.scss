@@ -2,7 +2,7 @@
 @name:en Global Font: Adobe-branded
 @name 全局思源黑体
 @namespace franciszhao
-@version 2.4.0
+@version 2.5.0
 @description:en An user stylesheet to replace all fonts on web pages with Adobe-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用 Adobe 品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -12,7 +12,8 @@
 @preprocessor default
 ==/UserStyle== */
 
-@use 'foundation';
+@use 'base';
+@use 'specific';
 
 // 全局字体定义
 
@@ -43,11 +44,11 @@ $font-sans-serif-fallback: 'Source Sans Pro', 'Noto Sans', 'Roboto';
 
 $font-sans-serif-sc: 'Source Han Sans SC';
 $font-sans-serif-sc-fallback: 'Noto Sans CJK SC', 'HanHei SC',
-  '方正兰亭黑_GB18030', '方正兰亭黑_GBK', foundation.$font-system-ui;
+  '方正兰亭黑_GB18030', '方正兰亭黑_GBK', base.$font-system-ui;
 
 $font-sans-serif-tc: 'Source Han Sans TC';
 $font-sans-serif-tc-fallback: 'Noto Sans CJK TC', 'HanHei TC',
-  foundation.$font-system-ui;
+  base.$font-system-ui;
 
 $font-sans-serif-hc: 'Source Han Sans HC';
 $font-sans-serif-hc-fallback: 'Noto Sans CJK HC', $font-sans-serif-tc,
@@ -55,11 +56,11 @@ $font-sans-serif-hc-fallback: 'Noto Sans CJK HC', $font-sans-serif-tc,
 
 $font-sans-serif-j: 'Source Han Sans';
 $font-sans-serif-j-fallback: 'Noto Sans CJK JP', 'Hiragino Kaku Gothic Pro',
-  foundation.$font-system-ui;
+  base.$font-system-ui;
 
 $font-sans-serif-k: 'Source Han Sans K';
 $font-sans-serif-k-fallback: 'Noto Sans CJK KR', 'Apple SD Gothic Neo',
-  foundation.$font-system-ui;
+  base.$font-system-ui;
 
 // 等宽字体
 $font-monospace: 'Source Code Pro';
@@ -92,9 +93,9 @@ $font-monospace-k-fallback: 'Noto Sans Mono CJK KR', $font-monospace,
 
 $vendor: 'adobe';
 
-@include foundation.default-font-families(
+@include base.default-font-families(
   $font-sans-serif:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif,
@@ -102,7 +103,7 @@ $vendor: 'adobe';
       )
     ),
   $font-monospace:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace,
@@ -110,7 +111,7 @@ $vendor: 'adobe';
       )
     ),
   $font-sans-serif-sc:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-sc,
@@ -118,7 +119,7 @@ $vendor: 'adobe';
       )
     ),
   $font-monospace-sc:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-sc,
@@ -126,7 +127,7 @@ $vendor: 'adobe';
       )
     ),
   $font-sans-serif-tc:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-tc,
@@ -134,7 +135,7 @@ $vendor: 'adobe';
       )
     ),
   $font-monospace-tc:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-tc,
@@ -142,7 +143,7 @@ $vendor: 'adobe';
       )
     ),
   $font-sans-serif-hc:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-hc,
@@ -150,7 +151,7 @@ $vendor: 'adobe';
       )
     ),
   $font-monospace-hc:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-hc,
@@ -158,7 +159,7 @@ $vendor: 'adobe';
       )
     ),
   $font-sans-serif-j:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-j,
@@ -166,7 +167,7 @@ $vendor: 'adobe';
       )
     ),
   $font-monospace-j:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-j,
@@ -174,7 +175,7 @@ $vendor: 'adobe';
       )
     ),
   $font-sans-serif-k:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-k,
@@ -182,7 +183,7 @@ $vendor: 'adobe';
       )
     ),
   $font-monospace-k:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-k,
@@ -194,7 +195,7 @@ $vendor: 'adobe';
 
 /* 字体替换 */
 
-@include foundation.font-face-replace(
+@include base.font-face-replace(
   $font-serif: $font-serif,
   $font-sans-serif: $font-sans-serif,
   $font-monospace: $font-monospace,
@@ -212,9 +213,9 @@ $vendor: 'adobe';
 
 /* 特定网站适配 */
 
-@include foundation.specific-websites(
+@include specific.websites(
   $font-serif:
-    foundation.get-default(
+    base.get-default(
       $type: 'serif',
       $font-list: (
         $font-serif-sc,
@@ -222,7 +223,7 @@ $vendor: 'adobe';
       )
     ),
   $font-sans-serif:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-sc,
@@ -230,7 +231,7 @@ $vendor: 'adobe';
       )
     ),
   $font-monospace:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-sc,

@@ -1,0 +1,30 @@
+// 特定网站适配
+// Specific websites
+
+@use '423down' as _423down;
+@use 'baidu';
+@use 'bing';
+@use 'github';
+@use 'google';
+@use 'greasyfork';
+@use 'ithome';
+@use 'jiemian';
+@use 'so';
+@use 'sogou';
+@use 'sspai';
+@use 'userstyles';
+
+@mixin websites($font-sans-serif, $font-serif: null, $font-monospace: null) {
+  @include _423down.style($font-sans-serif, $font-serif, $font-monospace);
+  @include baidu.style($font-sans-serif, $font-serif, $font-monospace);
+  @include bing.style($font-sans-serif, $font-serif, $font-monospace);
+  @include github.style($font-sans-serif, $font-serif, $font-monospace);
+  @include google.style($font-sans-serif, $font-serif, $font-monospace);
+  @include greasyfork.style($font-sans-serif, $font-serif, $font-monospace);
+  @include ithome.style($font-sans-serif, $font-serif, $font-monospace);
+  @include jiemian.style($font-sans-serif, $font-serif, $font-monospace);
+  @include so.style($font-sans-serif, $font-serif, $font-monospace);
+  @include sogou.style($font-sans-serif, $font-serif, $font-monospace);
+  @include sspai.style($font-sans-serif, $font-serif, $font-monospace);
+  @include userstyles.style($font-sans-serif, $font-serif, $font-monospace);
+}

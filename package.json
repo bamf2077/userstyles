@@ -1,22 +1,19 @@
 {
   "name": "userstyles",
   "author": "Francis Zhao",
+  "type": "module",
   "scripts": {
-    "sass:watch": "sass --no-charset --update --no-source-map --watch src:dist",
-    "sass": "sass --no-charset --no-source-map src:dist",
-    "postcss": "postcss dist/**/*.css --replace",
-    "prebuild": "prettier --write src",
-    "build": "npm run sass && npm run postcss",
-    "postbuild": "prettier --write dist"
+    "build": "yarn run build:sass && yarn run build:postcss && yarn run format",
+    "build:sass": "sass --no-charset --no-source-map --update src:dist",
+    "build:postcss": "postcss dist/**/*.css --replace",
+    "format": "prettier --write --cache --cache-location .yarn/cache/.prettiercache --cache-strategy metadata .",
+    "yarn-sdks-vscode": "yarn dlx @yarnpkg/sdks vscode"
   },
   "devDependencies": {
-    "postcss": "^8.4.18",
-    "postcss-cli": "^10.0.0",
-    "postcss-preset-env": "^7.8.2",
-    "prettier": "^2.7.1",
-    "sass": "^1.55.0"
-  },
-  "browserslist": [
-    "last 3 years"
-  ]
+    "postcss": "^8.4.31",
+    "postcss-cli": "^10.1.0",
+    "postcss-preset-env": "^9.3.0",
+    "prettier": "^3.0.3",
+    "sass": "^1.69.5"
+  }
 }

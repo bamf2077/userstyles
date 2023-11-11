@@ -1,11 +1,10 @@
-[<kbd>**`* 简体中文 *`**</kbd>](https://github.com/francis-zhao/userstyles#readme '读我')
-[<kbd>English</kbd>](https://github.com/francis-zhao/userstyles/blob/master/README.en.md 'Readme')
+[<kbd>**`* 简体中文 *`**</kbd>](https://github.com/francis-zhao/userstyles#readme "读我") [<kbd>English</kbd>](https://github.com/francis-zhao/userstyles/blob/master/README.en.md "Readme")
 
 # UserStyles
 
 ## 简介
 
-一系列方便实用的用户样式表，适用于 Stylish、[Stylus](http://add0n.com/stylus.html 'Stylus')、[Tampermonkey](https://www.tampermonkey.net/ 'Tampermonkey')、[Greasemonkey](https://www.greasespot.net/ 'Greasemonkey') 等用户样式表、用户脚本管理类浏览器扩展。样式表生效原理类似 `userChrome.css`、`Custom.css`、`user.css`，由 ![Sass/SCSS](https://img.shields.io/github/languages/top/francis-zhao/userstyles?style=flat-square) 语言写成。
+一系列方便实用的用户样式表，适用于 Stylish、[Stylus](http://add0n.com/stylus.html "Stylus")、[Tampermonkey](https://www.tampermonkey.net/ "Tampermonkey")、[Greasemonkey](https://www.greasespot.net/ "Greasemonkey") 等用户样式表、用户脚本管理类浏览器扩展。样式表生效原理类似 `userChrome.css`、`Custom.css`、`user.css`，由 ![Sass/SCSS](https://img.shields.io/github/languages/top/francis-zhao/userstyles?style=flat-square) 语言写成。
 
 <br>
 
@@ -29,13 +28,12 @@
 
 一款适用于 YYeTs 人人影视 ( http://yysub.net/ ) 网站的深色主题用户样式表。
 
-你可以在 [Greasy Fork](https://greasyfork.org/scripts/419366 'Greasy Fork') 上以原生的`用户样式`或自动转制的`用户脚本`的形式直接订阅使用最新的稳定版。
+你可以在 [Greasy Fork](https://greasyfork.org/scripts/419366 "Greasy Fork") 上以原生的`用户样式`或自动转制的`用户脚本`的形式直接订阅使用最新的稳定版。
 
 推荐一些宝藏资源网站：
 
-- RARBG ( https://rarbgmirror.org/torrents.php?category=41;49 ) ---- 欧美影视剧片源
-- RARBG ( https://rarbgmirror.org/torrents.php?category=45;44;50;54;51;52;46;42 ) ---- 欧美电影片源
-- 海盗湾 ( https://pirateproxy.page/ ) ---- 综合影音，需要魔法上网
+- RARBG ( https://rarbgunblocked.org/ ) ---- 欧美影视剧片源
+- 海盗湾 ( https://ukpiratebay.org ) ---- 综合影音
 - ED2000 ( https://www.ed2000k.com/ ) ---- 综合影音
 - FIX 字幕侠 ( https://www.zimuxia.cn/ ) ---- 综合影视剧、字幕
 - 蜜柑计划 ( https://mikanani.me/ ) ---- ACG
@@ -46,4 +44,4 @@
 <br>
 <br>
 
-[<kbd>返回顶部</kbd>](# '返回顶部')
+[<kbd>返回顶部</kbd>](# "返回顶部")

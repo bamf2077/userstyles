@@ -1,0 +1,10 @@
+@mixin style($font-sans-serif, $font-serif: null, $font-monospace: null) {
+  @if $font-monospace {
+    @document domain('greasyfork.org') {
+      #script_version_code,
+      .ace_editor {
+        font-family: $font-monospace !important;
+      }
+    }
+  }
+}

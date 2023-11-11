@@ -1,0 +1,7 @@
+@mixin style($font-sans-serif, $font-serif: null, $font-monospace: null) {
+  @document domain('ithome.com') {
+    .post_comment {
+      font-family: $font-sans-serif;
+    }
+  }
+}

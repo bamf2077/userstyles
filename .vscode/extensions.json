@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "csstools.postcss",
+    "arcanis.vscode-zipfs"
+  ]
+}

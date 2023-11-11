@@ -1,22 +1,32 @@
-.DS_Store
+# Package directories and files
 node_modules
 package-lock.json
+pnpm-lock.yaml
+pnpm-workspace.yaml
+yarn.lock
+.pnpm
+.pnpmfile.*
+.yarn
+.pnp.*
 
 # Local env files
 .env.local
 .env.*.local
 
-# Log files
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
+# Output directories
+#dist
+
+# Log/Temp/Cache directories and files
+logs
+tmp
+.cache
+Thumbs.db
+*.bak
+*.log
+*.old
+*.tmp
 
 # Editor directories and files
+.vscode/*
+!.vscode/extensions.json
 .idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?

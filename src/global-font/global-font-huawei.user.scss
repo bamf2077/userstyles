@@ -12,7 +12,8 @@
 @preprocessor default
 ==/UserStyle== */
 
-@use 'foundation';
+@use 'base';
+@use 'specific';
 
 // 全局字体定义
 
@@ -38,12 +39,11 @@ $font-sans-serif-fallback: 'Source Sans 3', 'Source Sans Pro', 'Noto Sans',
 
 $font-sans-serif-sc: 'HarmonyOS Sans SC';
 $font-sans-serif-sc-fallback: 'Source Han Sans SC', 'Noto Sans CJK SC',
-  'HanHei SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK',
-  foundation.$font-system-ui;
+  'HanHei SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK', base.$font-system-ui;
 
 $font-sans-serif-tc: 'HarmonyOS Sans TC';
 $font-sans-serif-tc-fallback: 'Source Han Sans TC', 'Noto Sans CJK TC',
-  'HanHei TC', foundation.$font-system-ui;
+  'HanHei TC', base.$font-system-ui;
 
 $font-sans-serif-hc: 'HarmonyOS Sans TC';
 $font-sans-serif-hc-fallback: 'Source Han Sans HC', 'Noto Sans CJK HC',
@@ -72,9 +72,9 @@ $font-monospace-hc-fallback: 'Noto Sans Mono CJK HC', $font-monospace-tc,
 
 $vendor: 'huawei';
 
-@include foundation.default-font-families(
+@include base.default-font-families(
   $font-sans-serif:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif,
@@ -82,7 +82,7 @@ $vendor: 'huawei';
       )
     ),
   $font-monospace:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace,
@@ -90,7 +90,7 @@ $vendor: 'huawei';
       )
     ),
   $font-sans-serif-sc:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-sc,
@@ -98,7 +98,7 @@ $vendor: 'huawei';
       )
     ),
   $font-monospace-sc:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-sc,
@@ -106,7 +106,7 @@ $vendor: 'huawei';
       )
     ),
   $font-sans-serif-tc:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-tc,
@@ -114,7 +114,7 @@ $vendor: 'huawei';
       )
     ),
   $font-monospace-tc:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-tc,
@@ -122,7 +122,7 @@ $vendor: 'huawei';
       )
     ),
   $font-sans-serif-hc:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-hc,
@@ -130,7 +130,7 @@ $vendor: 'huawei';
       )
     ),
   $font-monospace-hc:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-hc,
@@ -142,7 +142,7 @@ $vendor: 'huawei';
 
 /* 字体替换 */
 
-@include foundation.font-face-replace(
+@include base.font-face-replace(
   $font-serif: $font-serif,
   $font-sans-serif: $font-sans-serif,
   $font-monospace: $font-monospace,
@@ -156,9 +156,9 @@ $vendor: 'huawei';
 
 /* 特定网站适配 */
 
-@include foundation.specific-websites(
+@include specific.websites(
   $font-serif:
-    foundation.get-default(
+    base.get-default(
       $type: 'serif',
       $font-list: (
         $font-serif-sc,
@@ -166,7 +166,7 @@ $vendor: 'huawei';
       )
     ),
   $font-sans-serif:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-sc,
@@ -174,7 +174,7 @@ $vendor: 'huawei';
       )
     ),
   $font-monospace:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-sc,

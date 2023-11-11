@@ -1,8 +1,8 @@
 /* ==UserStyle==
-@name:en 💡 TURN OFF THE LIGHT, YYeTs!
-@name 💡 关灯，人人影视！
+@name:en Dark Theme: YYeTs
+@name 关灯，人人影视！
 @namespace franciszhao
-@version 2.4.1
+@version 2.4.2
 @description:en A dark theme stylesheet for the website of YYeTs subtitle group.
 @description 一款适用于 YYeTs 人人影视网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
@@ -11,17 +11,40 @@
 @license MIT
 @preprocessor default
 ==/UserStyle== */
-@-moz-document regexp("https?://(\\w+\\.)?yysub\\.net/.*")
+@document regexp("https?://(\\w+\\.)?yysub\\.\\w+/.*")
 {
   body {
     background-color: #1f1f1f;
     color: #8c8c8c;
-    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-      'HarmonyOS Sans SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK',
-      'Microsoft YaHei', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
-      Cantarell, Noto Sans, sans-serif, ui-sans-serif, sans-serif,
-      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji', emoji, sans-serif;
+    font-family:
+      'Source Han Sans SC',
+      'Noto Sans CJK SC',
+      'HanHei SC',
+      'HarmonyOS Sans SC',
+      '方正兰亭黑_GB18030',
+      '方正兰亭黑_GBK',
+      'Microsoft YaHei',
+      system-ui,
+      -apple-system,
+      Segoe UI,
+      Roboto,
+      Ubuntu,
+      Cantarell,
+      Noto Sans,
+      sans-serif,
+      Roboto,
+      Ubuntu,
+      Cantarell,
+      Noto Sans,
+      sans-serif,
+      ui-sans-serif,
+      sans-serif,
+      'Apple Color Emoji',
+      'Segoe UI Emoji',
+      'Segoe UI Symbol',
+      'Noto Color Emoji',
+      emoji,
+      sans-serif;
   }
   pre,
   code,
@@ -115,14 +138,16 @@
     border-radius: 4px 0 0 4px !important;
   }
   .header .search-box .submit {
-    background: url('https://jstu.yysub.net/images/saerch-submit.png') center
-        center/24px 24px no-repeat,
+    background:
+      url('https://jstu.yysub.net/images/saerch-submit.png') center center/24px
+        24px no-repeat,
       #005083 !important;
     border-radius: 0 4px 4px 0 !important;
   }
   .header .search-box .submit:hover {
-    background: url('https://jstu.yysub.net/images/saerch-submit.png') center
-        center/24px 24px no-repeat,
+    background:
+      url('https://jstu.yysub.net/images/saerch-submit.png') center center/24px
+        24px no-repeat,
       #006fb6 !important;
   }
   .header .search-box .key-result,
@@ -151,11 +176,9 @@
     padding: 10px;
   }
   .header .search-box #top_search_list li {
-    background: none !important;
-  }
-  .header .search-box #top_search_list li {
     width: 100%;
     padding: 0;
+    background: none !important;
     color: inherit;
   }
   .header .search-box #top_search_list li:not(:last-child) {
@@ -300,7 +323,10 @@
     color: inherit;
   }
   * {
-    transition: color 0.25s, background-color 0.5s, border-color 0.5s;
+    transition:
+      color 0.25s,
+      background-color 0.5s,
+      border-color 0.5s;
   }
   .middle-box .top24,
   .middle-box .today-play,
@@ -568,8 +594,6 @@
   }
   .middle-box .user-main .upgrade-item .upgrade-pop {
     top: -160px !important;
-  }
-  .middle-box .user-main .upgrade-item .upgrade-pop {
     background: rgba(0, 0, 0, 0.9);
     box-shadow: none;
     border: 3px solid rgba(255, 255, 255, 0.15);
@@ -589,10 +613,8 @@
     color: brown;
   }
   .middle-box .user-main .upgrade-item .upgrade-pop .button a {
-    color: #d9d9d9 !important;
-  }
-  .middle-box .user-main .upgrade-item .upgrade-pop .button a {
     background: rgba(52, 116, 249, 0.05);
+    color: #d9d9d9 !important;
   }
   .middle-box .user-main .upgrade-item .upgrade-pop .button .btn1 {
     background: rgba(52, 116, 249, 0.25);
@@ -782,11 +804,9 @@
     border: none;
   }
   .middle-box .res-bbs-box .res-bbs-left .news-bbs h2 span a.btn3 {
-    color: #8c8c8c !important;
-  }
-  .middle-box .res-bbs-box .res-bbs-left .news-bbs h2 span a.btn3 {
     background: rgba(52, 116, 249, 0.25);
     border: none;
+    color: #8c8c8c !important;
   }
   .middle-box .res-bbs-box .res-bbs-left .news-bbs ul {
     border-color: rgba(255, 255, 255, 0.05);
@@ -914,12 +934,35 @@
     color: inherit;
   }
   .middle-box .information-desc * {
-    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-      'HarmonyOS Sans SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK',
-      'Microsoft YaHei', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu,
-      Cantarell, Noto Sans, sans-serif, ui-sans-serif, sans-serif,
-      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji', emoji, sans-serif !important;
+    font-family:
+      'Source Han Sans SC',
+      'Noto Sans CJK SC',
+      'HanHei SC',
+      'HarmonyOS Sans SC',
+      '方正兰亭黑_GB18030',
+      '方正兰亭黑_GBK',
+      'Microsoft YaHei',
+      system-ui,
+      -apple-system,
+      Segoe UI,
+      Roboto,
+      Ubuntu,
+      Cantarell,
+      Noto Sans,
+      sans-serif,
+      Roboto,
+      Ubuntu,
+      Cantarell,
+      Noto Sans,
+      sans-serif,
+      ui-sans-serif,
+      sans-serif,
+      'Apple Color Emoji',
+      'Segoe UI Emoji',
+      'Segoe UI Symbol',
+      'Noto Color Emoji',
+      emoji,
+      sans-serif !important;
     font-size: 16px !important;
   }
   .middle-box .subtitle-box .subtitle-serch-sidebar li:nth-child(2n + 1) {
@@ -1177,10 +1220,8 @@
     background: rgba(0, 0, 0, 0.2);
   }
   .middle-box .resource-box .day_data .d_r_t tbody tr {
-    color: inherit !important;
-  }
-  .middle-box .resource-box .day_data .d_r_t tbody tr {
     background: rgba(0, 0, 0, 0.2);
+    color: inherit !important;
   }
   .middle-box .resource-box .day_data .d_r_t tbody tr td.d2,
   .middle-box .resource-box .day_data .d_r_t tbody tr td.dr_ico,
@@ -1290,7 +1331,7 @@
     padding: 4px 10px;
     border-width: 1px;
     border-style: solid;
-    text-indent: inherit;
+    text-indent: unset;
   }
   .middle-box .qiudang-box .qd-search form input[type='image'] {
     width: 35px;
@@ -1385,18 +1426,14 @@
     font-size: 14px;
   }
   .middle-box .qiudang-box .qd-form .submit input {
-    background: url(http://js.jstucdn.com/images/bg-btn.png) no-repeat !important;
-  }
-  .middle-box .qiudang-box .qd-form .submit input {
     margin-top: 10px;
+    background: url('http://js.jstucdn.com/images/bg-btn.png') no-repeat !important;
     font-family: inherit;
     filter: brightness(60%);
   }
   .middle-box .qiudang-box .bbs-list {
-    padding: 0 !important;
-  }
-  .middle-box .qiudang-box .bbs-list {
     margin-top: 25px;
+    padding: 0 !important;
     background: rgba(0, 0, 0, 0.2);
     border-radius: 8px;
   }
@@ -1419,12 +1456,10 @@
   }
   .middle-box .article-item h2.it {
     height: 62px !important;
-    padding: 0 !important;
-    line-height: 60px !important;
-  }
-  .middle-box .article-item h2.it {
     margin: 0 20px;
+    padding: 0 !important;
     font-size: 20px;
+    line-height: 60px !important;
   }
   .middle-box .article-item h2.it::after {
     position: absolute;
@@ -1446,8 +1481,7 @@
   }
   .middle-box .article-item .article-top li strong {
     width: 785px;
-    max-width: none;
-    max-width: initial;
+    max-width: unset;
     color: #8c8c8c;
   }
   .middle-box .article-item .article-top li strong a {
