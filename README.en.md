@@ -24,7 +24,7 @@ NOTE: Due to the lack of mutil-language supporting, `HarmonyOS` series fonts onl
 
 <br>
 
-### [TURN OFF THE LIGHT, YYeTs!](https://github.com/francis-zhao/userstyles/blob/master/src/yyets-dark-theme/yyets-dark-theme.user.scss)
+### [💡 TURN OFF THE LIGHT, YYeTs!](https://github.com/francis-zhao/userstyles/blob/master/src/yyets-dark-theme/yyets-dark-theme.user.scss)
 
 A dark theme stylesheet for the website of YYeTs subtitle group ( http://yysub.cc/ ).
 
