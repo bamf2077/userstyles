@@ -1,4 +1,5 @@
-# EditorConfig is awesome: https://EditorConfig.org
+# EditorConfig
+# https://EditorConfig.org
 
 root = true
 
@@ -10,9 +11,13 @@ charset = utf-8
 trim_trailing_whitespace = true
 insert_final_newline = true
 
-[*.py]
+[{*.c,*.h,*.cpp,*.hpp,*.java,*.cs,*.rs,*.sh,*ps1,*.php,*.py}]
+indent_size = 4
+
+[*.go]
+indent_style = tab
 indent_size = 4
 
 [Makefile]
 indent_style = tab
-indent_size = 4
+indent_size = 8

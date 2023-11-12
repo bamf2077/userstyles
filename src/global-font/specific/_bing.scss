@@ -1,0 +1,8 @@
+@mixin style($font-sans-serif, $font-serif: null, $font-monospace: null) {
+  @-moz-document regexp('https://(\\w+\\.)?bing\\.com/(search)?.*')
+  {
+    * {
+      font-family: $font-sans-serif;
+    }
+  }
+}

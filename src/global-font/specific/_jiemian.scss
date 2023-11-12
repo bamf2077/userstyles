@@ -1,0 +1,13 @@
+@mixin style($font-sans-serif, $font-serif: null, $font-monospace: null) {
+  @-moz-document domain('jiemian.com') {
+    .article-content {
+      font-family: $font-sans-serif !important;
+    }
+
+    #ad_header_top,
+    .cnzz-ads,
+    .jm-app {
+      display: none !important;
+    }
+  }
+}

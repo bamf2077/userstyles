@@ -1,0 +1,14 @@
+@mixin style($font-sans-serif, $font-serif: null, $font-monospace: null) {
+  @if $font-monospace {
+    @-moz-document domain('github.com') {
+      .text-mono {
+        font-family: $font-monospace !important;
+      }
+
+      .blob-num,
+      .blob-code-inner {
+        font-family: $font-monospace;
+      }
+    }
+  }
+}

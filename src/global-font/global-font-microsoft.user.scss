@@ -2,7 +2,7 @@
 @name:en Global Font: Microsoft-branded
 @name 全局微软雅黑
 @namespace franciszhao
-@version 2.4.0
+@version 2.5.1
 @description:en An user stylesheet to replace all fonts on web pages with Microsoft-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用微软品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -12,7 +12,8 @@
 @preprocessor default
 ==/UserStyle== */
 
-@use 'foundation';
+@use 'base';
+@use 'specific';
 
 // 全局字体定义
 
@@ -41,19 +42,19 @@ $font-sans-serif-fallback: 'Noto Sans', 'Roboto';
 
 $font-sans-serif-sc: 'Microsoft YaHei UI';
 $font-sans-serif-sc-fallback: 'Microsoft YaHei', '方正兰亭黑_GB18030',
-  '方正兰亭黑_GBK', foundation.$font-system-ui;
+  '方正兰亭黑_GBK', base.$font-system-ui;
 
 $font-sans-serif-tc: 'Microsoft JhengHei UI';
-$font-sans-serif-tc-fallback: 'Microsoft JhengHei', foundation.$font-system-ui;
+$font-sans-serif-tc-fallback: 'Microsoft JhengHei', base.$font-system-ui;
 
 $font-sans-serif-hc: 'Microsoft JhengHei UI';
 $font-sans-serif-hc-fallback: $font-sans-serif-tc-fallback;
 
 $font-sans-serif-j: 'Yu Gothic UI';
-$font-sans-serif-j-fallback: 'Yu Gothic', foundation.$font-system-ui;
+$font-sans-serif-j-fallback: 'Yu Gothic', base.$font-system-ui;
 
 $font-sans-serif-k: 'Malgun Gothic';
-$font-sans-serif-k-fallback: foundation.$font-system-ui;
+$font-sans-serif-k-fallback: base.$font-system-ui;
 
 // 等宽字体
 $font-monospace: 'Cascadia Code';
@@ -80,10 +81,12 @@ $font-monospace-k-fallback: $font-monospace-fallback;
 // ❌ 阿拉伯字母、希伯来文、泰文
 
 $vendor: 'microsoft';
+@-moz-document url-prefix() {
+}
 
-@include foundation.default-font-families(
+@include base.default-font-families(
   $font-sans-serif:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif,
@@ -91,7 +94,7 @@ $vendor: 'microsoft';
       )
     ),
   $font-monospace:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace,
@@ -99,7 +102,7 @@ $vendor: 'microsoft';
       )
     ),
   $font-sans-serif-sc:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-sc,
@@ -107,7 +110,7 @@ $vendor: 'microsoft';
       )
     ),
   $font-monospace-sc:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-sc,
@@ -115,7 +118,7 @@ $vendor: 'microsoft';
       )
     ),
   $font-sans-serif-tc:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-tc,
@@ -123,7 +126,7 @@ $vendor: 'microsoft';
       )
     ),
   $font-monospace-tc:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-tc,
@@ -131,7 +134,7 @@ $vendor: 'microsoft';
       )
     ),
   $font-sans-serif-hc:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-hc,
@@ -139,7 +142,7 @@ $vendor: 'microsoft';
       )
     ),
   $font-monospace-hc:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-hc,
@@ -147,7 +150,7 @@ $vendor: 'microsoft';
       )
     ),
   $font-sans-serif-j:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-j,
@@ -155,7 +158,7 @@ $vendor: 'microsoft';
       )
     ),
   $font-monospace-j:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-j,
@@ -163,7 +166,7 @@ $vendor: 'microsoft';
       )
     ),
   $font-sans-serif-k:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-k,
@@ -171,7 +174,7 @@ $vendor: 'microsoft';
       )
     ),
   $font-monospace-k:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-k,
@@ -183,7 +186,7 @@ $vendor: 'microsoft';
 
 /* 字体替换 */
 
-@include foundation.font-face-replace(
+@include base.font-face-replace(
   $font-serif: $font-serif,
   $font-sans-serif: $font-sans-serif,
   $font-monospace: $font-monospace,
@@ -201,9 +204,9 @@ $vendor: 'microsoft';
 
 /* 特定网站适配 */
 
-@include foundation.specific-websites(
+@include specific.websites(
   $font-serif:
-    foundation.get-default(
+    base.get-default(
       $type: 'serif',
       $font-list: (
         $font-serif-sc,
@@ -211,7 +214,7 @@ $vendor: 'microsoft';
       )
     ),
   $font-sans-serif:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-sc,
@@ -219,7 +222,7 @@ $vendor: 'microsoft';
       )
     ),
   $font-monospace:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-sc,

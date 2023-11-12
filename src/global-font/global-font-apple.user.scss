@@ -2,7 +2,7 @@
 @name:en Global Font: Apple-branded
 @name 全局苹方
 @namespace franciszhao
-@version 2.4.0
+@version 2.5.1
 @description:en An user stylesheet to replace all fonts on web pages with Apple-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用苹果品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -12,7 +12,8 @@
 @preprocessor default
 ==/UserStyle== */
 
-@use 'foundation';
+@use 'base';
+@use 'specific';
 
 // 全局字体定义
 
@@ -22,11 +23,11 @@ $font-sans-serif-fallback: 'Source Sans 3';
 
 $font-sans-serif-sc: 'PingFang SC';
 $font-sans-serif-sc-fallback: 'Source Han Sans SC', 'HanHei SC',
-  foundation.$font-system-ui;
+  base.$font-system-ui;
 
 $font-sans-serif-tc: 'PingFang TC';
 $font-sans-serif-tc-fallback: 'Source Han Sans TC', 'HanHei TC',
-  foundation.$font-system-ui;
+  base.$font-system-ui;
 
 $font-sans-serif-hc: 'PingFang HK';
 $font-sans-serif-hc-fallback: 'Source Han Sans HC', $font-sans-serif-tc,
@@ -51,10 +52,12 @@ $font-monospace-hc-fallback: 'PingFang HK';
 // ❌ 阿拉伯字母、希伯来文、泰文
 
 $vendor: 'apple';
+@-moz-document url-prefix() {
+}
 
-@include foundation.default-font-families(
+@include base.default-font-families(
   $font-sans-serif:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif,
@@ -62,7 +65,7 @@ $vendor: 'apple';
       )
     ),
   $font-monospace:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace,
@@ -70,7 +73,7 @@ $vendor: 'apple';
       )
     ),
   $font-sans-serif-sc:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-sc,
@@ -78,7 +81,7 @@ $vendor: 'apple';
       )
     ),
   $font-monospace-sc:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-sc,
@@ -86,7 +89,7 @@ $vendor: 'apple';
       )
     ),
   $font-sans-serif-tc:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-tc,
@@ -94,7 +97,7 @@ $vendor: 'apple';
       )
     ),
   $font-monospace-tc:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-tc,
@@ -102,7 +105,7 @@ $vendor: 'apple';
       )
     ),
   $font-sans-serif-hc:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-hc,
@@ -110,7 +113,7 @@ $vendor: 'apple';
       )
     ),
   $font-monospace-hc:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-hc,
@@ -122,7 +125,7 @@ $vendor: 'apple';
 
 /* 字体替换 */
 
-@include foundation.font-face-replace(
+@include base.font-face-replace(
   $font-sans-serif: $font-sans-serif,
   $font-monospace: $font-monospace,
   $font-sans-serif-sc: $font-sans-serif-sc,
@@ -132,9 +135,9 @@ $vendor: 'apple';
 
 /* 特定网站适配 */
 
-@include foundation.specific-websites(
+@include specific.websites(
   $font-sans-serif:
-    foundation.get-default(
+    base.get-default(
       $type: 'sans-serif',
       $font-list: (
         $font-sans-serif-sc,
@@ -142,7 +145,7 @@ $vendor: 'apple';
       )
     ),
   $font-monospace:
-    foundation.get-default(
+    base.get-default(
       $type: 'monospace',
       $font-list: (
         $font-monospace-sc,
