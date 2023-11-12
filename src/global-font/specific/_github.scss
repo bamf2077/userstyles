@@ -1,6 +1,6 @@
 @mixin style($font-sans-serif, $font-serif: null, $font-monospace: null) {
   @if $font-monospace {
-    @document domain('github.com') {
+    @-moz-document domain('github.com') {
       .text-mono {
         font-family: $font-monospace !important;
       }

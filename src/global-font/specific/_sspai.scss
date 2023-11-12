@@ -1,5 +1,5 @@
 @mixin style($font-sans-serif, $font-serif: null, $font-monospace: null) {
-  @document domain('sspai.com') {
+  @-moz-document domain('sspai.com') {
     h1,
     h2,
     h3,

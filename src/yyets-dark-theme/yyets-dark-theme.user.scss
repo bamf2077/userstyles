@@ -2,7 +2,7 @@
 @name:en 💡 TURN OFF THE LIGHT, YYeTs!
 @name 💡 关灯，人人影视！
 @namespace franciszhao
-@version 2.4.2
+@version 2.5.1
 @description:en A dark theme stylesheet for the website of YYeTs subtitle group.
 @description 一款适用于 YYeTs 人人影视网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
@@ -14,28 +14,10 @@
 
 // 外观定义
 
-$font-sans-serif:
-  'Source Han Sans SC',
-  'Noto Sans CJK SC',
-  'HanHei SC',
-  'HarmonyOS Sans SC',
-  '方正兰亭黑_GB18030',
-  '方正兰亭黑_GBK',
-  'Microsoft YaHei',
-  system-ui,
-  Segoe UI,
-  Roboto,
-  Ubuntu,
-  Cantarell,
-  Noto Sans,
-  sans-serif,
-  ui-sans-serif,
-  sans-serif,
-  'Apple Color Emoji',
-  'Segoe UI Emoji',
-  'Segoe UI Symbol',
-  'Noto Color Emoji',
-  emoji;
+$font-sans-serif: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
+  'HarmonyOS Sans SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK', 'Microsoft YaHei',
+  system-ui, ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  'Segoe UI Symbol', 'Noto Color Emoji', emoji;
 
 $font-monospace: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
   'Source Code Pro', 'Noto Mono', 'SF Mono', 'Roboto Mono', 'Cascadia Code',
@@ -68,7 +50,7 @@ $color-button-hover: rgba(52, 116, 249, 0.25);
 $border-radius: 4px;
 
 // 人人影视主站
-@document regexp("https?:\/\/(\\w+\\.)?yysub\\.\\w+\/.*") {
+@-moz-document regexp("https?:\/\/(\\w+\\.)?yysub\\.\\w+\/.*") {
   // 通用-字体
   body {
     background-color: $color-bg;

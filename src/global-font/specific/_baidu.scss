@@ -1,5 +1,5 @@
 @mixin style($font-sans-serif, $font-serif: null, $font-monospace: null) {
-  @document domain('baidu.com'),
+  @-moz-document domain('baidu.com'),
             regexp('https://www\\.baidu\\.com/(s|#)?.*')
   {
     * {

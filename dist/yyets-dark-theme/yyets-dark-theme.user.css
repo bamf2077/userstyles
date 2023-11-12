@@ -2,7 +2,7 @@
 @name:en 💡 TURN OFF THE LIGHT, YYeTs!
 @name 💡 关灯，人人影视！
 @namespace franciszhao
-@version 2.4.2
+@version 2.5.1
 @description:en A dark theme stylesheet for the website of YYeTs subtitle group.
 @description 一款适用于 YYeTs 人人影视网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
@@ -11,40 +11,16 @@
 @license MIT
 @preprocessor default
 ==/UserStyle== */
-@document regexp("https?://(\\w+\\.)?yysub\\.\\w+/.*")
+@-moz-document regexp("https?://(\\w+\\.)?yysub\\.\\w+/.*")
 {
   body {
     background-color: #1f1f1f;
     color: #8c8c8c;
-    font-family:
-      'Source Han Sans SC',
-      'Noto Sans CJK SC',
-      'HanHei SC',
-      'HarmonyOS Sans SC',
-      '方正兰亭黑_GB18030',
-      '方正兰亭黑_GBK',
-      'Microsoft YaHei',
-      system-ui,
-      -apple-system,
-      Segoe UI,
-      Roboto,
-      Ubuntu,
-      Cantarell,
-      Noto Sans,
-      sans-serif,
-      Roboto,
-      Ubuntu,
-      Cantarell,
-      Noto Sans,
-      sans-serif,
-      ui-sans-serif,
-      sans-serif,
-      'Apple Color Emoji',
-      'Segoe UI Emoji',
-      'Segoe UI Symbol',
-      'Noto Color Emoji',
-      emoji,
-      sans-serif;
+    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
+      'HarmonyOS Sans SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK',
+      'Microsoft YaHei', system-ui, ui-sans-serif, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji', emoji, sans-serif;
   }
   pre,
   code,
@@ -934,35 +910,11 @@
     color: inherit;
   }
   .middle-box .information-desc * {
-    font-family:
-      'Source Han Sans SC',
-      'Noto Sans CJK SC',
-      'HanHei SC',
-      'HarmonyOS Sans SC',
-      '方正兰亭黑_GB18030',
-      '方正兰亭黑_GBK',
-      'Microsoft YaHei',
-      system-ui,
-      -apple-system,
-      Segoe UI,
-      Roboto,
-      Ubuntu,
-      Cantarell,
-      Noto Sans,
-      sans-serif,
-      Roboto,
-      Ubuntu,
-      Cantarell,
-      Noto Sans,
-      sans-serif,
-      ui-sans-serif,
-      sans-serif,
-      'Apple Color Emoji',
-      'Segoe UI Emoji',
-      'Segoe UI Symbol',
-      'Noto Color Emoji',
-      emoji,
-      sans-serif !important;
+    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
+      'HarmonyOS Sans SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK',
+      'Microsoft YaHei', system-ui, ui-sans-serif, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji', emoji, sans-serif !important;
     font-size: 16px !important;
   }
   .middle-box .subtitle-box .subtitle-serch-sidebar li:nth-child(2n + 1) {
@@ -1092,6 +1044,7 @@
   .middle-box .resource-box .resource-list .resource-filter a.selected {
     background: rgba(52, 116, 249, 0.25);
     color: #8c8c8c;
+    -webkit-text-decoration: none;
     text-decoration: none;
   }
   .middle-box .resource-box .resource-list .resource-cats {
@@ -1252,6 +1205,7 @@
   .middle-box .resource-box .day_data .d_r_t tbody tr .dr_ico a {
     background: #237804;
     color: #d9d9d9;
+    -webkit-text-decoration: none;
     text-decoration: none;
   }
   .middle-box .play-schedule {
@@ -1519,6 +1473,7 @@
     color: #005083 !important;
   }
   .middle-box .article-box .article-con .article-resume p a u {
+    -webkit-text-decoration: none;
     text-decoration: none;
   }
   .middle-box .article-box .article-con .article-resume p a span {

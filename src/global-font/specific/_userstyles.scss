@@ -1,5 +1,5 @@
 @mixin style($font-sans-serif, $font-serif: null, $font-monospace: null) {
-  @document domain('userstyles.org') {
+  @-moz-document domain('userstyles.org') {
     .ad,
     #top_android_button,
     .android_button_button,

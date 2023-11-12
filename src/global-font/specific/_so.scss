@@ -1,5 +1,5 @@
 @mixin style($font-sans-serif, $font-serif: null, $font-monospace: null) {
-  @document regexp('https://www\\.so\\.com/s?.*')
+  @-moz-document regexp('https://www\\.so\\.com/s?.*')
   {
     * {
       font-family: $font-sans-serif;

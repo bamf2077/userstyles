@@ -2,7 +2,7 @@
 @name:en Global Font: Huawei-branded
 @name 全局鸿蒙黑体
 @namespace franciszhao
-@version 2.4.0
+@version 2.5.1
 @description:en An user stylesheet to replace all fonts on web pages with Huawei-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用华为品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -71,6 +71,8 @@ $font-monospace-hc-fallback: 'Noto Sans Mono CJK HC', $font-monospace-tc,
 // ❌ 阿拉伯字母、希伯来文、泰文
 
 $vendor: 'huawei';
+@-moz-document url-prefix() {
+}
 
 @include base.default-font-families(
   $font-sans-serif:
@@ -139,9 +141,6 @@ $vendor: 'huawei';
     ),
   $vendor: $vendor
 );
-
-/* 字体替换 */
-
 @include base.font-face-replace(
   $font-serif: $font-serif,
   $font-sans-serif: $font-sans-serif,
@@ -153,6 +152,8 @@ $vendor: 'huawei';
   $font-serif-hc: $font-sans-serif-hc,
   $font-sans-serif-hc: $font-sans-serif-hc
 );
+
+/* 字体替换 */
 
 /* 特定网站适配 */
 
