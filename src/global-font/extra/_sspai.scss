@@ -1,0 +1,13 @@
+@mixin style($font-sans, $font-serif: null, $font-mono: null) {
+  @document domain('sspai.com') {
+    * {
+      font-family: $font-sans;
+    }
+
+    :is(h1, h2, h3, h4, h5, h6, p, a),
+    .title,
+    .content {
+      font-family: $font-sans !important;
+    }
+  }
+}

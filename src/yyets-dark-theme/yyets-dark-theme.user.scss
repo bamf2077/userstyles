@@ -2,7 +2,7 @@
 @name:en 💡 TURN OFF THE LIGHT, YYeTs!
 @name 💡 关灯，人人影视！
 @namespace franciszhao
-@version 2.5.1
+@version 2.6.0
 @description:en A dark theme stylesheet for the website of YYeTs subtitle group.
 @description 一款适用于 YYeTs 人人影视网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
@@ -14,12 +14,14 @@
 
 // 外观定义
 
-$font-sans-serif: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-  'HarmonyOS Sans SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK', 'Microsoft YaHei',
-  system-ui, ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-  'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+$font-sans: 'Source Han Sans SC', 'Source Han Sans SC VF', 'Source Han Sans CN',
+  'Source Han Sans CN VF', 'Noto Sans CJK SC', 'Noto Sans SC', 'HanHei SC',
+  '方正兰亭黑Pro Global', '方正兰亭黑Pro GBK', '方正兰亭黑_GB18030',
+  '方正兰亭黑_GBK', 'HarmonyOS Sans SC', system-ui, ui-sans-serif, sans-serif,
+  'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji',
+  emoji;
 
-$font-monospace: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
+$font-mono: 'Source Han Mono SC', 'Source Han Mono CN', 'Noto Sans Mono CJK SC',
   'Source Code Pro', 'Noto Mono', 'SF Mono', 'Roboto Mono', 'Cascadia Code',
   ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
   'Segoe UI Symbol', 'Noto Color Emoji', emoji;
@@ -50,27 +52,19 @@ $color-button-hover: rgba(52, 116, 249, 0.25);
 $border-radius: 4px;
 
 // 人人影视主站
-@-moz-document regexp("https?:\/\/(\\w+\\.)?yysub\\.\\w+\/.*") {
+@document regexp("https?:\/\/(\\w+\\.)?yysub\\.\\w+\/.*") {
   // 通用-字体
   body {
     background-color: $color-bg;
     color: $color-text;
-    font-family: $font-sans-serif, sans-serif;
+    font-family: $font-sans, sans-serif;
   }
 
-  pre,
-  code,
-  kbd,
-  samp {
-    font-family: $font-monospace, monospace;
+  :is(pre, code, kbd, samp) {
+    font-family: $font-mono, monospace;
   }
 
-  button,
-  input,
-  keygen,
-  optgroup,
-  select,
-  textarea {
+  :is(button, input, keygen, optgroup, select, textarea) {
     font-family: inherit;
   }
 
@@ -106,16 +100,12 @@ $border-radius: 4px;
     color: brown !important;
   }
 
-  b,
-  strong {
+  :is(b, strong) {
     font-weight: 400 !important;
   }
 
   // 通用-控件
-  input[type='text'],
-  input[type='password'],
-  select,
-  textarea {
+  :is(input[type='text'], input[type='password'], select, textarea) {
     background: $color-black-010 !important;
     box-shadow: none !important;
     border-color: $color-link !important;
@@ -129,9 +119,7 @@ $border-radius: 4px;
     }
   }
 
-  input[type='button'],
-  input[type='submit'],
-  .res-form .submit {
+  :is(input[type='button'], input[type='submit'], .res-form .submit) {
     background: $color-link !important;
     box-shadow: none !important;
     border-color: $color-link !important;
@@ -635,7 +623,7 @@ $border-radius: 4px;
     .user-login {
       .input-txt {
         padding: 0 10px;
-        font-family: $font-monospace, monospace;
+        font-family: $font-mono, monospace;
       }
 
       p label,
@@ -1191,7 +1179,7 @@ $border-radius: 4px;
 
     .information-desc {
       * {
-        font-family: $font-sans-serif, sans-serif !important;
+        font-family: $font-sans, sans-serif !important;
         font-size: 16px !important;
       }
     }

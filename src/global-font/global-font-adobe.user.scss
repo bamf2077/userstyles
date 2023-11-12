@@ -2,7 +2,7 @@
 @name:en Global Font: Adobe-branded
 @name 全局思源黑体
 @namespace franciszhao
-@version 2.5.1
+@version 2.6.0
 @description:en An user stylesheet to replace all fonts on web pages with Adobe-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用 Adobe 品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -12,234 +12,224 @@
 @preprocessor default
 ==/UserStyle== */
 
+@use 'sass:list';
 @use 'base';
-@use 'specific';
+@use 'extra';
 
 // 全局字体定义
 
 // 衬线字体
-$font-serif: 'Source Serif 4';
-$font-serif-fallback: 'Source Serif Pro', 'Noto Serif', 'Roboto Slab';
+// prettier-ignore
+$font-serif:
+  'Source Serif 4',
+  'Source Serif Pro',
+  'Noto Serif',
+  'Roboto Slab';
 
-$font-serif-sc: 'Source Han Serif SC';
-$font-serif-sc-fallback: 'Noto Serif CJK SC', '方正新书宋_GBK', $font-serif,
-  $font-serif-fallback;
+// prettier-ignore
+$font-serif-sc:
+  'Source Han Serif SC',
+  'Source Han Serif SC VF',
+  'Source Han Serif CN',
+  'Source Han Serif CN VF',
+  'Noto Serif CJK SC',
+  'Noto Serif SC',
+  '方正新书宋_GBK',
+  $font-serif;
 
-$font-serif-tc: 'Source Han Serif TC';
-$font-serif-tc-fallback: 'Noto Serif CJK TC', $font-serif, $font-serif-fallback;
+// prettier-ignore
+$font-serif-tc:
+  'Source Han Serif TC',
+  'Source Han Serif TC VF',
+  'Source Han Serif TW',
+  'Source Han Serif TW VF',
+  'Noto Serif CJK TC',
+  'Noto Serif TC',
+  $font-serif;
 
-$font-serif-hc: 'Source Han Serif HC';
-$font-serif-hc-fallback: 'Noto Serif CJK HC', $font-serif-tc,
-  $font-serif-tc-fallback;
+// prettier-ignore
+$font-serif-hc:
+  'Source Han Serif HC',
+  'Source Han Serif HC VF',
+  'Source Han Serif HK',
+  'Source Han Serif HK VF',
+  'Noto Serif CJK HC',
+  'Noto Serif  HC',
+  $font-serif-tc;
 
-$font-serif-j: 'Source Han Serif';
-$font-serif-j-fallback: 'Noto Serif CJK JP', $font-serif, $font-serif-fallback;
+// prettier-ignore
+$font-serif-j:
+  'Source Han Serif',
+  'Source Han Serif VF',
+  'Source Han Serif JP',
+  'Source Han Serif JP VF',
+  'Noto Serif CJK JP',
+  'Noto Serif JP',
+  $font-serif;
 
-$font-serif-k: 'Source Han Serif K';
-$font-serif-k-fallback: 'Noto Serif CJK KR', $font-serif, $font-serif-fallback;
+// prettier-ignore
+$font-serif-k:
+  'Source Han Serif K',
+  'Source Han Serif K VF',
+  'Source Han Serif KR',
+  'Source Han Serif KR VF',
+  'Noto Serif CJK KR',
+  'Noto Serif KR',
+  $font-serif;
 
 // 无衬线字体
-$font-sans-serif: 'Source Sans 3';
-$font-sans-serif-fallback: 'Source Sans Pro', 'Noto Sans', 'Roboto';
+// prettier-ignore
+$font-sans:
+  'Source Sans 3',
+  'Source Sans Pro',
+  'Noto Sans',
+  'Roboto';
 
-$font-sans-serif-sc: 'Source Han Sans SC';
-$font-sans-serif-sc-fallback: 'Noto Sans CJK SC', 'HanHei SC',
-  '方正兰亭黑_GB18030', '方正兰亭黑_GBK', base.$font-system-ui;
+// prettier-ignore
+$font-sans-sc:
+  'Source Han Sans SC',
+  'Source Han Sans SC VF',
+  'Source Han Sans CN',
+  'Source Han Sans CN VF',
+  'Noto Sans CJK SC',
+  'Noto Sans SC',
+  'HanHei SC',
+  '方正兰亭黑Pro Global',
+  '方正兰亭黑Pro GBK',
+  '方正兰亭黑_GB18030',
+  '方正兰亭黑_GBK',
+  base.$font-system;
 
-$font-sans-serif-tc: 'Source Han Sans TC';
-$font-sans-serif-tc-fallback: 'Noto Sans CJK TC', 'HanHei TC',
-  base.$font-system-ui;
+// prettier-ignore
+$font-sans-tc:
+  'Source Han Sans TC',
+  'Source Han Sans TC VF',
+  'Source Han Sans TW',
+  'Source Han Sans TW VF',
+  'Noto Sans CJK TC',
+  'Noto Sans TC',
+  'HanHei TC',
+  base.$font-system;
 
-$font-sans-serif-hc: 'Source Han Sans HC';
-$font-sans-serif-hc-fallback: 'Noto Sans CJK HC', $font-sans-serif-tc,
-  $font-sans-serif-tc-fallback;
+// prettier-ignore
+$font-sans-hc:
+  'Source Han Sans HC',
+  'Source Han Sans HC VF',
+  'Source Han Sans HK',
+  'Source Han Sans HK VF',
+  'Noto Sans CJK HC',
+  'Noto Sans HC',
+  $font-sans-tc;
 
-$font-sans-serif-j: 'Source Han Sans';
-$font-sans-serif-j-fallback: 'Noto Sans CJK JP', 'Hiragino Kaku Gothic Pro',
-  base.$font-system-ui;
+// prettier-ignore
+$font-sans-j:
+  'Source Han Sans',
+  'Source Han Sans VF',
+  'Source Han Sans JP',
+  'Source Han Sans JP VF',
+  'Noto Sans CJK JP',
+  'Noto Sans JP',
+  'Hiragino Kaku Gothic Pro',
+  base.$font-system;
 
-$font-sans-serif-k: 'Source Han Sans K';
-$font-sans-serif-k-fallback: 'Noto Sans CJK KR', 'Apple SD Gothic Neo',
-  base.$font-system-ui;
+// prettier-ignore
+$font-sans-k:
+  'Source Han Sans K',
+  'Source Han Sans K VF',
+  'Source Han Sans KR',
+  'Source Han Sans KR VF',
+  'Noto Sans CJK KR',
+  'Noto Sans  KR',
+  'Apple SD Gothic Neo',
+  base.$font-system;
 
 // 等宽字体
-$font-monospace: 'Source Code Pro';
-$font-monospace-fallback: 'Noto Mono', 'SF Mono', 'Roboto Mono';
+// prettier-ignore
+$font-mono:
+  'Source Code Pro',
+  'Noto Mono',
+  'SF Mono',
+  'Roboto Mono';
 
-$font-monospace-sc: 'Source Han Mono SC';
-$font-monospace-sc-fallback: 'Noto Sans Mono CJK SC', $font-monospace,
-  $font-monospace-fallback;
+// prettier-ignore
+$font-mono-sc:
+  'Source Han Mono SC',
+  'Source Han Mono CN',
+  'Noto Sans Mono CJK SC',
+  $font-mono;
 
-$font-monospace-tc: 'Source Han Mono TC';
-$font-monospace-tc-fallback: 'Noto Sans Mono CJK TC', $font-monospace,
-  $font-monospace-fallback;
+// prettier-ignore
+$font-mono-tc:
+  'Source Han Mono TC',
+  'Source Han Mono TW',
+  'Noto Sans Mono CJK TC',
+  $font-mono;
 
-$font-monospace-hc: 'Source Han Mono HC';
-$font-monospace-hc-fallback: 'Noto Sans Mono CJK HC', $font-monospace-tc,
-  $font-monospace-tc-fallback;
+// prettier-ignore
+$font-mono-hc:
+  'Source Han Mono HC',
+  'Source Han Mono HK',
+  'Noto Sans Mono CJK HC',
+  $font-mono-tc;
 
-$font-monospace-j: 'Source Han Mono';
-$font-monospace-j-fallback: 'Noto Sans Mono CJK JP', $font-monospace,
-  $font-monospace-fallback;
+// prettier-ignore
+$font-mono-j:
+  'Source Han Mono',
+  'Source Han Mono JP',
+  'Noto Sans Mono CJK JP',
+  $font-mono;
 
-$font-monospace-k: 'Source Han Mono K';
-$font-monospace-k-fallback: 'Noto Sans Mono CJK KR', $font-monospace,
-  $font-monospace-fallback;
+// prettier-ignore
+$font-mono-k:
+  'Source Han Mono K',
+  'Source Han Mono KR',
+  'Noto Sans Mono CJK KR',
+  $font-mono;
 
 /* 字体设定 */
 
 // ✔️ 拉丁字母、西里尔字母、希腊文
 // ❌ 阿拉伯字母、希伯来文、泰文
 
-$vendor: 'adobe';
-@-moz-document url-prefix() {
-}
-
-@include base.default-font-families(
-  $font-sans-serif:
-    base.get-default(
-      $type: 'sans-serif',
-      $font-list: (
-        $font-sans-serif,
-        $font-sans-serif-fallback,
-      )
-    ),
-  $font-monospace:
-    base.get-default(
-      $type: 'monospace',
-      $font-list: (
-        $font-monospace,
-        $font-monospace-fallback,
-      )
-    ),
-  $font-sans-serif-sc:
-    base.get-default(
-      $type: 'sans-serif',
-      $font-list: (
-        $font-sans-serif-sc,
-        $font-sans-serif-sc-fallback,
-      )
-    ),
-  $font-monospace-sc:
-    base.get-default(
-      $type: 'monospace',
-      $font-list: (
-        $font-monospace-sc,
-        $font-monospace-sc-fallback,
-      )
-    ),
-  $font-sans-serif-tc:
-    base.get-default(
-      $type: 'sans-serif',
-      $font-list: (
-        $font-sans-serif-tc,
-        $font-sans-serif-tc-fallback,
-      )
-    ),
-  $font-monospace-tc:
-    base.get-default(
-      $type: 'monospace',
-      $font-list: (
-        $font-monospace-tc,
-        $font-monospace-tc-fallback,
-      )
-    ),
-  $font-sans-serif-hc:
-    base.get-default(
-      $type: 'sans-serif',
-      $font-list: (
-        $font-sans-serif-hc,
-        $font-sans-serif-hc-fallback,
-      )
-    ),
-  $font-monospace-hc:
-    base.get-default(
-      $type: 'monospace',
-      $font-list: (
-        $font-monospace-hc,
-        $font-monospace-hc-fallback,
-      )
-    ),
-  $font-sans-serif-j:
-    base.get-default(
-      $type: 'sans-serif',
-      $font-list: (
-        $font-sans-serif-j,
-        $font-sans-serif-j-fallback,
-      )
-    ),
-  $font-monospace-j:
-    base.get-default(
-      $type: 'monospace',
-      $font-list: (
-        $font-monospace-j,
-        $font-monospace-j-fallback,
-      )
-    ),
-  $font-sans-serif-k:
-    base.get-default(
-      $type: 'sans-serif',
-      $font-list: (
-        $font-sans-serif-k,
-        $font-sans-serif-k-fallback,
-      )
-    ),
-  $font-monospace-k:
-    base.get-default(
-      $type: 'monospace',
-      $font-list: (
-        $font-monospace-k,
-        $font-monospace-k-fallback,
-      )
-    ),
-  $vendor: $vendor
+@include base.default(
+  $font-sans: base.stack-join($font-sans, 'sans'),
+  $font-mono: base.stack-join($font-mono, 'mono'),
+  $font-sans-sc: base.stack-join($font-sans-sc, 'sans'),
+  $font-mono-sc: base.stack-join($font-mono-sc, 'mono'),
+  $font-sans-tc: base.stack-join($font-sans-tc, 'sans'),
+  $font-mono-tc: base.stack-join($font-mono-tc, 'mono'),
+  $font-sans-hc: base.stack-join($font-sans-hc, 'sans'),
+  $font-mono-hc: base.stack-join($font-mono-hc, 'mono'),
+  $font-sans-j: base.stack-join($font-sans-j, 'sans'),
+  $font-mono-j: base.stack-join($font-mono-j, 'mono'),
+  $font-sans-k: base.stack-join($font-sans-k, 'sans'),
+  $font-mono-k: base.stack-join($font-mono-k, 'mono')
 );
 
 /* 字体替换 */
 
-@include base.font-face-replace(
-  $font-serif: $font-serif,
-  $font-sans-serif: $font-sans-serif,
-  $font-monospace: $font-monospace,
-  $font-serif-sc: $font-sans-serif-sc,
-  $font-sans-serif-sc: $font-sans-serif-sc,
-  $font-serif-tc: $font-sans-serif-tc,
-  $font-sans-serif-tc: $font-sans-serif-tc,
-  $font-serif-hc: $font-sans-serif-hc,
-  $font-sans-serif-hc: $font-sans-serif-hc,
-  $font-serif-j: $font-sans-serif-j,
-  $font-sans-serif-j: $font-sans-serif-j,
-  $font-serif-k: $font-sans-serif-k,
-  $font-sans-serif-k: $font-sans-serif-k
+@include base.replacement(
+  $font-serif: list.nth($font-serif, 1),
+  $font-sans: list.nth($font-sans, 1),
+  $font-mono: list.nth($font-mono, 1),
+  $font-serif-sc: list.nth($font-sans-sc, 1),
+  $font-sans-sc: list.nth($font-sans-sc, 1),
+  $font-serif-tc: list.nth($font-sans-tc, 1),
+  $font-sans-tc: list.nth($font-sans-tc, 1),
+  $font-serif-hc: list.nth($font-sans-hc, 1),
+  $font-sans-hc: list.nth($font-sans-hc, 1),
+  $font-serif-j: list.nth($font-sans-j, 1),
+  $font-sans-j: list.nth($font-sans-j, 1),
+  $font-serif-k: list.nth($font-sans-k, 1),
+  $font-sans-k: list.nth($font-sans-k, 1)
 );
 
 /* 特定网站适配 */
 
-@include specific.websites(
-  $font-serif:
-    base.get-default(
-      $type: 'serif',
-      $font-list: (
-        $font-serif-sc,
-        $font-serif-sc-fallback,
-      )
-    ),
-  $font-sans-serif:
-    base.get-default(
-      $type: 'sans-serif',
-      $font-list: (
-        $font-sans-serif-sc,
-        $font-sans-serif-sc-fallback,
-      )
-    ),
-  $font-monospace:
-    base.get-default(
-      $type: 'monospace',
-      $font-list: (
-        $font-monospace-sc,
-        $font-monospace-sc-fallback,
-      )
-    )
+@include extra.websites(
+  $font-serif: base.stack-join($font-serif-sc, 'serif'),
+  $font-sans: base.stack-join($font-sans-sc, 'sans'),
+  $font-mono: base.stack-join($font-mono-sc, 'mono')
 );
 
 // 真的到底了

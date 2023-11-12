@@ -1,0 +1,13 @@
+@mixin style($font-sans, $font-serif: null, $font-mono: null) {
+  @document domain('3dmgame.com') {
+    * {
+      font-family: $font-sans;
+    }
+  }
+
+  @document domain('bbs.3dmgame.com') {
+    .xst {
+      font-family: $font-sans;
+    }
+  }
+}

@@ -2,7 +2,7 @@
 @name:en 💡 TURN OFF THE LIGHT, YYeTs!
 @name 💡 关灯，人人影视！
 @namespace franciszhao
-@version 2.5.1
+@version 2.6.0
 @description:en A dark theme stylesheet for the website of YYeTs subtitle group.
 @description 一款适用于 YYeTs 人人影视网站的深色主题用户样式表。
 @author Francis Zhao <francis@n2o.io>
@@ -11,32 +11,26 @@
 @license MIT
 @preprocessor default
 ==/UserStyle== */
-@-moz-document regexp("https?://(\\w+\\.)?yysub\\.\\w+/.*")
+@document regexp("https?://(\\w+\\.)?yysub\\.\\w+/.*")
 {
   body {
     background-color: #1f1f1f;
     color: #8c8c8c;
-    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-      'HarmonyOS Sans SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK',
-      'Microsoft YaHei', system-ui, ui-sans-serif, sans-serif,
+    font-family: 'Source Han Sans SC', 'Source Han Sans SC VF',
+      'Source Han Sans CN', 'Source Han Sans CN VF', 'Noto Sans CJK SC',
+      'Noto Sans SC', 'HanHei SC', '方正兰亭黑Pro Global', '方正兰亭黑Pro GBK',
+      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', 'HarmonyOS Sans SC', system-ui,
+      ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol', 'Noto Color Emoji', emoji, sans-serif;
+  }
+  :is(pre, code, kbd, samp) {
+    font-family: 'Source Han Mono SC', 'Source Han Mono CN',
+      'Noto Sans Mono CJK SC', 'Source Code Pro', 'Noto Mono', 'SF Mono',
+      'Roboto Mono', 'Cascadia Code', ui-monospace, monospace,
       'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji', emoji, sans-serif;
+      'Noto Color Emoji', emoji, monospace;
   }
-  pre,
-  code,
-  kbd,
-  samp {
-    font-family: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
-      'Source Code Pro', 'Noto Mono', 'SF Mono', 'Roboto Mono', 'Cascadia Code',
-      ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
-      'Segoe UI Symbol', 'Noto Color Emoji', emoji, monospace;
-  }
-  button,
-  input,
-  keygen,
-  optgroup,
-  select,
-  textarea {
+  :is(button, input, keygen, optgroup, select, textarea) {
     font-family: inherit;
   }
   a,
@@ -64,14 +58,10 @@
   .f7 {
     color: brown !important;
   }
-  b,
-  strong {
+  :is(b, strong) {
     font-weight: 400 !important;
   }
-  input[type='text'],
-  input[type='password'],
-  select,
-  textarea {
+  :is(input[type='text'], input[type='password'], select, textarea) {
     background: rgba(0, 0, 0, 0.1) !important;
     box-shadow: none !important;
     border-color: #005083 !important;
@@ -79,19 +69,11 @@
     color: #8c8c8c !important;
     outline: none !important;
   }
-  input[type='text']:hover,
-  input[type='text']:focus,
-  input[type='password']:hover,
-  input[type='password']:focus,
-  select:hover,
-  select:focus,
-  textarea:hover,
-  textarea:focus {
+  :is(input[type='text'], input[type='password'], select, textarea):hover,
+  :is(input[type='text'], input[type='password'], select, textarea):focus {
     border-color: #006fb6 !important;
   }
-  input[type='button'],
-  input[type='submit'],
-  .res-form .submit {
+  :is(input[type='button'], input[type='submit'], .res-form .submit) {
     background: #005083 !important;
     box-shadow: none !important;
     border-color: #005083 !important;
@@ -99,9 +81,7 @@
     color: #d9d9d9 !important;
     outline: none !important;
   }
-  input[type='button']:hover,
-  input[type='submit']:hover,
-  .res-form .submit:hover {
+  :is(input[type='button'], input[type='submit'], .res-form .submit):hover {
     background: #006fb6 !important;
   }
   .header {
@@ -458,10 +438,11 @@
   }
   .user-form .user-login .input-txt {
     padding: 0 10px;
-    font-family: 'Source Han Mono SC', 'Noto Sans Mono CJK SC',
-      'Source Code Pro', 'Noto Mono', 'SF Mono', 'Roboto Mono', 'Cascadia Code',
-      ui-monospace, monospace, 'Apple Color Emoji', 'Segoe UI Emoji',
-      'Segoe UI Symbol', 'Noto Color Emoji', emoji, monospace;
+    font-family: 'Source Han Mono SC', 'Source Han Mono CN',
+      'Noto Sans Mono CJK SC', 'Source Code Pro', 'Noto Mono', 'SF Mono',
+      'Roboto Mono', 'Cascadia Code', ui-monospace, monospace,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji', emoji, monospace;
   }
   .user-form .user-login p label,
   .user-form .user-login li label strong,
@@ -910,11 +891,12 @@
     color: inherit;
   }
   .middle-box .information-desc * {
-    font-family: 'Source Han Sans SC', 'Noto Sans CJK SC', 'HanHei SC',
-      'HarmonyOS Sans SC', '方正兰亭黑_GB18030', '方正兰亭黑_GBK',
-      'Microsoft YaHei', system-ui, ui-sans-serif, sans-serif,
-      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
-      'Noto Color Emoji', emoji, sans-serif !important;
+    font-family: 'Source Han Sans SC', 'Source Han Sans SC VF',
+      'Source Han Sans CN', 'Source Han Sans CN VF', 'Noto Sans CJK SC',
+      'Noto Sans SC', 'HanHei SC', '方正兰亭黑Pro Global', '方正兰亭黑Pro GBK',
+      '方正兰亭黑_GB18030', '方正兰亭黑_GBK', 'HarmonyOS Sans SC', system-ui,
+      ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol', 'Noto Color Emoji', emoji, sans-serif !important;
     font-size: 16px !important;
   }
   .middle-box .subtitle-box .subtitle-serch-sidebar li:nth-child(2n + 1) {

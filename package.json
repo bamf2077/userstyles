@@ -1,7 +1,9 @@
 {
   "name": "userstyles",
+  "version": "2.6.0",
   "author": "Francis Zhao",
   "type": "module",
+  "packageManager": "yarn@4.0.1",
   "scripts": {
     "build": "yarn run build:sass && yarn run build:postcss && yarn run format",
     "build:sass": "sass --no-charset --no-source-map src:dist",

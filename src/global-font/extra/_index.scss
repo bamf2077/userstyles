@@ -1,0 +1,32 @@
+// 特定网站适配
+// Extra settings for specific websites
+
+@use '3dmgame' as _3dmgame;
+@use '423down' as _423down;
+@use 'baidu';
+@use 'bing';
+@use 'github';
+@use 'google';
+@use 'greasyfork';
+@use 'ithome';
+@use 'jiemian';
+@use 'so';
+@use 'sogou';
+@use 'sspai';
+@use 'userstyles';
+
+@mixin websites($font-sans, $font-serif: null, $font-mono: null) {
+  @include _3dmgame.style($font-sans, $font-serif, $font-mono);
+  @include _423down.style($font-sans, $font-serif, $font-mono);
+  @include baidu.style($font-sans, $font-serif, $font-mono);
+  @include bing.style($font-sans, $font-serif, $font-mono);
+  @include github.style($font-sans, $font-serif, $font-mono);
+  @include google.style($font-sans, $font-serif, $font-mono);
+  @include greasyfork.style($font-sans, $font-serif, $font-mono);
+  @include ithome.style($font-sans, $font-serif, $font-mono);
+  @include jiemian.style($font-sans, $font-serif, $font-mono);
+  @include so.style($font-sans, $font-serif, $font-mono);
+  @include sogou.style($font-sans, $font-serif, $font-mono);
+  @include sspai.style($font-sans, $font-serif, $font-mono);
+  @include userstyles.style($font-sans, $font-serif, $font-mono);
+}

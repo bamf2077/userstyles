@@ -1,0 +1,7 @@
+@mixin style($font-sans, $font-serif: null, $font-mono: null) {
+  @document regexp('https:\/\/www\\.google(\\.\\w+){1,2}\/(search)?.*') {
+    * {
+      font-family: $font-sans;
+    }
+  }
+}

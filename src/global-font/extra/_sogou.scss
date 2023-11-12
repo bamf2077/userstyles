@@ -1,0 +1,7 @@
+@mixin style($font-sans, $font-serif: null, $font-mono: null) {
+  @document domain('sogou.com') {
+    * {
+      font-family: $font-sans;
+    }
+  }
+}

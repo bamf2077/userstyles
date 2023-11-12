@@ -2,7 +2,7 @@
 @name:en Global Font: Apple-branded
 @name 全局苹方
 @namespace franciszhao
-@version 2.5.1
+@version 2.6.0
 @description:en An user stylesheet to replace all fonts on web pages with Apple-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用苹果品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -12,146 +12,59 @@
 @preprocessor default
 ==/UserStyle== */
 
+@use 'sass:list';
 @use 'base';
-@use 'specific';
+@use 'extra';
 
 // 全局字体定义
 
 // 无衬线字体
-$font-sans-serif: 'San Francisco';
-$font-sans-serif-fallback: 'Source Sans 3';
-
-$font-sans-serif-sc: 'PingFang SC';
-$font-sans-serif-sc-fallback: 'Source Han Sans SC', 'HanHei SC',
-  base.$font-system-ui;
-
-$font-sans-serif-tc: 'PingFang TC';
-$font-sans-serif-tc-fallback: 'Source Han Sans TC', 'HanHei TC',
-  base.$font-system-ui;
-
-$font-sans-serif-hc: 'PingFang HK';
-$font-sans-serif-hc-fallback: 'Source Han Sans HC', $font-sans-serif-tc,
-  $font-sans-serif-tc-fallback;
+$font-sans: 'San Francisco';
+$font-sans-sc: 'PingFang SC', 'HanHei SC';
+$font-sans-tc: 'PingFang TC', 'HanHei TC';
+$font-sans-hc: 'PingFang HK', 'HanHei TC';
 
 // 等宽字体
-$font-monospace: 'SF Mono';
-$font-monospace-fallback: 'Source Code Pro';
-
-$font-monospace-sc: 'SF Mono';
-$font-monospace-sc-fallback: 'PingFang SC';
-
-$font-monospace-tc: 'SF Mono';
-$font-monospace-tc-fallback: 'PingFang TC';
-
-$font-monospace-hc: 'SF Mono';
-$font-monospace-hc-fallback: 'PingFang HK';
+$font-mono: 'SF Mono';
+$font-mono-sc: $font-mono, $font-sans-sc;
+$font-mono-tc: $font-mono, $font-sans-tc;
+$font-mono-hc: $font-mono, $font-sans-hc;
 
 /* 字体设定 */
 
 // ✔️ 拉丁字母、西里尔字母、希腊文
 // ❌ 阿拉伯字母、希伯来文、泰文
 
-$vendor: 'apple';
-@-moz-document url-prefix() {
-}
-
-@include base.default-font-families(
-  $font-sans-serif:
-    base.get-default(
-      $type: 'sans-serif',
-      $font-list: (
-        $font-sans-serif,
-        $font-sans-serif-fallback,
-      )
-    ),
-  $font-monospace:
-    base.get-default(
-      $type: 'monospace',
-      $font-list: (
-        $font-monospace,
-        $font-monospace-fallback,
-      )
-    ),
-  $font-sans-serif-sc:
-    base.get-default(
-      $type: 'sans-serif',
-      $font-list: (
-        $font-sans-serif-sc,
-        $font-sans-serif-sc-fallback,
-      )
-    ),
-  $font-monospace-sc:
-    base.get-default(
-      $type: 'monospace',
-      $font-list: (
-        $font-monospace-sc,
-        $font-monospace-sc-fallback,
-      )
-    ),
-  $font-sans-serif-tc:
-    base.get-default(
-      $type: 'sans-serif',
-      $font-list: (
-        $font-sans-serif-tc,
-        $font-sans-serif-tc-fallback,
-      )
-    ),
-  $font-monospace-tc:
-    base.get-default(
-      $type: 'monospace',
-      $font-list: (
-        $font-monospace-tc,
-        $font-monospace-tc-fallback,
-      )
-    ),
-  $font-sans-serif-hc:
-    base.get-default(
-      $type: 'sans-serif',
-      $font-list: (
-        $font-sans-serif-hc,
-        $font-sans-serif-hc-fallback,
-      )
-    ),
-  $font-monospace-hc:
-    base.get-default(
-      $type: 'monospace',
-      $font-list: (
-        $font-monospace-hc,
-        $font-monospace-hc-fallback,
-      )
-    ),
-  $vendor: $vendor
+@include base.default(
+  $font-sans: base.stack-join($font-sans, 'sans'),
+  $font-mono: base.stack-join($font-mono, 'mono'),
+  $font-sans-sc: base.stack-join($font-sans-sc, 'sans'),
+  $font-mono-sc: base.stack-join($font-mono-sc, 'mono'),
+  $font-sans-tc: base.stack-join($font-sans-tc, 'sans'),
+  $font-mono-tc: base.stack-join($font-mono-tc, 'mono'),
+  $font-sans-hc: base.stack-join($font-sans-hc, 'sans'),
+  $font-mono-hc: base.stack-join($font-mono-hc, 'mono')
 );
 
 /* 字体替换 */
 
-@include base.font-face-replace(
-  $font-sans-serif: $font-sans-serif,
-  $font-monospace: $font-monospace,
-  $font-sans-serif-sc: $font-sans-serif-sc,
-  $font-sans-serif-tc: $font-sans-serif-tc,
-  $font-sans-serif-hc: $font-sans-serif-hc
+@include base.replacement(
+  $font-serif: list.nth($font-sans, 1),
+  $font-sans: list.nth($font-sans, 1),
+  $font-mono: list.nth($font-mono, 1),
+  $font-serif-sc: list.nth($font-sans-sc, 1),
+  $font-sans-sc: list.nth($font-sans-sc, 1),
+  $font-serif-tc: list.nth($font-sans-tc, 1),
+  $font-sans-tc: list.nth($font-sans-tc, 1),
+  $font-serif-hc: list.nth($font-sans-hc, 1),
+  $font-sans-hc: list.nth($font-sans-hc, 1)
 );
 
 /* 特定网站适配 */
 
-@include specific.websites(
-  $font-sans-serif:
-    base.get-default(
-      $type: 'sans-serif',
-      $font-list: (
-        $font-sans-serif-sc,
-        $font-sans-serif-sc-fallback,
-      )
-    ),
-  $font-monospace:
-    base.get-default(
-      $type: 'monospace',
-      $font-list: (
-        $font-monospace-sc,
-        $font-monospace-sc-fallback,
-      )
-    )
+@include extra.websites(
+  $font-sans: base.stack-join($font-sans-sc, 'sans'),
+  $font-mono: base.stack-join($font-mono-sc, 'mono')
 );
 
 // 真的到底了
