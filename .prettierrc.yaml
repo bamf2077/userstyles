@@ -17,22 +17,9 @@ embeddedLanguageFormatting: auto
 singleAttributePerLine: false
 overrides:
   - files:
+      - "*.{html,vue}"
       - "*.{css,scss,less}"
-      - "*.{js,jsx,cjs,mjs,ts,tsx,cts,mts}"
-      - "*.vue"
+      - "*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}"
     options:
       singleQuote: true
       jsxSingleQuote: true
-  - files:
-      - "*.{c,h,cpp,hpp,java,cs,rs}"
-      - "*.{sh,ps1,php,py}"
-    options:
-      tabWidth: 4
-  - files: "*.go"
-    options:
-      tabWidth: 4
-      useTabs: true
-  - files: Makefile
-    options:
-      tabWidth: 8
-      useTabs: true

@@ -1,7 +1,6 @@
 # PostCSS Configuration
 # https://github.com/postcss/postcss-load-config
 
-map: false
 plugins:
   postcss-preset-env:
     features:

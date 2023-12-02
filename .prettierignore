@@ -10,4 +10,4 @@ pnpm-lock.yaml
 .pnp.*
 
 # Output directories
-#dist
+# dist

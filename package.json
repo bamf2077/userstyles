@@ -1,21 +1,20 @@
 {
   "name": "userstyles",
-  "version": "2.6.0",
+  "version": "2.6.1",
   "author": "Francis Zhao",
   "type": "module",
-  "packageManager": "yarn@4.0.1",
   "scripts": {
     "build": "yarn run build:sass && yarn run build:postcss && yarn run format",
     "build:sass": "sass --no-charset --no-source-map src:dist",
     "build:postcss": "postcss dist/**/*.css --replace --env production",
-    "format": "prettier --write --cache --cache-location .yarn/cache/.prettiercache --cache-strategy metadata .",
+    "format": "prettier --write --cache --cache-location .yarn/cache/prettier/.prettier-cache --cache-strategy metadata .",
     "yarn-sdks-vscode": "yarn dlx @yarnpkg/sdks vscode"
   },
   "devDependencies": {
-    "postcss": "^8.4.31",
+    "postcss": "^8.4.32",
     "postcss-cli": "^10.1.0",
     "postcss-preset-env": "^9.3.0",
-    "prettier": "^3.0.3",
+    "prettier": "^3.1.0",
     "sass": "^1.69.5"
   }
 }
