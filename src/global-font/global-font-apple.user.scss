@@ -2,7 +2,7 @@
 @name:en Global Font: Apple-branded
 @name 全局苹方
 @namespace franciszhao
-@version 2.5.1
+@version 2.5.2
 @description:en An user stylesheet to replace all fonts on web pages with Apple-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用苹果品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -58,7 +58,7 @@ $vendor: 'apple';
 @include base.default-font-families(
   $font-sans-serif:
     base.get-default(
-      $type: 'sans-serif',
+      $generic: 'sans-serif',
       $font-list: (
         $font-sans-serif,
         $font-sans-serif-fallback,
@@ -66,7 +66,7 @@ $vendor: 'apple';
     ),
   $font-monospace:
     base.get-default(
-      $type: 'monospace',
+      $generic: 'monospace',
       $font-list: (
         $font-monospace,
         $font-monospace-fallback,
@@ -74,7 +74,7 @@ $vendor: 'apple';
     ),
   $font-sans-serif-sc:
     base.get-default(
-      $type: 'sans-serif',
+      $generic: 'sans-serif',
       $font-list: (
         $font-sans-serif-sc,
         $font-sans-serif-sc-fallback,
@@ -82,7 +82,7 @@ $vendor: 'apple';
     ),
   $font-monospace-sc:
     base.get-default(
-      $type: 'monospace',
+      $generic: 'monospace',
       $font-list: (
         $font-monospace-sc,
         $font-monospace-sc-fallback,
@@ -90,7 +90,7 @@ $vendor: 'apple';
     ),
   $font-sans-serif-tc:
     base.get-default(
-      $type: 'sans-serif',
+      $generic: 'sans-serif',
       $font-list: (
         $font-sans-serif-tc,
         $font-sans-serif-tc-fallback,
@@ -98,7 +98,7 @@ $vendor: 'apple';
     ),
   $font-monospace-tc:
     base.get-default(
-      $type: 'monospace',
+      $generic: 'monospace',
       $font-list: (
         $font-monospace-tc,
         $font-monospace-tc-fallback,
@@ -106,7 +106,7 @@ $vendor: 'apple';
     ),
   $font-sans-serif-hc:
     base.get-default(
-      $type: 'sans-serif',
+      $generic: 'sans-serif',
       $font-list: (
         $font-sans-serif-hc,
         $font-sans-serif-hc-fallback,
@@ -114,7 +114,7 @@ $vendor: 'apple';
     ),
   $font-monospace-hc:
     base.get-default(
-      $type: 'monospace',
+      $generic: 'monospace',
       $font-list: (
         $font-monospace-hc,
         $font-monospace-hc-fallback,
@@ -138,7 +138,7 @@ $vendor: 'apple';
 @include specific.websites(
   $font-sans-serif:
     base.get-default(
-      $type: 'sans-serif',
+      $generic: 'sans-serif',
       $font-list: (
         $font-sans-serif-sc,
         $font-sans-serif-sc-fallback,
@@ -146,7 +146,7 @@ $vendor: 'apple';
     ),
   $font-monospace:
     base.get-default(
-      $type: 'monospace',
+      $generic: 'monospace',
       $font-list: (
         $font-monospace-sc,
         $font-monospace-sc-fallback,

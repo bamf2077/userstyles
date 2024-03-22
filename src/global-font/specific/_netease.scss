@@ -1,7 +1,7 @@
 @mixin set-style($font-sans-serif, $font-serif: null, $font-monospace: null) {
-  @-moz-document regexp('https://(www\\.)?sogou\\.com/(web|sogou)?.*')
-  {
-    * {
+  @-moz-document domain('www.163.com') {
+    .end-text,
+    .post_body {
       font-family: $font-sans-serif;
     }
   }

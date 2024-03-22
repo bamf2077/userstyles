@@ -1,4 +1,4 @@
-@mixin style($font-sans-serif, $font-serif: null, $font-monospace: null) {
+@mixin set-style($font-sans-serif, $font-serif: null, $font-monospace: null) {
   @-moz-document domain('baidu.com'),
             regexp('https://www\\.baidu\\.com/(s|#)?.*')
   {

@@ -5,34 +5,21 @@ printWidth: 80
 tabWidth: 2
 useTabs: false
 semi: false
-singleQuote: false
+singleQuote: true
+jsxSingleQuote: false
 quoteProps: as-needed
 trailingComma: all
 bracketSpacing: true
 bracketSameLine: false
 arrowParens: always
 proseWrap: never
+htmlWhitespaceSensitivity: css
+vueIndentScriptAndStyle: false
 endOfLine: lf
 embeddedLanguageFormatting: auto
 singleAttributePerLine: false
 overrides:
   - files:
-      - "*.{css,scss,less}"
-      - "*.{js,jsx,cjs,mjs,ts,tsx,cts,mts}"
-      - "*.vue"
+      - '*.{md,markdown}'
     options:
-      singleQuote: true
-      jsxSingleQuote: true
-  - files:
-      - "*.{c,h,cpp,hpp,java,cs,rs}"
-      - "*.{sh,ps1,php,py}"
-    options:
-      tabWidth: 4
-  - files: "*.go"
-    options:
-      tabWidth: 4
-      useTabs: true
-  - files: Makefile
-    options:
-      tabWidth: 8
-      useTabs: true
+      singleQuote: false

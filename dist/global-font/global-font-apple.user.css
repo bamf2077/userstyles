@@ -2,7 +2,7 @@
 @name:en Global Font: Apple-branded
 @name 全局苹方
 @namespace franciszhao
-@version 2.5.1
+@version 2.5.2
 @description:en An user stylesheet to replace all fonts on web pages with Apple-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用苹果品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -14,10 +14,16 @@
 /* 字体设定 */
 @-moz-document url-prefix() {
 }
+:root {
+  --font-sans-serif: ui-sans-serif, sans-serif;
+  --font-emoji: emoji;
+}
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  font-family: var(--font-sans-serif), var(--font-emoji);
 }
 
 body {
@@ -41,6 +47,11 @@ keygen,
 optgroup,
 select,
 textarea {
+  font-family: inherit;
+}
+
+::before,
+::after {
   font-family: inherit;
 }
 
@@ -1072,6 +1083,142 @@ html:lang(vi) samp {
 }
 
 /* 字体替换 */
+@font-face {
+  font-family: 'Arial';
+  src: local('San Francisco');
+}
+@font-face {
+  font-family: 'Calibri';
+  src: local('San Francisco');
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: local('San Francisco');
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: local('San Francisco');
+}
+@font-face {
+  font-family: 'Lucida Sans Unicode';
+  src: local('San Francisco');
+}
+@font-face {
+  font-family: 'Microsoft Sans Serif';
+  src: local('San Francisco');
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('San Francisco');
+}
+@font-face {
+  font-family: 'Segoe UI';
+  src: local('San Francisco');
+}
+@font-face {
+  font-family: 'Tahoma';
+  src: local('San Francisco');
+}
+@font-face {
+  font-family: 'Trebuchet';
+  src: local('San Francisco');
+}
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: local('San Francisco');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('San Francisco');
+}
+@font-face {
+  font-family: 'Verdana';
+  src: local('San Francisco');
+}
+@font-face {
+  font-family: 'Consolas';
+  src: local('SF Mono');
+}
+@font-face {
+  font-family: 'Courier';
+  src: local('SF Mono');
+}
+@font-face {
+  font-family: 'Courier New';
+  src: local('SF Mono');
+}
+@font-face {
+  font-family: 'DejaVu Sans Mono';
+  src: local('SF Mono');
+}
+@font-face {
+  font-family: 'Lucida Console';
+  src: local('SF Mono');
+}
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: local('SF Mono');
+}
+@font-face {
+  font-family: 'SimHei';
+  src: local('PingFang SC');
+}
+@font-face {
+  font-family: '黑体';
+  src: local('PingFang SC');
+}
+@font-face {
+  font-family: 'DengXian';
+  src: local('PingFang SC');
+}
+@font-face {
+  font-family: '等线';
+  src: local('PingFang SC');
+}
+@font-face {
+  font-family: 'Microsoft YaHei UI';
+  src: local('PingFang SC');
+}
+@font-face {
+  font-family: 'Microsoft YaHei';
+  src: local('PingFang SC');
+}
+@font-face {
+  font-family: '微软雅黑';
+  src: local('PingFang SC');
+}
+@font-face {
+  font-family: 'STHeiti SC';
+  src: local('PingFang SC');
+}
+@font-face {
+  font-family: '苹方-简';
+  src: local('PingFang SC');
+}
+@font-face {
+  font-family: 'Microsoft JhengHei UI';
+  src: local('PingFang TC');
+}
+@font-face {
+  font-family: 'Microsoft JhengHei';
+  src: local('PingFang TC');
+}
+@font-face {
+  font-family: '微軟正黑體';
+  src: local('PingFang TC');
+}
+@font-face {
+  font-family: 'STHeiti TC';
+  src: local('PingFang TC');
+}
+@font-face {
+  font-family: '蘋方-繁';
+  src: local('PingFang TC');
+}
+@font-face {
+  font-family: '蘋方-港';
+  src: local('PingFang HK');
+}
 /* 特定网站适配 */
 @-moz-document domain("423down.com") {
   .excerpt h2 {
@@ -1146,6 +1293,14 @@ html:lang(vi) samp {
     display: none !important;
   }
 }
+@-moz-document domain("www.163.com") {
+  .end-text,
+  .post_body {
+    font-family: 'PingFang SC', 'Source Han Sans SC', 'HanHei SC', system-ui,
+      ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+      'Segoe UI Symbol', 'Noto Color Emoji', emoji;
+  }
+}
 @-moz-document regexp("https://www\\.so\\.com/s?.*")
 {
   * {
@@ -1169,10 +1324,10 @@ html:lang(vi) samp {
   h4,
   h5,
   h6,
-  .title,
-  .content,
   p,
-  a {
+  a,
+  .title,
+  .content {
     font-family: 'PingFang SC', 'Source Han Sans SC', 'HanHei SC', system-ui,
       ui-sans-serif, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
       'Segoe UI Symbol', 'Noto Color Emoji', emoji !important;

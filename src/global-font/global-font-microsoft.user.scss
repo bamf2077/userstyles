@@ -2,7 +2,7 @@
 @name:en Global Font: Microsoft-branded
 @name 全局微软雅黑
 @namespace franciszhao
-@version 2.5.1
+@version 2.5.2
 @description:en An user stylesheet to replace all fonts on web pages with Microsoft-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用微软品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -87,7 +87,7 @@ $vendor: 'microsoft';
 @include base.default-font-families(
   $font-sans-serif:
     base.get-default(
-      $type: 'sans-serif',
+      $generic: 'sans-serif',
       $font-list: (
         $font-sans-serif,
         $font-sans-serif-fallback,
@@ -95,7 +95,7 @@ $vendor: 'microsoft';
     ),
   $font-monospace:
     base.get-default(
-      $type: 'monospace',
+      $generic: 'monospace',
       $font-list: (
         $font-monospace,
         $font-monospace-fallback,
@@ -103,7 +103,7 @@ $vendor: 'microsoft';
     ),
   $font-sans-serif-sc:
     base.get-default(
-      $type: 'sans-serif',
+      $generic: 'sans-serif',
       $font-list: (
         $font-sans-serif-sc,
         $font-sans-serif-sc-fallback,
@@ -111,7 +111,7 @@ $vendor: 'microsoft';
     ),
   $font-monospace-sc:
     base.get-default(
-      $type: 'monospace',
+      $generic: 'monospace',
       $font-list: (
         $font-monospace-sc,
         $font-monospace-sc-fallback,
@@ -119,7 +119,7 @@ $vendor: 'microsoft';
     ),
   $font-sans-serif-tc:
     base.get-default(
-      $type: 'sans-serif',
+      $generic: 'sans-serif',
       $font-list: (
         $font-sans-serif-tc,
         $font-sans-serif-tc-fallback,
@@ -127,7 +127,7 @@ $vendor: 'microsoft';
     ),
   $font-monospace-tc:
     base.get-default(
-      $type: 'monospace',
+      $generic: 'monospace',
       $font-list: (
         $font-monospace-tc,
         $font-monospace-tc-fallback,
@@ -135,7 +135,7 @@ $vendor: 'microsoft';
     ),
   $font-sans-serif-hc:
     base.get-default(
-      $type: 'sans-serif',
+      $generic: 'sans-serif',
       $font-list: (
         $font-sans-serif-hc,
         $font-sans-serif-hc-fallback,
@@ -143,7 +143,7 @@ $vendor: 'microsoft';
     ),
   $font-monospace-hc:
     base.get-default(
-      $type: 'monospace',
+      $generic: 'monospace',
       $font-list: (
         $font-monospace-hc,
         $font-monospace-hc-fallback,
@@ -151,7 +151,7 @@ $vendor: 'microsoft';
     ),
   $font-sans-serif-j:
     base.get-default(
-      $type: 'sans-serif',
+      $generic: 'sans-serif',
       $font-list: (
         $font-sans-serif-j,
         $font-sans-serif-j-fallback,
@@ -159,7 +159,7 @@ $vendor: 'microsoft';
     ),
   $font-monospace-j:
     base.get-default(
-      $type: 'monospace',
+      $generic: 'monospace',
       $font-list: (
         $font-monospace-j,
         $font-monospace-j-fallback,
@@ -167,7 +167,7 @@ $vendor: 'microsoft';
     ),
   $font-sans-serif-k:
     base.get-default(
-      $type: 'sans-serif',
+      $generic: 'sans-serif',
       $font-list: (
         $font-sans-serif-k,
         $font-sans-serif-k-fallback,
@@ -175,7 +175,7 @@ $vendor: 'microsoft';
     ),
   $font-monospace-k:
     base.get-default(
-      $type: 'monospace',
+      $generic: 'monospace',
       $font-list: (
         $font-monospace-k,
         $font-monospace-k-fallback,
@@ -207,7 +207,7 @@ $vendor: 'microsoft';
 @include specific.websites(
   $font-serif:
     base.get-default(
-      $type: 'serif',
+      $generic: 'serif',
       $font-list: (
         $font-serif-sc,
         $font-serif-sc-fallback,
@@ -215,7 +215,7 @@ $vendor: 'microsoft';
     ),
   $font-sans-serif:
     base.get-default(
-      $type: 'sans-serif',
+      $generic: 'sans-serif',
       $font-list: (
         $font-sans-serif-sc,
         $font-sans-serif-sc-fallback,
@@ -223,7 +223,7 @@ $vendor: 'microsoft';
     ),
   $font-monospace:
     base.get-default(
-      $type: 'monospace',
+      $generic: 'monospace',
       $font-list: (
         $font-monospace-sc,
         $font-monospace-sc-fallback,

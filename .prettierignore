@@ -1,7 +1,7 @@
 # Prettier Ignoring
 # https://prettier.io/docs/en/ignore
 
-# Package directories and files
+# Package files
 package-lock.json
 pnpm-lock.yaml
 .pnpm
@@ -9,5 +9,10 @@ pnpm-lock.yaml
 .yarn
 .pnp.*
 
+# Static files
+**/*.bundle.*
+**/*.compiled.*
+**/*.min.*
+
 # Output directories
-#dist
+# dist

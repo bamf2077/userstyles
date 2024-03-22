@@ -31,21 +31,43 @@
   $font-monospace-k: null,
   $vendor
 ) {
+  :root {
+    --font-sans-serif: ui-sans-serif, sans-serif;
+    --font-emoji: emoji;
+  }
+
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
+    font-family: var(--font-sans-serif), var(--font-emoji);
   }
 
   body {
     font-family: $font-sans-serif-sc;
   }
 
-  :is(pre, code, kbd, samp) {
+  // Fix for code elements
+  pre,
+  code,
+  kbd,
+  samp {
     font-family: $font-monospace-sc;
   }
 
-  :is(button, input, keygen, optgroup, select, textarea) {
+  // Fix for form elements
+  button,
+  input,
+  keygen,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+  }
+
+  // Fix for iconfonts
+  ::before,
+  ::after {
     font-family: inherit;
   }
 
@@ -134,9 +156,8 @@
       }
     }
 
-    &:lang(nb),
-    &:lang(no),
-    &:lang(es) {
+    // prettier-ignore
+    &:lang(nb), &:lang(no), &:lang(es) {
       body {
         quotes: '«' '»';
       }
@@ -161,13 +182,13 @@
 // 获取默认字体
 // Get default font families
 
-@function get-default($type, $font-list) {
+@function get-default($generic, $font-list) {
   $default: '';
-  @if $type == 'serif' {
+  @if $generic == 'serif' {
     $default: $font-list, variables.$font-serif, variables.$font-emoji;
-  } @else if $type == 'sans-serif' {
+  } @else if $generic == 'sans-serif' {
     $default: $font-list, variables.$font-sans-serif, variables.$font-emoji;
-  } @else if $type == 'monospace' {
+  } @else if $generic == 'monospace' {
     $default: $font-list, variables.$font-monospace, variables.$font-emoji;
   }
   @return $default;

@@ -1,15 +1,8 @@
-@mixin style($font-sans-serif, $font-serif: null, $font-monospace: null) {
+@mixin set-style($font-sans-serif, $font-serif: null, $font-monospace: null) {
   @-moz-document domain('sspai.com') {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
+    :is(h1, h2, h3, h4, h5, h6, p, a),
     .title,
-    .content,
-    p,
-    a {
+    .content {
       font-family: $font-sans-serif !important;
     }
   }

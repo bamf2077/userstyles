@@ -2,7 +2,7 @@
 @name:en Global Font: Microsoft-branded
 @name 全局微软雅黑
 @namespace franciszhao
-@version 2.5.1
+@version 2.5.2
 @description:en An user stylesheet to replace all fonts on web pages with Microsoft-branded fonts, brings you a more unified and beautiful visual style.
 @description 一款使用微软品牌字体替换网页原有字体的用户样式表，为你呈现更统一美观的页面风格。
 @author Francis Zhao <francis@n2o.io>
@@ -14,10 +14,16 @@
 /* 字体设定 */
 @-moz-document url-prefix() {
 }
+:root {
+  --font-sans-serif: ui-sans-serif, sans-serif;
+  --font-emoji: emoji;
+}
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  font-family: var(--font-sans-serif), var(--font-emoji);
 }
 
 body {
@@ -41,6 +47,11 @@ keygen,
 optgroup,
 select,
 textarea {
+  font-family: inherit;
+}
+
+::before,
+::after {
   font-family: inherit;
 }
 
@@ -1122,6 +1133,242 @@ html:lang(vi) samp {
 }
 
 /* 字体替换 */
+@font-face {
+  font-family: 'New York';
+  src: local('Georgia');
+}
+@font-face {
+  font-family: 'Times';
+  src: local('Georgia');
+}
+@font-face {
+  font-family: 'Time New Roman';
+  src: local('Georgia');
+}
+@font-face {
+  font-family: 'Arial';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Calibri';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Lucida Sans Unicode';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Microsoft Sans Serif';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'San Francisco';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Tahoma';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Trebuchet';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Trebuchet MS';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Verdana';
+  src: local('Segoe UI');
+}
+@font-face {
+  font-family: 'Consolas';
+  src: local('Cascadia Code');
+}
+@font-face {
+  font-family: 'Courier';
+  src: local('Cascadia Code');
+}
+@font-face {
+  font-family: 'Courier New';
+  src: local('Cascadia Code');
+}
+@font-face {
+  font-family: 'DejaVu Sans Mono';
+  src: local('Cascadia Code');
+}
+@font-face {
+  font-family: 'Lucida Console';
+  src: local('Cascadia Code');
+}
+@font-face {
+  font-family: 'SF Mono';
+  src: local('Cascadia Code');
+}
+@font-face {
+  font-family: 'Ubuntu Mono';
+  src: local('Cascadia Code');
+}
+@font-face {
+  font-family: 'SimSun';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: 'SimSun-ExtB';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: '宋体';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: 'NSimSun';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: '新宋体';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: 'SimHei';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: '黑体';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: 'DengXian';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: '等线';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: 'Microsoft YaHei';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: '微软雅黑';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: 'STHeiti SC';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: 'PingFang SC';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: '苹方-简';
+  src: local('Microsoft YaHei UI');
+}
+@font-face {
+  font-family: 'MingLiU';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'MingLiU-ExtB';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'PMingLiU';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'PMingLiU-ExtB';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'Microsoft JhengHei';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: '微軟正黑體';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'STHeiti TC';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'PingFang TC';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: '蘋方-繁';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'MingLiU_HKSCS';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'MingLiU_HKSCS-ExtB';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'PingFang HK';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: '蘋方-港';
+  src: local('Microsoft JhengHei UI');
+}
+@font-face {
+  font-family: 'MS Mincho';
+  src: local('Yu Gothic UI');
+}
+@font-face {
+  font-family: 'MS PMincho';
+  src: local('Yu Gothic UI');
+}
+@font-face {
+  font-family: 'Yu Mincho';
+  src: local('Yu Gothic UI');
+}
+@font-face {
+  font-family: 'Meiryo';
+  src: local('Yu Gothic UI');
+}
+@font-face {
+  font-family: 'Meiryo UI';
+  src: local('Yu Gothic UI');
+}
+@font-face {
+  font-family: 'MS Gothic';
+  src: local('Yu Gothic UI');
+}
+@font-face {
+  font-family: 'MS PGothic';
+  src: local('Yu Gothic UI');
+}
+@font-face {
+  font-family: 'MS UI Gothic';
+  src: local('Yu Gothic UI');
+}
+@font-face {
+  font-family: 'Yu Gothic';
+  src: local('Yu Gothic UI');
+}
 /* 特定网站适配 */
 @-moz-document domain("423down.com") {
   .excerpt h2 {
@@ -1201,6 +1448,15 @@ html:lang(vi) samp {
     display: none !important;
   }
 }
+@-moz-document domain("www.163.com") {
+  .end-text,
+  .post_body {
+    font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', '方正兰亭黑_GB18030',
+      '方正兰亭黑_GBK', system-ui, ui-sans-serif, sans-serif,
+      'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji', emoji;
+  }
+}
 @-moz-document regexp("https://www\\.so\\.com/s?.*")
 {
   * {
@@ -1226,10 +1482,10 @@ html:lang(vi) samp {
   h4,
   h5,
   h6,
-  .title,
-  .content,
   p,
-  a {
+  a,
+  .title,
+  .content {
     font-family: 'Microsoft YaHei UI', 'Microsoft YaHei', '方正兰亭黑_GB18030',
       '方正兰亭黑_GBK', system-ui, ui-sans-serif, sans-serif,
       'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',

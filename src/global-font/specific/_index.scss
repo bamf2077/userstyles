@@ -9,22 +9,24 @@
 @use 'greasyfork';
 @use 'ithome';
 @use 'jiemian';
+@use 'netease';
 @use 'so';
 @use 'sogou';
 @use 'sspai';
 @use 'userstyles';
 
 @mixin websites($font-sans-serif, $font-serif: null, $font-monospace: null) {
-  @include _423down.style($font-sans-serif, $font-serif, $font-monospace);
-  @include baidu.style($font-sans-serif, $font-serif, $font-monospace);
-  @include bing.style($font-sans-serif, $font-serif, $font-monospace);
-  @include github.style($font-sans-serif, $font-serif, $font-monospace);
-  @include google.style($font-sans-serif, $font-serif, $font-monospace);
-  @include greasyfork.style($font-sans-serif, $font-serif, $font-monospace);
-  @include ithome.style($font-sans-serif, $font-serif, $font-monospace);
-  @include jiemian.style($font-sans-serif, $font-serif, $font-monospace);
-  @include so.style($font-sans-serif, $font-serif, $font-monospace);
-  @include sogou.style($font-sans-serif, $font-serif, $font-monospace);
-  @include sspai.style($font-sans-serif, $font-serif, $font-monospace);
-  @include userstyles.style($font-sans-serif, $font-serif, $font-monospace);
+  @include _423down.set-style($font-sans-serif, $font-serif, $font-monospace);
+  @include baidu.set-style($font-sans-serif, $font-serif, $font-monospace);
+  @include bing.set-style($font-sans-serif, $font-serif, $font-monospace);
+  @include github.set-style($font-sans-serif, $font-serif, $font-monospace);
+  @include google.set-style($font-sans-serif, $font-serif, $font-monospace);
+  @include greasyfork.set-style($font-sans-serif, $font-serif, $font-monospace);
+  @include ithome.set-style($font-sans-serif, $font-serif, $font-monospace);
+  @include jiemian.set-style($font-sans-serif, $font-serif, $font-monospace);
+  @include netease.set-style($font-sans-serif, $font-serif, $font-monospace);
+  @include so.set-style($font-sans-serif, $font-serif, $font-monospace);
+  @include sogou.set-style($font-sans-serif, $font-serif, $font-monospace);
+  @include sspai.set-style($font-sans-serif, $font-serif, $font-monospace);
+  @include userstyles.set-style($font-sans-serif, $font-serif, $font-monospace);
 }
